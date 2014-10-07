@@ -20,4 +20,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Foundation
+import UIKit
+
+extension UIFont {
+  class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
+    return UIFont(name: "FontAwesome", size: fontSize)
+  }
+}
