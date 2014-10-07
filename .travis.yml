@@ -1,0 +1,7 @@
+# reference: http://www.objc.io/issue-6/travis-ci.html
+
+language: objective-c
+before_install: cd Demo
+xcode_project: FontAwesome.swift.xcodeproj
+xcode_scheme: FontAwesome.swift
+xcode_sdk: iphonesimulator
