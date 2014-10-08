@@ -578,7 +578,9 @@ extension String {
       "fa-yelp": "\u{f1e9}",
       "fa-yen": "\u{f157}",
       "fa-youtube": "\u{f167}",
-      "fa-youtube-play": "\u{f16a}”
+      "fa-youtube-play": "\u{f16a}"
     ]
+    
+    return icons[name]!
   }
 }
