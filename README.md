@@ -1,6 +1,6 @@
-# FontAwesome.swift
+# FontAwesome.swift [![CI Status](http://img.shields.io/travis/thii/FontAwesome.swift.svg?style=flat)](https://travis-ci.org/thii/FontAwesome.swift)
 
-[![CI Status](http://img.shields.io/travis/thii/FontAwesome.swift.svg?style=flat)](https://travis-ci.org/thii/FontAwesome.swift)
+Use Font Awesome in your Swift projects
 
 ## Installation
 
@@ -16,7 +16,7 @@ $ git submodule add https://github.com/thii/FontAwesome.swift
 ## Examples
 
 ```swift
-var myLabel:UILabel!
+var myLabel: UILabel!
 myLabel.font = UIFont.fontAwesomeOfSize(200)
 myLabel.text = String.fontAwesomeIconWithName("fa-github")
 
