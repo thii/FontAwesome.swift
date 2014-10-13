@@ -13,7 +13,14 @@ $ git submodule add https://github.com/thii/FontAwesome.swift
 - Add the `Fonts provided by application` key in your project's `plist` file
 - Add a `String` item inside that with the value `FontAwesome.otf`
 
-## Usage
+## Examples
+
+```swift
+var myLabel:UILabel!
+myLabel.font = UIFont.fontAwesomeOfSize(200)
+myLabel.text = String.fontAwesomeIconWithName("fa-github")
+
+```
 
 ## Requirements
 
