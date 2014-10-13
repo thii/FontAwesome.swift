@@ -27,5 +27,5 @@ myLabel.text = String.fontAwesomeIconWithName("fa-github")
 iOS 7 or later.
 
 ## License
-
-[MIT](http://thi.mit-license.org/)
+- FontAwesome.otf file licensed under SIL OFL 1.1
+- FontAwesome.swift licensed under [MIT](http://thi.mit-license.org/)
