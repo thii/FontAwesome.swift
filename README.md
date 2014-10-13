@@ -24,6 +24,8 @@ myLabel.text = String.fontAwesomeIconWithName("fa-github")
 
 ## Requirements
 
+iOS 7 or later.
+
 ## License
 
 [MIT](http://thi.mit-license.org/)
