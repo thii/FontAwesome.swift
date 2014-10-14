@@ -2,6 +2,5 @@
 
 language: objective-c
 before_install: cd Demo
-xcode_project: FontAwesome.swift.xcodeproj
-xcode_scheme: FontAwesome.swift
-xcode_sdk: iphonesimulator
+script:
+- xctool -project FontAwesome.swift.xcodeproj -scheme FontAwesome.swift -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
