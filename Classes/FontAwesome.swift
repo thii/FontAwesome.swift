@@ -24,7 +24,7 @@ import UIKit
 
 extension UIFont {
   class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
-    return UIFont(name: "FontAwesome", size: fontSize)
+    return UIFont(name: "FontAwesome", size: fontSize)!
   }
 }
 
