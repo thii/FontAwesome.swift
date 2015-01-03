@@ -22,14 +22,14 @@
 
 import UIKit
 
-extension UIFont {
-  class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
+public extension UIFont {
+  public class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
     return UIFont(name: "FontAwesome", size: fontSize)!
   }
 }
 
-extension String {
-  static func fontAwesomeIconWithName(name: String) -> String {
+public extension String {
+  public static func fontAwesomeIconWithName(name: String) -> String {
     var icons: [String: String]?
     var token: dispatch_once_t = 0
     
