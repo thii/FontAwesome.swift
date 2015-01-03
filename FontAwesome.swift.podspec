@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/*.{swift}'
   s.resource_bundle = { 'FontAwesome.swift' => 'Resources/*.otf' }
+  s.frameworks = 'UIKit', 'CoreText'
 end
