@@ -21,15 +21,44 @@
 // THE SOFTWARE.
 
 import UIKit
+import CoreText
 
-extension UIFont {
-  class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
-    return UIFont(name: "FontAwesome", size: fontSize)!
-  }
+private class FontLoader {
+    class func loadFont(name: String) {
+        let bundleURL = NSBundle(forClass: self).URLForResource("FontAwesome.swift", withExtension: "bundle")
+        let bundle = NSBundle(URL: bundleURL!)
+        let fontURL = bundle?.URLForResource(name, withExtension: "otf")
+        
+        let data = NSData(contentsOfURL: fontURL!)!
+        
+        let provider = CGDataProviderCreateWithCFData(data)
+        let font = CGFontCreateWithDataProvider(provider)!
+        
+        var error: Unmanaged<CFError>?
+        if !CTFontManagerRegisterGraphicsFont(font, &error) {
+            let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
+            let nsError = error!.takeUnretainedValue() as AnyObject as NSError
+            NSException(name: NSInternalInconsistencyException, reason: errorDescription, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
+        }
+    }
 }
 
-extension String {
-  static func fontAwesomeIconWithName(name: String) -> String {
+public extension UIFont {
+    public class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
+        struct Static {
+            static var onceToken : dispatch_once_t = 0
+        }
+        
+        let name = "FontAwesome"
+        dispatch_once(&Static.onceToken) {
+            FontLoader.loadFont("FontAwesome")
+        }
+        return UIFont(name: name, size: fontSize)!
+    }
+}
+
+public extension String {
+  public static func fontAwesomeIconWithName(name: String) -> String {
     var icons: [String: String]?
     var token: dispatch_once_t = 0
     
