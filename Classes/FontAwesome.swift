@@ -24,37 +24,37 @@ import UIKit
 import CoreText
 
 private class FontLoader {
-    class func loadFont(name: String) {
-        let bundleURL = NSBundle(forClass: self).URLForResource("FontAwesome.swift", withExtension: "bundle")
-        let bundle = NSBundle(URL: bundleURL!)
-        let fontURL = bundle?.URLForResource(name, withExtension: "otf")
-        
-        let data = NSData(contentsOfURL: fontURL!)!
-        
-        let provider = CGDataProviderCreateWithCFData(data)
-        let font = CGFontCreateWithDataProvider(provider)!
-        
-        var error: Unmanaged<CFError>?
-        if !CTFontManagerRegisterGraphicsFont(font, &error) {
-            let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
-            let nsError = error!.takeUnretainedValue() as AnyObject as NSError
-            NSException(name: NSInternalInconsistencyException, reason: errorDescription, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
-        }
+  class func loadFont(name: String) {
+    let bundleURL = NSBundle(forClass: self).URLForResource("FontAwesome.swift", withExtension: "bundle")
+    let bundle = NSBundle(URL: bundleURL!)
+    let fontURL = bundle?.URLForResource(name, withExtension: "otf")
+    
+    let data = NSData(contentsOfURL: fontURL!)!
+    
+    let provider = CGDataProviderCreateWithCFData(data)
+    let font = CGFontCreateWithDataProvider(provider)!
+    
+    var error: Unmanaged<CFError>?
+    if !CTFontManagerRegisterGraphicsFont(font, &error) {
+      let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
+      let nsError = error!.takeUnretainedValue() as AnyObject as NSError
+      NSException(name: NSInternalInconsistencyException, reason: errorDescription, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
     }
+  }
 }
 
 public extension UIFont {
-    public class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
-        struct Static {
-            static var onceToken : dispatch_once_t = 0
-        }
-        
-        let name = "FontAwesome"
-        dispatch_once(&Static.onceToken) {
-            FontLoader.loadFont("FontAwesome")
-        }
-        return UIFont(name: name, size: fontSize)!
+  public class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
+    struct Static {
+      static var onceToken : dispatch_once_t = 0
     }
+    
+    let name = "FontAwesome"
+    dispatch_once(&Static.onceToken) {
+      FontLoader.loadFont("FontAwesome")
+    }
+    return UIFont(name: name, size: fontSize)!
+  }
 }
 
 public extension String {
@@ -614,7 +614,7 @@ public extension String {
         "fa-youtube-play": "\u{f16a}"
       ]
     }
-
+    
     return icons![name]!
   }
 }
