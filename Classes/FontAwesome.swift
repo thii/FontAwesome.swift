@@ -49,9 +49,12 @@ public extension UIFont {
     }
     
     let name = "FontAwesome"
-    dispatch_once(&Static.onceToken) {
-      FontLoader.loadFont("FontAwesome")
+    if (UIFont.fontNamesForFamilyName(name).count == 0) {
+      dispatch_once(&Static.onceToken) {
+        FontLoader.loadFont(name)
+      }
     }
+
     return UIFont(name: name, size: fontSize)!
   }
 }
