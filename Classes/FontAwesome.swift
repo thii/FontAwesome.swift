@@ -66,8 +66,6 @@ public extension String {
     
     dispatch_once(&token) {
       icons = [
-      
-      // updated with the AwesomeFont 4.3.0 lattest version
         "fa-adjust":"\u{f042}",
         "fa-adn":"\u{f170}",
         "fa-align-center":"\u{f037}",
