@@ -660,7 +660,11 @@ public extension String {
         "fa-youtube-play":"\u{f16a}"
       ]
     }
-    
+
+    if icons!.indexForKey(name) == nil {
+        println("FontAwesome.swift: icon \"\(name)\" not available")
+        return icons!["fa-times-circle-o"]!
+    }
     return icons![name]!
   }
 }
