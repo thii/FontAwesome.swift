@@ -662,9 +662,10 @@ public extension String {
     }
 
     if icons!.indexForKey(name) == nil {
-        println("FontAwesome.swift: icon \"\(name)\" not available")
-        return icons!["fa-times-circle-o"]!
+      println("FontAwesome.swift: icon \"\(name)\" not available")
+      return icons!["fa-times-circle-o"]!
     }
+
     return icons![name]!
   }
 }
