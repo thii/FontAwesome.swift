@@ -61,11 +61,14 @@ public extension UIFont {
 
 public extension String {
   public static func fontAwesomeIconWithName(name: String) -> String {
-    var icons: [String: String]?
-    var token: dispatch_once_t = 0
+
+    struct Static {
+        static var onceToken : dispatch_once_t = 0
+        static var icons: [String: String]?
+    }
     
-    dispatch_once(&token) {
-      icons = [
+    dispatch_once(&Static.onceToken) {
+      Static.icons = [
         "fa-adjust":"\u{f042}",
         "fa-adn":"\u{f170}",
         "fa-align-center":"\u{f037}",
@@ -661,11 +664,11 @@ public extension String {
       ]
     }
 
-    if icons!.indexForKey(name) == nil {
+    if Static.icons!.indexForKey(name) == nil {
       println("FontAwesome.swift: icon \"\(name)\" not available")
-      return icons!["fa-times-circle-o"]!
+      return Static.icons!["fa-times-circle-o"]!
     }
 
-    return icons![name]!
+    return Static.icons![name]!
   }
 }
