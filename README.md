@@ -11,7 +11,7 @@ Use Font Awesome in your Swift projects
 ```swift
 var myLabel: UILabel!
 myLabel.font = UIFont.fontAwesomeOfSize(200)
-myLabel.text = String.fontAwesomeIconWithName("fa-github")
+myLabel.text = String.fontAwesomeIconWithName(FontAwesome.Github)
 
 ```
 
