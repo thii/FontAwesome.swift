@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     label.font = UIFont.fontAwesomeOfSize(200)
-    label.text = String.fontAwesomeIconWithName("fa-github")
+    label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
   }
 }
 
