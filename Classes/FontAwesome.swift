@@ -656,9 +656,6 @@ public enum FontAwesome: String {
 
 public extension String {
     public static func fontAwesomeIconWithName(name: FontAwesome) -> String {
-        var icons: [String: String]?
-        var token: dispatch_once_t = 0
-        
         return name.rawValue.substringToIndex(advance(name.rawValue.startIndex, 1))
     }
 }
