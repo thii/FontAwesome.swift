@@ -27,6 +27,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var leftBarButton: UIBarButtonItem!
   @IBOutlet weak var label: UILabel!
   @IBOutlet weak var toolbarItem: UIBarButtonItem!
+  @IBOutlet weak var button: UIButton!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,8 +36,13 @@ class ViewController: UIViewController {
     label.font = UIFont.fontAwesomeOfSize(200)
     label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
 
-    // FontAwesome icon as navigation bar item
     let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
+
+    // FontAwesome icon in button
+    button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+    button.setTitle(String.fontAwesomeIconWithName(.Github), forState: .Normal)
+
+    // FontAwesome icon as navigation bar item
     leftBarButton.setTitleTextAttributes(attributes, forState: .Normal)
     leftBarButton.title = String.fontAwesomeIconWithName(.Github)
 

@@ -28,6 +28,12 @@
                                     <barButtonItem title="Item" id="ZcV-cv-6rW"/>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnA-qd-hzW">
+                                <rect key="frame" x="164" y="72" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -36,6 +42,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="button" destination="GnA-qd-hzW" id="bOb-BJ-gky"/>
                         <outlet property="label" destination="QJK-GN-cIo" id="PIi-HE-hTp"/>
                         <outlet property="leftBarButton" destination="GiA-rH-r6O" id="Wle-vD-13q"/>
                         <outlet property="toolbarItem" destination="ZcV-cv-6rW" id="8XP-V5-0gH"/>
