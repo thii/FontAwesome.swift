@@ -8,12 +8,32 @@ Use Font Awesome in your Swift projects
 
 ## Examples
 
+### FontAwesome icon in label
 ```swift
-var myLabel: UILabel!
-myLabel.font = UIFont.fontAwesomeOfSize(200)
-myLabel.text = String.fontAwesomeIconWithName(FontAwesome.Github)
+label.font = UIFont.fontAwesomeOfSize(200)
+label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
 
+let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
 ```
+
+### FontAwesome icon in button
+```swift
+button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+button.setTitle(String.fontAwesomeIconWithName(.Github), forState: .Normal)
+```
+
+### FontAwesome icon as navigation bar item
+```swift
+leftBarButton.setTitleTextAttributes(attributes, forState: .Normal)
+leftBarButton.title = String.fontAwesomeIconWithName(.Github)
+```
+
+### FontAwesome icon as toolbar item
+```swift
+toolbarItem.setTitleTextAttributes(attributes, forState: .Normal)
+toolbarItem.title = String.fontAwesomeIconWithName(.Github)
+```
+
 
 ## Requirements
 
