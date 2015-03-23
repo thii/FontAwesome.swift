@@ -24,13 +24,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var leftBarButton: UIBarButtonItem!
   @IBOutlet weak var label: UILabel!
+  @IBOutlet weak var toolbarItem: UIBarButtonItem!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
+    // FontAwesome icon in label
     label.font = UIFont.fontAwesomeOfSize(200)
     label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
+
+    // FontAwesome icon as navigation bar item
+    let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
+    leftBarButton.setTitleTextAttributes(attributes, forState: .Normal)
+    leftBarButton.title = String.fontAwesomeIconWithName(.Github)
+
+    // FontAwesome icon as toolbar item
+    toolbarItem.setTitleTextAttributes(attributes, forState: .Normal)
+    toolbarItem.title = String.fontAwesomeIconWithName(.Github)
+
   }
 }
 
