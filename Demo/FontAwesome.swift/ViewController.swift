@@ -28,6 +28,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var label: UILabel!
   @IBOutlet weak var toolbarItem: UIBarButtonItem!
   @IBOutlet weak var button: UIButton!
+  @IBOutlet weak var imageView: UIImageView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -49,6 +50,9 @@ class ViewController: UIViewController {
     // FontAwesome icon as toolbar item
     toolbarItem.setTitleTextAttributes(attributes, forState: .Normal)
     toolbarItem.title = String.fontAwesomeIconWithName(.Github)
+
+    // FontAwesome icon as image (for an UITabBarItem's image e. g.)
+    imageView.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
 
   }
 }

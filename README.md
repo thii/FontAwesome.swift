@@ -34,6 +34,11 @@ toolbarItem.setTitleTextAttributes(attributes, forState: .Normal)
 toolbarItem.title = String.fontAwesomeIconWithName(.Github)
 ```
 
+### FontAwesome icon as a (tabbaritem's) image
+```swift
+tabBarItem.image = UIImage.fontAwesomeIconWithName(.Github, size: CGSizeMake(30, 30), textColor: UIColor.blackColor())
+```
+
 
 ## Requirements
 
