@@ -659,3 +659,109 @@ public extension String {
     return name.rawValue.substringToIndex(advance(name.rawValue.startIndex, 1))
   }
 }
+
+private func fa_constrainLabelToSize(label: UILabel, size: CGSize,
+    maxFontSize: CGFloat, minFontSize: CGFloat) -> CGSize {
+    // Set the frame of the label to the targeted rectangle
+    var rect = CGRectMake(0, 0, size.width, size.height)
+    label.frame = rect
+    
+    // Try all font sizes from largest to smallest font size
+    var fontSize = maxFontSize
+    
+    // Fit label width wize
+    var constraintSize = CGSizeMake(label.frame.size.width, CGFloat.max)
+    var attributes = [ NSFontAttributeName: label.font ]
+        
+    var textRect = CGRectMake(0, 0, size.width, size.height)
+    var done = false
+    while !done {
+        // Set current font size
+        label.font = UIFont(name: label.font.fontName, size: fontSize)
+        
+        // Find label size for current font size
+        textRect = label.text!.boundingRectWithSize(
+            constraintSize,
+            options: NSStringDrawingOptions.UsesFontLeading,
+            attributes: attributes,
+            context: nil)
+        
+        // Done, if created label is within target size
+        // Else decrease the font size and try again
+        if textRect.size.height <= label.frame.size.height {
+            done = true
+        } else if fontSize < minFontSize + 0.5 {
+            done = true
+        } else if fontSize < minFontSize + 2.0 {
+            fontSize -= 2.0
+        } else {
+            fontSize = minFontSize
+        }
+    }
+    return textRect.size
+}
+
+// Calculate aspect fit rectangle
+func fa_getAspectFitRect(viewSize: CGSize, iconSize: CGSize) -> CGRect {
+    
+    // Calculate shrinkage factors for width and height
+    let widthFactor = iconSize.width / viewSize.width
+    let heightFactor = iconSize.height / viewSize.height
+    let factor = fmax(widthFactor, heightFactor)
+    
+    // Multiply the view size by the greater of the vertical or horizontal shrinkage factor
+    let newWidth = viewSize.width * factor
+    let newHeight = viewSize.height * factor
+    
+    // Center horizontally or vertically
+    let x = (viewSize.width - iconSize.width) / 2
+    let y = (viewSize.height - iconSize.height) / 2
+    
+    return CGRectMake(x, y, newWidth, newHeight)
+}
+
+public extension UIImage {
+    public static func fontAwesomeIconWithName(name: FontAwesome, backgroundColor bgColor: UIColor,
+        iconColor fgColor: UIColor, imageSize viewSize: CGSize, margin m: CGFloat) -> UIImage! {
+ 
+        // View size less margins
+        var iconSize = CGSizeMake(viewSize.width - m - m, viewSize.height - m - m)
+            
+        var label = UILabel()
+        var font = UIFont.fontAwesomeOfSize(iconSize.height)
+        var textContent = String.fontAwesomeIconWithName(name)
+        label.font = font
+        label.text = textContent
+            
+        // Get correctly sized bounding box
+        iconSize = fa_constrainLabelToSize(label, iconSize, 500.0, 5.0)
+        
+        // Start image drawing
+        UIGraphicsBeginImageContextWithOptions(viewSize, false, 0.0)
+        
+        // Rectangle drawing
+        let viewRect = CGRectMake(0, 0, viewSize.width, viewSize.height)
+        let path:UIBezierPath = UIBezierPath(rect: viewRect)
+        bgColor.setFill()
+        path.fill()
+        
+        // Calculate aspect fit rectangle
+        let textRect = fa_getAspectFitRect(viewSize, iconSize)
+        
+        // Text drawing
+        var attributes = [
+            NSFontAttributeName: font,
+            NSForegroundColorAttributeName: fgColor,
+            NSBackgroundColorAttributeName: bgColor
+        ]
+        fgColor.setFill()
+        (textContent as NSString).drawInRect(textRect, withAttributes: attributes)
+            
+        // End image drawing
+        var image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+}
+
+
