@@ -1,7 +1,7 @@
 # reference: http://www.objc.io/issue-6/travis-ci.html
 
 language: objective-c
-osx_image: xcode61
+osx_image: beta-xcode6.3
 before_install: cd Demo
 script:
 - xctool -project FontAwesome.swift.xcodeproj -scheme FontAwesome.swift -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
