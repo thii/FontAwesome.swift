@@ -1,6 +1,6 @@
 // FontAwesome.swift
 //
-// Copyright (c) 2014 Doan Truong Thi
+// Copyright (c) 2014-2015 Thi Doan
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@ import CoreText
 
 private class FontLoader {
   class func loadFont(name: String) {
-    let bundle = NSBundle.mainBundle()
+    let bundle = NSBundle(forClass: FontLoader.self)
     let fontURL = bundle.URLForResource(name, withExtension: "otf")
     
     let data = NSData(contentsOfURL: fontURL!)!
