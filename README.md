@@ -4,6 +4,11 @@ Use Font Awesome in your Swift projects
 
 ## Installation
 
+### Using CocoaPods
+- add `pod 'FontAwesome.swift'` to the project's Podfile
+- after installing, add `import 'FontAwesome_swift'` to the top of the files using FontAwesome
+
+### Drag & Drop
 - Drag and drop `FontAwesome.otf` and `FontAwesome.swift` files into your project
 
 ## Examples
