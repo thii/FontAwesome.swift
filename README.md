@@ -4,14 +4,38 @@ Use Font Awesome in your Swift projects
 
 ## Installation
 
-### Using CocoaPods
-- add `pod 'FontAwesome.swift'` to the project's Podfile
-- after installing, add `import 'FontAwesome_swift'` to the top of the files using FontAwesome
+### CocoaPods
 
-### Drag & Drop
+To integrate FontAwesome into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'FontAwesome.swift'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+### Carthage
+
+To integrate FontAwesome into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "thii/FontAwesome" >= 0.4.0
+```
+
+### Manually
 - Drag and drop `FontAwesome.otf` and `FontAwesome.swift` files into your project
 
 ## Examples
+
+If you installed using CocoaPods or Carthage, you need to add `import FontAwesome` to the top of the files using FontAwesome.
 
 ### FontAwesome icon in label
 ```swift
@@ -47,7 +71,7 @@ tabBarItem.image = UIImage.fontAwesomeIconWithName(.Github, , textColor: UIColor
 
 ## Requirements
 
-iOS 7 or later.
+iOS 8 or later.
 
 ## License
 - FontAwesome.otf file licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
