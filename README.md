@@ -27,11 +27,11 @@ $ pod install
 To integrate FontAwesome into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "thii/FontAwesome" >= 0.4.0
+github "thii/FontAwesome" >= 0.4.1
 ```
 
 ### Manually
-- Drag and drop `FontAwesome.otf` and `FontAwesome.swift` files into your project
+- Drag and drop `FontAwesome.otf` and all Swift files into your project
 
 ## Examples
 
