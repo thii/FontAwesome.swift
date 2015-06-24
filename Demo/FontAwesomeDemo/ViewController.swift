@@ -21,11 +21,40 @@
 // THE SOFTWARE.
 
 import UIKit
+import FontAwesome
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var barButton: UIBarButtonItem!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var toolbarItem: UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // FontAwesome icon in label
+        label.font = UIFont.fontAwesomeOfSize(100)
+        label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
+
+        let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
+
+        // FontAwesome icon in button
+        button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+        button.setTitle(String.fontAwesomeIconWithName(.Github), forState: .Normal)
+
+        // FontAwesome icon as navigation bar item
+        barButton.setTitleTextAttributes(attributes, forState: .Normal)
+        barButton.title = String.fontAwesomeIconWithName(.Github)
+
+        // FontAwesome icon as toolbar item
+        toolbarItem.setTitleTextAttributes(attributes, forState: .Normal)
+        toolbarItem.title = String.fontAwesomeIconWithName(.Github)
+
+        // FontAwesome icon as image
+        imageView.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blackColor(), size: CGSizeMake(4000, 4000))
+
     }
 
 }
