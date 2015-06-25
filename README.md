@@ -22,6 +22,8 @@ Then, run the following command:
 $ pod install
 ```
 
+And add `import FontAwesome_swift` to the top of the files using FontAwesome.
+
 ### Carthage
 
 To integrate FontAwesome into your Xcode project using Carthage, specify it in your `Cartfile`:
@@ -30,19 +32,17 @@ To integrate FontAwesome into your Xcode project using Carthage, specify it in y
 github "thii/FontAwesome.swift" >= 0.4.1
 ```
 
+Then add `import FontAwesome` to the top of the files using FontAwesome.
+
 ### Manually
 - Drag and drop `FontAwesome.otf` and all Swift files into your project
 
 ## Examples
 
-If you installed using CocoaPods or Carthage, you need to add `import FontAwesome` to the top of the files using FontAwesome.
-
 ### FontAwesome icon in label
 ```swift
 label.font = UIFont.fontAwesomeOfSize(200)
 label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
-
-let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
 ```
 
 ### FontAwesome icon in button
@@ -53,12 +53,14 @@ button.setTitle(String.fontAwesomeIconWithName(.Github), forState: .Normal)
 
 ### FontAwesome icon as navigation bar item
 ```swift
+let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
 leftBarButton.setTitleTextAttributes(attributes, forState: .Normal)
 leftBarButton.title = String.fontAwesomeIconWithName(.Github)
 ```
 
 ### FontAwesome icon as toolbar item
 ```swift
+let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
 toolbarItem.setTitleTextAttributes(attributes, forState: .Normal)
 toolbarItem.title = String.fontAwesomeIconWithName(.Github)
 ```
