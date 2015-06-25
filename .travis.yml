@@ -2,6 +2,5 @@
 
 language: objective-c
 osx_image: beta-xcode6.3
-before_install: cd Demo
 script:
-- xctool -project FontAwesome.swift.xcodeproj -scheme FontAwesome.swift -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool -project FontAwesome.xcodeproj -scheme FontAwesome -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
