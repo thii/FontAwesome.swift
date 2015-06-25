@@ -26,9 +26,17 @@ import CoreText
 private class FontLoader {
     class func loadFont(name: String) {
         let bundle = NSBundle(forClass: FontLoader.self)
-        let fontURL = bundle.URLForResource(name, withExtension: "otf")
+        var fontURL = NSURL()
+        let identifier = bundle.bundleIdentifier
 
-        let data = NSData(contentsOfURL: fontURL!)!
+        if identifier?.hasPrefix("org.cocoapods") == true {
+            // If this framework is added using CocoaPods, resources is placed under a subdirectory
+            fontURL = bundle.URLForResource(name, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle")!
+        } else {
+            fontURL = bundle.URLForResource(name, withExtension: "otf")!
+        }
+
+        let data = NSData(contentsOfURL: fontURL)!
 
         let provider = CGDataProviderCreateWithCFData(data)
         let font = CGFontCreateWithDataProvider(provider)!
