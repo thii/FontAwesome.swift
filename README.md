@@ -45,6 +45,13 @@ label.font = UIFont.fontAwesomeOfSize(200)
 label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
 ```
 
+### FontAwesome icon in label from css class name
+```swift
+label.font = UIFont.fontAwesomeOfSize(200)
+label.text = String.fontAwesomeIconWithCode("fa-github")
+```
+
+
 ### FontAwesome icon in button
 ```swift
 button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
