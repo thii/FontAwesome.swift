@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 public enum FontAwesome: String {
+    //case 500px = "\u{f26e}"
     case Adjust = "\u{f042}"
     case ADN = "\u{f170}"
     case AlignCenter = "\u{f037}"
