@@ -79,7 +79,7 @@ public extension UIImage {
         paragraph.lineBreakMode = NSLineBreakMode.ByWordWrapping
         paragraph.alignment = .Center
         let attributedString = NSAttributedString(string: String.fontAwesomeIconWithName(name) as String, attributes: [NSFontAttributeName: UIFont.fontAwesomeOfSize(max(size.width, size.height)), NSForegroundColorAttributeName: textColor, NSParagraphStyleAttributeName:paragraph])
-        let size = sizeOfAttributeString(attributedString, size.width)
+        let size = attributedString.sizeWithMaxWidth(size.width)
         UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
         attributedString.drawInRect(CGRectMake(0, 0, size.width, size.height))
         let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -88,9 +88,10 @@ public extension UIImage {
     }
 }
 
-func sizeOfAttributeString(str: NSAttributedString, maxWidth: CGFloat) -> CGSize {
-    let size = str.boundingRectWithSize(CGSizeMake(maxWidth, 1000), options:(NSStringDrawingOptions.UsesLineFragmentOrigin), context:nil).size
-    return size
+public extension NSAttributedString {
+    public func sizeWithMaxWidth(maxWidth: CGFloat) -> CGSize {
+        return self.boundingRectWithSize(CGSizeMake(maxWidth, 1000), options:(NSStringDrawingOptions.UsesLineFragmentOrigin), context: nil).size
+    }
 }
 
 public extension String {
