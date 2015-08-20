@@ -88,8 +88,8 @@ public extension UIImage {
     }
 }
 
-public extension NSAttributedString {
-    public func sizeWithMaxWidth(maxWidth: CGFloat) -> CGSize {
+private extension NSAttributedString {
+    func sizeWithMaxWidth(maxWidth: CGFloat) -> CGSize {
         return self.boundingRectWithSize(CGSizeMake(maxWidth, 1000), options:(NSStringDrawingOptions.UsesLineFragmentOrigin), context: nil).size
     }
 }
