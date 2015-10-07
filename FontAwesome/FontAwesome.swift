@@ -79,9 +79,9 @@ public extension UIImage {
         paragraph.alignment = NSTextAlignment.Center
         
         // Taken from FontAwesome.io's Fixed Width Icon CSS
-        let magicNumber: CGFloat = 1.28571429
+        let fontAspectRatio: CGFloat = 1.28571429
         
-        let fontSize = min(size.width / magicNumber, size.height)
+        let fontSize = min(size.width / fontAspectRatio, size.height)
         let attributedString = NSAttributedString(string: String.fontAwesomeIconWithName(name) as String, attributes: [NSFontAttributeName: UIFont.fontAwesomeOfSize(fontSize), NSForegroundColorAttributeName: textColor, NSParagraphStyleAttributeName: paragraph])
         UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
         attributedString.drawInRect(CGRectMake(0, (size.height - fontSize) / 2, size.width, fontSize))
