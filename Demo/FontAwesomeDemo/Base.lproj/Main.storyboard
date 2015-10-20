@@ -71,22 +71,6 @@
             </objects>
             <point key="canvasLocation" x="3376" y="-278"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="W0Y-ca-wY5">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EVo-XE-7mK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ngh-QY-m7S">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gkf-lM-L0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1077" y="-278"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4xp-vg-fRc">
             <objects>
