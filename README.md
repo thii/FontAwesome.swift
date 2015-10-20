@@ -75,8 +75,11 @@ toolbarItem.title = String.fontAwesomeIconWithName(.Github)
 ### FontAwesome icon as a (tabbaritem's) image
 ```swift
 tabBarItem.image = UIImage.fontAwesomeIconWithName(.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
-```
 
+### FontAwesome icon as a (tabbaritem's) image with background color
+```swift
+tabBarItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
+```
 
 ## Requirements
 

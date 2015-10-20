@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var barButton: UIBarButtonItem!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageViewColored: UIImageView!
     @IBOutlet weak var toolbarItem: UIBarButtonItem!
 
     override func viewDidLoad() {
@@ -55,6 +56,8 @@ class ViewController: UIViewController {
         // FontAwesome icon as image
         imageView.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blackColor(), size: CGSizeMake(4000, 4000))
 
+        // FontAwesome icon as image with background color
+        imageViewColored.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
     }
 
 }
