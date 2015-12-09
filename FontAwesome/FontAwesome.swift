@@ -57,7 +57,7 @@ public extension UIFont {
         }
 
         let name = "FontAwesome"
-        if (UIFont.fontNamesForFamilyName(name).count == 0) {
+        if UIFont.fontNamesForFamilyName(name).isEmpty {
             dispatch_once(&Static.onceToken) {
                 FontLoader.loadFont(name)
             }
@@ -74,7 +74,7 @@ public extension String {
 }
 
 public extension UIImage {
-    public static func fontAwesomeIconWithName(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor) -> UIImage {
+    public static func fontAwesomeIconWithName(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clearColor()) -> UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.Center
         
@@ -82,27 +82,22 @@ public extension UIImage {
         let fontAspectRatio: CGFloat = 1.28571429
         
         let fontSize = min(size.width / fontAspectRatio, size.height)
-        let attributedString = NSAttributedString(string: String.fontAwesomeIconWithName(name) as String, attributes: [NSFontAttributeName: UIFont.fontAwesomeOfSize(fontSize), NSForegroundColorAttributeName: textColor, NSBackgroundColorAttributeName: backgroundColor, NSParagraphStyleAttributeName: paragraph])
+        let attributedString = NSAttributedString(string: String.fontAwesomeIconWithName(name), attributes: [NSFontAttributeName: UIFont.fontAwesomeOfSize(fontSize), NSForegroundColorAttributeName: textColor, NSBackgroundColorAttributeName: backgroundColor, NSParagraphStyleAttributeName: paragraph])
         UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
         attributedString.drawInRect(CGRectMake(0, (size.height - fontSize) / 2, size.width, fontSize))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
     }
-    
-    public static func fontAwesomeIconWithName(name: FontAwesome, textColor: UIColor, size: CGSize) -> UIImage {
-        return fontAwesomeIconWithName(name, textColor: textColor, size: size, backgroundColor: UIColor.clearColor())
-    }
 }
 
 public extension String {
     public static func fontAwesomeIconWithCode(code: String) -> String? {
-        
-        if let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw)  {
-            return self.fontAwesomeIconWithName(icon)
+        guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
+          return nil
         }
-        
-        return nil
+
+        return self.fontAwesomeIconWithName(icon)
     }
 }
 
