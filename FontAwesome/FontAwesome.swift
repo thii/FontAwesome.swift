@@ -74,7 +74,7 @@ public extension String {
 }
 
 public extension UIImage {
-    public static func fontAwesomeIconWithName(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor) -> UIImage {
+    public static func fontAwesomeIconWithName(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clearColor()) -> UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.Center
         
@@ -88,10 +88,6 @@ public extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
-    }
-    
-    public static func fontAwesomeIconWithName(name: FontAwesome, textColor: UIColor, size: CGSize) -> UIImage {
-        return fontAwesomeIconWithName(name, textColor: textColor, size: size, backgroundColor: UIColor.clearColor())
     }
 }
 
