@@ -23,35 +23,6 @@
 import UIKit
 import CoreText
 
-// MARK: - Private
-
-private class FontLoader {
-    class func loadFont(name: String) {
-        let bundle = NSBundle(forClass: FontLoader.self)
-        var fontURL = NSURL()
-        let identifier = bundle.bundleIdentifier
-
-        if identifier?.hasPrefix("org.cocoapods") == true {
-            // If this framework is added using CocoaPods, resources is placed under a subdirectory
-            fontURL = bundle.URLForResource(name, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle")!
-        } else {
-            fontURL = bundle.URLForResource(name, withExtension: "otf")!
-        }
-
-        let data = NSData(contentsOfURL: fontURL)!
-
-        let provider = CGDataProviderCreateWithCFData(data)
-        let font = CGFontCreateWithDataProvider(provider)!
-
-        var error: Unmanaged<CFError>?
-        if !CTFontManagerRegisterGraphicsFont(font, &error) {
-            let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
-            let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
-            NSException(name: NSInternalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
-        }
-    }
-}
-
 // MARK: - Public
 
 /// A FontAwesome extension to UIFont.
@@ -87,6 +58,18 @@ public extension String {
     public static func fontAwesomeIconWithName(name: FontAwesome) -> String {
         return name.rawValue.substringToIndex(name.rawValue.startIndex.advancedBy(1))
     }
+
+    /// Get a FontAwesome icon string with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
+    ///
+    /// - parameter code: The preferred icon name.
+    /// - returns: A string that will appear as icon with FontAwesome.
+    public static func fontAwesomeIconWithCode(code: String) -> String? {
+        guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
+            return nil
+        }
+
+        return self.fontAwesomeIconWithName(icon)
+    }
 }
 
 /// A FontAwesome extension to UIImage.
@@ -116,19 +99,31 @@ public extension UIImage {
     }
 }
 
-public extension String {
+// MARK: - Private
 
-    /// Get a FontAwesome icon string with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
-    ///
-    /// - parameter code: The preferred icon name.
-    /// - returns: A string that will appear as icon with FontAwesome.
-    public static func fontAwesomeIconWithCode(code: String) -> String? {
-        guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
-          return nil
+private class FontLoader {
+    class func loadFont(name: String) {
+        let bundle = NSBundle(forClass: FontLoader.self)
+        var fontURL = NSURL()
+        let identifier = bundle.bundleIdentifier
+
+        if identifier?.hasPrefix("org.cocoapods") == true {
+            // If this framework is added using CocoaPods, resources is placed under a subdirectory
+            fontURL = bundle.URLForResource(name, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle")!
+        } else {
+            fontURL = bundle.URLForResource(name, withExtension: "otf")!
         }
 
-        return self.fontAwesomeIconWithName(icon)
+        let data = NSData(contentsOfURL: fontURL)!
+
+        let provider = CGDataProviderCreateWithCFData(data)
+        let font = CGFontCreateWithDataProvider(provider)!
+
+        var error: Unmanaged<CFError>?
+        if !CTFontManagerRegisterGraphicsFont(font, &error) {
+            let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
+            let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
+            NSException(name: NSInternalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
+        }
     }
 }
-
-
