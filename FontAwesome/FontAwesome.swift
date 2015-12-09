@@ -97,12 +97,11 @@ public extension UIImage {
 
 public extension String {
     public static func fontAwesomeIconWithCode(code: String) -> String? {
-        
-        if let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw)  {
-            return self.fontAwesomeIconWithName(icon)
+        guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
+          return nil
         }
-        
-        return nil
+
+        return self.fontAwesomeIconWithName(icon)
     }
 }
 
