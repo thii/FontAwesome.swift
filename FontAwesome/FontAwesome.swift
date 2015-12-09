@@ -23,6 +23,8 @@
 import UIKit
 import CoreText
 
+// MARK: - Private
+
 private class FontLoader {
     class func loadFont(name: String) {
         let bundle = NSBundle(forClass: FontLoader.self)
@@ -50,7 +52,15 @@ private class FontLoader {
     }
 }
 
+// MARK: - Public
+
+/// A FontAwesome extension to UIFont.
 public extension UIFont {
+
+    /// Get a UIFont object of FontAwesome.
+    ///
+    /// - parameter fontSize: The preferred font size.
+    /// - returns: A UIFont object of FontAwesome.
     public class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
         struct Static {
             static var onceToken : dispatch_once_t = 0
@@ -67,13 +77,28 @@ public extension UIFont {
     }
 }
 
+/// A FontAwesome extension to String.
 public extension String {
+
+    /// Get a FontAwesome icon string with the given icon name.
+    ///
+    /// - parameter name: The preferred icon name.
+    /// - returns: A string that will appear as icon with FontAwesome.
     public static func fontAwesomeIconWithName(name: FontAwesome) -> String {
         return name.rawValue.substringToIndex(name.rawValue.startIndex.advancedBy(1))
     }
 }
 
+/// A FontAwesome extension to UIImage.
 public extension UIImage {
+
+    /// Get a FontAwesome image with the given icon name, text color, size and an optional background color.
+    ///
+    /// - parameter name: The preferred icon name.
+    /// - parameter textColor: The text color.
+    /// - parameter size: The image size.
+    /// - parameter backgroundColor: The background color (optional).
+    /// - returns: A string that will appear as icon with FontAwesome
     public static func fontAwesomeIconWithName(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clearColor()) -> UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.Center
@@ -92,6 +117,11 @@ public extension UIImage {
 }
 
 public extension String {
+
+    /// Get a FontAwesome icon string with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
+    ///
+    /// - parameter code: The preferred icon name.
+    /// - returns: A string that will appear as icon with FontAwesome.
     public static func fontAwesomeIconWithCode(code: String) -> String? {
         guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
           return nil

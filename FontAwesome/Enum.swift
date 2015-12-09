@@ -20,6 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+/// An enumaration of FontAwesome icon names.
 public enum FontAwesome: String {
     //case 500px = "\u{f26e}"
     case Adjust = "\u{f042}"
@@ -697,6 +698,7 @@ public enum FontAwesome: String {
     case YouTubeSquare = "\u{f166}"
 }
 
+/// An array of FontAwesome icon codes.
 public let FontAwesomeIcons = [
     "fa-500px" : "\u{f26e}",
     "fa-adjust" : "\u{f042}",
