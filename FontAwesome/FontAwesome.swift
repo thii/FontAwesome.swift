@@ -57,7 +57,7 @@ public extension UIFont {
         }
 
         let name = "FontAwesome"
-        if (UIFont.fontNamesForFamilyName(name).count == 0) {
+        if UIFont.fontNamesForFamilyName(name).isEmpty {
             dispatch_once(&Static.onceToken) {
                 FontLoader.loadFont(name)
             }
