@@ -695,6 +695,26 @@ public enum FontAwesome: String {
     case YouTube = "\u{f167}"
     case YouTubePlay = "\u{f16a}"
     case YouTubeSquare = "\u{f166}"
+    case RedditAlien = "\u{f281}"
+    case Edge = "\u{f282}"
+    case CreditCardAlt = "\u{f283}"
+    case Codiepie = "\u{f284}"
+    case Modx = "\u{f285}"
+    case FortAwesome = "\u{f286}"
+    case Usb = "\u{f287}"
+    case ProductHunt = "\u{f288}"
+    case Mixcloud = "\u{f289}"
+    case Scribd = "\u{f28a}"
+    case PauseCircle = "\u{f28b}"
+    case PauseCircleO = "\u{f28c}"
+    case StopCircle = "\u{f28d}"
+    case StopCircleO = "\u{f28e}"
+    case ShoppingBag = "\u{f290}"
+    case ShoppingBasket = "\u{f291}"
+    case Hashtag = "\u{f292}"
+    case Bluetooth = "\u{f293}"
+    case BluetoothB = "\u{f294}"
+    case Percent = "\u{f295}"
 }
 
 public let FontAwesomeIcons = [
@@ -1372,4 +1392,24 @@ public let FontAwesomeIcons = [
     "fa-youtube" : "\u{f167}",
     "fa-youtube-play" : "\u{f16a}",
     "fa-youtube-square" : "\u{f166}",
+    "fa-reddit-alien" : "\u{f281}",
+    "fa-edge" : "\u{f282}",
+    "fa-credit-card-alt" : "\u{f283}",
+    "fa-codiepie" : "\u{f284}",
+    "fa-modx" : "\u{f285}",
+    "fa-fort-awesome" : "\u{f286}",
+    "fa-usb" : "\u{f287}",
+    "fa-product-hunt" : "\u{f288}",
+    "fa-mixcloud" : "\u{f289}",
+    "fa-scribd" : "\u{f28a}",
+    "fa-pause-circle" : "\u{f28b}",
+    "fa-pause-circle-o" : "\u{f28c}",
+    "fa-stop-circle" : "\u{f28d}",
+    "fa-stop-circle-o" : "\u{f28e}",
+    "fa-shopping-bag" : "\u{f290}",
+    "fa-shopping-basket" : "\u{f291}",
+    "fa-hashtag" : "\u{f292}",
+    "fa-bluetooth" : "\u{f293}",
+    "fa-bluetooth-b" : "\u{f294}",
+    "fa-percent" : "\u{f295}"
 ]
