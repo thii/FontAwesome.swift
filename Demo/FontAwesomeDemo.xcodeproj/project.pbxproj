@@ -16,6 +16,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1025818D1C2B187200146E20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841575D01B39AB71001092B6 /* FontAwesome.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8401A8D11B39601400269D14;
+			remoteInfo = FontAwesome;
+		};
 		8401A9641B398B5600269D14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8401A9461B398B5600269D14 /* Project object */;
@@ -151,6 +158,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1025818E1C2B187200146E20 /* PBXTargetDependency */,
 			);
 			name = FontAwesomeDemo;
 			productName = FontAwesomeDemo;
@@ -276,6 +284,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1025818E1C2B187200146E20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesome;
+			targetProxy = 1025818D1C2B187200146E20 /* PBXContainerItemProxy */;
+		};
 		8401A9651B398B5600269D14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8401A94D1B398B5600269D14 /* FontAwesomeDemo */;
