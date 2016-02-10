@@ -4,3 +4,4 @@ language: objective-c
 osx_image: xcode7.2
 script:
 - xctool test -project FontAwesome.xcodeproj -scheme FontAwesome -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xctool -project FontAwesome.xcodeproj -scheme FontAwesome-watchOS -sdk watchsimulator ONLY_ACTIVE_ARCH=NO
