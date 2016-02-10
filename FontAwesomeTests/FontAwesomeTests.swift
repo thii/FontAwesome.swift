@@ -22,29 +22,43 @@
 
 import UIKit
 import XCTest
+@testable import FontAwesome
 
 class FontAwesomeTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    func testIconFontShouldBeRegisted() {
+        let label = UILabel()
+        label.font = UIFont.fontAwesomeOfSize(200)
+        XCTAssertNotNil(label.font, "Icon font should not be nil.")
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    func testLabelText() {
+        let label = UILabel()
+        label.font = UIFont.fontAwesomeOfSize(200)
+        label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
+        XCTAssertEqual(label.text, "\u{f09b}")
+        label.text = String.fontAwesomeIconWithCode("fa-github")
+        XCTAssertEqual(label.text, "\u{f09b}")
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+
+    func testButtonTitle() {
+        let button = UIButton()
+        button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
+        button.setTitle(String.fontAwesomeIconWithName(.Github), forState: .Normal)
+        XCTAssertEqual(button.titleLabel?.text, "\u{f09b}")
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testBarItemTitle() {
+        let barItem = UIBarButtonItem()
+        let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
+        barItem.setTitleTextAttributes(attributes, forState: .Normal)
+        barItem.title = String.fontAwesomeIconWithName(.Github)
+        XCTAssertEqual(barItem.title, "\u{f09b}")
     }
-    
+
+    func testIconImage() {
+        let barItem = UIBarButtonItem()
+        barItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
+        XCTAssertNotNil(barItem.image)
+    }
 }
