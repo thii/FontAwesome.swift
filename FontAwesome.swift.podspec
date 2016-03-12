@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.author           = { "Thi Doan" => "t@thi.im" }
   s.source           = { :git => "https://github.com/thii/FontAwesome.swift.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
   s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 
   s.source_files = 'FontAwesome/*.{swift}'
