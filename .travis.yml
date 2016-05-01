@@ -13,7 +13,7 @@ deploy:
   api_key:
     secure: cas9AI0zCDIumfTKk79sazU6PLuVXICET6eIjqivntG1Qs1g9yvmsI3JbBMLPyZqDl0w+uDHhki7cBeO3tDXJ8cxIErj8xYwtX4TMnA916QWqo7DVkGjkqAxosWWBGBgx6VbcSw0WSnPYrlo41c5yKssuDal+CZjoTeadJqB8Rg=
   file: FontAwesome.framework.zip
+  skip_cleanup: true
   on:
-    skip_cleanup: true
     tags: true
     repo: thii/FontAwesome.swift
