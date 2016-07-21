@@ -46,8 +46,8 @@ Then add `import FontAwesome` to the top of the files using FontAwesome.
 ## Examples
 
 ### FontAwesomeView - Storyboard
-![](https://github.com/antonyalkmim/FontAwesome.swift/blob/master/fontawesome_storyboard_setup.png)
-![](https://github.com/antonyalkmim/FontAwesome.swift/blob/master/fontawesome_storyboard_uses.png)
+![](https://raw.githubusercontent.com/thii/FontAwesome.swift/master/.github/fontawesome_storyboard_setup.png)
+![](https://raw.githubusercontent.com/thii/FontAwesome.swift/master/.github/fontawesome_storyboard_uses.png)
 
 ### FontAwesome icon in label
 ```swift
