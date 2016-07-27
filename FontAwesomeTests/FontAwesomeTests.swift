@@ -44,7 +44,7 @@ class FontAwesomeTests: XCTestCase {
     func testButtonTitle() {
         let button = UIButton()
         button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
-        button.setTitle(String.fontAwesomeIconWithName(.Github), forState: .Normal)
+        button.setTitle(String.fontAwesomeIconWithName(.Github), for: .Normal)
         XCTAssertEqual(button.titleLabel?.text, "\u{f09b}")
     }
 
@@ -58,7 +58,7 @@ class FontAwesomeTests: XCTestCase {
 
     func testIconImage() {
         let barItem = UIBarButtonItem()
-        barItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
+        barItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blueColor(), size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.redColor())
         XCTAssertNotNil(barItem.image)
     }
 }
