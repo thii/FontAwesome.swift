@@ -61,6 +61,10 @@ import UIKit
         self.addSubview(iconView)
     }
     
+    override func tintColorDidChange() {
+        iconView.textColor = self.tintColor
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.clipsToBounds = true
