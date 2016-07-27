@@ -67,7 +67,7 @@ public extension String {
     /// - parameter code: The preferred icon name.
     /// - returns: A string that will appear as icon with FontAwesome.
     public static func fontAwesomeIconWithCode(_ code: String) -> String? {
-        guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
+        guard let raw = FontAwesomeIcons[code], let icon = FontAwesome(rawValue: raw) else {
             return nil
         }
 
