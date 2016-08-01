@@ -55,6 +55,7 @@ import UIKit
 		self.iconView.textAlignment = NSTextAlignment.center
 		self.iconView.text = String.fontAwesomeIconWithCode(self.iconCode)
 		self.iconView.textColor = self.tintColor
+		self.addSubview(iconView)
 	}
 	
 	override func tintColorDidChange() {
@@ -66,7 +67,6 @@ import UIKit
 		self.clipsToBounds = true
 		self.iconView.font = UIFont.fontAwesomeOfSize(bounds.size.width < bounds.size.height ? bounds.size.width : bounds.size.height)
 		self.iconView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: bounds.size.width, height: bounds.size.height))
-		self.addSubview(iconView)
 	}
 	
 }
