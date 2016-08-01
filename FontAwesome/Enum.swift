@@ -721,7 +721,7 @@ public enum FontAwesome: String {
     ///
     /// - parameter code: The preferred icon name.
     /// - returns: FontAwesome icon.
-    public static func fromCode(code: String) -> FontAwesome? {
+    public static func fromCode(_ code: String) -> FontAwesome? {
         guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
             return nil
         }

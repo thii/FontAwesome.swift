@@ -23,6 +23,13 @@
 			remoteGlobalIDString = 8401A8D11B39601400269D14;
 			remoteInfo = FontAwesome;
 		};
+		7AB88FE11D4FAC1C00CB2534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841575D01B39AB71001092B6 /* FontAwesome.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 848937F91C6AF0660085F6D1;
+			remoteInfo = "FontAwesome-watchOS";
+		};
 		8401A9641B398B5600269D14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8401A9461B398B5600269D14 /* Project object */;
@@ -140,6 +147,7 @@
 			children = (
 				841575D61B39AB71001092B6 /* FontAwesome.framework */,
 				841575D81B39AB71001092B6 /* FontAwesomeTests.xctest */,
+				7AB88FE21D4FAC1C00CB2534 /* FontAwesome.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,9 +202,11 @@
 				TargetAttributes = {
 					8401A94D1B398B5600269D14 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 					};
 					8401A9621B398B5600269D14 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 8401A94D1B398B5600269D14;
 					};
 				};
@@ -227,6 +237,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		7AB88FE21D4FAC1C00CB2534 /* FontAwesome.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FontAwesome.framework;
+			remoteRef = 7AB88FE11D4FAC1C00CB2534 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		841575D61B39AB71001092B6 /* FontAwesome.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -319,6 +336,7 @@
 		8401A96B1B398B5600269D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -364,6 +382,7 @@
 		8401A96C1B398B5600269D14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -401,22 +420,26 @@
 		8401A96E1B398B5600269D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FontAwesomeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8401A96F1B398B5600269D14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FontAwesomeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -436,6 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FontAwesomeDemo.app/FontAwesomeDemo";
 			};
 			name = Debug;
@@ -452,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FontAwesomeDemo.app/FontAwesomeDemo";
 			};
 			name = Release;
