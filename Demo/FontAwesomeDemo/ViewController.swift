@@ -54,10 +54,10 @@ class ViewController: UIViewController {
         toolbarItem.title = String.fontAwesomeIconWithName(.Github)
 
         // FontAwesome icon as image
-		imageView.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.black(), size: CGSize(width: 4000, height: 4000))
+		imageView.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.black, size: CGSize(width: 4000, height: 4000))
 
         // FontAwesome icon as image with background color
-        imageViewColored.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blue(), size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red())
+        imageViewColored.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
     }
 
 }

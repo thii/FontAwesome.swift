@@ -74,7 +74,7 @@ public extension String {
     /// - parameter code: The preferred icon name.
     /// - returns: A string that will appear as icon with FontAwesome.
     public static func fontAwesomeIconWithCode(_ code: String) -> String? {
-        guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
+        guard let raw = FontAwesomeIcons[code], let icon = FontAwesome(rawValue: raw) else {
             return nil
         }
 
@@ -92,7 +92,7 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    public static func fontAwesomeIconWithName(_ name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear()) -> UIImage {
+    public static func fontAwesomeIconWithName(_ name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear) -> UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.center
         
@@ -100,7 +100,7 @@ public extension UIImage {
         let fontAspectRatio: CGFloat = 1.28571429
         
         let fontSize = min(size.width / fontAspectRatio, size.height)
-        let attributedString = AttributedString(string: String.fontAwesomeIconWithName(name), attributes: [NSFontAttributeName: UIFont.fontAwesomeOfSize(fontSize), NSForegroundColorAttributeName: textColor, NSBackgroundColorAttributeName: backgroundColor, NSParagraphStyleAttributeName: paragraph])
+        let attributedString = NSAttributedString(string: String.fontAwesomeIconWithName(name), attributes: [NSFontAttributeName: UIFont.fontAwesomeOfSize(fontSize), NSForegroundColorAttributeName: textColor, NSBackgroundColorAttributeName: backgroundColor, NSParagraphStyleAttributeName: paragraph])
         UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
         attributedString.draw(in: CGRect(x: 0, y: (size.height - fontSize) / 2, width: size.width, height: fontSize))
 		let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -119,9 +119,9 @@ private class FontLoader {
 
         if identifier?.hasPrefix("org.cocoapods") == true {
             // If this framework is added using CocoaPods, resources is placed under a subdirectory
-            fontURL = bundle.urlForResource(name, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle")!
+			fontURL = bundle.url(forResource: name, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle")!
         } else {
-            fontURL = bundle.urlForResource(name, withExtension: "otf")!
+            fontURL = bundle.url(forResource: name, withExtension: "otf")!
         }
 
         let data = try! Data(contentsOf: fontURL)
