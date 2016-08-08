@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BF6F16AF1D57CF4B00C47D75"
+               BlueprintIdentifier = "BF6F16821D57C9C400C47D75"
                BuildableName = "FontAwesome.framework"
-               BlueprintName = "FontAwesome-watchOS"
+               BlueprintName = "FontAwesome-iOS"
                ReferencedContainer = "container:FontAwesome.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,9 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF6F16911D57CBC000C47D75"
+               BuildableName = "FontAwesome-iOS-Tests.xctest"
+               BlueprintName = "FontAwesome-iOS-Tests"
+               ReferencedContainer = "container:FontAwesome.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BF6F16821D57C9C400C47D75"
+            BuildableName = "FontAwesome.framework"
+            BlueprintName = "FontAwesome-iOS"
+            ReferencedContainer = "container:FontAwesome.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF6F16AF1D57CF4B00C47D75"
+            BlueprintIdentifier = "BF6F16821D57C9C400C47D75"
             BuildableName = "FontAwesome.framework"
-            BlueprintName = "FontAwesome-watchOS"
+            BlueprintName = "FontAwesome-iOS"
             ReferencedContainer = "container:FontAwesome.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +83,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF6F16AF1D57CF4B00C47D75"
+            BlueprintIdentifier = "BF6F16821D57C9C400C47D75"
             BuildableName = "FontAwesome.framework"
-            BlueprintName = "FontAwesome-watchOS"
+            BlueprintName = "FontAwesome-iOS"
             ReferencedContainer = "container:FontAwesome.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
