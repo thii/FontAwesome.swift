@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BF6F16AF1D57CF4B00C47D75"
-               BuildableName = "FontAwesome.framework"
-               BlueprintName = "FontAwesome-watchOS"
-               ReferencedContainer = "container:FontAwesome.xcodeproj">
+               BlueprintIdentifier = "BF6F16C11D57D57000C47D75"
+               BuildableName = "gen.app"
+               BlueprintName = "gen"
+               ReferencedContainer = "container:gen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BF6F16C11D57D57000C47D75"
+            BuildableName = "gen.app"
+            BlueprintName = "gen"
+            ReferencedContainer = "container:gen.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,23 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF6F16AF1D57CF4B00C47D75"
-            BuildableName = "FontAwesome.framework"
-            BlueprintName = "FontAwesome-watchOS"
-            ReferencedContainer = "container:FontAwesome.xcodeproj">
+            BlueprintIdentifier = "BF6F16C11D57D57000C47D75"
+            BuildableName = "gen.app"
+            BlueprintName = "gen"
+            ReferencedContainer = "container:gen.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "FAGEN_DESTINATION"
+            value = "$(SRCROOT)/../Source/Icon.swift"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +77,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF6F16AF1D57CF4B00C47D75"
-            BuildableName = "FontAwesome.framework"
-            BlueprintName = "FontAwesome-watchOS"
-            ReferencedContainer = "container:FontAwesome.xcodeproj">
+            BlueprintIdentifier = "BF6F16C11D57D57000C47D75"
+            BuildableName = "gen.app"
+            BlueprintName = "gen"
+            ReferencedContainer = "container:gen.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
