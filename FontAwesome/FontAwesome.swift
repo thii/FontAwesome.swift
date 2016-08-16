@@ -28,7 +28,7 @@ import CoreText
 /// A FontAwesome extension to UIFont.
 public extension UIFont {
 	struct Static {
-		private static var OnceToken = [String]()
+		static var OnceToken = [String]()
 	}
 
     /// Get a UIFont object of FontAwesome.
@@ -46,7 +46,7 @@ public extension UIFont {
         return UIFont(name: name, size: fontSize)!
     }
 	
-	public class func once(token: String, block:@noescape(Void)->Void) {
+	public class func once(token: String, block:(Void)->Void) {
 		objc_sync_enter(self); defer { objc_sync_exit(self) }
 		
 		if Static.OnceToken.contains(token) {
@@ -126,7 +126,7 @@ private class FontLoader {
 
         let data = try! Data(contentsOf: fontURL)
 
-        let provider = CGDataProvider(data: data)
+        let provider = CGDataProvider(data: data as CFData)
         let font = CGFont(provider!)
 
         var error: Unmanaged<CFError>?
