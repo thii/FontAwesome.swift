@@ -50,7 +50,7 @@ public extension UIFont {
 
 /// A FontAwesome extension to String.
 public extension String {
-
+    
     /// Get a FontAwesome icon string with the given icon name.
     ///
     /// - parameter name: The preferred icon name.
@@ -58,23 +58,37 @@ public extension String {
     public static func fontAwesomeIconWithName(name: FontAwesome) -> String {
         return name.rawValue.substringToIndex(name.rawValue.startIndex.advancedBy(1))
     }
-
+    
     /// Get a FontAwesome icon string with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
     ///
     /// - parameter code: The preferred icon name.
     /// - returns: A string that will appear as icon with FontAwesome.
     public static func fontAwesomeIconWithCode(code: String) -> String? {
+        
+        guard let name = self.fontAwesomeFromCode(code) else {
+            return nil
+        }
+        
+        return self.fontAwesomeIconWithName(name)
+    }
+    
+    /// Get a FontAwesome icon with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
+    ///
+    /// - parameter code: The preferred icon name.
+    /// - returns: An internal corresponding FontAwesome code.
+    public static func fontAwesomeFromCode(code: String) -> FontAwesome? {
+        
         guard let raw = FontAwesomeIcons[code], icon = FontAwesome(rawValue: raw) else {
             return nil
         }
-
-        return self.fontAwesomeIconWithName(icon)
+        
+        return icon
     }
 }
 
 /// A FontAwesome extension to UIImage.
 public extension UIImage {
-
+    
     /// Get a FontAwesome image with the given icon name, text color, size and an optional background color.
     ///
     /// - parameter name: The preferred icon name.
@@ -96,6 +110,18 @@ public extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
+    }
+    
+    /// Get a FontAwesome image with the given icon css code, text color, size and an optional background color.
+    ///
+    /// - parameter code: The preferred icon css code.
+    /// - parameter textColor: The text color.
+    /// - parameter size: The image size.
+    /// - parameter backgroundColor: The background color (optional).
+    /// - returns: A string that will appear as icon with FontAwesome
+    public static func fontAwesomeIconWithCode(code: String, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clearColor()) -> UIImage? {
+        guard let name = String.fontAwesomeFromCode(code) else { return nil }
+        return fontAwesomeIconWithName(name, textColor: textColor, size: size, backgroundColor: backgroundColor)
     }
 }
 
