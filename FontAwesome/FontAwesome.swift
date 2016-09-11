@@ -109,7 +109,7 @@ public extension UIImage {
         attributedString.drawInRect(CGRectMake(0, (size.height - fontSize) / 2, size.width, fontSize))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return image
+        return image!
     }
     
     /// Get a FontAwesome image with the given icon css code, text color, size and an optional background color.
@@ -143,7 +143,7 @@ private class FontLoader {
         let data = NSData(contentsOfURL: fontURL)!
 
         let provider = CGDataProviderCreateWithCFData(data)
-        let font = CGFontCreateWithDataProvider(provider)!
+        let font = CGFontCreateWithDataProvider(provider!)
 
         var error: Unmanaged<CFError>?
         if !CTFontManagerRegisterGraphicsFont(font, &error) {
