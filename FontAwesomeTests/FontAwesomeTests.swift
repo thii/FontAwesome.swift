@@ -49,27 +49,27 @@ class FontAwesomeTests: XCTestCase {
     func testButtonTitle() {
         let button = UIButton()
         button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
-        button.setTitle(String.fontAwesomeIconWithName(.Github), forState: .Normal)
+        button.setTitle(String.fontAwesomeIconWithName(.Github), for: UIControlState())
         XCTAssertEqual(button.titleLabel?.text, "\u{f09b}")
     }
 
     func testBarItemTitle() {
         let barItem = UIBarButtonItem()
         let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
-        barItem.setTitleTextAttributes(attributes, forState: .Normal)
+        barItem.setTitleTextAttributes(attributes, for: UIControlState())
         barItem.title = String.fontAwesomeIconWithName(.Github)
         XCTAssertEqual(barItem.title, "\u{f09b}")
     }
 
     func testIconImage() {
         let barItem = UIBarButtonItem()
-        barItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
+        barItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
         XCTAssertNotNil(barItem.image)
     }
 
     func testIconImageFromCode() {
         let barItem = UIBarButtonItem()
-        barItem.image = UIImage.fontAwesomeIconWithCode("fa-github", textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
+        barItem.image = UIImage.fontAwesomeIconWithCode("fa-github", textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
         XCTAssertNotNil(barItem.image)
     }
 }
