@@ -1,6 +1,6 @@
 // FontAwesomeTests.swift
 //
-// Copyright (c) 2014-2015 Thi Doan
+// Copyright (c) 2014-present FontAwesome.swift contributors
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -38,7 +38,7 @@ class FontAwesomeTests: XCTestCase {
         label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
         XCTAssertEqual(label.text, "\u{f09b}")
     }
-    
+
     func testLabelTextFromCode() {
         let label = UILabel()
         label.font = UIFont.fontAwesomeOfSize(200)
@@ -66,7 +66,7 @@ class FontAwesomeTests: XCTestCase {
         barItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
         XCTAssertNotNil(barItem.image)
     }
-    
+
     func testIconImageFromCode() {
         let barItem = UIBarButtonItem()
         barItem.image = UIImage.fontAwesomeIconWithCode("fa-github", textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
