@@ -12,6 +12,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'FontAwesome/*.{swift}'
-  s.resource_bundle = { 'FontAwesome.swift' => 'FontAwesome/*.otf' }
   s.frameworks = 'UIKit', 'CoreText'
 end

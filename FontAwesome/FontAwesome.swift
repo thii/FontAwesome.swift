@@ -33,18 +33,7 @@ public extension UIFont {
     /// - parameter fontSize: The preferred font size.
     /// - returns: A UIFont object of FontAwesome.
     public class func fontAwesomeOfSize(fontSize: CGFloat) -> UIFont {
-        struct Static {
-            static var onceToken : dispatch_once_t = 0
-        }
-
-        let name = "FontAwesome"
-        if UIFont.fontNamesForFamilyName(name).isEmpty {
-            dispatch_once(&Static.onceToken) {
-                FontLoader.loadFont(name)
-            }
-        }
-
-        return UIFont(name: name, size: fontSize)!
+        return UIFont(name: "FontAwesome", size: fontSize)!
     }
 }
 
@@ -122,34 +111,5 @@ public extension UIImage {
     public static func fontAwesomeIconWithCode(code: String, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clearColor()) -> UIImage? {
         guard let name = String.fontAwesomeFromCode(code) else { return nil }
         return fontAwesomeIconWithName(name, textColor: textColor, size: size, backgroundColor: backgroundColor)
-    }
-}
-
-// MARK: - Private
-
-private class FontLoader {
-    class func loadFont(name: String) {
-        let bundle = NSBundle(forClass: FontLoader.self)
-        var fontURL = NSURL()
-        let identifier = bundle.bundleIdentifier
-
-        if identifier?.hasPrefix("org.cocoapods") == true {
-            // If this framework is added using CocoaPods, resources is placed under a subdirectory
-            fontURL = bundle.URLForResource(name, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle")!
-        } else {
-            fontURL = bundle.URLForResource(name, withExtension: "otf")!
-        }
-
-        let data = NSData(contentsOfURL: fontURL)!
-
-        let provider = CGDataProviderCreateWithCFData(data)
-        let font = CGFontCreateWithDataProvider(provider)!
-
-        var error: Unmanaged<CFError>?
-        if !CTFontManagerRegisterGraphicsFont(font, &error) {
-            let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
-            let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
-            NSException(name: NSInternalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
-        }
     }
 }
