@@ -15,7 +15,6 @@
 		841575DA1B3A490A001092B6 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841575D91B3A490A001092B6 /* Enum.swift */; };
 		848938011C6AF0770085F6D1 /* FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401A8D71B39601400269D14 /* FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84DBFFAD1D8A7E76002C4517 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */; };
-		84DBFFAE1D8A7E76002C4517 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DBFFAE1D8A7E76002C4517 /* FontAwesomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
