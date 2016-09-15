@@ -44,6 +44,13 @@
 			remoteGlobalIDString = 8401A8DD1B39601400269D14;
 			remoteInfo = FontAwesomeTests;
 		};
+		84DBFFAA1D8A7E5C002C4517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841575D01B39AB71001092B6 /* FontAwesome.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 848937F91C6AF0660085F6D1;
+			remoteInfo = "FontAwesome-watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +147,7 @@
 			children = (
 				841575D61B39AB71001092B6 /* FontAwesome.framework */,
 				841575D81B39AB71001092B6 /* FontAwesomeTests.xctest */,
+				84DBFFAB1D8A7E5C002C4517 /* FontAwesome.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,9 +202,11 @@
 				TargetAttributes = {
 					8401A94D1B398B5600269D14 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 					};
 					8401A9621B398B5600269D14 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 8401A94D1B398B5600269D14;
 					};
 				};
@@ -239,6 +249,13 @@
 			fileType = wrapper.cfbundle;
 			path = FontAwesomeTests.xctest;
 			remoteRef = 841575D71B39AB71001092B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84DBFFAB1D8A7E5C002C4517 /* FontAwesome.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FontAwesome.framework;
+			remoteRef = 84DBFFAA1D8A7E5C002C4517 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -406,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -417,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -436,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FontAwesomeDemo.app/FontAwesomeDemo";
 			};
 			name = Debug;
@@ -452,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FontAwesomeDemo.app/FontAwesomeDemo";
 			};
 			name = Release;
