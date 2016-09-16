@@ -28,7 +28,7 @@ import UIKit
     @IBInspectable
     var iconCode:String = "" {
         didSet{
-            self.iconView.text = String.fontAwesomeIconWithCode(iconCode)
+            self.iconView.text = String.fontAwesomeIcon(with: iconCode)
         }
     }
     
@@ -54,9 +54,10 @@ import UIKit
     func setupViews(){
         self.iconView = UILabel()
         // Fits icon in the view
-        iconView.font = UIFont.fontAwesomeOfSize(bounds.size.width < bounds.size.height ? bounds.size.width : bounds.size.height)
-        iconView.textAlignment = NSTextAlignment.Center
-        iconView.text = String.fontAwesomeIconWithCode(self.iconCode)
+        let size = bounds.size.width < bounds.size.height ? bounds.size.width : bounds.size.height
+        iconView.font = UIFont.fontAwesome(of: size)
+        iconView.textAlignment = NSTextAlignment.center
+        iconView.text = String.fontAwesomeIcon(with: self.iconCode)
         iconView.textColor = self.tintColor
         self.addSubview(iconView)
     }
@@ -68,7 +69,7 @@ import UIKit
     override func layoutSubviews() {
         super.layoutSubviews()
         self.clipsToBounds = true
-        iconView.frame = CGRectMake(0, 0, bounds.size.width, bounds.size.height)
+        iconView.frame = CGRect(x: 0, y: 0, width: bounds.size.width, height: bounds.size.height)
     }
     
 }
