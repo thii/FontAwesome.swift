@@ -124,15 +124,17 @@ public extension UIImage {
 private class FontLoader {
     class func loadFont(_ name: String) {
         let bundle = Bundle(for: FontLoader.self)
-        var fontURL = bundle.url(forResource: name, withExtension: "otf")
         let identifier = bundle.bundleIdentifier
 
+        var fontURL: URL
         if identifier?.hasPrefix("org.cocoapods") == true {
             // If this framework is added using CocoaPods, resources is placed under a subdirectory
-            fontURL = bundle.url(forResource: name, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle")
+            fontURL = bundle.url(forResource: name, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle")!
+        } else {
+            fontURL = bundle.url(forResource: name, withExtension: "otf")!
         }
 
-        let data = try! Data(contentsOf: fontURL!)
+        let data = try! Data(contentsOf: fontURL)
 
         let provider = CGDataProvider(data: data as CFData)
         let font = CGFont(provider!)
