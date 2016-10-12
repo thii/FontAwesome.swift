@@ -36,28 +36,28 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // FontAwesome icon in label
-        label.font = UIFont.fontAwesomeOfSize(100)
-        label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
+        label.font = UIFont.fontAwesome(size: 100)
+        label.text = String.fontAwesomeIcon(name: FontAwesome.Github)
 
-        let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
+        let attributes = [NSFontAttributeName: UIFont.fontAwesome(size: 20)] as Dictionary!
 
         // FontAwesome icon in button
-        button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
-        button.setTitle(String.fontAwesomeIconWithName(.Github), for: .normal)
+        button.titleLabel?.font = UIFont.fontAwesome(size: 30)
+        button.setTitle(String.fontAwesomeIcon(name: .Github), for: .normal)
 
         // FontAwesome icon as navigation bar item
         barButton.setTitleTextAttributes(attributes, for: .normal)
-        barButton.title = String.fontAwesomeIconWithName(.Github)
+        barButton.title = String.fontAwesomeIcon(name: .Github)
 
         // FontAwesome icon as toolbar item
         toolbarItem.setTitleTextAttributes(attributes, for: .normal)
-        toolbarItem.title = String.fontAwesomeIconWithName(.Github)
+        toolbarItem.title = String.fontAwesomeIcon(name: .Github)
 
         // FontAwesome icon as image
-        imageView.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.black, size: CGSize(width: 4000, height: 4000))
+        imageView.image = UIImage.fontAwesomeIcon(name: FontAwesome.Github, textColor: UIColor.black, size: CGSize(width: 4000, height: 4000))
 
         // FontAwesome icon as image with background color
-        imageViewColored.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
+        imageViewColored.image = UIImage.fontAwesomeIcon(name: FontAwesome.Github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
     }
 
 }
