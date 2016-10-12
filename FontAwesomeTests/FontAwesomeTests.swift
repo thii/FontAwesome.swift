@@ -28,34 +28,34 @@ class FontAwesomeTests: XCTestCase {
 
     func testIconFontShouldBeRegisted() {
         let label = UILabel()
-        label.font = UIFont.fontAwesome(size: 200)
+        label.font = UIFont.fontAwesome(ofSize: 200)
         XCTAssertNotNil(label.font, "Icon font should not be nil.")
     }
 
     func testLabelText() {
         let label = UILabel()
-        label.font = UIFont.fontAwesome(size: 200)
+        label.font = UIFont.fontAwesome(ofSize: 200)
         label.text = String.fontAwesomeIcon(name: FontAwesome.Github)
         XCTAssertEqual(label.text, "\u{f09b}")
     }
 
     func testLabelTextFromCode() {
         let label = UILabel()
-        label.font = UIFont.fontAwesome(size: 200)
+        label.font = UIFont.fontAwesome(ofSize: 200)
         label.text = String.fontAwesomeIcon(code: "fa-github")
         XCTAssertEqual(label.text, "\u{f09b}")
     }
 
     func testButtonTitle() {
         let button = UIButton()
-        button.titleLabel?.font = UIFont.fontAwesome(size: 30)
+        button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
         button.setTitle(String.fontAwesomeIcon(name: .Github), for: UIControlState())
         XCTAssertEqual(button.titleLabel?.text, "\u{f09b}")
     }
 
     func testBarItemTitle() {
         let barItem = UIBarButtonItem()
-        let attributes = [NSFontAttributeName: UIFont.fontAwesome(size: 20)] as Dictionary!
+        let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as Dictionary!
         barItem.setTitleTextAttributes(attributes, for: UIControlState())
         barItem.title = String.fontAwesomeIcon(name: .Github)
         XCTAssertEqual(barItem.title, "\u{f09b}")
