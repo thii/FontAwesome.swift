@@ -44,7 +44,7 @@ public extension UIFont {
 
 /// A FontAwesome extension to String.
 public extension String {
-    
+
     /// Get a FontAwesome icon string with the given icon name.
     ///
     /// - parameter name: The preferred icon name.
@@ -52,37 +52,37 @@ public extension String {
     public static func fontAwesomeIcon(name: FontAwesome) -> String {
         return name.rawValue.substring(to: name.rawValue.characters.index(name.rawValue.startIndex, offsetBy: 1))
     }
-    
+
     /// Get a FontAwesome icon string with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
     ///
     /// - parameter code: The preferred icon name.
     /// - returns: A string that will appear as icon with FontAwesome.
     public static func fontAwesomeIcon(code: String) -> String? {
-        
-      guard let name = self.fontAwesome(code: code) else {
+
+        guard let name = self.fontAwesome(code: code) else {
             return nil
         }
-        
+
       return self.fontAwesomeIcon(name: name)
     }
-    
+
     /// Get a FontAwesome icon with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
     ///
     /// - parameter code: The preferred icon name.
     /// - returns: An internal corresponding FontAwesome code.
     public static func fontAwesome(code: String) -> FontAwesome? {
-        
+
         guard let raw = FontAwesomeIcons[code], let icon = FontAwesome(rawValue: raw) else {
             return nil
         }
-        
+
         return icon
     }
 }
 
 /// A FontAwesome extension to UIImage.
 public extension UIImage {
-    
+
     /// Get a FontAwesome image with the given icon name, text color, size and an optional background color.
     ///
     /// - parameter name: The preferred icon name.
@@ -93,19 +93,19 @@ public extension UIImage {
     public static func fontAwesomeIcon(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear) -> UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.center
-        
+
         // Taken from FontAwesome.io's Fixed Width Icon CSS
         let fontAspectRatio: CGFloat = 1.28571429
-        
+
         let fontSize = min(size.width / fontAspectRatio, size.height)
-      let attributedString = NSAttributedString(string: String.fontAwesomeIcon(name: name), attributes: [NSFontAttributeName: UIFont.fontAwesome(size: fontSize), NSForegroundColorAttributeName: textColor, NSBackgroundColorAttributeName: backgroundColor, NSParagraphStyleAttributeName: paragraph])
+        let attributedString = NSAttributedString(string: String.fontAwesomeIcon(name: name), attributes: [NSFontAttributeName: UIFont.fontAwesome(size: fontSize), NSForegroundColorAttributeName: textColor, NSBackgroundColorAttributeName: backgroundColor, NSParagraphStyleAttributeName: paragraph])
         UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
         attributedString.draw(in: CGRect(x: 0, y: (size.height - fontSize) / 2, width: size.width, height: fontSize))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image!
     }
-    
+
     /// Get a FontAwesome image with the given icon css code, text color, size and an optional background color.
     ///
     /// - parameter code: The preferred icon css code.
@@ -114,8 +114,8 @@ public extension UIImage {
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
     public static func fontAwesomeIcon(code: String, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear) -> UIImage? {
-      guard let name = String.fontAwesome(code: code) else { return nil }
-      return fontAwesomeIcon(name: name, textColor: textColor, size: size, backgroundColor: backgroundColor)
+        guard let name = String.fontAwesome(code: code) else { return nil }
+        return fontAwesomeIcon(name: name, textColor: textColor, size: size, backgroundColor: backgroundColor)
     }
 }
 
