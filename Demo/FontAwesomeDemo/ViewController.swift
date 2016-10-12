@@ -36,13 +36,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // FontAwesome icon in label
-        label.font = UIFont.fontAwesome(size: 100)
+        label.font = UIFont.fontAwesome(ofSize: 100)
         label.text = String.fontAwesomeIcon(name: FontAwesome.Github)
 
-        let attributes = [NSFontAttributeName: UIFont.fontAwesome(size: 20)] as Dictionary!
+        let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as Dictionary!
 
         // FontAwesome icon in button
-        button.titleLabel?.font = UIFont.fontAwesome(size: 30)
+        button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
         button.setTitle(String.fontAwesomeIcon(name: .Github), for: .normal)
 
         // FontAwesome icon as navigation bar item
