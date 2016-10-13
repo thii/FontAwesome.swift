@@ -35,7 +35,7 @@ class FontAwesomeTests: XCTestCase {
     func testLabelText() {
         let label = UILabel()
         label.font = UIFont.fontAwesome(ofSize: 200)
-        label.text = String.fontAwesomeIcon(name: FontAwesome.Github)
+        label.text = String.fontAwesomeIcon(name: FontAwesome.github)
         XCTAssertEqual(label.text, "\u{f09b}")
     }
 
@@ -49,7 +49,7 @@ class FontAwesomeTests: XCTestCase {
     func testButtonTitle() {
         let button = UIButton()
         button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
-        button.setTitle(String.fontAwesomeIcon(name: .Github), for: UIControlState())
+        button.setTitle(String.fontAwesomeIcon(name: .github), for: UIControlState())
         XCTAssertEqual(button.titleLabel?.text, "\u{f09b}")
     }
 
@@ -57,13 +57,13 @@ class FontAwesomeTests: XCTestCase {
         let barItem = UIBarButtonItem()
         let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as Dictionary!
         barItem.setTitleTextAttributes(attributes, for: UIControlState())
-        barItem.title = String.fontAwesomeIcon(name: .Github)
+        barItem.title = String.fontAwesomeIcon(name: .github)
         XCTAssertEqual(barItem.title, "\u{f09b}")
     }
 
     func testIconImage() {
         let barItem = UIBarButtonItem()
-        barItem.image = UIImage.fontAwesomeIcon(name: FontAwesome.Github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
+        barItem.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
         XCTAssertNotNil(barItem.image)
     }
 

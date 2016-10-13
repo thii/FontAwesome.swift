@@ -37,27 +37,27 @@ class ViewController: UIViewController {
 
         // FontAwesome icon in label
         label.font = UIFont.fontAwesome(ofSize: 100)
-        label.text = String.fontAwesomeIcon(name: FontAwesome.Github)
+        label.text = String.fontAwesomeIcon(name: FontAwesome.github)
 
         let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as Dictionary!
 
         // FontAwesome icon in button
         button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
-        button.setTitle(String.fontAwesomeIcon(name: .Github), for: .normal)
+        button.setTitle(String.fontAwesomeIcon(name: .github), for: .normal)
 
         // FontAwesome icon as navigation bar item
         barButton.setTitleTextAttributes(attributes, for: .normal)
-        barButton.title = String.fontAwesomeIcon(name: .Github)
+        barButton.title = String.fontAwesomeIcon(name: .github)
 
         // FontAwesome icon as toolbar item
         toolbarItem.setTitleTextAttributes(attributes, for: .normal)
-        toolbarItem.title = String.fontAwesomeIcon(name: .Github)
+        toolbarItem.title = String.fontAwesomeIcon(name: .github)
 
         // FontAwesome icon as image
-        imageView.image = UIImage.fontAwesomeIcon(name: FontAwesome.Github, textColor: UIColor.black, size: CGSize(width: 4000, height: 4000))
+        imageView.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.black, size: CGSize(width: 4000, height: 4000))
 
         // FontAwesome icon as image with background color
-        imageViewColored.image = UIImage.fontAwesomeIcon(name: FontAwesome.Github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
+        imageViewColored.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
     }
 
 }
