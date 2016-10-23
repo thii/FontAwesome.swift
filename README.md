@@ -68,15 +68,15 @@ button.setTitle(String.fontAwesomeIcon(name: .github), for: .normal)
 ### FontAwesome icon as navigation bar item
 ```swift
 let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as [String: Any]
-leftBarButton.setTitleTextAttributes(attributes, forState: .normal)
-leftBarButton.title = String.fontAwesomeIconWithName(.github)
+leftBarButton.setTitleTextAttributes(attributes, for: .normal)
+leftBarButton.title = String.fontAwesomeIcon(name: .github)
 ```
 
 ### FontAwesome icon as toolbar item
 ```swift
 let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
-toolbarItem.setTitleTextAttributes(attributes, forState: .normal)
-toolbarItem.title = String.fontAwesomeIconWithName(.github)
+toolbarItem.setTitleTextAttributes(attributes, for: .normal)
+toolbarItem.title = String.fontAwesomeIcon(name: .github)
 ```
 
 ### FontAwesome icon as an image
@@ -86,7 +86,7 @@ tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.bla
 
 ### FontAwesome icon as an image with background color
 ```swift
-tabBarItem.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
+tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
 ```
 
 ## Requirements
