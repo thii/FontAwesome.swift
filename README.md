@@ -10,6 +10,18 @@ Use Font Awesome in your Swift projects
 
 ## Installation
 
+Since this is a Swift project, integrating using Carthage is the recommended way. Releases which support CocoaPods might be delayed sometimes.
+
+### Carthage
+
+To integrate FontAwesome into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "thii/FontAwesome.swift"
+```
+
+Then add `import FontAwesome` to the top of the files using FontAwesome.
+
 ### CocoaPods
 
 To integrate FontAwesome into your Xcode project using CocoaPods, specify it in your `Podfile`:
@@ -30,66 +42,51 @@ $ pod install
 
 And add `import FontAwesome_swift` to the top of the files using FontAwesome.
 
-### Carthage
-
-To integrate FontAwesome into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```ogdl
-github "thii/FontAwesome.swift" >= 0.4.1
-```
-
-Then add `import FontAwesome` to the top of the files using FontAwesome.
-
 ### Manually
 - Drag and drop `FontAwesome.otf` and all Swift files into your project
 
 ## Examples
 
-### FontAwesomeView - Storyboard
-![](https://raw.githubusercontent.com/thii/FontAwesome.swift/master/.github/fontawesome_storyboard_setup.png)
-![](https://raw.githubusercontent.com/thii/FontAwesome.swift/master/.github/fontawesome_storyboard_uses.png)
-
 ### FontAwesome icon in label
 ```swift
-label.font = UIFont.fontAwesomeOfSize(200)
-label.text = String.fontAwesomeIconWithName(FontAwesome.Github)
+label.font = UIFont.fontAwesome(ofSize: 100)
+label.text = String.fontAwesomeIcon(name: .github)
 ```
 
 ### FontAwesome icon in label from css class name
 ```swift
-label.font = UIFont.fontAwesomeOfSize(200)
-label.text = String.fontAwesomeIconWithCode("fa-github")
+label.font = UIFont.fontAwesome(ofSize: 200)
+label.text = String.fontAwesomeIcon(code: "fa-github")
 ```
-
 
 ### FontAwesome icon in button
 ```swift
-button.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
-button.setTitle(String.fontAwesomeIconWithName(.Github), forState: .Normal)
+button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
+button.setTitle(String.fontAwesomeIcon(name: .github), for: .normal)
 ```
 
 ### FontAwesome icon as navigation bar item
 ```swift
-let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
-leftBarButton.setTitleTextAttributes(attributes, forState: .Normal)
-leftBarButton.title = String.fontAwesomeIconWithName(.Github)
+let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as [String: Any]
+leftBarButton.setTitleTextAttributes(attributes, forState: .normal)
+leftBarButton.title = String.fontAwesomeIconWithName(.github)
 ```
 
 ### FontAwesome icon as toolbar item
 ```swift
-let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as Dictionary!
-toolbarItem.setTitleTextAttributes(attributes, forState: .Normal)
-toolbarItem.title = String.fontAwesomeIconWithName(.Github)
+let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
+toolbarItem.setTitleTextAttributes(attributes, forState: .normal)
+toolbarItem.title = String.fontAwesomeIconWithName(.github)
 ```
 
 ### FontAwesome icon as an image
 ```swift
-tabBarItem.image = UIImage.fontAwesomeIconWithName(.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
 ```
 
 ### FontAwesome icon as an image with background color
 ```swift
-tabBarItem.image = UIImage.fontAwesomeIconWithName(FontAwesome.Github, textColor: UIColor.blueColor(), size: CGSizeMake(4000, 4000), backgroundColor: UIColor.redColor())
+tabBarItem.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
 ```
 
 ## Requirements
