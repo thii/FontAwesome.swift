@@ -23,6 +23,10 @@
 /// An enumaration of FontAwesome icon names.
 public enum FontAwesome: String {
     case fiveHundredPixels = "\u{f26e}"
+    case addressBook = "\u{f2b9}"
+    case addressBookO = "\u{f2ba}"
+    case addressCard = "\u{f2bb}"
+    case addressCardO = "\u{f2bc}"
     case adjust = "\u{f042}"
     case adn = "\u{f170}"
     case alignCenter = "\u{f037}"
@@ -71,11 +75,13 @@ public enum FontAwesome: String {
     case backward = "\u{f04a}"
     case balanceScale = "\u{f24e}"
     case ban = "\u{f05e}"
+    case bandCamp = "\u{f2d5}"
     case bank = "\u{f19c}A"
     case barChart = "\u{f080}"
     case barChartO = "\u{f080}A"
     case barcode = "\u{f02a}"
     case bars = "\u{f0c9}"
+    case bath = "\u{f2cd}"
     case battery0 = "\u{f244}A"
     case battery1 = "\u{f243}A"
     case battery2 = "\u{f242}A"
@@ -229,15 +235,19 @@ public enum FontAwesome: String {
     case drupal = "\u{f1a9}"
     case edge = "\u{f282}"
     case edit = "\u{f044}A"
+    case eercast = "\u{f2da}"
     case eject = "\u{f052}"
     case ellipsisH = "\u{f141}"
     case ellipsisV = "\u{f142}"
     case empire = "\u{f1d1}"
     case envelope = "\u{f0e0}"
     case envelopeO = "\u{f003}"
+    case envelopeOpen = "\u{f2b6}"
+    case envelopeOpenO = "\u{f2b7}"
     case envelopeSquare = "\u{f199}"
     case envira = "\u{f299}"
     case eraser = "\u{f12d}"
+    case etsy = "\u{f2d7}"
     case eur = "\u{f153}"
     case euro = "\u{f153}A"
     case exchange = "\u{f0ec}"
@@ -305,6 +315,7 @@ public enum FontAwesome: String {
     case forumbee = "\u{f211}"
     case forward = "\u{f04e}"
     case foursquare = "\u{f180}"
+    case freeCodeCamp = "\u{f2c5}"
     case frownO = "\u{f119}"
     case futbolO = "\u{f1e3}"
     case gamepad = "\u{f11b}"
@@ -337,6 +348,7 @@ public enum FontAwesome: String {
     case googleWallet = "\u{f1ee}"
     case graduationCap = "\u{f19d}"
     case gratipay = "\u{f184}"
+    case grav = "\u{f2d6}"
     case group = "\u{f0c0}A"
     case hSquare = "\u{f0fd}"
     case hackerNews = "\u{f1d4}"
@@ -351,6 +363,7 @@ public enum FontAwesome: String {
     case handPointerO = "\u{f25a}"
     case handRockO = "\u{f255}"
     case handScissorsO = "\u{f257}"
+    case handShakeO = "\u{f2b5}"
     case handSpockO = "\u{f259}"
     case handStopO = "\u{f256}A"
     case hardOfHearing = "\u{f2a4}B"
@@ -376,8 +389,12 @@ public enum FontAwesome: String {
     case houzz = "\u{f27c}"
     case html5 = "\u{f13b}"
     case iCursor = "\u{f246}"
+    case idBadge = "\u{f2c1}"
+    case idCard = "\u{f2c2}"
+    case idCardO = "\u{f2c3}"
     case ils = "\u{f20b}"
     case image = "\u{f03e}A"
+    case imdb = "\u{f2d8}"
     case inbox = "\u{f01c}"
     case indent = "\u{f03c}"
     case industry = "\u{f275}"
@@ -415,6 +432,7 @@ public enum FontAwesome: String {
     case link = "\u{f0c1}"
     case linkedIn = "\u{f0e1}"
     case linkedInSquare = "\u{f08c}"
+    case linode = "\u{f2b8}"
     case linux = "\u{f17c}"
     case list = "\u{f03a}"
     case listAlt = "\u{f022}"
@@ -447,8 +465,10 @@ public enum FontAwesome: String {
     case meanpath = "\u{f20c}"
     case medium = "\u{f23a}"
     case medkit = "\u{f0fa}"
+    case meetup = "\u{f2e0}"
     case mehO = "\u{f11a}"
     case mercury = "\u{f223}"
+    case microchip = "\u{f2db}"
     case microphone = "\u{f130}"
     case microphoneSlash = "\u{f131}"
     case minus = "\u{f068}"
@@ -513,12 +533,14 @@ public enum FontAwesome: String {
     case plusCircle = "\u{f055}"
     case plusSquare = "\u{f0fe}"
     case plusSquareO = "\u{f196}"
+    case podcast = "\u{f2ce}"
     case powerOff = "\u{f011}"
     case print = "\u{f02f}"
     case productHunt = "\u{f288}"
     case puzzlePiece = "\u{f12e}"
     case qq = "\u{f1d6}"
     case qrcode = "\u{f029}"
+    case quora = "\u{f2c4}"
     case question = "\u{f128}"
     case questionCircle = "\u{f059}"
     case questionCircleO = "\u{f29c}"
@@ -526,6 +548,7 @@ public enum FontAwesome: String {
     case quoteRight = "\u{f10e}"
     case ra = "\u{f1d0}A"
     case random = "\u{f074}"
+    case ravelry = "\u{f2d9}"
     case rebel = "\u{f1d0}"
     case recycle = "\u{f1b8}"
     case reddit = "\u{f1a1}"
@@ -576,6 +599,7 @@ public enum FontAwesome: String {
     case shoppingBag = "\u{f290}"
     case shoppingBasket = "\u{f291}"
     case shoppingCart = "\u{f07a}"
+    case shower = "\u{f2cc}"
     case signIn = "\u{f090}"
     case signLanguage = "\u{f2a7}"
     case signOut = "\u{f08b}"
@@ -592,6 +616,7 @@ public enum FontAwesome: String {
     case snapchat = "\u{f2ab}"
     case snapchatGhost = "\u{f2ac}"
     case snapchatSquare = "\u{f2ad}"
+    case snowflakeO = "\u{f2dc}"
     case soccerBallO = "\u{f1e3}A"
     case sort = "\u{f0dc}"
     case sortAlphaAsc = "\u{f15d}"
@@ -638,6 +663,7 @@ public enum FontAwesome: String {
     case suitcase = "\u{f0f2}"
     case sunO = "\u{f185}"
     case superscript = "\u{f12b}"
+    case superpowers = "\u{f2dd}"
     case support = "\u{f1cd}D"
     case table = "\u{f0ce}"
     case tablet = "\u{f10a}"
@@ -646,6 +672,7 @@ public enum FontAwesome: String {
     case tags = "\u{f02c}"
     case tasks = "\u{f0ae}"
     case taxi = "\u{f1ba}"
+    case telegram = "\u{f2c6}"
     case television = "\u{f26c}"
     case tencentWeibo = "\u{f1d5}"
     case terminal = "\u{f120}"
@@ -655,6 +682,11 @@ public enum FontAwesome: String {
     case thLarge = "\u{f009}"
     case thList = "\u{f00b}"
     case themeisle = "\u{f2b2}"
+    case thermometerEmpty = "\u{f2cb}"
+    case thermometerFull = "\u{f2c7}"
+    case thermometerHalf = "\u{f2c9}"
+    case thermometerQuarter = "\u{f2ca}"
+    case thermometerThreeQuarters = "\u{f2c8}"
     case thumbTack = "\u{f08d}"
     case thumbsDown = "\u{f165}"
     case thumbsODown = "\u{f088}"
@@ -704,6 +736,9 @@ public enum FontAwesome: String {
     case usb = "\u{f287}"
     case usd = "\u{f155}"
     case user = "\u{f007}"
+    case userO = "\u{f2c0}"
+    case userCircle = "\u{f2bd}"
+    case userCircleO = "\u{f2be}"
     case userMd = "\u{f0f0}"
     case userPlus = "\u{f234}"
     case userSecret = "\u{f21b}"
@@ -733,10 +768,16 @@ public enum FontAwesome: String {
     case wheelchairAlt = "\u{f29b}"
     case wifi = "\u{f1eb}"
     case wikipediaW = "\u{f266}"
+    case windowClose = "\u{f2d3}"
+    case windowCloseO = "\u{f2d4}"
+    case windowMaximize = "\u{f2d0}"
+    case windowMinimize = "\u{f2d1}"
+    case windowRestore = "\u{f2d2}"
     case windows = "\u{f17a}"
     case won = "\u{f159}A"
     case wordpress = "\u{f19a}"
     case wpbeginner = "\u{f297}"
+    case wpexplorer = "\u{f2de}"
     case wpforms = "\u{f298}"
     case wrench = "\u{f0ad}"
     case xing = "\u{f168}"
@@ -771,6 +812,10 @@ public let FontAwesomeIcons = [
     "fa-500px": "\u{f26e}",
     "fa-adjust": "\u{f042}",
     "fa-adn": "\u{f170}",
+    "fa-address-book":"\u{f2b9}",
+    "fa-address-book-o":"\u{f2ba}",
+    "fa-address-card":"\u{f2bb}",
+    "fa-address-card-o":"\u{f2bc}",
     "fa-align-center": "\u{f037}",
     "fa-align-justify": "\u{f039}",
     "fa-align-left": "\u{f036}",
@@ -817,11 +862,13 @@ public let FontAwesomeIcons = [
     "fa-backward": "\u{f04a}",
     "fa-balance-scale": "\u{f24e}",
     "fa-ban": "\u{f05e}",
+    "fa-bandcamp": "\u{f2d5}",
     "fa-bank": "\u{f19c}",
     "fa-bar-chart": "\u{f080}",
     "fa-bar-chart-o": "\u{f080}",
     "fa-barcode": "\u{f02a}",
     "fa-bars": "\u{f0c9}",
+    "fa-bath": "\u{f2cd}",
     "fa-battery-0": "\u{f244}",
     "fa-battery-1": "\u{f243}",
     "fa-battery-2": "\u{f242}",
@@ -975,6 +1022,7 @@ public let FontAwesomeIcons = [
     "fa-drupal": "\u{f1a9}",
     "fa-edge": "\u{f282}",
     "fa-edit": "\u{f044}",
+    "fa-eercast": "\u{f2da}",
     "fa-eject": "\u{f052}",
     "fa-ellipsis-h": "\u{f141}",
     "fa-ellipsis-v": "\u{f142}",
@@ -982,8 +1030,11 @@ public let FontAwesomeIcons = [
     "fa-envelope": "\u{f0e0}",
     "fa-envelope-o": "\u{f003}",
     "fa-envelope-square": "\u{f199}",
+    "fa-envelope-open": "\u{f2b6}",
+    "fa-envelope-open-o": "\u{f2b7}",
     "fa-envira": "\u{f299}",
     "fa-eraser": "\u{f12d}",
+    "fa-etsy": "\u{f2d7}",
     "fa-eur": "\u{f153}",
     "fa-euro": "\u{f153}",
     "fa-exchange": "\u{f0ec}",
@@ -1051,6 +1102,7 @@ public let FontAwesomeIcons = [
     "fa-forumbee": "\u{f211}",
     "fa-forward": "\u{f04e}",
     "fa-foursquare": "\u{f180}",
+    "fa-free-code-camp": "\u{f2c5}",
     "fa-frown-o": "\u{f119}",
     "fa-futbol-o": "\u{f1e3}",
     "fa-gamepad": "\u{f11b}",
@@ -1083,9 +1135,11 @@ public let FontAwesomeIcons = [
     "fa-google-wallet": "\u{f1ee}",
     "fa-graduation-cap": "\u{f19d}",
     "fa-gratipay": "\u{f184}",
+    "fa-grav": "\u{f2d6}",
     "fa-group": "\u{f0c0}",
     "fa-h-square": "\u{f0fd}",
     "fa-hacker-news": "\u{f1d4}",
+    "fa-handshake-o": "\u{f2b5}",
     "fa-hand-grab-o": "\u{f255}",
     "fa-hand-lizard-o": "\u{f258}",
     "fa-hand-o-down": "\u{f0a7}",
@@ -1122,8 +1176,12 @@ public let FontAwesomeIcons = [
     "fa-houzz": "\u{f27c}",
     "fa-html5": "\u{f13b}",
     "fa-i-cursor": "\u{f246}",
+    "fa-id-badge": "\u{f2c1}",
+    "fa-id-card": "\u{f2c2}",
+    "fa-id-card-o": "\u{f2c3}",
     "fa-ils": "\u{f20b}",
     "fa-image": "\u{f03e}",
+    "fa-imdb": "\u{f2d8}",
     "fa-inbox": "\u{f01c}",
     "fa-indent": "\u{f03c}",
     "fa-industry": "\u{f275}",
@@ -1161,6 +1219,7 @@ public let FontAwesomeIcons = [
     "fa-link": "\u{f0c1}",
     "fa-linkedin": "\u{f0e1}",
     "fa-linkedin-square": "\u{f08c}",
+    "fa-linode": "\u{f2b8}",
     "fa-linux": "\u{f17c}",
     "fa-list": "\u{f03a}",
     "fa-list-alt": "\u{f022}",
@@ -1193,8 +1252,10 @@ public let FontAwesomeIcons = [
     "fa-meanpath": "\u{f20c}",
     "fa-medium": "\u{f23a}",
     "fa-medkit": "\u{f0fa}",
+    "fa-meetup": "\u{f2e0}",
     "fa-meh-o": "\u{f11a}",
     "fa-mercury": "\u{f223}",
+    "fa-microchip": "\u{f2db}",
     "fa-microphone": "\u{f130}",
     "fa-microphone-slash": "\u{f131}",
     "fa-minus": "\u{f068}",
@@ -1259,6 +1320,7 @@ public let FontAwesomeIcons = [
     "fa-plus-circle": "\u{f055}",
     "fa-plus-square": "\u{f0fe}",
     "fa-plus-square-o": "\u{f196}",
+    "fa-podcast": "\u{f2ce}",
     "fa-power-off": "\u{f011}",
     "fa-print": "\u{f02f}",
     "fa-product-hunt": "\u{f288}",
@@ -1268,10 +1330,12 @@ public let FontAwesomeIcons = [
     "fa-question": "\u{f128}",
     "fa-question-circle": "\u{f059}",
     "fa-question-circle-o": "\u{f29c}",
+    "fa-quora": "\u{f2c4}",
     "fa-quote-left": "\u{f10d}",
     "fa-quote-right": "\u{f10e}",
     "fa-ra": "\u{f1d0}",
     "fa-random": "\u{f074}",
+    "fa-ravelry": "\u{f2d9}",
     "fa-rebel": "\u{f1d0}",
     "fa-recycle": "\u{f1b8}",
     "fa-reddit": "\u{f1a1}",
@@ -1322,6 +1386,7 @@ public let FontAwesomeIcons = [
     "fa-shopping-bag": "\u{f290}",
     "fa-shopping-basket": "\u{f291}",
     "fa-shopping-cart": "\u{f07a}",
+    "fa-shower": "\u{f2cc}",
     "fa-sign-in": "\u{f090}",
     "fa-sign-language": "\u{f2a7}",
     "fa-sign-out": "\u{f08b}",
@@ -1338,6 +1403,7 @@ public let FontAwesomeIcons = [
     "fa-snapchat": "\u{f2ab}",
     "fa-snapchat-ghost": "\u{f2ac}",
     "fa-snapchat-square": "\u{f2ad}",
+    "fa-snowflake": "\u{f2dc}",
     "fa-soccer-ball-o": "\u{f1e3}",
     "fa-sort": "\u{f0dc}",
     "fa-sort-alpha-asc": "\u{f15d}",
@@ -1383,6 +1449,7 @@ public let FontAwesomeIcons = [
     "fa-subway": "\u{f239}",
     "fa-suitcase": "\u{f0f2}",
     "fa-sun-o": "\u{f185}",
+    "fa-superpowers": "\u{f2dd}",
     "fa-superscript": "\u{f12b}",
     "fa-support": "\u{f1cd}",
     "fa-table": "\u{f0ce}",
@@ -1392,6 +1459,7 @@ public let FontAwesomeIcons = [
     "fa-tags": "\u{f02c}",
     "fa-tasks": "\u{f0ae}",
     "fa-taxi": "\u{f1ba}",
+    "fa-telegram": "\u{f2c6}",
     "fa-television": "\u{f26c}",
     "fa-tencent-weibo": "\u{f1d5}",
     "fa-terminal": "\u{f120}",
@@ -1401,6 +1469,11 @@ public let FontAwesomeIcons = [
     "fa-th-large": "\u{f009}",
     "fa-th-list": "\u{f00b}",
     "fa-themeisle": "\u{f2b2}",
+    "fa-thermometer-empty": "\u{f2cb}",
+    "fa-fa-thermometer-full": "\u{f2c7}",
+    "fa-fa-thermometer-half": "\u{f2c9}",
+    "fa-fa-thermometer-quarter": "\u{f2ca}",
+    "fa-thermometer-three-quarters": "\u{f2c8}",
     "fa-thumb-tack": "\u{f08d}",
     "fa-thumbs-down": "\u{f165}",
     "fa-thumbs-o-down": "\u{f088}",
@@ -1450,10 +1523,13 @@ public let FontAwesomeIcons = [
     "fa-usb": "\u{f287}",
     "fa-usd": "\u{f155}",
     "fa-user": "\u{f007}",
+    "fa-user-o": "\u{f2c0}",
     "fa-user-md": "\u{f0f0}",
     "fa-user-plus": "\u{f234}",
     "fa-user-secret": "\u{f21b}",
     "fa-user-times": "\u{f235}",
+    "fa-user-circle": "\u{f2bd}",
+    "fa-user-circle-o": "\u{f2be}",
     "fa-users": "\u{f0c0}",
     "fa-venus": "\u{f221}",
     "fa-venus-double": "\u{f226}",
@@ -1479,10 +1555,16 @@ public let FontAwesomeIcons = [
     "fa-wheelchair-alt": "\u{f29b}",
     "fa-wifi": "\u{f1eb}",
     "fa-wikipedia-w": "\u{f266}",
+    "fa-window-close": "\u{f2d3}",
+    "fa-window-close-o": "\u{f2d4}",
+    "fa-window-maximize": "\u{f2d0}",
+    "fa-window-minimize": "\u{f2d1}",
+    "fa-window-restore": "\u{f2d2}",
     "fa-windows": "\u{f17a}",
     "fa-won": "\u{f159}",
     "fa-wordpress": "\u{f19a}",
     "fa-wpbeginner": "\u{f297}",
+    "fa-wpexplorer": "\u{f2de}",
     "fa-wpforms": "\u{f298}",
     "fa-wrench": "\u{f0ad}",
     "fa-xing": "\u{f168}",
