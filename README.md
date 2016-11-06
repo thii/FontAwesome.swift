@@ -67,7 +67,7 @@ button.setTitle(String.fontAwesomeIcon(name: .github), for: .normal)
 
 ### FontAwesome icon as navigation bar item
 ```swift
-let attributes = [NSFontAttributeName: UIFont.fontAwesomeOfSize(20)] as [String: Any]
+let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
 leftBarButton.setTitleTextAttributes(attributes, for: .normal)
 leftBarButton.title = String.fontAwesomeIcon(name: .github)
 ```
