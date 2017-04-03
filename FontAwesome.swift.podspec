@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "FontAwesome.swift"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "Use Font Awesome in your Swift projects"
   s.homepage         = "https://github.com/thii/FontAwesome.swift"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

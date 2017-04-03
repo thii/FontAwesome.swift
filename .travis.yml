@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.2
+osx_image: xcode8.3
 script:
 - xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.0' | xcpretty -c
 - xcodebuild -project FontAwesome.xcodeproj -scheme FontAwesome-watchOS -destination 'name=Apple Watch - 42mm' | xcpretty -c
