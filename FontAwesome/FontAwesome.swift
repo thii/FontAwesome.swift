@@ -90,7 +90,7 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    public static func fontAwesomeIcon(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear) -> UIImage {
+    public static func fontAwesomeIcon(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.center
 
@@ -98,7 +98,19 @@ public extension UIImage {
         let fontAspectRatio: CGFloat = 1.28571429
 
         let fontSize = min(size.width / fontAspectRatio, size.height)
-        let attributedString = NSAttributedString(string: String.fontAwesomeIcon(name: name), attributes: [NSFontAttributeName: UIFont.fontAwesome(ofSize: fontSize), NSForegroundColorAttributeName: textColor, NSBackgroundColorAttributeName: backgroundColor, NSParagraphStyleAttributeName: paragraph])
+
+        // stroke width expects a whole number percentage of the font size
+        let strokeWidth: CGFloat = fontSize == 0 ? 0 : (-100 * borderWidth / fontSize)
+
+        let attributedString = NSAttributedString(string: String.fontAwesomeIcon(name: name), attributes: [
+            NSFontAttributeName: UIFont.fontAwesome(ofSize: fontSize),
+            NSForegroundColorAttributeName: textColor,
+            NSBackgroundColorAttributeName: backgroundColor,
+            NSParagraphStyleAttributeName: paragraph,
+            NSStrokeWidthAttributeName: strokeWidth,
+            NSStrokeColorAttributeName: borderColor
+            ])
+
         UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
         attributedString.draw(in: CGRect(x: 0, y: (size.height - fontSize) / 2, width: size.width, height: fontSize))
         let image = UIGraphicsGetImageFromCurrentImageContext()
@@ -113,9 +125,9 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    public static func fontAwesomeIcon(code: String, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear) -> UIImage? {
+    public static func fontAwesomeIcon(code: String, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage? {
         guard let name = String.fontAwesome(code: code) else { return nil }
-        return fontAwesomeIcon(name: name, textColor: textColor, size: size, backgroundColor: backgroundColor)
+        return fontAwesomeIcon(name: name, textColor: textColor, size: size, backgroundColor: backgroundColor, borderWidth: borderWidth, borderColor: borderColor)
     }
 }
 
