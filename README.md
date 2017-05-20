@@ -28,7 +28,7 @@ To integrate FontAwesome into your Xcode project using CocoaPods, specify it in 
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 pod 'FontAwesome.swift'
@@ -91,7 +91,7 @@ tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.blu
 
 ## Requirements
 
-iOS 8 or later.
+iOS 9 or later.
 
 ## License
 - FontAwesome.otf file licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
