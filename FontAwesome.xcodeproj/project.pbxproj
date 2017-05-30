@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		484F4A3D1ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A361ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift */; };
-		484F4A3E1ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A371ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift */; };
-		484F4A3F1ECC816A0010B0BA /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A381ECC816A0010B0BA /* FontAwesomeImageView.swift */; };
-		484F4A401ECC816A0010B0BA /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A391ECC816A0010B0BA /* FontAwesomeSegmentedControl.swift */; };
-		484F4A411ECC816A0010B0BA /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A3A1ECC816A0010B0BA /* FontAwesomeStateRequirement.swift */; };
-		484F4A421ECC816A0010B0BA /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A3B1ECC816A0010B0BA /* FontAwesomeTabBarItem.swift */; };
-		484F4A431ECC816A0010B0BA /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A3C1ECC816A0010B0BA /* FontAwesomeTextRepresentable.swift */; };
+		483163F91EDD648E00D987BF /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483163F61EDD648E00D987BF /* FontAwesomeImageRepresentable.swift */; };
+		483163FA1EDD648E00D987BF /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483163F71EDD648E00D987BF /* FontAwesomeStateRequirement.swift */; };
+		483163FB1EDD648E00D987BF /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483163F81EDD648E00D987BF /* FontAwesomeTextRepresentable.swift */; };
+		483164021EDD651B00D987BF /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483163FE1EDD651B00D987BF /* FontAwesomeBarButtonItem.swift */; };
+		483164031EDD651B00D987BF /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483163FF1EDD651B00D987BF /* FontAwesomeImageView.swift */; };
+		483164041EDD651B00D987BF /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483164001EDD651B00D987BF /* FontAwesomeSegmentedControl.swift */; };
+		483164051EDD651B00D987BF /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483164011EDD651B00D987BF /* FontAwesomeTabBarItem.swift */; };
 		4D8AFBEE1E9459210046C7F6 /* FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401A8D71B39601400269D14 /* FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DF4FB961E94582700F03B22 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8401A8F21B3961B800269D14 /* FontAwesome.otf */; };
 		4DF4FB971E94582B00F03B22 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401A8F01B39610F00269D14 /* FontAwesome.swift */; };
@@ -43,13 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		484F4A361ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
-		484F4A371ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
-		484F4A381ECC816A0010B0BA /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeImageView.swift; sourceTree = "<group>"; };
-		484F4A391ECC816A0010B0BA /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
-		484F4A3A1ECC816A0010B0BA /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
-		484F4A3B1ECC816A0010B0BA /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
-		484F4A3C1ECC816A0010B0BA /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		483163F61EDD648E00D987BF /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
+		483163F71EDD648E00D987BF /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
+		483163F81EDD648E00D987BF /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		483163FE1EDD651B00D987BF /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
+		483163FF1EDD651B00D987BF /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeImageView.swift; sourceTree = "<group>"; };
+		483164001EDD651B00D987BF /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
+		483164011EDD651B00D987BF /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
 		4DF4FB8E1E94581300F03B22 /* FontAwesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8401A8D21B39601400269D14 /* FontAwesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8401A8D61B39601400269D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +97,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		483163F41EDD63F900D987BF /* StoryboardSupport */ = {
+			isa = PBXGroup;
+			children = (
+				483163FE1EDD651B00D987BF /* FontAwesomeBarButtonItem.swift */,
+				483164001EDD651B00D987BF /* FontAwesomeSegmentedControl.swift */,
+				483163FF1EDD651B00D987BF /* FontAwesomeImageView.swift */,
+				483164011EDD651B00D987BF /* FontAwesomeTabBarItem.swift */,
+				483163F51EDD641C00D987BF /* Protocols */,
+			);
+			path = StoryboardSupport;
+			sourceTree = "<group>";
+		};
+		483163F51EDD641C00D987BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				483163F61EDD648E00D987BF /* FontAwesomeImageRepresentable.swift */,
+				483163F71EDD648E00D987BF /* FontAwesomeStateRequirement.swift */,
+				483163F81EDD648E00D987BF /* FontAwesomeTextRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		8401A8C81B39601400269D14 = {
 			isa = PBXGroup;
 			children = (
@@ -120,13 +142,7 @@
 		8401A8D41B39601400269D14 /* FontAwesome */ = {
 			isa = PBXGroup;
 			children = (
-				484F4A361ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift */,
-				484F4A371ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift */,
-				484F4A381ECC816A0010B0BA /* FontAwesomeImageView.swift */,
-				484F4A391ECC816A0010B0BA /* FontAwesomeSegmentedControl.swift */,
-				484F4A3A1ECC816A0010B0BA /* FontAwesomeStateRequirement.swift */,
-				484F4A3B1ECC816A0010B0BA /* FontAwesomeTabBarItem.swift */,
-				484F4A3C1ECC816A0010B0BA /* FontAwesomeTextRepresentable.swift */,
+				483163F41EDD63F900D987BF /* StoryboardSupport */,
 				8401A8D71B39601400269D14 /* FontAwesome.h */,
 				8401A8F01B39610F00269D14 /* FontAwesome.swift */,
 				84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */,
@@ -361,15 +377,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				841575DA1B3A490A001092B6 /* Enum.swift in Sources */,
-				484F4A3E1ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift in Sources */,
-				484F4A411ECC816A0010B0BA /* FontAwesomeStateRequirement.swift in Sources */,
-				484F4A421ECC816A0010B0BA /* FontAwesomeTabBarItem.swift in Sources */,
-				484F4A431ECC816A0010B0BA /* FontAwesomeTextRepresentable.swift in Sources */,
-				484F4A3D1ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift in Sources */,
-				484F4A401ECC816A0010B0BA /* FontAwesomeSegmentedControl.swift in Sources */,
-				484F4A3F1ECC816A0010B0BA /* FontAwesomeImageView.swift in Sources */,
+				483164051EDD651B00D987BF /* FontAwesomeTabBarItem.swift in Sources */,
+				483163FB1EDD648E00D987BF /* FontAwesomeTextRepresentable.swift in Sources */,
+				483163FA1EDD648E00D987BF /* FontAwesomeStateRequirement.swift in Sources */,
+				483164031EDD651B00D987BF /* FontAwesomeImageView.swift in Sources */,
+				483163F91EDD648E00D987BF /* FontAwesomeImageRepresentable.swift in Sources */,
 				8401A8F11B39610F00269D14 /* FontAwesome.swift in Sources */,
+				483164021EDD651B00D987BF /* FontAwesomeBarButtonItem.swift in Sources */,
 				84DBFFAD1D8A7E76002C4517 /* FontAwesomeView.swift in Sources */,
+				483164041EDD651B00D987BF /* FontAwesomeSegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
