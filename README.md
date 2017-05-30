@@ -88,6 +88,44 @@ tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.bla
 ```swift
 tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
 ```
+## Storyboard support
+
+### Instructions
+
+After adding FontAwesome.swift to your project you have to add a reference to your project. This can be done by drag-and-drop. Simply drag and drop the `FontAwesome.xcodeproj` in your project or workspace. If you're using Carthage or CocoaPods the project is checked out anyway. So you can find a copy of the project there and dont have to manage it by yourself.
+
+An demo project can be found in /Demo/StoryboardSupportDemo. Simply open the .xcworkspace file.
+
+### Limitations
+
+UITabBarItems and UIBarButtonItems will never render in Storyboard. This is because Xcode does not call the necessary code to render this elements.
+![Alt text](DocImgs/Xcode_Storyboard.png)
+![Alt text](DocImgs/Simulator1.png)
+![Alt text](DocImgs/Simulator2.png)
+
+### Text based controls
+
+When using text based controls (FontAwesomeSegmentedControl and FontAwesomeBarButtonItem) you can set a property called `isFontAwesomeCSSCode`. This property indicates whether the text is raw entered as a FontAwesome Icon (you can paste icons as raw text) or a css code was used e.g. fa-squre.
+
+### FontAwesomeImageView
+
+![Alt text](DocImgs/ImageView1.png)
+![Alt text](DocImgs/ImageView2.png)
+
+### FontAwesomeBarButtonItem
+
+![Alt text](DocImgs/BarButtonItem1.png)
+![Alt text](DocImgs/BarButtonItem2.png)
+
+### FontAwesomeSegmentedControl
+
+![Alt text](DocImgs/Segmented1.png)
+![Alt text](DocImgs/Segmented2.png)
+
+### FontAwesomeTabBarItem
+
+![Alt text](DocImgs/TabBarItem1.png)
+![Alt text](DocImgs/TabBarItem2.png)
 
 ## Requirements
 
