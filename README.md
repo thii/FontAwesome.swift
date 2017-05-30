@@ -99,9 +99,12 @@ An demo project can be found in /Demo/StoryboardSupportDemo. Simply open the .xc
 ### Limitations
 
 UITabBarItems and UIBarButtonItems will never render in Storyboard. This is because Xcode does not call the necessary code to render this elements.
-![Alt text](DocImgs/Xcode_Storyboard.png)
-![Alt text](DocImgs/Simulator1.png)
-![Alt text](DocImgs/Simulator2.png)
+
+<img width="100%" src="DocImgs/Xcode_Storyboard.png">
+
+| <img width="50%" src="DocImgs/Simulator1.png"> | <img width="50%" src="DocImgs/Simulator2.png"> |
+|:---:|:---:|
+| First tab selected | Second tab selected |
 
 ### Text based controls
 
@@ -109,23 +112,27 @@ When using text based controls (FontAwesomeSegmentedControl and FontAwesomeBarBu
 
 ### FontAwesomeImageView
 
-![Alt text](DocImgs/ImageView1.png)
-![Alt text](DocImgs/ImageView2.png)
+| <img width="200" src="DocImgs/ImageView1.png"> | <img width="200" src="DocImgs/ImageView2.png"> |
+|:---:|:---:|
+| Set class | Set attributes |
 
 ### FontAwesomeBarButtonItem
 
-![Alt text](DocImgs/BarButtonItem1.png)
-![Alt text](DocImgs/BarButtonItem2.png)
+| <img width="200" src="DocImgs/BarButtonItem1.png"> | <img width="200" src="DocImgs/BarButtonItem2.png"> |
+|:---:|:---:|
+| Set class | Set attributes |
 
 ### FontAwesomeSegmentedControl
 
-![Alt text](DocImgs/Segmented1.png)
-![Alt text](DocImgs/Segmented2.png)
+| <img width="200" src="DocImgs/Segmented1.png"> | <img width="200" src="DocImgs/Segmented2.png"> |
+|:---:|:---:|
+| Set class | Set attributes |
 
 ### FontAwesomeTabBarItem
 
-![Alt text](DocImgs/TabBarItem1.png)
-![Alt text](DocImgs/TabBarItem2.png)
+| <img width="200" src="DocImgs/TabBarItem1.png"> | <img width="200" src="DocImgs/TabBarItem2.png"> |
+|:---:|:---:|
+| Set class | Set attributes |
 
 ## Requirements
 
