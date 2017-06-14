@@ -149,7 +149,13 @@ private class FontLoader {
         let data = try! Data(contentsOf: fontURL)
 
         let provider = CGDataProvider(data: data as CFData)
-        let font = CGFont(provider!)
+        var font: CGFont
+        #if swift(>=3.2)
+            font = CGFont(provider!)!
+        #else
+            font = CGFont(provider!)
+        #endif
+        
 
         var error: Unmanaged<CFError>?
         if !CTFontManagerRegisterGraphicsFont(font, &error) {
