@@ -88,6 +88,51 @@ tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.bla
 ```swift
 tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
 ```
+## Storyboard support
+
+### Instructions
+
+After adding FontAwesome.swift to your project you have to add a reference to your project. This can be done by drag-and-drop. Simply drag and drop the `FontAwesome.xcodeproj` in your project or workspace. If you're using Carthage or CocoaPods the project is checked out anyway. So you can find a copy of the project there and dont have to manage it by yourself.
+
+An demo project can be found in /Demo/StoryboardSupportDemo. Simply open the .xcworkspace file.
+
+### Limitations
+
+UITabBarItems and UIBarButtonItems will never render in Storyboard. This is because Xcode does not call the necessary code to render this elements.
+
+<img width="100%" src="DocImgs/Xcode_Storyboard.png">
+
+| <img width="50%" src="DocImgs/Simulator1.png"> | <img width="50%" src="DocImgs/Simulator2.png"> |
+|:---:|:---:|
+| First tab selected | Second tab selected |
+
+### Text based controls
+
+When using text based controls (FontAwesomeSegmentedControl and FontAwesomeBarButtonItem) you can set a property called `isFontAwesomeCSSCode`. This property indicates whether the text is raw entered as a FontAwesome Icon (you can paste icons as raw text) or a css code was used e.g. fa-squre.
+
+### FontAwesomeImageView
+
+| <img width="200" src="DocImgs/ImageView1.png"> | <img width="200" src="DocImgs/ImageView2.png"> |
+|:---:|:---:|
+| Set class | Set attributes |
+
+### FontAwesomeBarButtonItem
+
+| <img width="200" src="DocImgs/BarButtonItem1.png"> | <img width="200" src="DocImgs/BarButtonItem2.png"> |
+|:---:|:---:|
+| Set class | Set attributes |
+
+### FontAwesomeSegmentedControl
+
+| <img width="200" src="DocImgs/Segmented1.png"> | <img width="200" src="DocImgs/Segmented2.png"> |
+|:---:|:---:|
+| Set class | Set attributes |
+
+### FontAwesomeTabBarItem
+
+| <img width="200" src="DocImgs/TabBarItem1.png"> | <img width="200" src="DocImgs/TabBarItem2.png"> |
+|:---:|:---:|
+| Set class | Set attributes |
 
 ## Requirements
 

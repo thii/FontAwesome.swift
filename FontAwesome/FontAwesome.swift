@@ -94,10 +94,7 @@ public extension UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.center
 
-        // Taken from FontAwesome.io's Fixed Width Icon CSS
-        let fontAspectRatio: CGFloat = 1.28571429
-
-        let fontSize = min(size.width / fontAspectRatio, size.height)
+        let fontSize = min(size.width / FontAwesome.fontAspectRatio, size.height)
 
         // stroke width expects a whole number percentage of the font size
         let strokeWidth: CGFloat = fontSize == 0 ? 0 : (-100 * borderWidth / fontSize)

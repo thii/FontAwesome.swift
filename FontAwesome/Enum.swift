@@ -22,6 +22,9 @@
 
 /// An enumaration of FontAwesome icon names.
 public enum FontAwesome: String {
+    // Taken from FontAwesome.io's Fixed Width Icon CSS
+    public static let fontAspectRatio: CGFloat = 1.28571429
+    
     case fiveHundredPixels = "\u{f26e}"
     case addressBook = "\u{f2b9}"
     case addressBookO = "\u{f2ba}"

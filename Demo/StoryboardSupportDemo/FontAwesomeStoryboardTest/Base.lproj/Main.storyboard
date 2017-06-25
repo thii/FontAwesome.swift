@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jde-pH-tZ4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="ucS-9D-7E5">
+            <objects>
+                <viewController id="64g-N8-zhA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gTZ-wZ-vr4"/>
+                        <viewControllerLayoutGuide type="bottom" id="F10-4M-1o0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Znm-s2-ATe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="crN-Z3-R3D" customClass="FontAwesomeTabBarItem" customModule="FontAwesome"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0y-a4-E84" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="475"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="JV5-xR-xqs">
+            <objects>
+                <navigationController id="GGv-ur-vDQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" id="1Cv-K1-AoT" customClass="FontAwesomeTabBarItem" customModule="FontAwesome">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="fa-comments-o"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="selectedIconName" value="fa-comments"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yzx-v9-duC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BkU-Ln-et3" kind="relationship" relationship="rootViewController" id="LPe-eO-Qfc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvQ-Bn-lJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarItem title="Chat" id="O5g-nj-Jw5" customClass="FontAwesomeTabBarItem" customModule="FontAwesome">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="fa-comments-o"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="selectedIconName" value="fa-comments"/>
+                    </userDefinedRuntimeAttributes>
+                </tabBarItem>
+            </objects>
+            <point key="canvasLocation" x="516" y="-182"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9f7-e5-EKV">
+            <objects>
+                <viewController id="BkU-Ln-et3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k1f-ci-bqM"/>
+                        <viewControllerLayoutGuide type="bottom" id="u4n-KJ-U4o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="75N-ZA-mEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ffb-LP-7PG" customClass="FontAwesomeImageView" customModule="FontAwesome">
+                                <rect key="frame" x="16" y="72" width="343" height="538"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="cssCode" value="fa-puzzle-piece"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="imageColor">
+                                        <color key="value" red="0.55294117649999996" green="0.75294117650000003" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ffb-LP-7PG" firstAttribute="leading" secondItem="75N-ZA-mEQ" secondAttribute="leadingMargin" id="JJV-6T-zUL"/>
+                            <constraint firstItem="u4n-KJ-U4o" firstAttribute="top" secondItem="Ffb-LP-7PG" secondAttribute="bottom" constant="8" id="Jrb-ol-JJy"/>
+                            <constraint firstItem="Ffb-LP-7PG" firstAttribute="top" secondItem="k1f-ci-bqM" secondAttribute="bottom" constant="8" id="Ur5-hm-0hd"/>
+                            <constraint firstItem="Ffb-LP-7PG" firstAttribute="trailing" secondItem="75N-ZA-mEQ" secondAttribute="trailingMargin" id="aaH-1R-DaU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="x8v-dk-UlV">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="QlD-mv-dnz" customClass="FontAwesomeSegmentedControl" customModule="FontAwesome">
+                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="fa-list"/>
+                                <segment title="fa-circle"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="fa-rocket" id="eOi-Vs-nZE" customClass="FontAwesomeBarButtonItem" customModule="FontAwesome"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RS1-oH-hg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="-182.15892053973016"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="P5D-Ty-pt2">
+            <objects>
+                <tabBarController id="Jde-pH-tZ4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="pk6-XH-CUu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GGv-ur-vDQ" kind="relationship" relationship="viewControllers" id="C9i-Bj-tFD"/>
+                        <segue destination="64g-N8-zhA" kind="relationship" relationship="viewControllers" id="VEG-m9-bZf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lck-ID-gTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="148"/>
+        </scene>
+    </scenes>
+</document>
