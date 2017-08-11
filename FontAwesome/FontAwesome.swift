@@ -142,7 +142,7 @@ private class FontLoader {
             fontURL = bundle.url(forResource: name, withExtension: "otf")!
         }
 
-        let data = try! Data(contentsOf: fontURL)
+        guard let data = try? Data(contentsOf: fontURL) else { return }
 
         let provider = CGDataProvider(data: data as CFData)
         var font: CGFont
@@ -155,7 +155,7 @@ private class FontLoader {
         var error: Unmanaged<CFError>?
         if !CTFontManagerRegisterGraphicsFont(font, &error) {
             let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
-            let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
+            guard let nsError = error?.takeUnretainedValue() as AnyObject as? NSError else { return }
             NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
         }
     }
