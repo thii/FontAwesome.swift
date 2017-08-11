@@ -28,7 +28,7 @@ import UIKit
     @IBInspectable
     public var iconCode:String = "" {
         didSet{
-          self.iconView.text = String.fontAwesomeIcon(code: iconCode)
+            self.iconView.text = String.fontAwesomeIcon(code: iconCode)
         }
     }
 

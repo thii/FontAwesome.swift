@@ -23,19 +23,19 @@
 import UIKit
 
 @IBDesignable public class FontAwesomeSegmentedControl: UISegmentedControl {
-    
+
     @IBInspectable public var isFontAwesomeCSSCode: Bool = true
     @IBInspectable public var size: CGFloat = 22.0
-    
+
     public override func awakeFromNib() {
         super.awakeFromNib()
         useFontAwesome()
     }
-    
+
     public override func prepareForInterfaceBuilder() {
         useFontAwesome()
     }
-    
+
     private func useFontAwesome() {
         updateText {
             for i in 0 ..< numberOfSegments  {
@@ -50,19 +50,19 @@ import UIKit
             setTitleTextAttributes(attributes, for: state)
         }
     }
-    
+
 }
 
 extension FontAwesomeSegmentedControl: FontAwesomeTextRepresentable {
-    
+
     var isTextCSSCode: Bool {
         return isFontAwesomeCSSCode
     }
-    
+
     var textSize: CGFloat {
         return size
     }
-    
+
     static func supportedStates() -> [UIControlState] {
         if #available(iOS 9.0, *) {
             return [.normal, .highlighted, .disabled, .focused, .selected, .application, .reserved]
@@ -70,5 +70,5 @@ extension FontAwesomeSegmentedControl: FontAwesomeTextRepresentable {
             return [.normal, .highlighted, .disabled, .selected, .application, .reserved]
         }
     }
-    
+
 }

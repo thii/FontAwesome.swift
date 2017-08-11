@@ -23,32 +23,32 @@
 import UIKit
 
 protocol FontAwesomeTextRepresentable: class, FontAwesomeStateRequirement {
-    
+
     var textSize: CGFloat { get }
     var isTextCSSCode: Bool { get }
 
     func updateText(_ updateTextBlock: () -> ())
     func updateFontAttributes(forStates stateBlock: (UIControlState, UIFont) -> ())
-    
+
 }
 
 extension FontAwesomeTextRepresentable {
-    
+
     public func updateText(_ updateTextBlock: () -> ()) {
         guard isTextCSSCode else {
             return
         }
-        
+
         updateTextBlock()
     }
-    
+
     public func updateFontAttributes(forStates stateBlock: (UIControlState, UIFont) -> ()) {
         let states = type(of: self).supportedStates()
         let font = UIFont.fontAwesome(ofSize: textSize)
-        
+
         for state in states {
             stateBlock(state, font)
         }
     }
-
+    
 }

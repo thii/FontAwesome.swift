@@ -63,7 +63,7 @@ public extension String {
             return nil
         }
 
-      return self.fontAwesomeIcon(name: name)
+        return self.fontAwesomeIcon(name: name)
     }
 
     /// Get a FontAwesome icon with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
@@ -72,7 +72,7 @@ public extension String {
     /// - returns: An internal corresponding FontAwesome code.
     public static func fontAwesome(code: String) -> FontAwesome? {
         guard let raw = FontAwesomeIcons[code] else { return nil }
-        return FontAwesome(rawValue: raw) 
+        return FontAwesome(rawValue: raw)
     }
 }
 
@@ -151,7 +151,6 @@ private class FontLoader {
         #else
             font = CGFont(provider!)
         #endif
-        
 
         var error: Unmanaged<CFError>?
         if !CTFontManagerRegisterGraphicsFont(font, &error) {

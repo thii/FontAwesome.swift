@@ -23,19 +23,19 @@
 import UIKit
 
 @IBDesignable public class FontAwesomeBarButtonItem: UIBarButtonItem {
-    
+
     @IBInspectable public var isFontAwesomeCSSCode: Bool = true
     @IBInspectable public var size: CGFloat = 25.0
-    
+
     public override func awakeFromNib() {
         super.awakeFromNib()
         useFontAwesome()
     }
-    
+
     public override func prepareForInterfaceBuilder() {
         useFontAwesome()
     }
-    
+
     private func useFontAwesome() {
         updateText {
             if let cssCode = title {
@@ -48,21 +48,21 @@ import UIKit
             setTitleTextAttributes(attributes, for: state)
         }
     }
-    
+
 }
 
 extension FontAwesomeBarButtonItem: FontAwesomeTextRepresentable {
-    
+
     var isTextCSSCode: Bool {
         return isFontAwesomeCSSCode
     }
-    
+
     var textSize: CGFloat {
         return size
     }
-    
+
     static func supportedStates() -> [UIControlState] {
         return [.normal, .highlighted, .disabled]
     }
-    
+
 }
