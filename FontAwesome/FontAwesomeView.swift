@@ -23,11 +23,11 @@
 import UIKit
 
 /// A view for FontAwesome icons.
-@IBDesignable public class FontAwesomeView : UIView {
+@IBDesignable public class FontAwesomeView: UIView {
 
     @IBInspectable
-    public var iconCode:String = "" {
-        didSet{
+    public var iconCode: String = "" {
+        didSet {
             self.iconView.text = String.fontAwesomeIcon(code: iconCode)
         }
     }

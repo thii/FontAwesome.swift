@@ -50,5 +50,4 @@ extension FontAwesomeTextRepresentable {
             stateBlock(state, font)
         }
     }
-    
 }
