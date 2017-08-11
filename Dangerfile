@@ -4,6 +4,8 @@ warn("PR is classed as Work in Progress") if github.pr_title.include? "[WIP]"
 # Warn when there is a big PR
 warn("Big PR") if git.lines_of_code > 500
 
+swiftlint.lint_files
+
 # Make a note about new contributors
 unless github.api.collaborator?("thii/FontAwesome.swift", github.pr_author)
   message "@#{github.pr_author} is not a contributor yet, would you like to be a FontAwesome.swift maintainer?"
