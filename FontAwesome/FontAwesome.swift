@@ -107,7 +107,7 @@ public extension UIImage {
             NSStrokeColorAttributeName: borderColor
             ])
 
-        UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         attributedString.draw(in: CGRect(x: 0, y: (size.height - fontSize) / 2, width: size.width, height: fontSize))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

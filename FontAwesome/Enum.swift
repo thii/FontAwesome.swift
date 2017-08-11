@@ -808,11 +808,12 @@ public enum FontAwesome: String {
 }
 
 /// An array of FontAwesome icon codes.
+// swiftlint:disable identifier_name
 public let FontAwesomeIcons: [String : String] = [
     "fa-500px": "\u{f26e}",
     "fa-adjust": "\u{f042}",
     "fa-adn": "\u{f170}",
-    "fa-address-book":"\u{f2b9}",
+    "fa-address-book": "\u{f2b9}",
     "fa-address-book-o": "\u{f2ba}",
     "fa-address-card": "\u{f2bb}",
     "fa-address-card-o": "\u{f2bc}",
