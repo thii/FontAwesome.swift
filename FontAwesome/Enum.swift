@@ -808,7 +808,7 @@ public enum FontAwesome: String {
 }
 
 /// An array of FontAwesome icon codes.
-public let FontAwesomeIcons = [
+public let FontAwesomeIcons: [String : String] = [
     "fa-500px": "\u{f26e}",
     "fa-adjust": "\u{f042}",
     "fa-adn": "\u{f170}",
