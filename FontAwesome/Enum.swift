@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 /// An enumaration of FontAwesome icon names.
+// swiftlint:disable file_length type_body_length
 public enum FontAwesome: String {
     case fiveHundredPixels = "\u{f26e}"
     case addressBook = "\u{f2b9}"
@@ -794,7 +795,6 @@ public enum FontAwesome: String {
     case youTubePlay = "\u{f16a}"
     case youTubeSquare = "\u{f166}"
 
-
     /// Get a FontAwesome string from the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
     ///
     /// - parameter code: The preferred icon name.
@@ -813,9 +813,9 @@ public let FontAwesomeIcons: [String : String] = [
     "fa-adjust": "\u{f042}",
     "fa-adn": "\u{f170}",
     "fa-address-book":"\u{f2b9}",
-    "fa-address-book-o":"\u{f2ba}",
-    "fa-address-card":"\u{f2bb}",
-    "fa-address-card-o":"\u{f2bc}",
+    "fa-address-book-o": "\u{f2ba}",
+    "fa-address-card": "\u{f2bb}",
+    "fa-address-card-o": "\u{f2bc}",
     "fa-align-center": "\u{f037}",
     "fa-align-justify": "\u{f039}",
     "fa-align-left": "\u{f036}",
