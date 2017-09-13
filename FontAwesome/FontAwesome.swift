@@ -50,7 +50,8 @@ public extension String {
     /// - parameter name: The preferred icon name.
     /// - returns: A string that will appear as icon with FontAwesome.
     public static func fontAwesomeIcon(name: FontAwesome) -> String {
-        return name.rawValue.substring(to: name.rawValue.characters.index(name.rawValue.startIndex, offsetBy: 1))
+        let toIndex = name.rawValue.characters.index(name.rawValue.startIndex, offsetBy: 1)
+        return String(name.rawValue[name.rawValue.characters.startIndex..<toIndex])
     }
 
     /// Get a FontAwesome icon string with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
@@ -99,12 +100,12 @@ public extension UIImage {
         let strokeWidth: CGFloat = fontSize == 0 ? 0 : (-100 * borderWidth / fontSize)
 
         let attributedString = NSAttributedString(string: String.fontAwesomeIcon(name: name), attributes: [
-            NSFontAttributeName: UIFont.fontAwesome(ofSize: fontSize),
-            NSForegroundColorAttributeName: textColor,
-            NSBackgroundColorAttributeName: backgroundColor,
-            NSParagraphStyleAttributeName: paragraph,
-            NSStrokeWidthAttributeName: strokeWidth,
-            NSStrokeColorAttributeName: borderColor
+            NSAttributedStringKey.font: UIFont.fontAwesome(ofSize: fontSize),
+            NSAttributedStringKey.foregroundColor: textColor,
+            NSAttributedStringKey.backgroundColor: backgroundColor,
+            NSAttributedStringKey.paragraphStyle: paragraph,
+            NSAttributedStringKey.strokeWidth: strokeWidth,
+            NSAttributedStringKey.strokeColor: borderColor
             ])
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
