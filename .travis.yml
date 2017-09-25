@@ -17,3 +17,5 @@ deploy:
   on:
     tags: true
     repo: thii/FontAwesome.swift
+notifications:
+  email: false
