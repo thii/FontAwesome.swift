@@ -55,7 +55,7 @@ class FontAwesomeTests: XCTestCase {
 
     func testBarItemTitle() {
         let barItem = UIBarButtonItem()
-        let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as Dictionary!
+        let attributes = [NSAttributedStringKey.font: UIFont.fontAwesome(ofSize: 20)] as Dictionary!
         barItem.setTitleTextAttributes(attributes, for: UIControlState())
         barItem.title = String.fontAwesomeIcon(name: .github)
         XCTAssertEqual(barItem.title, "\u{f09b}")
