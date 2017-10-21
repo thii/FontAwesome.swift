@@ -143,11 +143,12 @@ private class FontLoader {
             fontURL = bundle.url(forResource: name, withExtension: "otf")!
         }
 
-        guard let data = try? Data(contentsOf: fontURL) else { return }
+        guard
+            let data = try? Data(contentsOf: fontURL),
+            let provider = CGDataProvider(data: data as CFData),
+            let font = CGFont(provider)
+            else { return }
 
-        let provider = CGDataProvider(data: data as CFData)
-        let font = CGFont(provider!)
-        
         var error: Unmanaged<CFError>?
         if !CTFontManagerRegisterGraphicsFont(font, &error) {
             let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
