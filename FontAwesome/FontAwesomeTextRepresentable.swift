@@ -22,8 +22,8 @@
 
 import UIKit
 
-protocol FontAwesomeTextRepresentable: class, FontAwesomeStateRequirement {
-
+protocol FontAwesomeTextRepresentable : FontAwesomeStateRequirement {
+    
     var textSize: CGFloat { get }
     var isTextCSSCode: Bool { get }
 
