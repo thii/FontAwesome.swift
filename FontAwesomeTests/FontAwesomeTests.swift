@@ -25,8 +25,8 @@ import XCTest
 @testable import FontAwesome
 
 class FontAwesomeTests: XCTestCase {
-
-    func testIconFontShouldBeRegisted() {
+    
+    func testIconFontShouldBeRegistered() {
         let label = UILabel()
         label.font = UIFont.fontAwesome(ofSize: 200)
         XCTAssertNotNil(label.font, "Icon font should not be nil.")
@@ -61,6 +61,12 @@ class FontAwesomeTests: XCTestCase {
         XCTAssertEqual(barItem.title, "\u{f09b}")
     }
 
+    func testIconImageZeroSize() {
+        let barItem = UIBarButtonItem()
+        barItem.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 0), backgroundColor: UIColor.red)
+        XCTAssertNotNil(barItem.image)
+    }
+    
     func testIconImage() {
         let barItem = UIBarButtonItem()
         barItem.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
