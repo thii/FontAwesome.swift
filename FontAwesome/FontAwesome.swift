@@ -25,6 +25,19 @@ import CoreText
 
 // MARK: - Public
 
+/// A configuration namespace for FontAwesome.
+public struct FontAwesomeConfig {
+    
+    // Marked private to prevent initialization of this struct.
+    private init(){}
+    
+    /// A static member that holds the FontAwesome font name.
+    static let name = "FontAwesome"
+    
+    /// Taken from FontAwesome.io's Fixed Width Icon CSS.
+    public static let fontAspectRatio: CGFloat = 1.28571429
+}
+
 /// A FontAwesome extension to UIFont.
 public extension UIFont {
 
@@ -33,12 +46,21 @@ public extension UIFont {
     /// - parameter ofSize: The preferred font size.
     /// - returns: A UIFont object of FontAwesome.
     public class func fontAwesome(ofSize fontSize: CGFloat) -> UIFont {
-        let name = "FontAwesome"
-        if UIFont.fontNames(forFamilyName: name).isEmpty {
-            FontLoader.loadFont(name)
+        loadFontawesome()
+        return UIFont(name: FontAwesomeConfig.name, size: fontSize)!
+    }
+    
+    /// Loads the FontAwesome font in to memory.
+    /// This method should be called when setting icons without using code.
+    public class func loadFontawesome() {
+        
+        let name = FontAwesomeConfig.name
+        
+        if !UIFont.fontNames(forFamilyName: name).isEmpty {
+            return
         }
-
-        return UIFont(name: name, size: fontSize)!
+        
+        FontLoader.loadFont(name)
     }
 }
 
@@ -88,13 +110,16 @@ public extension UIImage {
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
     public static func fontAwesomeIcon(name: FontAwesome, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage {
+        
+        // Prevent application crash when passing size where width or height is set equal to or less than zero, by clipping width and height to a minimum of 1 pixel.
+        var size = size
+        if size.width <= 0 { size.width = 1 }
+        if size.height <= 0 { size.height = 1 }
+        
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.center
 
-        // Taken from FontAwesome.io's Fixed Width Icon CSS
-        let fontAspectRatio: CGFloat = 1.28571429
-
-        let fontSize = min(size.width / fontAspectRatio, size.height)
+        let fontSize = min(size.width / FontAwesomeConfig.fontAspectRatio, size.height)
 
         // stroke width expects a whole number percentage of the font size
         let strokeWidth: CGFloat = fontSize == 0 ? 0 : (-100 * borderWidth / fontSize)

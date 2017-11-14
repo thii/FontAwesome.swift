@@ -50,7 +50,6 @@ extension FontAwesomeImageRepresentable {
     }
 
     private func imageSizeForAspectRatio() -> CGSize {
-        let fontAspectRatio: CGFloat = 1.28571429
-        return CGSize(width: imageWidth, height: imageWidth / fontAspectRatio)
+        return CGSize(width: imageWidth, height: imageWidth / FontAwesomeConfig.fontAspectRatio)
     }
 }
