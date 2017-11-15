@@ -54,13 +54,11 @@ public extension UIFont {
     /// This method should be called when setting icons without using code.
     public class func loadFontawesome() {
         
-        let name = FontAwesomeConfig.name
-        
-        if !UIFont.fontNames(forFamilyName: name).isEmpty {
+        if !UIFont.fontNames(forFamilyName: FontAwesomeConfig.name).isEmpty {
             return
         }
         
-        FontLoader.loadFont(name)
+        FontLoader.loadFont(FontAwesomeConfig.name)
     }
 }
 
