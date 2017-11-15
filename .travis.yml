@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode9.1
 script:
 - set -o pipefail
-- bundle exec danger
+- bundle exec danger || echo "Danger failed, moving on"
 - xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome -destination 'platform=iOS Simulator,name=iPhone 7' | bundle exec xcpretty -c
 - xcodebuild -project FontAwesome.xcodeproj -scheme FontAwesome-watchOS -destination 'OS=4.0,name=Apple Watch - 42mm' | bundle exec xcpretty -c
 before_deploy:
