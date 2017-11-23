@@ -46,13 +46,13 @@ public extension UIFont {
     /// - parameter ofSize: The preferred font size.
     /// - returns: A UIFont object of FontAwesome.
     public class func fontAwesome(ofSize fontSize: CGFloat) -> UIFont {
-        loadFontawesome()
+        loadFontAwesome()
         return UIFont(name: FontAwesomeConfig.name, size: fontSize)!
     }
     
     /// Loads the FontAwesome font in to memory.
     /// This method should be called when setting icons without using code.
-    public class func loadFontawesome() {
+    public class func loadFontAwesome() {
         
         if !UIFont.fontNames(forFamilyName: FontAwesomeConfig.name).isEmpty {
             return
