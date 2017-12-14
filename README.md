@@ -8,6 +8,8 @@
 
 Use Font Awesome in your Swift projects
 
+To see the complete set of 675 icons in Font Awesome 4.7.0, please check the [FontAwesome.io](http://fontawesome.io/icons/) site.
+
 ## Installation
 
 Since this is a Swift project, integrating using Carthage is the recommended way. Releases which support CocoaPods might be delayed sometimes.
