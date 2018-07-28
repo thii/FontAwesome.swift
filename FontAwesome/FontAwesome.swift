@@ -29,13 +29,48 @@ import CoreText
 public struct FontAwesomeConfig {
     
     // Marked private to prevent initialization of this struct.
-    private init(){}
-    
-    /// A static member that holds the FontAwesome font name.
-    static let name = "FontAwesome"
+    private init() { }
     
     /// Taken from FontAwesome.io's Fixed Width Icon CSS.
     public static let fontAspectRatio: CGFloat = 1.28571429
+}
+
+public enum Style {
+    case solid
+    case regular
+    case brands
+
+    func fontName() -> String {
+        switch self {
+        case .solid:
+            return "FontAwesome5FreeSolid"
+        case .regular:
+            return "FontAwesome5FreeRegular"
+        case .brands:
+            return "FontAwesome5BrandsRegular"
+        }
+    }
+
+    func fontFilename() -> String {
+        switch self {
+        case .solid:
+            return "Font-Awesome-5-Free-Solid-900"
+        case .regular:
+            return "Font-Awesome-5-Free-Regular-400"
+        case .brands:
+            return "Font-Awesome-5-Brands-Regular-400"
+        }
+    }
+
+    func fontFamilyName() -> String {
+        switch self {
+        case .solid:
+            return "Font Awesome 5 Brands"
+        case .regular,
+             .brands:
+            return "Font Awesome 5 Free"
+        }
+    }
 }
 
 /// A FontAwesome extension to UIFont.
@@ -45,20 +80,19 @@ public extension UIFont {
     ///
     /// - parameter ofSize: The preferred font size.
     /// - returns: A UIFont object of FontAwesome.
-    public class func fontAwesome(ofSize fontSize: CGFloat) -> UIFont {
-        loadFontAwesome()
-        return UIFont(name: FontAwesomeConfig.name, size: fontSize)!
+    public class func fontAwesome(ofSize fontSize: CGFloat, style: Style = .regular) -> UIFont {
+        loadFontAwesome(ofStyle: style)
+        return UIFont(name: style.fontName(), size: fontSize)!
     }
     
     /// Loads the FontAwesome font in to memory.
     /// This method should be called when setting icons without using code.
-    public class func loadFontAwesome() {
-        
-        if !UIFont.fontNames(forFamilyName: FontAwesomeConfig.name).isEmpty {
+    public class func loadFontAwesome(ofStyle style: Style = .regular) {
+        if !UIFont.fontNames(forFamilyName: style.fontFamilyName()).isEmpty {
             return
         }
         
-        FontLoader.loadFont(FontAwesomeConfig.name)
+        FontLoader.loadFont(style.fontFilename())
     }
 }
 
