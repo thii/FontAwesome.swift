@@ -814,17 +814,6 @@ public enum FontAwesome: String {
     case yoast = "\u{f2b1}"
     case youtube = "\u{f167}"
     case youtubeSquare = "\u{f431}"
-    
-    /// Get a FontAwesome string from the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
-    ///
-    /// - parameter code: The preferred icon name.
-    /// - returns: FontAwesome icon.
-    public static func fromCode(_ code: String) -> FontAwesome? {
-        guard let raw = FontAwesomeIcons[code], let icon = FontAwesome(rawValue: raw) else {
-            return nil
-        }
-        return icon
-    }
 }
 
 /// An array of FontAwesome icon codes.
