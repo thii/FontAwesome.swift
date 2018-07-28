@@ -15,7 +15,6 @@
 		484F4A421ECC816A0010B0BA /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A3B1ECC816A0010B0BA /* FontAwesomeTabBarItem.swift */; };
 		484F4A431ECC816A0010B0BA /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A3C1ECC816A0010B0BA /* FontAwesomeTextRepresentable.swift */; };
 		4D8AFBEE1E9459210046C7F6 /* FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401A8D71B39601400269D14 /* FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DF4FB961E94582700F03B22 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8401A8F21B3961B800269D14 /* FontAwesome.otf */; };
 		4DF4FB971E94582B00F03B22 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401A8F01B39610F00269D14 /* FontAwesome.swift */; };
 		4DF4FB981E94582E00F03B22 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */; };
 		4DF4FB991E94583100F03B22 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841575D91B3A490A001092B6 /* Enum.swift */; };
@@ -23,16 +22,23 @@
 		8401A8DE1B39601400269D14 /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8401A8D21B39601400269D14 /* FontAwesome.framework */; };
 		8401A8E51B39601400269D14 /* FontAwesomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401A8E41B39601400269D14 /* FontAwesomeTests.swift */; };
 		8401A8F11B39610F00269D14 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401A8F01B39610F00269D14 /* FontAwesome.swift */; };
-		8401A8F31B3961B800269D14 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8401A8F21B3961B800269D14 /* FontAwesome.otf */; };
 		841575DA1B3A490A001092B6 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841575D91B3A490A001092B6 /* Enum.swift */; };
 		848938011C6AF0770085F6D1 /* FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 8401A8D71B39601400269D14 /* FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84DBFFAD1D8A7E76002C4517 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */; };
 		84E07765210C36B600CF2885 /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E07764210C36B600CF2885 /* FontAwesomeExtension.swift */; };
 		84E07766210C36B600CF2885 /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E07764210C36B600CF2885 /* FontAwesomeExtension.swift */; };
 		84E07767210C36B600CF2885 /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E07764210C36B600CF2885 /* FontAwesomeExtension.swift */; };
+		84E0776B210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E07768210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf */; };
+		84E0776C210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E07768210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf */; };
+		84E0776D210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E07768210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf */; };
+		84E0776E210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E07769210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf */; };
+		84E0776F210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E07769210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf */; };
+		84E07770210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E07769210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf */; };
+		84E07771210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E0776A210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf */; };
+		84E07772210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E0776A210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf */; };
+		84E07773210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84E0776A210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf */; };
 		B104D3C01E95304D0025BA9B /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401A8F01B39610F00269D14 /* FontAwesome.swift */; };
 		B104D3C21E9530560025BA9B /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841575D91B3A490A001092B6 /* Enum.swift */; };
-		B104D3C31E9530600025BA9B /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8401A8F21B3961B800269D14 /* FontAwesome.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +67,13 @@
 		8401A8E31B39601400269D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8401A8E41B39601400269D14 /* FontAwesomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeTests.swift; sourceTree = "<group>"; };
 		8401A8F01B39610F00269D14 /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesome.swift; sourceTree = "<group>"; };
-		8401A8F21B3961B800269D14 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		841575D91B3A490A001092B6 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		848937F91C6AF0660085F6D1 /* FontAwesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeView.swift; sourceTree = "<group>"; };
 		84E07764210C36B600CF2885 /* FontAwesomeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeExtension.swift; sourceTree = "<group>"; };
+		84E07768210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		84E07769210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Free-Solid-900.otf"; sourceTree = "<group>"; };
+		84E0776A210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Free-Regular-400.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,19 +132,19 @@
 		8401A8D41B39601400269D14 /* FontAwesome */ = {
 			isa = PBXGroup;
 			children = (
+				841575D91B3A490A001092B6 /* Enum.swift */,
+				8401A8D71B39601400269D14 /* FontAwesome.h */,
+				8401A8F01B39610F00269D14 /* FontAwesome.swift */,
 				484F4A361ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift */,
+				84E07764210C36B600CF2885 /* FontAwesomeExtension.swift */,
 				484F4A371ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift */,
 				484F4A381ECC816A0010B0BA /* FontAwesomeImageView.swift */,
 				484F4A391ECC816A0010B0BA /* FontAwesomeSegmentedControl.swift */,
 				484F4A3A1ECC816A0010B0BA /* FontAwesomeStateRequirement.swift */,
 				484F4A3B1ECC816A0010B0BA /* FontAwesomeTabBarItem.swift */,
 				484F4A3C1ECC816A0010B0BA /* FontAwesomeTextRepresentable.swift */,
-				8401A8D71B39601400269D14 /* FontAwesome.h */,
-				8401A8F01B39610F00269D14 /* FontAwesome.swift */,
 				84DBFFAC1D8A7E76002C4517 /* FontAwesomeView.swift */,
-				841575D91B3A490A001092B6 /* Enum.swift */,
-				84E07764210C36B600CF2885 /* FontAwesomeExtension.swift */,
-				8401A8F21B3961B800269D14 /* FontAwesome.otf */,
+				84E07774210CA54300CF2885 /* Resources */,
 				8401A8D51B39601400269D14 /* Supporting Files */,
 			);
 			path = FontAwesome;
@@ -165,6 +173,16 @@
 				8401A8E31B39601400269D14 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84E07774210CA54300CF2885 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84E07768210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf */,
+				84E0776A210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf */,
+				84E07769210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,7 +339,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF4FB961E94582700F03B22 /* FontAwesome.otf in Resources */,
+				84E07770210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf in Resources */,
+				84E07773210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf in Resources */,
+				84E0776D210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +349,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8401A8F31B3961B800269D14 /* FontAwesome.otf in Resources */,
+				84E0776E210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf in Resources */,
+				84E07771210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf in Resources */,
+				84E0776B210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +366,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B104D3C31E9530600025BA9B /* FontAwesome.otf in Resources */,
+				84E0776F210C47DD00CF2885 /* Font-Awesome-5-Free-Solid-900.otf in Resources */,
+				84E07772210C47DD00CF2885 /* Font-Awesome-5-Free-Regular-400.otf in Resources */,
+				84E0776C210C47DD00CF2885 /* Font-Awesome-5-Brands-Regular-400.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
