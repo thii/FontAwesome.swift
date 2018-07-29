@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.source_files = 'FontAwesome/*.{swift}'
   s.resource_bundle = { 'FontAwesome.swift' => 'FontAwesome/*.otf' }
   s.frameworks = 'UIKit', 'CoreText'
+  s.swift_version = "4.0"
 end
