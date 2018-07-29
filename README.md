@@ -8,7 +8,7 @@
 
 Use Font Awesome in your Swift projects
 
-To see the complete set of 675 icons in Font Awesome 4.7.0, please check the [FontAwesome.io](http://fontawesome.io/icons/) site.
+To see the complete set of 3,652 icons in Font Awesome 5, please check the [FontAwesome.com](http://fontawesome.com/icons/) site.
 
 ## Installation
 
@@ -79,6 +79,15 @@ imageViewColored.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, 
 
 iOS 8 or later.
 
+## Development
+To update this project to include all the latest icons:
+
+    cd FortAwesome/Font-Awesome
+    git fetch origin
+    git checkout 5.3.0 # Replace with the latest released version
+    cd ../.. # Go back the project root
+    ./codegen.swift # Re-generate Enum.swift file from the latest icon list
+
 ## License
-- FontAwesome.otf file licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
+- All font files licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
 - FontAwesome.swift licensed under [MIT](http://thi.mit-license.org/)
