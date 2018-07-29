@@ -45,50 +45,34 @@ $ pod install
 And add `import FontAwesome_swift` to the top of the files using FontAwesome.
 
 ### Manually
-- Drag and drop `FontAwesome.otf` and all Swift files into your project
+- Drag and drop all `.otf` and `.swift` files into your project
 
 ## Examples
 
-### FontAwesome icon in label
 ```swift
-label.font = UIFont.fontAwesome(ofSize: 100)
+// FontAwesome icon in label
+label.font = UIFont.fontAwesome(ofSize: 100, style: .brands)
 label.text = String.fontAwesomeIcon(name: .github)
-```
 
-### FontAwesome icon in label from css class name
-```swift
-label.font = UIFont.fontAwesome(ofSize: 200)
-label.text = String.fontAwesomeIcon(code: "fa-github")
-```
+let attributes = [NSAttributedStringKey.font: UIFont.fontAwesome(ofSize: 20, style: .brands)]
 
-### FontAwesome icon in button
-```swift
-button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
+// FontAwesome icon in button
+button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .brands)
 button.setTitle(String.fontAwesomeIcon(name: .github), for: .normal)
-```
 
-### FontAwesome icon as navigation bar item
-```swift
-let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
-leftBarButton.setTitleTextAttributes(attributes, for: .normal)
-leftBarButton.title = String.fontAwesomeIcon(name: .github)
-```
+// FontAwesome icon as navigation bar item
+barButton.setTitleTextAttributes(attributes, for: .normal)
+barButton.title = String.fontAwesomeIcon(name: .github)
 
-### FontAwesome icon as toolbar item
-```swift
-let attributes = [NSFontAttributeName: UIFont.fontAwesome(ofSize: 20)] as [String: Any]
+// FontAwesome icon as toolbar item
 toolbarItem.setTitleTextAttributes(attributes, for: .normal)
 toolbarItem.title = String.fontAwesomeIcon(name: .github)
-```
 
-### FontAwesome icon as an image
-```swift
-tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
-```
+// FontAwesome icon as image
+imageView.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, textColor: .black, size: CGSize(width: 4000, height: 4000))
 
-### FontAwesome icon as an image with background color
-```swift
-tabBarItem.image = UIImage.fontAwesomeIcon(name: .github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
+// FontAwesome icon as image with background color
+imageViewColored.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, textColor: .white, size: CGSize(width: 4000, height: 4000), backgroundColor: .black)
 ```
 
 ## Requirements
