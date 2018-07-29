@@ -64,10 +64,10 @@ public enum Style {
 
     func fontFamilyName() -> String {
         switch self {
-        case .solid:
+        case .brands:
             return "Font Awesome 5 Brands"
         case .regular,
-             .brands:
+             .solid:
             return "Font Awesome 5 Free"
         }
     }
