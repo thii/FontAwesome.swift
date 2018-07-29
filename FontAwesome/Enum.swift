@@ -1175,7 +1175,7 @@ public enum FontAwesome: String {
 
 /// An array of FontAwesome icon codes.
 // swiftlint:disable identifier_name
-public let FontAwesomeIcons: [String : String] = [
+public let FontAwesomeIcons: [String: String] = [
     "fa-500px": "\u{f26e}",
     "fa-accessible-icon": "\u{f368}",
     "fa-accusoft": "\u{f369}",
@@ -2320,5 +2320,5 @@ public let FontAwesomeIcons: [String : String] = [
     "fa-yoast": "\u{f2b1}",
     "fa-youtube": "\u{f167}",
     "fa-youtube-square": "\u{f431}",
-    "fa-zhihu": "\u{f63f}",
+    "fa-zhihu": "\u{f63f}"
 ]

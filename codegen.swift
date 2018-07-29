@@ -94,19 +94,22 @@ fontAwesomeEnum += """
 
 /// An array of FontAwesome icon codes.
 // swiftlint:disable identifier_name
-public let FontAwesomeIcons: [String : String] = [
+public let FontAwesomeIcons: [String: String] = [
 
 """
 
 sortedKeys.forEach { key in
     guard let value = icons[key] else { return }
     fontAwesomeEnum += """
-        \"fa-\(key)\": \"\\u{\(value.unicode)}\",
-
+        \"fa-\(key)\": \"\\u{\(value.unicode)}\"
     """
+    if key != sortedKeys.last {
+        fontAwesomeEnum += ",\n"
+    }
 }
 
 fontAwesomeEnum += """
+
 ]
 
 """

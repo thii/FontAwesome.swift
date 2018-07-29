@@ -27,10 +27,10 @@ import CoreText
 
 /// A configuration namespace for FontAwesome.
 public struct FontAwesomeConfig {
-    
+
     // Marked private to prevent initialization of this struct.
     private init() { }
-    
+
     /// Taken from FontAwesome.io's Fixed Width Icon CSS.
     public static let fontAspectRatio: CGFloat = 1.28571429
 }
@@ -84,14 +84,14 @@ public extension UIFont {
         loadFontAwesome(ofStyle: style)
         return UIFont(name: style.fontName(), size: fontSize)!
     }
-    
+
     /// Loads the FontAwesome font in to memory.
     /// This method should be called when setting icons without using code.
     public class func loadFontAwesome(ofStyle style: Style = .regular) {
         if !UIFont.fontNames(forFamilyName: style.fontFamilyName()).isEmpty {
             return
         }
-        
+
         FontLoader.loadFont(style.fontFilename())
     }
 }
@@ -143,12 +143,12 @@ public extension UIImage {
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
     public static func fontAwesomeIcon(name: FontAwesome, style: Style = .regular, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage {
-        
+
         // Prevent application crash when passing size where width or height is set equal to or less than zero, by clipping width and height to a minimum of 1 pixel.
         var size = size
         if size.width <= 0 { size.width = 1 }
         if size.height <= 0 { size.height = 1 }
-        
+
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.center
 
