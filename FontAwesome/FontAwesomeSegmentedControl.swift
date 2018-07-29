@@ -38,9 +38,9 @@ import UIKit
 
     private func useFontAwesome() {
         updateText {
-            for i in 0 ..< numberOfSegments {
-                if let cssCode = titleForSegment(at: i) {
-                    setTitle(String.fontAwesomeIcon(code: cssCode), forSegmentAt: i)
+            for index in 0 ..< numberOfSegments {
+                if let cssCode = titleForSegment(at: index) {
+                    setTitle(String.fontAwesomeIcon(code: cssCode), forSegmentAt: index)
                 }
             }
         }
