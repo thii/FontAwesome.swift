@@ -1,4 +1,9 @@
-// FontAwesomeTabBarItem.swift
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FILEHEADER</key>
+	<string> ___FILENAME___
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -18,45 +23,6 @@
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
-
-import UIKit
-
-@IBDesignable public class FontAwesomeTabBarItem: UITabBarItem {
-
-    @IBInspectable public var iconName: String = "fa-square-o"
-    @IBInspectable public var selectedIconName: String = "fa-square"
-    @IBInspectable public var size: CGFloat = 38.0
-
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-        useFontAwesomeImage()
-    }
-
-    public override func prepareForInterfaceBuilder() {
-        useFontAwesomeImage()
-    }
-
-    private func useFontAwesomeImage() {
-        createImages { (img, index) in
-            if index == 0 {
-                image = img
-            } else {
-                selectedImage = img
-            }
-        }
-    }
-
-}
-
-extension FontAwesomeTabBarItem: FontAwesomeImageRepresentable {
-
-    var imageWidth: CGFloat {
-        return size
-    }
-
-    var imageConfigs: [ImageConfig] {
-        return [(iconName, nil, nil), (selectedIconName, nil, nil)]
-    }
-
-}
+// THE SOFTWARE.</string>
+</dict>
+</plist>

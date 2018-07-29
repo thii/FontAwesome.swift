@@ -1,4 +1,4 @@
-// FontAwesomeTabBarItem.swift
+// FontAwesomeExtension.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,43 +20,17 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import UIKit
+import Foundation
 
-@IBDesignable public class FontAwesomeTabBarItem: UITabBarItem {
-
-    @IBInspectable public var iconName: String = "fa-square-o"
-    @IBInspectable public var selectedIconName: String = "fa-square"
-    @IBInspectable public var size: CGFloat = 38.0
-
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-        useFontAwesomeImage()
-    }
-
-    public override func prepareForInterfaceBuilder() {
-        useFontAwesomeImage()
-    }
-
-    private func useFontAwesomeImage() {
-        createImages { (img, index) in
-            if index == 0 {
-                image = img
-            } else {
-                selectedImage = img
-            }
+public extension FontAwesome {
+    /// Get a FontAwesome string from the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
+    ///
+    /// - parameter code: The preferred icon name.
+    /// - returns: FontAwesome icon.
+    public static func fromCode(_ code: String) -> FontAwesome? {
+        guard let raw = FontAwesomeIcons[code], let icon = FontAwesome(rawValue: raw) else {
+            return nil
         }
+        return icon
     }
-
-}
-
-extension FontAwesomeTabBarItem: FontAwesomeImageRepresentable {
-
-    var imageWidth: CGFloat {
-        return size
-    }
-
-    var imageConfigs: [ImageConfig] {
-        return [(iconName, nil, nil), (selectedIconName, nil, nil)]
-    }
-
 }
