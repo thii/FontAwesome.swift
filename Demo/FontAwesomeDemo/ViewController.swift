@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var barButton: UIBarButtonItem!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageViewColored: UIImageView!
-    @IBOutlet weak var toolbarItem: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +47,6 @@ class ViewController: UIViewController {
         // FontAwesome icon as navigation bar item
         barButton.setTitleTextAttributes(attributes, for: .normal)
         barButton.title = String.fontAwesomeIcon(name: .github)
-
-        // FontAwesome icon as toolbar item
-        toolbarItem.setTitleTextAttributes(attributes, for: .normal)
-        toolbarItem.title = String.fontAwesomeIcon(name: .github)
 
         // FontAwesome icon as image
         imageView.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, textColor: .black, size: CGSize(width: 4000, height: 4000))
