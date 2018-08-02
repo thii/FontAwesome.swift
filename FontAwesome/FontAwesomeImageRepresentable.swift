@@ -24,7 +24,7 @@ import UIKit
 
 protocol FontAwesomeImageRepresentable: class {
 
-    typealias ImageConfig = (cssIconName: String, color: UIColor?, backgroundColor: UIColor?)
+    typealias ImageConfig = (cssIconName: String, style: Style, color: UIColor?, backgroundColor: UIColor?)
 
     var imageWidth: CGFloat { get }
     var imageConfigs: [ImageConfig] { get }
@@ -44,6 +44,7 @@ extension FontAwesomeImageRepresentable {
 
     private func createImage(config: ImageConfig, size: CGSize) -> UIImage? {
         return UIImage.fontAwesomeIcon(code: config.cssIconName,
+                                       style: config.style,
                                        textColor: config.color ?? .black,
                                        size: size,
                                        backgroundColor: config.backgroundColor ?? .clear)

@@ -35,7 +35,7 @@ public struct FontAwesomeConfig {
     public static let fontAspectRatio: CGFloat = 1.28571429
 }
 
-public enum Style {
+public enum Style: String {
     case solid
     case regular
     case brands
