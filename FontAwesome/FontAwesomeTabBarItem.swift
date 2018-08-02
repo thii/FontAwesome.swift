@@ -24,9 +24,10 @@ import UIKit
 
 @IBDesignable public class FontAwesomeTabBarItem: UITabBarItem {
 
-    @IBInspectable public var iconName: String = "fa-square-o"
-    @IBInspectable public var selectedIconName: String = "fa-square"
+    @IBInspectable public var iconName: String = "fa-font-awesome-flag"
+    @IBInspectable public var selectedIconName: String = "fa-font-awesome-flag"
     @IBInspectable public var size: CGFloat = 38.0
+    @IBInspectable public var styleName: String = "Brands"
 
     public override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,7 +57,8 @@ extension FontAwesomeTabBarItem: FontAwesomeImageRepresentable {
     }
 
     var imageConfigs: [ImageConfig] {
-        return [(iconName, nil, nil), (selectedIconName, nil, nil)]
+        guard let style = Style(rawValue: styleName.lowercased()) else { return [] }
+        return [(iconName, style, nil, nil), (selectedIconName, style, nil, nil)]
     }
 
 }
