@@ -25,6 +25,7 @@ import UIKit
 @IBDesignable public class FontAwesomeBarButtonItem: UIBarButtonItem {
 
     @IBInspectable public var isFontAwesomeCSSCode: Bool = true
+    @IBInspectable public var styleName: String = "Brands"
     @IBInspectable public var size: CGFloat = 25.0
 
     public override func awakeFromNib() {
@@ -57,13 +58,16 @@ import UIKit
 }
 
 extension FontAwesomeBarButtonItem: FontAwesomeTextRepresentable {
-
     var isTextCSSCode: Bool {
         return isFontAwesomeCSSCode
     }
 
     var textSize: CGFloat {
         return size
+    }
+
+    var fontStyle: Style {
+        return Style(rawValue: styleName) ?? .solid
     }
 
     static func supportedStates() -> [UIControlState] {

@@ -80,14 +80,14 @@ public extension UIFont {
     ///
     /// - parameter ofSize: The preferred font size.
     /// - returns: A UIFont object of FontAwesome.
-    public class func fontAwesome(ofSize fontSize: CGFloat, style: Style = .regular) -> UIFont {
+    public class func fontAwesome(ofSize fontSize: CGFloat, style: Style) -> UIFont {
         loadFontAwesome(ofStyle: style)
         return UIFont(name: style.fontName(), size: fontSize)!
     }
 
     /// Loads the FontAwesome font in to memory.
     /// This method should be called when setting icons without using code.
-    public class func loadFontAwesome(ofStyle style: Style = .regular) {
+    public class func loadFontAwesome(ofStyle style: Style) {
         if !UIFont.fontNames(forFamilyName: style.fontFamilyName()).isEmpty {
             return
         }
@@ -142,7 +142,7 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    public static func fontAwesomeIcon(name: FontAwesome, style: Style = .regular, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage {
+    public static func fontAwesomeIcon(name: FontAwesome, style: Style, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage {
 
         // Prevent application crash when passing size where width or height is set equal to or less than zero, by clipping width and height to a minimum of 1 pixel.
         var size = size
@@ -181,7 +181,7 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    public static func fontAwesomeIcon(code: String, style: Style = .regular, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage? {
+    public static func fontAwesomeIcon(code: String, style: Style, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage? {
         guard let name = String.fontAwesome(code: code) else { return nil }
         return fontAwesomeIcon(name: name, style: style, textColor: textColor, size: size, backgroundColor: backgroundColor, borderWidth: borderWidth, borderColor: borderColor)
     }
