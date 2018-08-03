@@ -1,7 +1,9 @@
 desc "Runs all the tests"
 lane :test do
-  sh("xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome -destination 'platform=iOS Simulator,name=iPhone 7' | bundle exec xcpretty -c")
-  sh("xcodebuild -project FontAwesome.xcodeproj -scheme FontAwesome-watchOS -destination 'OS=4.0,name=Apple Watch - 42mm' | bundle exec xcpretty -c")
+  Dir.chdir("..") do
+    sh("xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome -destination 'platform=iOS Simulator,name=iPhone 7' | bundle exec xcpretty -c")
+    sh("xcodebuild -project FontAwesome.xcodeproj -scheme FontAwesome-watchOS -destination 'OS=4.3,name=Apple Watch - 42mm' | bundle exec xcpretty -c")
+  end
 end
 
 desc "Release a new version"
@@ -18,9 +20,9 @@ lane :release do |options|
   increment_version_number(version_number: target_version)
   version_bump_podspec(path: "FontAwesome.swift.podspec", version_number: target_version)
 
-  sh("git commit --all --message=\"Bump version to #{target_version}\"")
-  sh("git tag #{target_version} --message=#{target_version}")
-  sh("git push origin #{target_version}")
+  git_commit(path: ".", message: "Bump version to #{target_version}")
+  add_git_tag(tag: target_version, message: target_version)
+  push_to_git_remote(local_branch: target_version, remote_branch: target_version)
 
   pod_push(use_bundle_exec: true)
 end
