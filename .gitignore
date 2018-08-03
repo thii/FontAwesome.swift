@@ -33,3 +33,4 @@ DerivedData
 
 # fastlane scan
 test_output
+fastlane/report.xml

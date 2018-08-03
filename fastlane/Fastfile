@@ -1,0 +1,26 @@
+desc "Runs all the tests"
+lane :test do
+  sh("xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome -destination 'platform=iOS Simulator,name=iPhone 7' | bundle exec xcpretty -c")
+  sh("xcodebuild -project FontAwesome.xcodeproj -scheme FontAwesome-watchOS -destination 'OS=4.0,name=Apple Watch - 42mm' | bundle exec xcpretty -c")
+end
+
+desc "Release a new version"
+lane :release do |options|
+  target_version = options[:version]
+  raise "The version is missed. Use `bundle exec fastlane release version:{version_number}`.`" if target_version.nil?
+
+  ensure_git_branch
+  ensure_git_status_clean
+
+  test
+  pod_lib_lint
+
+  increment_version_number(version_number: target_version)
+  version_bump_podspec(path: "FontAwesome.swift.podspec", version_number: target_version)
+
+  sh("git commit --all --message=\"Bump version to #{target_version}\"")
+  sh("git tag #{target_version} --message=#{target_version}")
+  sh("git push origin #{target_version}")
+
+  pod_push(use_bundle_exec: true)
+end
