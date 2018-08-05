@@ -24,7 +24,7 @@ import UIKit
 
 protocol FontAwesomeImageRepresentable: class {
 
-    typealias ImageConfig = (cssIconName: String, style: Style, color: UIColor?, backgroundColor: UIColor?)
+    typealias ImageConfig = (cssIconName: String, style: FontAwesomeStyle, color: UIColor?, backgroundColor: UIColor?)
 
     var imageWidth: CGFloat { get }
     var imageConfigs: [ImageConfig] { get }

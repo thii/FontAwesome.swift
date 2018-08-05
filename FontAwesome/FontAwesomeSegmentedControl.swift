@@ -59,8 +59,8 @@ extension FontAwesomeSegmentedControl: FontAwesomeTextRepresentable {
         return isFontAwesomeCSSCode
     }
 
-    var fontStyle: Style {
-        return Style(rawValue: styleName) ?? .solid
+    var fontStyle: FontAwesomeStyle {
+        return FontAwesomeStyle(rawValue: styleName) ?? .solid
     }
 
     var textSize: CGFloat {

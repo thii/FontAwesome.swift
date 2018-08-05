@@ -57,7 +57,7 @@ extension FontAwesomeTabBarItem: FontAwesomeImageRepresentable {
     }
 
     var imageConfigs: [ImageConfig] {
-        guard let style = Style(rawValue: styleName.lowercased()) else { return [] }
+        guard let style = FontAwesomeStyle(rawValue: styleName.lowercased()) else { return [] }
         return [(iconName, style, nil, nil), (selectedIconName, style, nil, nil)]
     }
 
