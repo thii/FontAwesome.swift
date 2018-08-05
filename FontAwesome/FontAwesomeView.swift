@@ -68,7 +68,7 @@ import UIKit
         super.layoutSubviews()
         self.clipsToBounds = true
         let size = bounds.size.width < bounds.size.height ? bounds.size.width : bounds.size.height
-        let style = Style(rawValue: styleName) ?? .solid
+        let style = FontAwesomeStyle(rawValue: styleName) ?? .solid
         self.iconView.font = UIFont.fontAwesome(ofSize: size, style: style)
         self.iconView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: bounds.size.width, height: bounds.size.height))
     }

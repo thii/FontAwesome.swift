@@ -66,8 +66,8 @@ extension FontAwesomeBarButtonItem: FontAwesomeTextRepresentable {
         return size
     }
 
-    var fontStyle: Style {
-        return Style(rawValue: styleName) ?? .solid
+    var fontStyle: FontAwesomeStyle {
+        return FontAwesomeStyle(rawValue: styleName) ?? .solid
     }
 
     static func supportedStates() -> [UIControlState] {

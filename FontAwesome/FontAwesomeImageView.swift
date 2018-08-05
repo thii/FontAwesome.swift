@@ -53,7 +53,7 @@ extension FontAwesomeImageView: FontAwesomeImageRepresentable {
     }
 
     var imageConfigs: [ImageConfig] {
-        guard let style = Style(rawValue: styleName.lowercased()) else { return [] }
+        guard let style = FontAwesomeStyle(rawValue: styleName.lowercased()) else { return [] }
         return [(cssCode, style, imageColor, imageBackgroundColor)]
     }
 

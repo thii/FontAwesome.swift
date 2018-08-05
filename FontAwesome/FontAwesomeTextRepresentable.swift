@@ -26,7 +26,7 @@ protocol FontAwesomeTextRepresentable: FontAwesomeStateRequirement {
 
     var textSize: CGFloat { get }
     var isTextCSSCode: Bool { get }
-    var fontStyle: Style { get }
+    var fontStyle: FontAwesomeStyle { get }
 
     func updateText(_ updateTextBlock: () -> Void)
     func updateFontAttributes(forStates stateBlock: (UIControlState, UIFont) -> Void)
