@@ -88,7 +88,7 @@ public extension UIFont {
     /// Loads the FontAwesome font in to memory.
     /// This method should be called when setting icons without using code.
     public class func loadFontAwesome(ofStyle style: FontAwesomeStyle) {
-        if !UIFont.fontNames(forFamilyName: style.fontFamilyName()).isEmpty {
+        if UIFont.fontNames(forFamilyName: style.fontFamilyName()).contains(style.fontName()) {
             return
         }
 
