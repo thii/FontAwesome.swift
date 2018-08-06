@@ -92,7 +92,12 @@ public extension UIFont {
             return
         }
 
-        FontLoader.loadFont(style.fontFilename())
+        if style == .solid || style == .regular {
+            FontLoader.loadFont(FontAwesomeStyle.solid.fontFilename())
+            FontLoader.loadFont(FontAwesomeStyle.regular.fontFilename())
+        } else {
+            FontLoader.loadFont(style.fontFilename())
+        }
     }
 }
 
