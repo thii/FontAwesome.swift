@@ -87,6 +87,14 @@ To update this project to include all the latest icons:
     git checkout 5.3.0 # Replace with the latest released version
     cd ../.. # Go back the project root
     ./codegen.swift # Re-generate Enum.swift file from the latest icon list
+    
+To release a new version `x.y.z` (replace `x.y.z` with a real version number):
+
+    bundle exec fastlane release version:x.y.z
+
+Since it will automatically make a new commit to bump version and push to CocoaPods
+trunk, make sure you have write access to this repo and be one of the podspec owners.
+If you are a maintainer but don't have these privilege yet, please let me know.
 
 ## License
 - All font files licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
