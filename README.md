@@ -80,14 +80,11 @@ imageViewColored.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, 
 iOS 8 or later.
 
 ## Development
-To update this project to include all the latest icons:
+To update this project to include all the latest icons from the new verison of
+Font Awesome (replace `x.y.z` with the new font version):
 
-    cd FortAwesome/Font-Awesome
-    git fetch origin
-    git checkout 5.3.0 # Replace with the latest released version
-    cd ../.. # Go back the project root
-    ./codegen.swift # Re-generate Enum.swift file from the latest icon list
-    
+    bundle exec fastlane update_font version:x.y.z
+
 To release a new version `x.y.z` (replace `x.y.z` with a real version number):
 
     bundle exec fastlane release version:x.y.z

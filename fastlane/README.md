@@ -20,6 +20,11 @@ or alternatively using `brew cask install fastlane`
 fastlane test
 ```
 Runs all the tests
+### update_font
+```
+fastlane update_font
+```
+Update to new version of Font Awesome
 ### release
 ```
 fastlane release
