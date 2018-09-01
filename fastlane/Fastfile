@@ -6,6 +6,16 @@ lane :test do
   end
 end
 
+desc "Update to new version of Font Awesome"
+lane :update_font do |options|
+  target_version = options[:version]
+  raise "The version is missed. Use `bundle exec fastlane bum_web_font version:{version_number}`.`" if target_version.nil?
+
+  sh("cd #{ENV["PWD"]}/FortAwesome/Font-Awesome && git fetch origin && git checkout #{target_version}")
+  sh("/bin/cp -f #{ENV["PWD"]}/FortAwesome/Font-Awesome/use-on-desktop/*.otf #{ENV["PWD"]}/FontAwesome")
+  sh("cd #{ENV["PWD"]} && ./codegen.swift")
+end
+
 desc "Release a new version"
 lane :release do |options|
   target_version = options[:version]

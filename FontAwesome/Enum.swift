@@ -29,6 +29,7 @@ public enum FontAwesome: String {
     case fiveHundredPixels = "\u{f26e}"
     case accessibleIcon = "\u{f368}"
     case accusoft = "\u{f369}"
+    case ad = "\u{f641}"
     case addressBook = "\u{f2b9}"
     case addressCard = "\u{f2bb}"
     case adjust = "\u{f042}"
@@ -41,6 +42,7 @@ public enum FontAwesome: String {
     case alignJustify = "\u{f039}"
     case alignLeft = "\u{f036}"
     case alignRight = "\u{f038}"
+    case alipay = "\u{f642}"
     case allergies = "\u{f461}"
     case amazon = "\u{f270}"
     case amazonPay = "\u{f42c}"
@@ -61,6 +63,7 @@ public enum FontAwesome: String {
     case angry = "\u{f556}"
     case angrycreative = "\u{f36e}"
     case angular = "\u{f420}"
+    case ankh = "\u{f644}"
     case appStore = "\u{f36f}"
     case appStoreIos = "\u{f370}"
     case apper = "\u{f371}"
@@ -120,6 +123,7 @@ public enum FontAwesome: String {
     case bell = "\u{f0f3}"
     case bellSlash = "\u{f1f6}"
     case bezierCurve = "\u{f55b}"
+    case bible = "\u{f647}"
     case bicycle = "\u{f206}"
     case bimobject = "\u{f378}"
     case binoculars = "\u{f1e5}"
@@ -164,6 +168,7 @@ public enum FontAwesome: String {
     case buromobelexperte = "\u{f37f}"
     case bus = "\u{f207}"
     case busAlt = "\u{f55e}"
+    case businessTime = "\u{f64a}"
     case buysellads = "\u{f20d}"
     case calculator = "\u{f1ec}"
     case calendar = "\u{f133}"
@@ -235,6 +240,7 @@ public enum FontAwesome: String {
     case church = "\u{f51d}"
     case circle = "\u{f111}"
     case circleNotch = "\u{f1ce}"
+    case city = "\u{f64f}"
     case clipboard = "\u{f328}"
     case clipboardCheck = "\u{f46c}"
     case clipboardList = "\u{f46d}"
@@ -259,9 +265,11 @@ public enum FontAwesome: String {
     case columns = "\u{f0db}"
     case comment = "\u{f075}"
     case commentAlt = "\u{f27a}"
+    case commentDollar = "\u{f651}"
     case commentDots = "\u{f4ad}"
     case commentSlash = "\u{f4b3}"
     case comments = "\u{f086}"
+    case commentsDollar = "\u{f653}"
     case compactDisc = "\u{f51f}"
     case compass = "\u{f14e}"
     case compress = "\u{f066}"
@@ -290,6 +298,7 @@ public enum FontAwesome: String {
     case creditCard = "\u{f09d}"
     case crop = "\u{f125}"
     case cropAlt = "\u{f565}"
+    case cross = "\u{f654}"
     case crosshairs = "\u{f05b}"
     case crow = "\u{f520}"
     case crown = "\u{f521}"
@@ -308,6 +317,7 @@ public enum FontAwesome: String {
     case deskpro = "\u{f38f}"
     case desktop = "\u{f108}"
     case deviantart = "\u{f1bd}"
+    case dharmachakra = "\u{f655}"
     case diagnoses = "\u{f470}"
     case dice = "\u{f522}"
     case diceFive = "\u{f523}"
@@ -360,6 +370,7 @@ public enum FontAwesome: String {
     case empire = "\u{f1d1}"
     case envelope = "\u{f0e0}"
     case envelopeOpen = "\u{f2b6}"
+    case envelopeOpenText = "\u{f658}"
     case envelopeSquare = "\u{f199}"
     case envira = "\u{f299}"
     case equals = "\u{f52c}"
@@ -434,7 +445,9 @@ public enum FontAwesome: String {
     case flushed = "\u{f579}"
     case fly = "\u{f417}"
     case folder = "\u{f07b}"
+    case folderMinus = "\u{f65d}"
     case folderOpen = "\u{f07c}"
+    case folderPlus = "\u{f65e}"
     case font = "\u{f031}"
     case fontAwesome = "\u{f2b4}"
     case fontAwesomeAlt = "\u{f35c}"
@@ -454,6 +467,7 @@ public enum FontAwesome: String {
     case frown = "\u{f119}"
     case frownOpen = "\u{f57a}"
     case fulcrum = "\u{f50b}"
+    case funnelDollar = "\u{f662}"
     case futbol = "\u{f1e3}"
     case galacticRepublic = "\u{f50c}"
     case galacticSenate = "\u{f50d}"
@@ -494,6 +508,7 @@ public enum FontAwesome: String {
     case googlePlusG = "\u{f0d5}"
     case googlePlusSquare = "\u{f0d4}"
     case googleWallet = "\u{f1ee}"
+    case gopuram = "\u{f664}"
     case graduationCap = "\u{f19d}"
     case gratipay = "\u{f184}"
     case grav = "\u{f2d6}"
@@ -522,6 +537,7 @@ public enum FontAwesome: String {
     case hackerNews = "\u{f1d4}"
     case hackerNewsSquare = "\u{f3af}"
     case hackerrank = "\u{f5f7}"
+    case hamsa = "\u{f665}"
     case handHolding = "\u{f4bd}"
     case handHoldingHeart = "\u{f4be}"
     case handHoldingUsd = "\u{f4c0}"
@@ -540,6 +556,7 @@ public enum FontAwesome: String {
     case handsHelping = "\u{f4c4}"
     case handshake = "\u{f2b5}"
     case hashtag = "\u{f292}"
+    case haykal = "\u{f666}"
     case hdd = "\u{f0a0}"
     case heading = "\u{f1dc}"
     case headphones = "\u{f025}"
@@ -589,19 +606,23 @@ public enum FontAwesome: String {
     case itunes = "\u{f3b4}"
     case itunesNote = "\u{f3b5}"
     case java = "\u{f4e4}"
+    case jedi = "\u{f669}"
     case jediOrder = "\u{f50e}"
     case jenkins = "\u{f3b6}"
     case joget = "\u{f3b7}"
     case joint = "\u{f595}"
     case joomla = "\u{f1aa}"
+    case journalWhills = "\u{f66a}"
     case js = "\u{f3b8}"
     case jsSquare = "\u{f3b9}"
     case jsfiddle = "\u{f1cc}"
+    case kaaba = "\u{f66b}"
     case kaggle = "\u{f5fa}"
     case key = "\u{f084}"
     case keybase = "\u{f4f5}"
     case keyboard = "\u{f11c}"
     case keycdn = "\u{f3ba}"
+    case khanda = "\u{f66d}"
     case kickstarter = "\u{f3bb}"
     case kickstarterK = "\u{f3bc}"
     case kiss = "\u{f596}"
@@ -609,6 +630,7 @@ public enum FontAwesome: String {
     case kissWinkHeart = "\u{f598}"
     case kiwiBird = "\u{f535}"
     case korvue = "\u{f42f}"
+    case landmark = "\u{f66f}"
     case language = "\u{f1ab}"
     case laptop = "\u{f109}"
     case laptopCode = "\u{f5fc}"
@@ -654,6 +676,7 @@ public enum FontAwesome: String {
     case magento = "\u{f3c4}"
     case magic = "\u{f0d0}"
     case magnet = "\u{f076}"
+    case mailBulk = "\u{f674}"
     case mailchimp = "\u{f59e}"
     case male = "\u{f183}"
     case mandalorian = "\u{f50f}"
@@ -685,6 +708,7 @@ public enum FontAwesome: String {
     case mehBlank = "\u{f5a4}"
     case mehRollingEyes = "\u{f5a5}"
     case memory = "\u{f538}"
+    case menorah = "\u{f676}"
     case mercury = "\u{f223}"
     case microchip = "\u{f2db}"
     case microphone = "\u{f130}"
@@ -712,6 +736,7 @@ public enum FontAwesome: String {
     case monument = "\u{f5a6}"
     case moon = "\u{f186}"
     case mortarPestle = "\u{f5a7}"
+    case mosque = "\u{f678}"
     case motorcycle = "\u{f21c}"
     case mousePointer = "\u{f245}"
     case music = "\u{f001}"
@@ -734,6 +759,7 @@ public enum FontAwesome: String {
     case odnoklassnikiSquare = "\u{f264}"
     case oilCan = "\u{f613}"
     case oldRepublic = "\u{f510}"
+    case om = "\u{f679}"
     case opencart = "\u{f23d}"
     case openid = "\u{f19b}"
     case opera = "\u{f26a}"
@@ -753,12 +779,14 @@ public enum FontAwesome: String {
     case paragraph = "\u{f1dd}"
     case parking = "\u{f540}"
     case passport = "\u{f5ab}"
+    case pastafarianism = "\u{f67b}"
     case paste = "\u{f0ea}"
     case patreon = "\u{f3d9}"
     case pause = "\u{f04c}"
     case pauseCircle = "\u{f28b}"
     case paw = "\u{f1b0}"
     case paypal = "\u{f1ed}"
+    case peace = "\u{f67c}"
     case pen = "\u{f304}"
     case penAlt = "\u{f305}"
     case penFancy = "\u{f5ac}"
@@ -787,6 +815,7 @@ public enum FontAwesome: String {
     case pinterest = "\u{f0d2}"
     case pinterestP = "\u{f231}"
     case pinterestSquare = "\u{f0d3}"
+    case placeOfWorship = "\u{f67f}"
     case plane = "\u{f072}"
     case planeArrival = "\u{f5af}"
     case planeDeparture = "\u{f5b0}"
@@ -798,11 +827,15 @@ public enum FontAwesome: String {
     case plusCircle = "\u{f055}"
     case plusSquare = "\u{f0fe}"
     case podcast = "\u{f2ce}"
+    case poll = "\u{f681}"
+    case pollH = "\u{f682}"
     case poo = "\u{f2fe}"
     case poop = "\u{f619}"
     case portrait = "\u{f3e0}"
     case poundSign = "\u{f154}"
     case powerOff = "\u{f011}"
+    case pray = "\u{f683}"
+    case prayingHands = "\u{f684}"
     case prescription = "\u{f5b1}"
     case prescriptionBottle = "\u{f485}"
     case prescriptionBottleAlt = "\u{f486}"
@@ -822,6 +855,7 @@ public enum FontAwesome: String {
     case quora = "\u{f2c4}"
     case quoteLeft = "\u{f10d}"
     case quoteRight = "\u{f10e}"
+    case quran = "\u{f687}"
     case rProject = "\u{f4f7}"
     case random = "\u{f074}"
     case ravelry = "\u{f2d9}"
@@ -871,6 +905,8 @@ public enum FontAwesome: String {
     case screwdriver = "\u{f54a}"
     case scribd = "\u{f28a}"
     case search = "\u{f002}"
+    case searchDollar = "\u{f688}"
+    case searchLocation = "\u{f689}"
     case searchMinus = "\u{f010}"
     case searchPlus = "\u{f00e}"
     case searchengin = "\u{f3eb}"
@@ -922,6 +958,7 @@ public enum FontAwesome: String {
     case snapchatGhost = "\u{f2ac}"
     case snapchatSquare = "\u{f2ad}"
     case snowflake = "\u{f2dc}"
+    case socks = "\u{f696}"
     case solarPanel = "\u{f5ba}"
     case sort = "\u{f0dc}"
     case sortAlphaDown = "\u{f15d}"
@@ -942,13 +979,16 @@ public enum FontAwesome: String {
     case sprayCan = "\u{f5bd}"
     case square = "\u{f0c8}"
     case squareFull = "\u{f45c}"
+    case squareRootAlt = "\u{f698}"
     case squarespace = "\u{f5be}"
     case stackExchange = "\u{f18d}"
     case stackOverflow = "\u{f16c}"
     case stamp = "\u{f5bf}"
     case star = "\u{f005}"
+    case starAndCrescent = "\u{f699}"
     case starHalf = "\u{f089}"
     case starHalfAlt = "\u{f5c0}"
+    case starOfDavid = "\u{f69a}"
     case starOfLife = "\u{f621}"
     case staylinked = "\u{f3f5}"
     case steam = "\u{f1b6}"
@@ -986,6 +1026,7 @@ public enum FontAwesome: String {
     case swatchbook = "\u{f5c3}"
     case swimmer = "\u{f5c4}"
     case swimmingPool = "\u{f5c5}"
+    case synagogue = "\u{f69b}"
     case sync = "\u{f021}"
     case syncAlt = "\u{f2f1}"
     case syringe = "\u{f48e}"
@@ -1012,6 +1053,7 @@ public enum FontAwesome: String {
     case th = "\u{f00a}"
     case thLarge = "\u{f009}"
     case thList = "\u{f00b}"
+    case theRedYeti = "\u{f69d}"
     case theaterMasks = "\u{f630}"
     case themeco = "\u{f5c6}"
     case themeisle = "\u{f2b2}"
@@ -1034,6 +1076,8 @@ public enum FontAwesome: String {
     case toggleOn = "\u{f205}"
     case toolbox = "\u{f552}"
     case tooth = "\u{f5c9}"
+    case torah = "\u{f6a0}"
+    case toriiGate = "\u{f6a1}"
     case tradeFederation = "\u{f513}"
     case trademark = "\u{f25c}"
     case trafficLight = "\u{f637}"
@@ -1116,6 +1160,7 @@ public enum FontAwesome: String {
     case viber = "\u{f409}"
     case video = "\u{f03d}"
     case videoSlash = "\u{f4e2}"
+    case vihara = "\u{f6a7}"
     case vimeo = "\u{f40a}"
     case vimeoSquare = "\u{f194}"
     case vimeoV = "\u{f27d}"
@@ -1167,6 +1212,7 @@ public enum FontAwesome: String {
     case yandexInternational = "\u{f414}"
     case yelp = "\u{f1e9}"
     case yenSign = "\u{f157}"
+    case yinYang = "\u{f6ad}"
     case yoast = "\u{f2b1}"
     case youtube = "\u{f167}"
     case youtubeSquare = "\u{f431}"
@@ -1179,6 +1225,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-500px": "\u{f26e}",
     "fa-accessible-icon": "\u{f368}",
     "fa-accusoft": "\u{f369}",
+    "fa-ad": "\u{f641}",
     "fa-address-book": "\u{f2b9}",
     "fa-address-card": "\u{f2bb}",
     "fa-adjust": "\u{f042}",
@@ -1191,6 +1238,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-align-justify": "\u{f039}",
     "fa-align-left": "\u{f036}",
     "fa-align-right": "\u{f038}",
+    "fa-alipay": "\u{f642}",
     "fa-allergies": "\u{f461}",
     "fa-amazon": "\u{f270}",
     "fa-amazon-pay": "\u{f42c}",
@@ -1211,6 +1259,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-angry": "\u{f556}",
     "fa-angrycreative": "\u{f36e}",
     "fa-angular": "\u{f420}",
+    "fa-ankh": "\u{f644}",
     "fa-app-store": "\u{f36f}",
     "fa-app-store-ios": "\u{f370}",
     "fa-apper": "\u{f371}",
@@ -1270,6 +1319,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-bell": "\u{f0f3}",
     "fa-bell-slash": "\u{f1f6}",
     "fa-bezier-curve": "\u{f55b}",
+    "fa-bible": "\u{f647}",
     "fa-bicycle": "\u{f206}",
     "fa-bimobject": "\u{f378}",
     "fa-binoculars": "\u{f1e5}",
@@ -1314,6 +1364,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-buromobelexperte": "\u{f37f}",
     "fa-bus": "\u{f207}",
     "fa-bus-alt": "\u{f55e}",
+    "fa-business-time": "\u{f64a}",
     "fa-buysellads": "\u{f20d}",
     "fa-calculator": "\u{f1ec}",
     "fa-calendar": "\u{f133}",
@@ -1385,6 +1436,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-church": "\u{f51d}",
     "fa-circle": "\u{f111}",
     "fa-circle-notch": "\u{f1ce}",
+    "fa-city": "\u{f64f}",
     "fa-clipboard": "\u{f328}",
     "fa-clipboard-check": "\u{f46c}",
     "fa-clipboard-list": "\u{f46d}",
@@ -1409,9 +1461,11 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-columns": "\u{f0db}",
     "fa-comment": "\u{f075}",
     "fa-comment-alt": "\u{f27a}",
+    "fa-comment-dollar": "\u{f651}",
     "fa-comment-dots": "\u{f4ad}",
     "fa-comment-slash": "\u{f4b3}",
     "fa-comments": "\u{f086}",
+    "fa-comments-dollar": "\u{f653}",
     "fa-compact-disc": "\u{f51f}",
     "fa-compass": "\u{f14e}",
     "fa-compress": "\u{f066}",
@@ -1440,6 +1494,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-credit-card": "\u{f09d}",
     "fa-crop": "\u{f125}",
     "fa-crop-alt": "\u{f565}",
+    "fa-cross": "\u{f654}",
     "fa-crosshairs": "\u{f05b}",
     "fa-crow": "\u{f520}",
     "fa-crown": "\u{f521}",
@@ -1458,6 +1513,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-deskpro": "\u{f38f}",
     "fa-desktop": "\u{f108}",
     "fa-deviantart": "\u{f1bd}",
+    "fa-dharmachakra": "\u{f655}",
     "fa-diagnoses": "\u{f470}",
     "fa-dice": "\u{f522}",
     "fa-dice-five": "\u{f523}",
@@ -1510,6 +1566,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-empire": "\u{f1d1}",
     "fa-envelope": "\u{f0e0}",
     "fa-envelope-open": "\u{f2b6}",
+    "fa-envelope-open-text": "\u{f658}",
     "fa-envelope-square": "\u{f199}",
     "fa-envira": "\u{f299}",
     "fa-equals": "\u{f52c}",
@@ -1584,7 +1641,9 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-flushed": "\u{f579}",
     "fa-fly": "\u{f417}",
     "fa-folder": "\u{f07b}",
+    "fa-folder-minus": "\u{f65d}",
     "fa-folder-open": "\u{f07c}",
+    "fa-folder-plus": "\u{f65e}",
     "fa-font": "\u{f031}",
     "fa-font-awesome": "\u{f2b4}",
     "fa-font-awesome-alt": "\u{f35c}",
@@ -1604,6 +1663,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-frown": "\u{f119}",
     "fa-frown-open": "\u{f57a}",
     "fa-fulcrum": "\u{f50b}",
+    "fa-funnel-dollar": "\u{f662}",
     "fa-futbol": "\u{f1e3}",
     "fa-galactic-republic": "\u{f50c}",
     "fa-galactic-senate": "\u{f50d}",
@@ -1644,6 +1704,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-google-plus-g": "\u{f0d5}",
     "fa-google-plus-square": "\u{f0d4}",
     "fa-google-wallet": "\u{f1ee}",
+    "fa-gopuram": "\u{f664}",
     "fa-graduation-cap": "\u{f19d}",
     "fa-gratipay": "\u{f184}",
     "fa-grav": "\u{f2d6}",
@@ -1672,6 +1733,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-hacker-news": "\u{f1d4}",
     "fa-hacker-news-square": "\u{f3af}",
     "fa-hackerrank": "\u{f5f7}",
+    "fa-hamsa": "\u{f665}",
     "fa-hand-holding": "\u{f4bd}",
     "fa-hand-holding-heart": "\u{f4be}",
     "fa-hand-holding-usd": "\u{f4c0}",
@@ -1690,6 +1752,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-hands-helping": "\u{f4c4}",
     "fa-handshake": "\u{f2b5}",
     "fa-hashtag": "\u{f292}",
+    "fa-haykal": "\u{f666}",
     "fa-hdd": "\u{f0a0}",
     "fa-heading": "\u{f1dc}",
     "fa-headphones": "\u{f025}",
@@ -1739,19 +1802,23 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-itunes": "\u{f3b4}",
     "fa-itunes-note": "\u{f3b5}",
     "fa-java": "\u{f4e4}",
+    "fa-jedi": "\u{f669}",
     "fa-jedi-order": "\u{f50e}",
     "fa-jenkins": "\u{f3b6}",
     "fa-joget": "\u{f3b7}",
     "fa-joint": "\u{f595}",
     "fa-joomla": "\u{f1aa}",
+    "fa-journal-whills": "\u{f66a}",
     "fa-js": "\u{f3b8}",
     "fa-js-square": "\u{f3b9}",
     "fa-jsfiddle": "\u{f1cc}",
+    "fa-kaaba": "\u{f66b}",
     "fa-kaggle": "\u{f5fa}",
     "fa-key": "\u{f084}",
     "fa-keybase": "\u{f4f5}",
     "fa-keyboard": "\u{f11c}",
     "fa-keycdn": "\u{f3ba}",
+    "fa-khanda": "\u{f66d}",
     "fa-kickstarter": "\u{f3bb}",
     "fa-kickstarter-k": "\u{f3bc}",
     "fa-kiss": "\u{f596}",
@@ -1759,6 +1826,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-kiss-wink-heart": "\u{f598}",
     "fa-kiwi-bird": "\u{f535}",
     "fa-korvue": "\u{f42f}",
+    "fa-landmark": "\u{f66f}",
     "fa-language": "\u{f1ab}",
     "fa-laptop": "\u{f109}",
     "fa-laptop-code": "\u{f5fc}",
@@ -1804,6 +1872,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-magento": "\u{f3c4}",
     "fa-magic": "\u{f0d0}",
     "fa-magnet": "\u{f076}",
+    "fa-mail-bulk": "\u{f674}",
     "fa-mailchimp": "\u{f59e}",
     "fa-male": "\u{f183}",
     "fa-mandalorian": "\u{f50f}",
@@ -1835,6 +1904,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-meh-blank": "\u{f5a4}",
     "fa-meh-rolling-eyes": "\u{f5a5}",
     "fa-memory": "\u{f538}",
+    "fa-menorah": "\u{f676}",
     "fa-mercury": "\u{f223}",
     "fa-microchip": "\u{f2db}",
     "fa-microphone": "\u{f130}",
@@ -1862,6 +1932,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-monument": "\u{f5a6}",
     "fa-moon": "\u{f186}",
     "fa-mortar-pestle": "\u{f5a7}",
+    "fa-mosque": "\u{f678}",
     "fa-motorcycle": "\u{f21c}",
     "fa-mouse-pointer": "\u{f245}",
     "fa-music": "\u{f001}",
@@ -1884,6 +1955,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-odnoklassniki-square": "\u{f264}",
     "fa-oil-can": "\u{f613}",
     "fa-old-republic": "\u{f510}",
+    "fa-om": "\u{f679}",
     "fa-opencart": "\u{f23d}",
     "fa-openid": "\u{f19b}",
     "fa-opera": "\u{f26a}",
@@ -1903,12 +1975,14 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-paragraph": "\u{f1dd}",
     "fa-parking": "\u{f540}",
     "fa-passport": "\u{f5ab}",
+    "fa-pastafarianism": "\u{f67b}",
     "fa-paste": "\u{f0ea}",
     "fa-patreon": "\u{f3d9}",
     "fa-pause": "\u{f04c}",
     "fa-pause-circle": "\u{f28b}",
     "fa-paw": "\u{f1b0}",
     "fa-paypal": "\u{f1ed}",
+    "fa-peace": "\u{f67c}",
     "fa-pen": "\u{f304}",
     "fa-pen-alt": "\u{f305}",
     "fa-pen-fancy": "\u{f5ac}",
@@ -1937,6 +2011,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-pinterest": "\u{f0d2}",
     "fa-pinterest-p": "\u{f231}",
     "fa-pinterest-square": "\u{f0d3}",
+    "fa-place-of-worship": "\u{f67f}",
     "fa-plane": "\u{f072}",
     "fa-plane-arrival": "\u{f5af}",
     "fa-plane-departure": "\u{f5b0}",
@@ -1948,11 +2023,15 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-plus-circle": "\u{f055}",
     "fa-plus-square": "\u{f0fe}",
     "fa-podcast": "\u{f2ce}",
+    "fa-poll": "\u{f681}",
+    "fa-poll-h": "\u{f682}",
     "fa-poo": "\u{f2fe}",
     "fa-poop": "\u{f619}",
     "fa-portrait": "\u{f3e0}",
     "fa-pound-sign": "\u{f154}",
     "fa-power-off": "\u{f011}",
+    "fa-pray": "\u{f683}",
+    "fa-praying-hands": "\u{f684}",
     "fa-prescription": "\u{f5b1}",
     "fa-prescription-bottle": "\u{f485}",
     "fa-prescription-bottle-alt": "\u{f486}",
@@ -1972,6 +2051,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-quora": "\u{f2c4}",
     "fa-quote-left": "\u{f10d}",
     "fa-quote-right": "\u{f10e}",
+    "fa-quran": "\u{f687}",
     "fa-r-project": "\u{f4f7}",
     "fa-random": "\u{f074}",
     "fa-ravelry": "\u{f2d9}",
@@ -2021,6 +2101,8 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-screwdriver": "\u{f54a}",
     "fa-scribd": "\u{f28a}",
     "fa-search": "\u{f002}",
+    "fa-search-dollar": "\u{f688}",
+    "fa-search-location": "\u{f689}",
     "fa-search-minus": "\u{f010}",
     "fa-search-plus": "\u{f00e}",
     "fa-searchengin": "\u{f3eb}",
@@ -2072,6 +2154,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-snapchat-ghost": "\u{f2ac}",
     "fa-snapchat-square": "\u{f2ad}",
     "fa-snowflake": "\u{f2dc}",
+    "fa-socks": "\u{f696}",
     "fa-solar-panel": "\u{f5ba}",
     "fa-sort": "\u{f0dc}",
     "fa-sort-alpha-down": "\u{f15d}",
@@ -2092,13 +2175,16 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-spray-can": "\u{f5bd}",
     "fa-square": "\u{f0c8}",
     "fa-square-full": "\u{f45c}",
+    "fa-square-root-alt": "\u{f698}",
     "fa-squarespace": "\u{f5be}",
     "fa-stack-exchange": "\u{f18d}",
     "fa-stack-overflow": "\u{f16c}",
     "fa-stamp": "\u{f5bf}",
     "fa-star": "\u{f005}",
+    "fa-star-and-crescent": "\u{f699}",
     "fa-star-half": "\u{f089}",
     "fa-star-half-alt": "\u{f5c0}",
+    "fa-star-of-david": "\u{f69a}",
     "fa-star-of-life": "\u{f621}",
     "fa-staylinked": "\u{f3f5}",
     "fa-steam": "\u{f1b6}",
@@ -2136,6 +2222,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-swatchbook": "\u{f5c3}",
     "fa-swimmer": "\u{f5c4}",
     "fa-swimming-pool": "\u{f5c5}",
+    "fa-synagogue": "\u{f69b}",
     "fa-sync": "\u{f021}",
     "fa-sync-alt": "\u{f2f1}",
     "fa-syringe": "\u{f48e}",
@@ -2162,6 +2249,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-th": "\u{f00a}",
     "fa-th-large": "\u{f009}",
     "fa-th-list": "\u{f00b}",
+    "fa-the-red-yeti": "\u{f69d}",
     "fa-theater-masks": "\u{f630}",
     "fa-themeco": "\u{f5c6}",
     "fa-themeisle": "\u{f2b2}",
@@ -2184,6 +2272,8 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-toggle-on": "\u{f205}",
     "fa-toolbox": "\u{f552}",
     "fa-tooth": "\u{f5c9}",
+    "fa-torah": "\u{f6a0}",
+    "fa-torii-gate": "\u{f6a1}",
     "fa-trade-federation": "\u{f513}",
     "fa-trademark": "\u{f25c}",
     "fa-traffic-light": "\u{f637}",
@@ -2266,6 +2356,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-viber": "\u{f409}",
     "fa-video": "\u{f03d}",
     "fa-video-slash": "\u{f4e2}",
+    "fa-vihara": "\u{f6a7}",
     "fa-vimeo": "\u{f40a}",
     "fa-vimeo-square": "\u{f194}",
     "fa-vimeo-v": "\u{f27d}",
@@ -2317,6 +2408,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-yandex-international": "\u{f414}",
     "fa-yelp": "\u{f1e9}",
     "fa-yen-sign": "\u{f157}",
+    "fa-yin-yang": "\u{f6ad}",
     "fa-yoast": "\u{f2b1}",
     "fa-youtube": "\u{f167}",
     "fa-youtube-square": "\u{f431}",
