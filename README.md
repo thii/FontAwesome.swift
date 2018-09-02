@@ -15,8 +15,6 @@ To see the complete set of 3,652 icons in Font Awesome 5, please check the [Font
 
 ## Installation
 
-Since this is a Swift project, integrating using Carthage is the recommended way. Releases which support CocoaPods might be delayed sometimes.
-
 ### Carthage
 
 To integrate FontAwesome into your Xcode project using Carthage, specify it in your `Cartfile`:
@@ -45,7 +43,8 @@ Then, run the following command:
 $ pod install
 ```
 
-And add `import FontAwesome_swift` to the top of the files using FontAwesome.
+And add `import FontAwesome_swift` to the top of the files using FontAwesome
+(**Note**: There is an underscore).
 
 ### Manually
 - Drag and drop all `.otf` and `.swift` files into your project
