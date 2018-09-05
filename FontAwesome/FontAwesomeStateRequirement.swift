@@ -24,6 +24,6 @@ import UIKit
 
 protocol FontAwesomeStateRequirement: class {
 
-    static func supportedStates() -> [UIControlState]
+    static func supportedStates() -> [UIControl.State]
 
 }
