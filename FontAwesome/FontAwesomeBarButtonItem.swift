@@ -45,12 +45,12 @@ import UIKit
         }
         updateFontAttributes { (state, font) in
             let currentAttributes = titleTextAttributes(for: state) ?? [:]
-            var attributes = [NSAttributedStringKey: Any]()
+            var attributes = [NSAttributedString.Key: Any]()
             currentAttributes.enumerated().forEach {
-                let currentAttribute = NSAttributedStringKey(rawValue: $0.element.key)
+                let currentAttribute = $0.element.key
                 attributes[currentAttribute] = $0.element.value
             }
-            attributes[NSAttributedStringKey.font] = font
+            attributes[NSAttributedString.Key.font] = font
             setTitleTextAttributes(attributes, for: state)
         }
     }
@@ -70,7 +70,7 @@ extension FontAwesomeBarButtonItem: FontAwesomeTextRepresentable {
         return FontAwesomeStyle(rawValue: styleName) ?? .solid
     }
 
-    static func supportedStates() -> [UIControlState] {
+    static func supportedStates() -> [UIControl.State] {
         return [.normal, .highlighted, .disabled]
     }
 
