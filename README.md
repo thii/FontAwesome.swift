@@ -8,7 +8,7 @@
 
 Use Font Awesome in your Swift projects
 
-To see the complete set of 3,652 icons in Font Awesome 5, please check the [FontAwesome.com](http://fontawesome.com/icons/) site.
+To see the complete set of 3,978 icons in Font Awesome 5, please check the [FontAwesome.com](http://fontawesome.com/icons/) site.
 
 ## Examples
 ![](./.github/examples.png)
@@ -17,34 +17,14 @@ To see the complete set of 3,652 icons in Font Awesome 5, please check the [Font
 
 ### Carthage
 
-To integrate FontAwesome into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```ogdl
-github "thii/FontAwesome.swift"
-```
-
-Then add `import FontAwesome` to the top of the files using FontAwesome.
+    github "thii/FontAwesome.swift"
 
 ### CocoaPods
 
-To integrate FontAwesome into your Xcode project using CocoaPods, specify it in your `Podfile`:
+    pod 'FontAwesome.swift'
 
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-use_frameworks!
-
-pod 'FontAwesome.swift'
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
-
-And add `import FontAwesome_swift` to the top of the files using FontAwesome
-(**Note**: There is an underscore).
+**Note**: If you install this using CocoaPods, the framework name will be
+`FontAwesome_swift` (there is an underscore).
 
 ### Manually
 - Drag and drop all `.otf` and `.swift` files into your project
