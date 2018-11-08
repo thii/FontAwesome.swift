@@ -233,7 +233,6 @@ DEPENDENCIES
   danger
   danger-swiftlint
   fastlane
-  xcpretty
 
 BUNDLED WITH
    1.16.1
