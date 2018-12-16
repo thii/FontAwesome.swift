@@ -12,7 +12,7 @@ lane :update_font do |options|
   raise "The version is missed. Use `bundle exec fastlane bum_web_font version:{version_number}`.`" if target_version.nil?
 
   sh("cd #{ENV["PWD"]}/FortAwesome/Font-Awesome && git fetch origin && git checkout #{target_version}")
-  sh("/bin/cp -f #{ENV["PWD"]}/FortAwesome/Font-Awesome/use-on-desktop/*.otf #{ENV["PWD"]}/FontAwesome")
+  sh("/bin/cp -f #{ENV["PWD"]}/FortAwesome/Font-Awesome/otfs/*.otf #{ENV["PWD"]}/FontAwesome")
   sh("cd #{ENV["PWD"]} && ./codegen.swift")
   sh("git commit -m \"Update font version to #{target_version}\" ../FontAwesome ../FortAwesome")
 end
