@@ -480,6 +480,7 @@ public enum FontAwesome: String {
     case filter = "\u{f0b0}"
     case fingerprint = "\u{f577}"
     case fire = "\u{f06d}"
+    case fireAlt = "\u{f7e4}"
     case fireExtinguisher = "\u{f134}"
     case firefox = "\u{f269}"
     case firstAid = "\u{f479}"
@@ -1814,6 +1815,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-filter": "\u{f0b0}",
     "fa-fingerprint": "\u{f577}",
     "fa-fire": "\u{f06d}",
+    "fa-fire-alt": "\u{f7e4}",
     "fa-fire-extinguisher": "\u{f134}",
     "fa-firefox": "\u{f269}",
     "fa-first-aid": "\u{f479}",
