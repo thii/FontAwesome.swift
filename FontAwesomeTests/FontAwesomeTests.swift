@@ -26,6 +26,15 @@ import XCTest
 
 class FontAwesomeTests: XCTestCase {
 
+    func testFontsShouldBeLoaded() {
+        let solidFont = UIFont.fontAwesome(ofSize: 200, style: .solid)
+        let regularFont = UIFont.fontAwesome(ofSize: 200, style: .regular)
+        let brandsFont = UIFont.fontAwesome(ofSize: 200, style: .brands)
+        XCTAssertNotNil(solidFont, "Solid font should be loaded.")
+        XCTAssertNotNil(regularFont, "Regular font should be loaded.")
+        XCTAssertNotNil(brandsFont, "Brands font should be loaded.")
+    }
+
     func testIconFontShouldBeRegistered() {
         let label = UILabel()
         label.font = UIFont.fontAwesome(ofSize: 200, style: .brands)
