@@ -43,11 +43,11 @@ public enum FontAwesomeStyle: String {
     func fontName() -> String {
         switch self {
         case .solid:
-            return "FontAwesome5FreeSolid"
+            return "FontAwesome5Free-Solid"
         case .regular:
-            return "FontAwesome5FreeRegular"
+            return "FontAwesome5Free-Regular"
         case .brands:
-            return "FontAwesome5BrandsRegular"
+            return "FontAwesome5Brands-Regular"
         }
     }
 
