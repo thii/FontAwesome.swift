@@ -38,7 +38,7 @@ public struct FontAwesomeConfig {
     ///
     /// To use Font Awesome Pro fonts, you should add these to your main project and
     /// make sure they are added to the target and are included in the Info.plist file.
-    public static var useProFonts: Bool = false
+    public static var usesProFonts: Bool = false
 }
 
 public enum FontAwesomeStyle: String {
@@ -51,11 +51,11 @@ public enum FontAwesomeStyle: String {
     func fontName() -> String {
         switch self {
         case .solid:
-            return FontAwesomeConfig.useProFonts ? "FontAwesome5ProSolid" : "FontAwesome5Free-Solid"
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5ProSolid" : "FontAwesome5Free-Solid"
         case .light:
-            return FontAwesomeConfig.useProFonts ? "FontAwesome5ProLight" : "FontAwesome5Free-Regular"
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5ProLight" : "FontAwesome5Free-Regular"
         case .regular:
-            return FontAwesomeConfig.useProFonts ? "FontAwesome5ProRegular" : "FontAwesome5Free-Regular"
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5ProRegular" : "FontAwesome5Free-Regular"
         case .brands:
             return "FontAwesome5Brands-Regular"
         }
@@ -64,11 +64,11 @@ public enum FontAwesomeStyle: String {
     func fontFilename() -> String {
         switch self {
         case .solid:
-            return FontAwesomeConfig.useProFonts ? "Font Awesome 5 Pro-Solid-900" : "Font Awesome 5 Free-Solid-900"
+            return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro-Solid-900" : "Font Awesome 5 Free-Solid-900"
         case .light:
-            return FontAwesomeConfig.useProFonts ? "Font Awesome 5 Pro-Light-300" : "Font Awesome 5 Free-Regular-400"
+            return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro-Light-300" : "Font Awesome 5 Free-Regular-400"
         case .regular:
-            return FontAwesomeConfig.useProFonts ? "Font Awesome 5 Pro-Regular-400" : "Font Awesome 5 Free-Regular-400"
+            return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro-Regular-400" : "Font Awesome 5 Free-Regular-400"
         case .brands:
             return "Font Awesome 5 Brands-Regular-400"
         }
@@ -81,7 +81,7 @@ public enum FontAwesomeStyle: String {
         case .regular,
              .light,
              .solid:
-            return FontAwesomeConfig.useProFonts ? "Font Awesome 5 Pro" : "Font Awesome 5 Free"
+            return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro" : "Font Awesome 5 Free"
         }
     }
 }
