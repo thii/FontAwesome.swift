@@ -51,11 +51,11 @@ public enum FontAwesomeStyle: String {
     func fontName() -> String {
         switch self {
         case .solid:
-            return FontAwesomeConfig.usesProFonts ? "FontAwesome5ProSolid" : "FontAwesome5Free-Solid"
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5Pro-Solid" : "FontAwesome5Free-Solid"
         case .light:
-            return FontAwesomeConfig.usesProFonts ? "FontAwesome5ProLight" : "FontAwesome5Free-Regular"
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5Pro-Light" : "FontAwesome5Free-Regular"
         case .regular:
-            return FontAwesomeConfig.usesProFonts ? "FontAwesome5ProRegular" : "FontAwesome5Free-Regular"
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5Pro-Regular" : "FontAwesome5Free-Regular"
         case .brands:
             return "FontAwesome5Brands-Regular"
         }
