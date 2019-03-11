@@ -122,7 +122,7 @@ public extension UIFont {
         if #available(iOS 11.0, *) {
             return UIFontMetrics.default.scaledFont(for: awesomeFont)
         } else {
-            let scale = UIFontDescriptor.preferredFontDescriptor(withTextStyle: textStyle).pointSize / 17
+            let scale = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body).pointSize / 17
             return awesomeFont.withSize(scale * awesomeFont.pointSize)
         }
     }
