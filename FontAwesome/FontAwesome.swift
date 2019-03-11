@@ -113,7 +113,7 @@ public extension UIFont {
     /// - parameter forTextStyle: The preferred text style
     /// - parameter style: FontAwesome font style
     /// - returns: A UIFont object of FontAwesome
-    public class func fontAwesome(forTextStyle textStyle: UIFont.TextStyle, style: FontAwesomeStyle = .solid) -> UIFont {
+    public class func fontAwesome(forTextStyle textStyle: UIFont.TextStyle, style: FontAwesomeStyle) -> UIFont {
         let userFont = UIFontDescriptor.preferredFontDescriptor(withTextStyle: textStyle)
         let pointSize = userFont.pointSize
         loadFontAwesome(ofStyle: style)
