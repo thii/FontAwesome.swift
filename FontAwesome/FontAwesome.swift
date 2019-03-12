@@ -119,7 +119,7 @@ public extension UIFont {
         loadFontAwesome(ofStyle: style)
         let awesomeFont = UIFont(name: style.fontName(), size: pointSize)!
         
-        if #available(iOS 11.0, *) {
+        if #available(iOS 11.0, *), #available(watchOSApplicationExtension 4.0, *), #available(tvOS 11.0, *) {
             return UIFontMetrics.default.scaledFont(for: awesomeFont)
         } else {
             let scale = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body).pointSize / 17
