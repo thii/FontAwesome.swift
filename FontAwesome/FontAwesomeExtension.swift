@@ -27,7 +27,7 @@ public extension FontAwesome {
     ///
     /// - parameter code: The preferred icon name.
     /// - returns: FontAwesome icon.
-    public static func fromCode(_ code: String) -> FontAwesome? {
+    static func fromCode(_ code: String) -> FontAwesome? {
         guard let raw = FontAwesomeIcons[code], let icon = FontAwesome(rawValue: raw) else {
             return nil
         }
