@@ -317,11 +317,11 @@
 			};
 			buildConfigurationList = 8401A8CC1B39601400269D14 /* Build configuration list for PBXProject "FontAwesome" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 8401A8C81B39601400269D14;
 			productRefGroup = 8401A8D31B39601400269D14 /* Products */;
