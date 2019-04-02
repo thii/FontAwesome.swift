@@ -35,5 +35,8 @@ lane :release do |options|
   add_git_tag(tag: target_version, message: target_version)
   push_to_git_remote
 
-  pod_push(use_bundle_exec: true)
+  pod_push(
+    allow_warnings: true,
+    use_bundle_exec: true,
+  )
 end
