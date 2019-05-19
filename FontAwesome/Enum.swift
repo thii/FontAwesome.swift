@@ -2758,3 +2758,867 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-youtube-square": "\u{f431}",
     "fa-zhihu": "\u{f63f}"
 ]
+
+/// An enumaration of FontAwesome Brands icon names
+// swiftlint:disable file_length type_body_length
+public enum FontAwesomeBrands: String {
+    case fiveHundredPixels = "\u{f26e}"
+    case accessibleIcon = "\u{f368}"
+    case accusoft = "\u{f369}"
+    case acquisitionsIncorporated = "\u{f6af}"
+    case adn = "\u{f170}"
+    case adobe = "\u{f778}"
+    case adversal = "\u{f36a}"
+    case affiliatetheme = "\u{f36b}"
+    case airbnb = "\u{f834}"
+    case algolia = "\u{f36c}"
+    case alipay = "\u{f642}"
+    case amazon = "\u{f270}"
+    case amazonPay = "\u{f42c}"
+    case amilia = "\u{f36d}"
+    case android = "\u{f17b}"
+    case angellist = "\u{f209}"
+    case angrycreative = "\u{f36e}"
+    case angular = "\u{f420}"
+    case appStore = "\u{f36f}"
+    case appStoreIos = "\u{f370}"
+    case apper = "\u{f371}"
+    case apple = "\u{f179}"
+    case applePay = "\u{f415}"
+    case artstation = "\u{f77a}"
+    case asymmetrik = "\u{f372}"
+    case atlassian = "\u{f77b}"
+    case audible = "\u{f373}"
+    case autoprefixer = "\u{f41c}"
+    case avianex = "\u{f374}"
+    case aviato = "\u{f421}"
+    case aws = "\u{f375}"
+    case bandcamp = "\u{f2d5}"
+    case battleNet = "\u{f835}"
+    case behance = "\u{f1b4}"
+    case behanceSquare = "\u{f1b5}"
+    case bimobject = "\u{f378}"
+    case bitbucket = "\u{f171}"
+    case bitcoin = "\u{f379}"
+    case bity = "\u{f37a}"
+    case blackTie = "\u{f27e}"
+    case blackberry = "\u{f37b}"
+    case blogger = "\u{f37c}"
+    case bloggerB = "\u{f37d}"
+    case bluetooth = "\u{f293}"
+    case bluetoothB = "\u{f294}"
+    case bootstrap = "\u{f836}"
+    case btc = "\u{f15a}"
+    case buffer = "\u{f837}"
+    case buromobelexperte = "\u{f37f}"
+    case buysellads = "\u{f20d}"
+    case canadianMapleLeaf = "\u{f785}"
+    case ccAmazonPay = "\u{f42d}"
+    case ccAmex = "\u{f1f3}"
+    case ccApplePay = "\u{f416}"
+    case ccDinersClub = "\u{f24c}"
+    case ccDiscover = "\u{f1f2}"
+    case ccJcb = "\u{f24b}"
+    case ccMastercard = "\u{f1f1}"
+    case ccPaypal = "\u{f1f4}"
+    case ccStripe = "\u{f1f5}"
+    case ccVisa = "\u{f1f0}"
+    case centercode = "\u{f380}"
+    case centos = "\u{f789}"
+    case chrome = "\u{f268}"
+    case chromecast = "\u{f838}"
+    case cloudscale = "\u{f383}"
+    case cloudsmith = "\u{f384}"
+    case cloudversify = "\u{f385}"
+    case codepen = "\u{f1cb}"
+    case codiepie = "\u{f284}"
+    case confluence = "\u{f78d}"
+    case connectdevelop = "\u{f20e}"
+    case contao = "\u{f26d}"
+    case cpanel = "\u{f388}"
+    case creativeCommons = "\u{f25e}"
+    case creativeCommonsBy = "\u{f4e7}"
+    case creativeCommonsNc = "\u{f4e8}"
+    case creativeCommonsNcEu = "\u{f4e9}"
+    case creativeCommonsNcJp = "\u{f4ea}"
+    case creativeCommonsNd = "\u{f4eb}"
+    case creativeCommonsPd = "\u{f4ec}"
+    case creativeCommonsPdAlt = "\u{f4ed}"
+    case creativeCommonsRemix = "\u{f4ee}"
+    case creativeCommonsSa = "\u{f4ef}"
+    case creativeCommonsSampling = "\u{f4f0}"
+    case creativeCommonsSamplingPlus = "\u{f4f1}"
+    case creativeCommonsShare = "\u{f4f2}"
+    case creativeCommonsZero = "\u{f4f3}"
+    case criticalRole = "\u{f6c9}"
+    case css3 = "\u{f13c}"
+    case css3Alt = "\u{f38b}"
+    case cuttlefish = "\u{f38c}"
+    case dAndD = "\u{f38d}"
+    case dAndDBeyond = "\u{f6ca}"
+    case dashcube = "\u{f210}"
+    case delicious = "\u{f1a5}"
+    case deploydog = "\u{f38e}"
+    case deskpro = "\u{f38f}"
+    case dev = "\u{f6cc}"
+    case deviantart = "\u{f1bd}"
+    case dhl = "\u{f790}"
+    case diaspora = "\u{f791}"
+    case digg = "\u{f1a6}"
+    case digitalOcean = "\u{f391}"
+    case discord = "\u{f392}"
+    case discourse = "\u{f393}"
+    case dochub = "\u{f394}"
+    case docker = "\u{f395}"
+    case draft2digital = "\u{f396}"
+    case dribbble = "\u{f17d}"
+    case dribbbleSquare = "\u{f397}"
+    case dropbox = "\u{f16b}"
+    case drupal = "\u{f1a9}"
+    case dyalog = "\u{f399}"
+    case earlybirds = "\u{f39a}"
+    case ebay = "\u{f4f4}"
+    case edge = "\u{f282}"
+    case elementor = "\u{f430}"
+    case ello = "\u{f5f1}"
+    case ember = "\u{f423}"
+    case empire = "\u{f1d1}"
+    case envira = "\u{f299}"
+    case erlang = "\u{f39d}"
+    case ethereum = "\u{f42e}"
+    case etsy = "\u{f2d7}"
+    case evernote = "\u{f839}"
+    case expeditedssl = "\u{f23e}"
+    case facebook = "\u{f09a}"
+    case facebookF = "\u{f39e}"
+    case facebookMessenger = "\u{f39f}"
+    case facebookSquare = "\u{f082}"
+    case fantasyFlightGames = "\u{f6dc}"
+    case fedex = "\u{f797}"
+    case fedora = "\u{f798}"
+    case figma = "\u{f799}"
+    case firefox = "\u{f269}"
+    case firstOrder = "\u{f2b0}"
+    case firstOrderAlt = "\u{f50a}"
+    case firstdraft = "\u{f3a1}"
+    case flickr = "\u{f16e}"
+    case flipboard = "\u{f44d}"
+    case fly = "\u{f417}"
+    case fontAwesome = "\u{f2b4}"
+    case fontAwesomeAlt = "\u{f35c}"
+    case fontAwesomeFlag = "\u{f425}"
+    case fontAwesomeLogoFull = "\u{f4e6}"
+    case fonticons = "\u{f280}"
+    case fonticonsFi = "\u{f3a2}"
+    case fortAwesome = "\u{f286}"
+    case fortAwesomeAlt = "\u{f3a3}"
+    case forumbee = "\u{f211}"
+    case foursquare = "\u{f180}"
+    case freeCodeCamp = "\u{f2c5}"
+    case freebsd = "\u{f3a4}"
+    case fulcrum = "\u{f50b}"
+    case galacticRepublic = "\u{f50c}"
+    case galacticSenate = "\u{f50d}"
+    case getPocket = "\u{f265}"
+    case gg = "\u{f260}"
+    case ggCircle = "\u{f261}"
+    case git = "\u{f1d3}"
+    case gitSquare = "\u{f1d2}"
+    case github = "\u{f09b}"
+    case githubAlt = "\u{f113}"
+    case githubSquare = "\u{f092}"
+    case gitkraken = "\u{f3a6}"
+    case gitlab = "\u{f296}"
+    case gitter = "\u{f426}"
+    case glide = "\u{f2a5}"
+    case glideG = "\u{f2a6}"
+    case gofore = "\u{f3a7}"
+    case goodreads = "\u{f3a8}"
+    case goodreadsG = "\u{f3a9}"
+    case google = "\u{f1a0}"
+    case googleDrive = "\u{f3aa}"
+    case googlePlay = "\u{f3ab}"
+    case googlePlus = "\u{f2b3}"
+    case googlePlusG = "\u{f0d5}"
+    case googlePlusSquare = "\u{f0d4}"
+    case googleWallet = "\u{f1ee}"
+    case gratipay = "\u{f184}"
+    case grav = "\u{f2d6}"
+    case gripfire = "\u{f3ac}"
+    case grunt = "\u{f3ad}"
+    case gulp = "\u{f3ae}"
+    case hackerNews = "\u{f1d4}"
+    case hackerNewsSquare = "\u{f3af}"
+    case hackerrank = "\u{f5f7}"
+    case hips = "\u{f452}"
+    case hireAHelper = "\u{f3b0}"
+    case hooli = "\u{f427}"
+    case hornbill = "\u{f592}"
+    case hotjar = "\u{f3b1}"
+    case houzz = "\u{f27c}"
+    case html5 = "\u{f13b}"
+    case hubspot = "\u{f3b2}"
+    case imdb = "\u{f2d8}"
+    case instagram = "\u{f16d}"
+    case intercom = "\u{f7af}"
+    case internetExplorer = "\u{f26b}"
+    case invision = "\u{f7b0}"
+    case ioxhost = "\u{f208}"
+    case itchIo = "\u{f83a}"
+    case itunes = "\u{f3b4}"
+    case itunesNote = "\u{f3b5}"
+    case java = "\u{f4e4}"
+    case jediOrder = "\u{f50e}"
+    case jenkins = "\u{f3b6}"
+    case jira = "\u{f7b1}"
+    case joget = "\u{f3b7}"
+    case joomla = "\u{f1aa}"
+    case js = "\u{f3b8}"
+    case jsSquare = "\u{f3b9}"
+    case jsfiddle = "\u{f1cc}"
+    case kaggle = "\u{f5fa}"
+    case keybase = "\u{f4f5}"
+    case keycdn = "\u{f3ba}"
+    case kickstarter = "\u{f3bb}"
+    case kickstarterK = "\u{f3bc}"
+    case korvue = "\u{f42f}"
+    case laravel = "\u{f3bd}"
+    case lastfm = "\u{f202}"
+    case lastfmSquare = "\u{f203}"
+    case leanpub = "\u{f212}"
+    case less = "\u{f41d}"
+    case line = "\u{f3c0}"
+    case linkedin = "\u{f08c}"
+    case linkedinIn = "\u{f0e1}"
+    case linode = "\u{f2b8}"
+    case linux = "\u{f17c}"
+    case lyft = "\u{f3c3}"
+    case magento = "\u{f3c4}"
+    case mailchimp = "\u{f59e}"
+    case mandalorian = "\u{f50f}"
+    case markdown = "\u{f60f}"
+    case mastodon = "\u{f4f6}"
+    case maxcdn = "\u{f136}"
+    case medapps = "\u{f3c6}"
+    case medium = "\u{f23a}"
+    case mediumM = "\u{f3c7}"
+    case medrt = "\u{f3c8}"
+    case meetup = "\u{f2e0}"
+    case megaport = "\u{f5a3}"
+    case mendeley = "\u{f7b3}"
+    case microsoft = "\u{f3ca}"
+    case mix = "\u{f3cb}"
+    case mixcloud = "\u{f289}"
+    case mizuni = "\u{f3cc}"
+    case modx = "\u{f285}"
+    case monero = "\u{f3d0}"
+    case napster = "\u{f3d2}"
+    case neos = "\u{f612}"
+    case nimblr = "\u{f5a8}"
+    case nintendoSwitch = "\u{f418}"
+    case node = "\u{f419}"
+    case nodeJs = "\u{f3d3}"
+    case npm = "\u{f3d4}"
+    case ns8 = "\u{f3d5}"
+    case nutritionix = "\u{f3d6}"
+    case odnoklassniki = "\u{f263}"
+    case odnoklassnikiSquare = "\u{f264}"
+    case oldRepublic = "\u{f510}"
+    case opencart = "\u{f23d}"
+    case openid = "\u{f19b}"
+    case opera = "\u{f26a}"
+    case optinMonster = "\u{f23c}"
+    case osi = "\u{f41a}"
+    case page4 = "\u{f3d7}"
+    case pagelines = "\u{f18c}"
+    case palfed = "\u{f3d8}"
+    case patreon = "\u{f3d9}"
+    case paypal = "\u{f1ed}"
+    case pennyArcade = "\u{f704}"
+    case periscope = "\u{f3da}"
+    case phabricator = "\u{f3db}"
+    case phoenixFramework = "\u{f3dc}"
+    case phoenixSquadron = "\u{f511}"
+    case php = "\u{f457}"
+    case piedPiper = "\u{f2ae}"
+    case piedPiperAlt = "\u{f1a8}"
+    case piedPiperHat = "\u{f4e5}"
+    case piedPiperPp = "\u{f1a7}"
+    case pinterest = "\u{f0d2}"
+    case pinterestP = "\u{f231}"
+    case pinterestSquare = "\u{f0d3}"
+    case playstation = "\u{f3df}"
+    case productHunt = "\u{f288}"
+    case pushed = "\u{f3e1}"
+    case python = "\u{f3e2}"
+    case qq = "\u{f1d6}"
+    case quinscape = "\u{f459}"
+    case quora = "\u{f2c4}"
+    case rProject = "\u{f4f7}"
+    case raspberryPi = "\u{f7bb}"
+    case ravelry = "\u{f2d9}"
+    case react = "\u{f41b}"
+    case reacteurope = "\u{f75d}"
+    case readme = "\u{f4d5}"
+    case rebel = "\u{f1d0}"
+    case redRiver = "\u{f3e3}"
+    case reddit = "\u{f1a1}"
+    case redditAlien = "\u{f281}"
+    case redditSquare = "\u{f1a2}"
+    case redhat = "\u{f7bc}"
+    case renren = "\u{f18b}"
+    case replyd = "\u{f3e6}"
+    case researchgate = "\u{f4f8}"
+    case resolving = "\u{f3e7}"
+    case rev = "\u{f5b2}"
+    case rocketchat = "\u{f3e8}"
+    case rockrms = "\u{f3e9}"
+    case safari = "\u{f267}"
+    case salesforce = "\u{f83b}"
+    case sass = "\u{f41e}"
+    case schlix = "\u{f3ea}"
+    case scribd = "\u{f28a}"
+    case searchengin = "\u{f3eb}"
+    case sellcast = "\u{f2da}"
+    case sellsy = "\u{f213}"
+    case servicestack = "\u{f3ec}"
+    case shirtsinbulk = "\u{f214}"
+    case shopware = "\u{f5b5}"
+    case simplybuilt = "\u{f215}"
+    case sistrix = "\u{f3ee}"
+    case sith = "\u{f512}"
+    case sketch = "\u{f7c6}"
+    case skyatlas = "\u{f216}"
+    case skype = "\u{f17e}"
+    case slack = "\u{f198}"
+    case slackHash = "\u{f3ef}"
+    case slideshare = "\u{f1e7}"
+    case snapchat = "\u{f2ab}"
+    case snapchatGhost = "\u{f2ac}"
+    case snapchatSquare = "\u{f2ad}"
+    case soundcloud = "\u{f1be}"
+    case sourcetree = "\u{f7d3}"
+    case speakap = "\u{f3f3}"
+    case speakerDeck = "\u{f83c}"
+    case spotify = "\u{f1bc}"
+    case squarespace = "\u{f5be}"
+    case stackExchange = "\u{f18d}"
+    case stackOverflow = "\u{f16c}"
+    case staylinked = "\u{f3f5}"
+    case steam = "\u{f1b6}"
+    case steamSquare = "\u{f1b7}"
+    case steamSymbol = "\u{f3f6}"
+    case stickerMule = "\u{f3f7}"
+    case strava = "\u{f428}"
+    case stripe = "\u{f429}"
+    case stripeS = "\u{f42a}"
+    case studiovinari = "\u{f3f8}"
+    case stumbleupon = "\u{f1a4}"
+    case stumbleuponCircle = "\u{f1a3}"
+    case superpowers = "\u{f2dd}"
+    case supple = "\u{f3f9}"
+    case suse = "\u{f7d6}"
+    case symfony = "\u{f83d}"
+    case teamspeak = "\u{f4f9}"
+    case telegram = "\u{f2c6}"
+    case telegramPlane = "\u{f3fe}"
+    case tencentWeibo = "\u{f1d5}"
+    case theRedYeti = "\u{f69d}"
+    case themeco = "\u{f5c6}"
+    case themeisle = "\u{f2b2}"
+    case thinkPeaks = "\u{f731}"
+    case tradeFederation = "\u{f513}"
+    case trello = "\u{f181}"
+    case tripadvisor = "\u{f262}"
+    case tumblr = "\u{f173}"
+    case tumblrSquare = "\u{f174}"
+    case twitch = "\u{f1e8}"
+    case twitter = "\u{f099}"
+    case twitterSquare = "\u{f081}"
+    case typo3 = "\u{f42b}"
+    case uber = "\u{f402}"
+    case ubuntu = "\u{f7df}"
+    case uikit = "\u{f403}"
+    case uniregistry = "\u{f404}"
+    case untappd = "\u{f405}"
+    case ups = "\u{f7e0}"
+    case usb = "\u{f287}"
+    case usps = "\u{f7e1}"
+    case ussunnah = "\u{f407}"
+    case vaadin = "\u{f408}"
+    case viacoin = "\u{f237}"
+    case viadeo = "\u{f2a9}"
+    case viadeoSquare = "\u{f2aa}"
+    case viber = "\u{f409}"
+    case vimeo = "\u{f40a}"
+    case vimeoSquare = "\u{f194}"
+    case vimeoV = "\u{f27d}"
+    case vine = "\u{f1ca}"
+    case vk = "\u{f189}"
+    case vnv = "\u{f40b}"
+    case vuejs = "\u{f41f}"
+    case waze = "\u{f83f}"
+    case weebly = "\u{f5cc}"
+    case weibo = "\u{f18a}"
+    case weixin = "\u{f1d7}"
+    case whatsapp = "\u{f232}"
+    case whatsappSquare = "\u{f40c}"
+    case whmcs = "\u{f40d}"
+    case wikipediaW = "\u{f266}"
+    case windows = "\u{f17a}"
+    case wix = "\u{f5cf}"
+    case wizardsOfTheCoast = "\u{f730}"
+    case wolfPackBattalion = "\u{f514}"
+    case wordpress = "\u{f19a}"
+    case wordpressSimple = "\u{f411}"
+    case wpbeginner = "\u{f297}"
+    case wpexplorer = "\u{f2de}"
+    case wpforms = "\u{f298}"
+    case wpressr = "\u{f3e4}"
+    case xbox = "\u{f412}"
+    case xing = "\u{f168}"
+    case xingSquare = "\u{f169}"
+    case yCombinator = "\u{f23b}"
+    case yahoo = "\u{f19e}"
+    case yammer = "\u{f840}"
+    case yandex = "\u{f413}"
+    case yandexInternational = "\u{f414}"
+    case yarn = "\u{f7e3}"
+    case yelp = "\u{f1e9}"
+    case yoast = "\u{f2b1}"
+    case youtube = "\u{f167}"
+    case youtubeSquare = "\u{f431}"
+    case zhihu = "\u{f63f}"
+}
+
+/// An array of FontAwesome brand icon codes.
+// swiftlint:disable identifier_name
+public let FontAwesomeBrandIcons: [String: String] = [
+"fa-500px": "\u{f26e}",
+"fa-accessible-icon": "\u{f368}",
+"fa-accusoft": "\u{f369}",
+"fa-acquisitions-incorporated": "\u{f6af}",
+"fa-adn": "\u{f170}",
+"fa-adobe": "\u{f778}",
+"fa-adversal": "\u{f36a}",
+"fa-affiliatetheme": "\u{f36b}",
+"fa-airbnb": "\u{f834}",
+"fa-algolia": "\u{f36c}",
+"fa-alipay": "\u{f642}",
+"fa-amazon": "\u{f270}",
+"fa-amazon-pay": "\u{f42c}",
+"fa-amilia": "\u{f36d}",
+"fa-android": "\u{f17b}",
+"fa-angellist": "\u{f209}",
+"fa-angrycreative": "\u{f36e}",
+"fa-angular": "\u{f420}",
+"fa-app-store": "\u{f36f}",
+"fa-app-store-ios": "\u{f370}",
+"fa-apper": "\u{f371}",
+"fa-apple": "\u{f179}",
+"fa-apple-pay": "\u{f415}",
+"fa-artstation": "\u{f77a}",
+"fa-asymmetrik": "\u{f372}",
+"fa-atlassian": "\u{f77b}",
+"fa-audible": "\u{f373}",
+"fa-autoprefixer": "\u{f41c}",
+"fa-avianex": "\u{f374}",
+"fa-aviato": "\u{f421}",
+"fa-aws": "\u{f375}",
+"fa-bandcamp": "\u{f2d5}",
+"fa-battle-net": "\u{f835}",
+"fa-behance": "\u{f1b4}",
+"fa-behance-square": "\u{f1b5}",
+"fa-bimobject": "\u{f378}",
+"fa-bitbucket": "\u{f171}",
+"fa-bitcoin": "\u{f379}",
+"fa-bity": "\u{f37a}",
+"fa-black-tie": "\u{f27e}",
+"fa-blackberry": "\u{f37b}",
+"fa-blogger": "\u{f37c}",
+"fa-blogger-b": "\u{f37d}",
+"fa-bluetooth": "\u{f293}",
+"fa-bluetooth-b": "\u{f294}",
+"fa-bootstrap": "\u{f836}",
+"fa-btc": "\u{f15a}",
+"fa-buffer": "\u{f837}",
+"fa-buromobelexperte": "\u{f37f}",
+"fa-buysellads": "\u{f20d}",
+"fa-canadian-maple-leaf": "\u{f785}",
+"fa-cc-amazon-pay": "\u{f42d}",
+"fa-cc-amex": "\u{f1f3}",
+"fa-cc-apple-pay": "\u{f416}",
+"fa-cc-diners-club": "\u{f24c}",
+"fa-cc-discover": "\u{f1f2}",
+"fa-cc-jcb": "\u{f24b}",
+"fa-cc-mastercard": "\u{f1f1}",
+"fa-cc-paypal": "\u{f1f4}",
+"fa-cc-stripe": "\u{f1f5}",
+"fa-cc-visa": "\u{f1f0}",
+"fa-centercode": "\u{f380}",
+"fa-centos": "\u{f789}",
+"fa-chrome": "\u{f268}",
+"fa-chromecast": "\u{f838}",
+"fa-cloudscale": "\u{f383}",
+"fa-cloudsmith": "\u{f384}",
+"fa-cloudversify": "\u{f385}",
+"fa-codepen": "\u{f1cb}",
+"fa-codiepie": "\u{f284}",
+"fa-confluence": "\u{f78d}",
+"fa-connectdevelop": "\u{f20e}",
+"fa-contao": "\u{f26d}",
+"fa-cpanel": "\u{f388}",
+"fa-creative-commons": "\u{f25e}",
+"fa-creative-commons-by": "\u{f4e7}",
+"fa-creative-commons-nc": "\u{f4e8}",
+"fa-creative-commons-nc-eu": "\u{f4e9}",
+"fa-creative-commons-nc-jp": "\u{f4ea}",
+"fa-creative-commons-nd": "\u{f4eb}",
+"fa-creative-commons-pd": "\u{f4ec}",
+"fa-creative-commons-pd-alt": "\u{f4ed}",
+"fa-creative-commons-remix": "\u{f4ee}",
+"fa-creative-commons-sa": "\u{f4ef}",
+"fa-creative-commons-sampling": "\u{f4f0}",
+"fa-creative-commons-sampling-plus": "\u{f4f1}",
+"fa-creative-commons-share": "\u{f4f2}",
+"fa-creative-commons-zero": "\u{f4f3}",
+"fa-critical-role": "\u{f6c9}",
+"fa-css3": "\u{f13c}",
+"fa-css3-alt": "\u{f38b}",
+"fa-cuttlefish": "\u{f38c}",
+"fa-d-and-d": "\u{f38d}",
+"fa-d-and-d-beyond": "\u{f6ca}",
+"fa-dashcube": "\u{f210}",
+"fa-delicious": "\u{f1a5}",
+"fa-deploydog": "\u{f38e}",
+"fa-deskpro": "\u{f38f}",
+"fa-dev": "\u{f6cc}",
+"fa-deviantart": "\u{f1bd}",
+"fa-dhl": "\u{f790}",
+"fa-diaspora": "\u{f791}",
+"fa-digg": "\u{f1a6}",
+"fa-digital-ocean": "\u{f391}",
+"fa-discord": "\u{f392}",
+"fa-discourse": "\u{f393}",
+"fa-dochub": "\u{f394}",
+"fa-docker": "\u{f395}",
+"fa-draft2digital": "\u{f396}",
+"fa-dribbble": "\u{f17d}",
+"fa-dribbble-square": "\u{f397}",
+"fa-dropbox": "\u{f16b}",
+"fa-drupal": "\u{f1a9}",
+"fa-dyalog": "\u{f399}",
+"fa-earlybirds": "\u{f39a}",
+"fa-ebay": "\u{f4f4}",
+"fa-edge": "\u{f282}",
+"fa-elementor": "\u{f430}",
+"fa-ello": "\u{f5f1}",
+"fa-ember": "\u{f423}",
+"fa-empire": "\u{f1d1}",
+"fa-envira": "\u{f299}",
+"fa-erlang": "\u{f39d}",
+"fa-ethereum": "\u{f42e}",
+"fa-etsy": "\u{f2d7}",
+"fa-evernote": "\u{f839}",
+"fa-expeditedssl": "\u{f23e}",
+"fa-facebook": "\u{f09a}",
+"fa-facebook-f": "\u{f39e}",
+"fa-facebook-messenger": "\u{f39f}",
+"fa-facebook-square": "\u{f082}",
+"fa-fantasy-flight-games": "\u{f6dc}",
+"fa-fedex": "\u{f797}",
+"fa-fedora": "\u{f798}",
+"fa-figma": "\u{f799}",
+"fa-firefox": "\u{f269}",
+"fa-first-order": "\u{f2b0}",
+"fa-first-order-alt": "\u{f50a}",
+"fa-firstdraft": "\u{f3a1}",
+"fa-flickr": "\u{f16e}",
+"fa-flipboard": "\u{f44d}",
+"fa-fly": "\u{f417}",
+"fa-font-awesome": "\u{f2b4}",
+"fa-font-awesome-alt": "\u{f35c}",
+"fa-font-awesome-flag": "\u{f425}",
+"fa-font-awesome-logo-full": "\u{f4e6}",
+"fa-fonticons": "\u{f280}",
+"fa-fonticons-fi": "\u{f3a2}",
+"fa-fort-awesome": "\u{f286}",
+"fa-fort-awesome-alt": "\u{f3a3}",
+"fa-forumbee": "\u{f211}",
+"fa-foursquare": "\u{f180}",
+"fa-free-code-camp": "\u{f2c5}",
+"fa-freebsd": "\u{f3a4}",
+"fa-fulcrum": "\u{f50b}",
+"fa-galactic-republic": "\u{f50c}",
+"fa-galactic-senate": "\u{f50d}",
+"fa-get-pocket": "\u{f265}",
+"fa-gg": "\u{f260}",
+"fa-gg-circle": "\u{f261}",
+"fa-git": "\u{f1d3}",
+"fa-git-square": "\u{f1d2}",
+"fa-github": "\u{f09b}",
+"fa-github-alt": "\u{f113}",
+"fa-github-square": "\u{f092}",
+"fa-gitkraken": "\u{f3a6}",
+"fa-gitlab": "\u{f296}",
+"fa-gitter": "\u{f426}",
+"fa-glide": "\u{f2a5}",
+"fa-glide-g": "\u{f2a6}",
+"fa-gofore": "\u{f3a7}",
+"fa-goodreads": "\u{f3a8}",
+"fa-goodreads-g": "\u{f3a9}",
+"fa-google": "\u{f1a0}",
+"fa-google-drive": "\u{f3aa}",
+"fa-google-play": "\u{f3ab}",
+"fa-google-plus": "\u{f2b3}",
+"fa-google-plus-g": "\u{f0d5}",
+"fa-google-plus-square": "\u{f0d4}",
+"fa-google-wallet": "\u{f1ee}",
+"fa-gratipay": "\u{f184}",
+"fa-grav": "\u{f2d6}",
+"fa-gripfire": "\u{f3ac}",
+"fa-grunt": "\u{f3ad}",
+"fa-gulp": "\u{f3ae}",
+"fa-hacker-news": "\u{f1d4}",
+"fa-hacker-news-square": "\u{f3af}",
+"fa-hackerrank": "\u{f5f7}",
+"fa-hips": "\u{f452}",
+"fa-hire-a-helper": "\u{f3b0}",
+"fa-hooli": "\u{f427}",
+"fa-hornbill": "\u{f592}",
+"fa-hotjar": "\u{f3b1}",
+"fa-houzz": "\u{f27c}",
+"fa-html5": "\u{f13b}",
+"fa-hubspot": "\u{f3b2}",
+"fa-imdb": "\u{f2d8}",
+"fa-instagram": "\u{f16d}",
+"fa-intercom": "\u{f7af}",
+"fa-internet-explorer": "\u{f26b}",
+"fa-invision": "\u{f7b0}",
+"fa-ioxhost": "\u{f208}",
+"fa-itch-io": "\u{f83a}",
+"fa-itunes": "\u{f3b4}",
+"fa-itunes-note": "\u{f3b5}",
+"fa-java": "\u{f4e4}",
+"fa-jedi-order": "\u{f50e}",
+"fa-jenkins": "\u{f3b6}",
+"fa-jira": "\u{f7b1}",
+"fa-joget": "\u{f3b7}",
+"fa-joomla": "\u{f1aa}",
+"fa-js": "\u{f3b8}",
+"fa-js-square": "\u{f3b9}",
+"fa-jsfiddle": "\u{f1cc}",
+"fa-kaggle": "\u{f5fa}",
+"fa-keybase": "\u{f4f5}",
+"fa-keycdn": "\u{f3ba}",
+"fa-kickstarter": "\u{f3bb}",
+"fa-kickstarter-k": "\u{f3bc}",
+"fa-korvue": "\u{f42f}",
+"fa-laravel": "\u{f3bd}",
+"fa-lastfm": "\u{f202}",
+"fa-lastfm-square": "\u{f203}",
+"fa-leanpub": "\u{f212}",
+"fa-less": "\u{f41d}",
+"fa-line": "\u{f3c0}",
+"fa-linkedin": "\u{f08c}",
+"fa-linkedin-in": "\u{f0e1}",
+"fa-linode": "\u{f2b8}",
+"fa-linux": "\u{f17c}",
+"fa-lyft": "\u{f3c3}",
+"fa-magento": "\u{f3c4}",
+"fa-mailchimp": "\u{f59e}",
+"fa-mandalorian": "\u{f50f}",
+"fa-markdown": "\u{f60f}",
+"fa-mastodon": "\u{f4f6}",
+"fa-maxcdn": "\u{f136}",
+"fa-medapps": "\u{f3c6}",
+"fa-medium": "\u{f23a}",
+"fa-medium-m": "\u{f3c7}",
+"fa-medrt": "\u{f3c8}",
+"fa-meetup": "\u{f2e0}",
+"fa-megaport": "\u{f5a3}",
+"fa-mendeley": "\u{f7b3}",
+"fa-microsoft": "\u{f3ca}",
+"fa-mix": "\u{f3cb}",
+"fa-mixcloud": "\u{f289}",
+"fa-mizuni": "\u{f3cc}",
+"fa-modx": "\u{f285}",
+"fa-monero": "\u{f3d0}",
+"fa-napster": "\u{f3d2}",
+"fa-neos": "\u{f612}",
+"fa-nimblr": "\u{f5a8}",
+"fa-nintendo-switch": "\u{f418}",
+"fa-node": "\u{f419}",
+"fa-node-js": "\u{f3d3}",
+"fa-npm": "\u{f3d4}",
+"fa-ns8": "\u{f3d5}",
+"fa-nutritionix": "\u{f3d6}",
+"fa-odnoklassniki": "\u{f263}",
+"fa-odnoklassniki-square": "\u{f264}",
+"fa-old-republic": "\u{f510}",
+"fa-opencart": "\u{f23d}",
+"fa-openid": "\u{f19b}",
+"fa-opera": "\u{f26a}",
+"fa-optin-monster": "\u{f23c}",
+"fa-osi": "\u{f41a}",
+"fa-page4": "\u{f3d7}",
+"fa-pagelines": "\u{f18c}",
+"fa-palfed": "\u{f3d8}",
+"fa-patreon": "\u{f3d9}",
+"fa-paypal": "\u{f1ed}",
+"fa-penny-arcade": "\u{f704}",
+"fa-periscope": "\u{f3da}",
+"fa-phabricator": "\u{f3db}",
+"fa-phoenix-framework": "\u{f3dc}",
+"fa-phoenix-squadron": "\u{f511}",
+"fa-php": "\u{f457}",
+"fa-pied-piper": "\u{f2ae}",
+"fa-pied-piper-alt": "\u{f1a8}",
+"fa-pied-piper-hat": "\u{f4e5}",
+"fa-pied-piper-pp": "\u{f1a7}",
+"fa-pinterest": "\u{f0d2}",
+"fa-pinterest-p": "\u{f231}",
+"fa-pinterest-square": "\u{f0d3}",
+"fa-playstation": "\u{f3df}",
+"fa-product-hunt": "\u{f288}",
+"fa-pushed": "\u{f3e1}",
+"fa-python": "\u{f3e2}",
+"fa-qq": "\u{f1d6}",
+"fa-quinscape": "\u{f459}",
+"fa-quora": "\u{f2c4}",
+"fa-r-project": "\u{f4f7}",
+"fa-raspberry-pi": "\u{f7bb}",
+"fa-ravelry": "\u{f2d9}",
+"fa-react": "\u{f41b}",
+"fa-reacteurope": "\u{f75d}",
+"fa-readme": "\u{f4d5}",
+"fa-rebel": "\u{f1d0}",
+"fa-red-river": "\u{f3e3}",
+"fa-reddit": "\u{f1a1}",
+"fa-reddit-alien": "\u{f281}",
+"fa-reddit-square": "\u{f1a2}",
+"fa-redhat": "\u{f7bc}",
+"fa-renren": "\u{f18b}",
+"fa-replyd": "\u{f3e6}",
+"fa-researchgate": "\u{f4f8}",
+"fa-resolving": "\u{f3e7}",
+"fa-rev": "\u{f5b2}",
+"fa-rocketchat": "\u{f3e8}",
+"fa-rockrms": "\u{f3e9}",
+"fa-safari": "\u{f267}",
+"fa-salesforce": "\u{f83b}",
+"fa-sass": "\u{f41e}",
+"fa-schlix": "\u{f3ea}",
+"fa-scribd": "\u{f28a}",
+"fa-searchengin": "\u{f3eb}",
+"fa-sellcast": "\u{f2da}",
+"fa-sellsy": "\u{f213}",
+"fa-servicestack": "\u{f3ec}",
+"fa-shirtsinbulk": "\u{f214}",
+"fa-shopware": "\u{f5b5}",
+"fa-simplybuilt": "\u{f215}",
+"fa-sistrix": "\u{f3ee}",
+"fa-sith": "\u{f512}",
+"fa-sketch": "\u{f7c6}",
+"fa-skyatlas": "\u{f216}",
+"fa-skype": "\u{f17e}",
+"fa-slack": "\u{f198}",
+"fa-slack-hash": "\u{f3ef}",
+"fa-slideshare": "\u{f1e7}",
+"fa-snapchat": "\u{f2ab}",
+"fa-snapchat-ghost": "\u{f2ac}",
+"fa-snapchat-square": "\u{f2ad}",
+"fa-soundcloud": "\u{f1be}",
+"fa-sourcetree": "\u{f7d3}",
+"fa-speakap": "\u{f3f3}",
+"fa-speaker-deck": "\u{f83c}",
+"fa-spotify": "\u{f1bc}",
+"fa-squarespace": "\u{f5be}",
+"fa-stack-exchange": "\u{f18d}",
+"fa-stack-overflow": "\u{f16c}",
+"fa-staylinked": "\u{f3f5}",
+"fa-steam": "\u{f1b6}",
+"fa-steam-square": "\u{f1b7}",
+"fa-steam-symbol": "\u{f3f6}",
+"fa-sticker-mule": "\u{f3f7}",
+"fa-strava": "\u{f428}",
+"fa-stripe": "\u{f429}",
+"fa-stripe-s": "\u{f42a}",
+"fa-studiovinari": "\u{f3f8}",
+"fa-stumbleupon": "\u{f1a4}",
+"fa-stumbleupon-circle": "\u{f1a3}",
+"fa-superpowers": "\u{f2dd}",
+"fa-supple": "\u{f3f9}",
+"fa-suse": "\u{f7d6}",
+"fa-symfony": "\u{f83d}",
+"fa-teamspeak": "\u{f4f9}",
+"fa-telegram": "\u{f2c6}",
+"fa-telegram-plane": "\u{f3fe}",
+"fa-tencent-weibo": "\u{f1d5}",
+"fa-the-red-yeti": "\u{f69d}",
+"fa-themeco": "\u{f5c6}",
+"fa-themeisle": "\u{f2b2}",
+"fa-think-peaks": "\u{f731}",
+"fa-trade-federation": "\u{f513}",
+"fa-trello": "\u{f181}",
+"fa-tripadvisor": "\u{f262}",
+"fa-tumblr": "\u{f173}",
+"fa-tumblr-square": "\u{f174}",
+"fa-twitch": "\u{f1e8}",
+"fa-twitter": "\u{f099}",
+"fa-twitter-square": "\u{f081}",
+"fa-typo3": "\u{f42b}",
+"fa-uber": "\u{f402}",
+"fa-ubuntu": "\u{f7df}",
+"fa-uikit": "\u{f403}",
+"fa-uniregistry": "\u{f404}",
+"fa-untappd": "\u{f405}",
+"fa-ups": "\u{f7e0}",
+"fa-usb": "\u{f287}",
+"fa-usps": "\u{f7e1}",
+"fa-ussunnah": "\u{f407}",
+"fa-vaadin": "\u{f408}",
+"fa-viacoin": "\u{f237}",
+"fa-viadeo": "\u{f2a9}",
+"fa-viadeo-square": "\u{f2aa}",
+"fa-viber": "\u{f409}",
+"fa-vimeo": "\u{f40a}",
+"fa-vimeo-square": "\u{f194}",
+"fa-vimeo-v": "\u{f27d}",
+"fa-vine": "\u{f1ca}",
+"fa-vk": "\u{f189}",
+"fa-vnv": "\u{f40b}",
+"fa-vuejs": "\u{f41f}",
+"fa-waze": "\u{f83f}",
+"fa-weebly": "\u{f5cc}",
+"fa-weibo": "\u{f18a}",
+"fa-weixin": "\u{f1d7}",
+"fa-whatsapp": "\u{f232}",
+"fa-whatsapp-square": "\u{f40c}",
+"fa-whmcs": "\u{f40d}",
+"fa-wikipedia-w": "\u{f266}",
+"fa-windows": "\u{f17a}",
+"fa-wix": "\u{f5cf}",
+"fa-wizards-of-the-coast": "\u{f730}",
+"fa-wolf-pack-battalion": "\u{f514}",
+"fa-wordpress": "\u{f19a}",
+"fa-wordpress-simple": "\u{f411}",
+"fa-wpbeginner": "\u{f297}",
+"fa-wpexplorer": "\u{f2de}",
+"fa-wpforms": "\u{f298}",
+"fa-wpressr": "\u{f3e4}",
+"fa-xbox": "\u{f412}",
+"fa-xing": "\u{f168}",
+"fa-xing-square": "\u{f169}",
+"fa-y-combinator": "\u{f23b}",
+"fa-yahoo": "\u{f19e}",
+"fa-yammer": "\u{f840}",
+"fa-yandex": "\u{f413}",
+"fa-yandex-international": "\u{f414}",
+"fa-yarn": "\u{f7e3}",
+"fa-yelp": "\u{f1e9}",
+"fa-yoast": "\u{f2b1}",
+"fa-youtube": "\u{f167}",
+"fa-youtube-square": "\u{f431}",
+"fa-zhihu": "\u{f63f}"
+]

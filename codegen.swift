@@ -112,6 +112,45 @@ fontAwesomeEnum += """
 
 ]
 
+/// An enumaration of FontAwesome Brands icon names
+// swiftlint:disable file_length type_body_length
+public enum FontAwesomeBrands: String {
+
+"""
+
+let brandsIcons = icons.filter { $0.value.styles.contains("brands") }
+let sortedBrandsKeys = Array(brandsIcons.keys).sorted(by: <)
+sortedBrandsKeys.forEach { key in
+    guard let value = brandsIcons[key] else { return }
+    let enumKeyName = key.filteredKeywords().camelCased(with: "-")
+    fontAwesomeEnum += """
+        case \(enumKeyName) = \"\\u{\(value.unicode)}\"
+    
+    """
+}
+
+fontAwesomeEnum += """
+}
+
+/// An array of FontAwesome brand icon codes.
+// swiftlint:disable identifier_name
+public let FontAwesomeBrandIcons: [String: String] = [
+
+"""
+
+sortedBrandsKeys.forEach { key in
+    guard let value = brandsIcons[key] else { return }
+    fontAwesomeEnum += """
+    \"fa-\(key)\": \"\\u{\(value.unicode)}\"
+    """
+    if key != sortedBrandsKeys.last {
+        fontAwesomeEnum += ",\n"
+    }
+}
+
+fontAwesomeEnum += """
+
+]
 """
 
 FileManager.default.createFile(atPath: "FontAwesome/Enum.swift", contents: fontAwesomeEnum.data(using: .utf8), attributes: nil)
