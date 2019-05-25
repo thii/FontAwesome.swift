@@ -113,7 +113,6 @@ fontAwesomeEnum += """
 ]
 
 /// An enumaration of FontAwesome Brands icon names
-// swiftlint:disable file_length type_body_length
 public enum FontAwesomeBrands: String {
 
 """
@@ -133,7 +132,6 @@ fontAwesomeEnum += """
 }
 
 /// An array of FontAwesome brand icon codes.
-// swiftlint:disable identifier_name
 public let FontAwesomeBrandIcons: [String: String] = [
 
 """
@@ -141,7 +139,7 @@ public let FontAwesomeBrandIcons: [String: String] = [
 sortedBrandsKeys.forEach { key in
     guard let value = brandsIcons[key] else { return }
     fontAwesomeEnum += """
-    \"fa-\(key)\": \"\\u{\(value.unicode)}\"
+        \"fa-\(key)\": \"\\u{\(value.unicode)}\"
     """
     if key != sortedBrandsKeys.last {
         fontAwesomeEnum += ",\n"
