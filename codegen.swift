@@ -141,7 +141,7 @@ public let FontAwesomeBrandIcons: [String: String] = [
 sortedBrandsKeys.forEach { key in
     guard let value = brandsIcons[key] else { return }
     fontAwesomeEnum += """
-    \"fa-\(key)\": \"\\u{\(value.unicode)}\"
+        \"fa-\(key)\": \"\\u{\(value.unicode)}\"
     """
     if key != sortedBrandsKeys.last {
         fontAwesomeEnum += ",\n"
