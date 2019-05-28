@@ -550,6 +550,7 @@ public enum FontAwesome: String {
     case gift = "\u{f06b}"
     case gifts = "\u{f79c}"
     case git = "\u{f1d3}"
+    case gitAlt = "\u{f841}"
     case gitSquare = "\u{f1d2}"
     case github = "\u{f09b}"
     case githubAlt = "\u{f113}"
@@ -1125,6 +1126,7 @@ public enum FontAwesome: String {
     case squarespace = "\u{f5be}"
     case stackExchange = "\u{f18d}"
     case stackOverflow = "\u{f16c}"
+    case stackpath = "\u{f842}"
     case stamp = "\u{f5bf}"
     case star = "\u{f005}"
     case starAndCrescent = "\u{f699}"
@@ -1918,6 +1920,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-gift": "\u{f06b}",
     "fa-gifts": "\u{f79c}",
     "fa-git": "\u{f1d3}",
+    "fa-git-alt": "\u{f841}",
     "fa-git-square": "\u{f1d2}",
     "fa-github": "\u{f09b}",
     "fa-github-alt": "\u{f113}",
@@ -2493,6 +2496,7 @@ public let FontAwesomeIcons: [String: String] = [
     "fa-squarespace": "\u{f5be}",
     "fa-stack-exchange": "\u{f18d}",
     "fa-stack-overflow": "\u{f16c}",
+    "fa-stackpath": "\u{f842}",
     "fa-stamp": "\u{f5bf}",
     "fa-star": "\u{f005}",
     "fa-star-and-crescent": "\u{f699}",
@@ -2760,7 +2764,6 @@ public let FontAwesomeIcons: [String: String] = [
 ]
 
 /// An enumaration of FontAwesome Brands icon names
-// swiftlint:disable file_length type_body_length
 public enum FontAwesomeBrands: String {
     case fiveHundredPixels = "\u{f26e}"
     case accessibleIcon = "\u{f368}"
@@ -2923,6 +2926,7 @@ public enum FontAwesomeBrands: String {
     case gg = "\u{f260}"
     case ggCircle = "\u{f261}"
     case git = "\u{f1d3}"
+    case gitAlt = "\u{f841}"
     case gitSquare = "\u{f1d2}"
     case github = "\u{f09b}"
     case githubAlt = "\u{f113}"
@@ -3104,6 +3108,7 @@ public enum FontAwesomeBrands: String {
     case squarespace = "\u{f5be}"
     case stackExchange = "\u{f18d}"
     case stackOverflow = "\u{f16c}"
+    case stackpath = "\u{f842}"
     case staylinked = "\u{f3f5}"
     case steam = "\u{f1b6}"
     case steamSquare = "\u{f1b7}"
@@ -3192,7 +3197,6 @@ public enum FontAwesomeBrands: String {
 }
 
 /// An array of FontAwesome brand icon codes.
-// swiftlint:disable identifier_name
 public let FontAwesomeBrandIcons: [String: String] = [
     "fa-500px": "\u{f26e}",
     "fa-accessible-icon": "\u{f368}",
@@ -3355,6 +3359,7 @@ public let FontAwesomeBrandIcons: [String: String] = [
     "fa-gg": "\u{f260}",
     "fa-gg-circle": "\u{f261}",
     "fa-git": "\u{f1d3}",
+    "fa-git-alt": "\u{f841}",
     "fa-git-square": "\u{f1d2}",
     "fa-github": "\u{f09b}",
     "fa-github-alt": "\u{f113}",
@@ -3536,6 +3541,7 @@ public let FontAwesomeBrandIcons: [String: String] = [
     "fa-squarespace": "\u{f5be}",
     "fa-stack-exchange": "\u{f18d}",
     "fa-stack-overflow": "\u{f16c}",
+    "fa-stackpath": "\u{f842}",
     "fa-staylinked": "\u{f3f5}",
     "fa-steam": "\u{f1b6}",
     "fa-steam-square": "\u{f1b7}",
