@@ -26,3605 +26,2740 @@
 /// An enumaration of FontAwesome icon names.
 // swiftlint:disable file_length type_body_length
 public enum FontAwesome: String {
-    case fiveHundredPixels = "\u{f26e}"
-    case accessibleIcon = "\u{f368}"
-    case accusoft = "\u{f369}"
-    case acquisitionsIncorporated = "\u{f6af}"
-    case ad = "\u{f641}"
-    case addressBook = "\u{f2b9}"
-    case addressCard = "\u{f2bb}"
-    case adjust = "\u{f042}"
-    case adn = "\u{f170}"
-    case adobe = "\u{f778}"
-    case adversal = "\u{f36a}"
-    case affiliatetheme = "\u{f36b}"
-    case airFreshener = "\u{f5d0}"
-    case airbnb = "\u{f834}"
-    case algolia = "\u{f36c}"
-    case alignCenter = "\u{f037}"
-    case alignJustify = "\u{f039}"
-    case alignLeft = "\u{f036}"
-    case alignRight = "\u{f038}"
-    case alipay = "\u{f642}"
-    case allergies = "\u{f461}"
-    case amazon = "\u{f270}"
-    case amazonPay = "\u{f42c}"
-    case ambulance = "\u{f0f9}"
-    case americanSignLanguageInterpreting = "\u{f2a3}"
-    case amilia = "\u{f36d}"
-    case anchor = "\u{f13d}"
-    case android = "\u{f17b}"
-    case angellist = "\u{f209}"
-    case angleDoubleDown = "\u{f103}"
-    case angleDoubleLeft = "\u{f100}"
-    case angleDoubleRight = "\u{f101}"
-    case angleDoubleUp = "\u{f102}"
-    case angleDown = "\u{f107}"
-    case angleLeft = "\u{f104}"
-    case angleRight = "\u{f105}"
-    case angleUp = "\u{f106}"
-    case angry = "\u{f556}"
-    case angrycreative = "\u{f36e}"
-    case angular = "\u{f420}"
-    case ankh = "\u{f644}"
-    case appStore = "\u{f36f}"
-    case appStoreIos = "\u{f370}"
-    case apper = "\u{f371}"
-    case apple = "\u{f179}"
-    case appleAlt = "\u{f5d1}"
-    case applePay = "\u{f415}"
-    case archive = "\u{f187}"
-    case archway = "\u{f557}"
-    case arrowAltCircleDown = "\u{f358}"
-    case arrowAltCircleLeft = "\u{f359}"
-    case arrowAltCircleRight = "\u{f35a}"
-    case arrowAltCircleUp = "\u{f35b}"
-    case arrowCircleDown = "\u{f0ab}"
-    case arrowCircleLeft = "\u{f0a8}"
-    case arrowCircleRight = "\u{f0a9}"
-    case arrowCircleUp = "\u{f0aa}"
-    case arrowDown = "\u{f063}"
-    case arrowLeft = "\u{f060}"
-    case arrowRight = "\u{f061}"
-    case arrowUp = "\u{f062}"
-    case arrowsAlt = "\u{f0b2}"
-    case arrowsAltH = "\u{f337}"
-    case arrowsAltV = "\u{f338}"
-    case artstation = "\u{f77a}"
-    case assistiveListeningSystems = "\u{f2a2}"
-    case asterisk = "\u{f069}"
-    case asymmetrik = "\u{f372}"
-    case at = "\u{f1fa}"
-    case atlas = "\u{f558}"
-    case atlassian = "\u{f77b}"
-    case atom = "\u{f5d2}"
-    case audible = "\u{f373}"
-    case audioDescription = "\u{f29e}"
-    case autoprefixer = "\u{f41c}"
-    case avianex = "\u{f374}"
-    case aviato = "\u{f421}"
-    case award = "\u{f559}"
-    case aws = "\u{f375}"
-    case baby = "\u{f77c}"
-    case babyCarriage = "\u{f77d}"
-    case backspace = "\u{f55a}"
-    case backward = "\u{f04a}"
-    case bacon = "\u{f7e5}"
-    case balanceScale = "\u{f24e}"
-    case ban = "\u{f05e}"
-    case bandAid = "\u{f462}"
-    case bandcamp = "\u{f2d5}"
-    case barcode = "\u{f02a}"
-    case bars = "\u{f0c9}"
-    case baseballBall = "\u{f433}"
-    case basketballBall = "\u{f434}"
-    case bath = "\u{f2cd}"
-    case batteryEmpty = "\u{f244}"
-    case batteryFull = "\u{f240}"
-    case batteryHalf = "\u{f242}"
-    case batteryQuarter = "\u{f243}"
-    case batteryThreeQuarters = "\u{f241}"
-    case battleNet = "\u{f835}"
-    case bed = "\u{f236}"
-    case beer = "\u{f0fc}"
-    case behance = "\u{f1b4}"
-    case behanceSquare = "\u{f1b5}"
-    case bell = "\u{f0f3}"
-    case bellSlash = "\u{f1f6}"
-    case bezierCurve = "\u{f55b}"
-    case bible = "\u{f647}"
-    case bicycle = "\u{f206}"
-    case bimobject = "\u{f378}"
-    case binoculars = "\u{f1e5}"
-    case biohazard = "\u{f780}"
-    case birthdayCake = "\u{f1fd}"
-    case bitbucket = "\u{f171}"
-    case bitcoin = "\u{f379}"
-    case bity = "\u{f37a}"
-    case blackTie = "\u{f27e}"
-    case blackberry = "\u{f37b}"
-    case blender = "\u{f517}"
-    case blenderPhone = "\u{f6b6}"
-    case blind = "\u{f29d}"
-    case blog = "\u{f781}"
-    case blogger = "\u{f37c}"
-    case bloggerB = "\u{f37d}"
-    case bluetooth = "\u{f293}"
-    case bluetoothB = "\u{f294}"
-    case bold = "\u{f032}"
-    case bolt = "\u{f0e7}"
-    case bomb = "\u{f1e2}"
-    case bone = "\u{f5d7}"
-    case bong = "\u{f55c}"
-    case book = "\u{f02d}"
-    case bookDead = "\u{f6b7}"
-    case bookMedical = "\u{f7e6}"
-    case bookOpen = "\u{f518}"
-    case bookReader = "\u{f5da}"
-    case bookmark = "\u{f02e}"
-    case bootstrap = "\u{f836}"
-    case bowlingBall = "\u{f436}"
-    case box = "\u{f466}"
-    case boxOpen = "\u{f49e}"
-    case boxes = "\u{f468}"
-    case braille = "\u{f2a1}"
-    case brain = "\u{f5dc}"
-    case breadSlice = "\u{f7ec}"
-    case briefcase = "\u{f0b1}"
-    case briefcaseMedical = "\u{f469}"
-    case broadcastTower = "\u{f519}"
-    case broom = "\u{f51a}"
-    case brush = "\u{f55d}"
-    case btc = "\u{f15a}"
-    case buffer = "\u{f837}"
-    case bug = "\u{f188}"
-    case building = "\u{f1ad}"
-    case bullhorn = "\u{f0a1}"
-    case bullseye = "\u{f140}"
-    case burn = "\u{f46a}"
-    case buromobelexperte = "\u{f37f}"
-    case bus = "\u{f207}"
-    case busAlt = "\u{f55e}"
-    case businessTime = "\u{f64a}"
-    case buysellads = "\u{f20d}"
-    case calculator = "\u{f1ec}"
-    case calendar = "\u{f133}"
-    case calendarAlt = "\u{f073}"
-    case calendarCheck = "\u{f274}"
-    case calendarDay = "\u{f783}"
-    case calendarMinus = "\u{f272}"
-    case calendarPlus = "\u{f271}"
-    case calendarTimes = "\u{f273}"
-    case calendarWeek = "\u{f784}"
-    case camera = "\u{f030}"
-    case cameraRetro = "\u{f083}"
-    case campground = "\u{f6bb}"
-    case canadianMapleLeaf = "\u{f785}"
-    case candyCane = "\u{f786}"
-    case cannabis = "\u{f55f}"
-    case capsules = "\u{f46b}"
-    case car = "\u{f1b9}"
-    case carAlt = "\u{f5de}"
-    case carBattery = "\u{f5df}"
-    case carCrash = "\u{f5e1}"
-    case carSide = "\u{f5e4}"
-    case caretDown = "\u{f0d7}"
-    case caretLeft = "\u{f0d9}"
-    case caretRight = "\u{f0da}"
-    case caretSquareDown = "\u{f150}"
-    case caretSquareLeft = "\u{f191}"
-    case caretSquareRight = "\u{f152}"
-    case caretSquareUp = "\u{f151}"
-    case caretUp = "\u{f0d8}"
-    case carrot = "\u{f787}"
-    case cartArrowDown = "\u{f218}"
-    case cartPlus = "\u{f217}"
-    case cashRegister = "\u{f788}"
-    case cat = "\u{f6be}"
-    case ccAmazonPay = "\u{f42d}"
-    case ccAmex = "\u{f1f3}"
-    case ccApplePay = "\u{f416}"
-    case ccDinersClub = "\u{f24c}"
-    case ccDiscover = "\u{f1f2}"
-    case ccJcb = "\u{f24b}"
-    case ccMastercard = "\u{f1f1}"
-    case ccPaypal = "\u{f1f4}"
-    case ccStripe = "\u{f1f5}"
-    case ccVisa = "\u{f1f0}"
-    case centercode = "\u{f380}"
-    case centos = "\u{f789}"
-    case certificate = "\u{f0a3}"
-    case chair = "\u{f6c0}"
-    case chalkboard = "\u{f51b}"
-    case chalkboardTeacher = "\u{f51c}"
-    case chargingStation = "\u{f5e7}"
-    case chartArea = "\u{f1fe}"
-    case chartBar = "\u{f080}"
-    case chartLine = "\u{f201}"
-    case chartPie = "\u{f200}"
-    case check = "\u{f00c}"
-    case checkCircle = "\u{f058}"
-    case checkDouble = "\u{f560}"
-    case checkSquare = "\u{f14a}"
-    case cheese = "\u{f7ef}"
-    case chess = "\u{f439}"
-    case chessBishop = "\u{f43a}"
-    case chessBoard = "\u{f43c}"
-    case chessKing = "\u{f43f}"
-    case chessKnight = "\u{f441}"
-    case chessPawn = "\u{f443}"
-    case chessQueen = "\u{f445}"
-    case chessRook = "\u{f447}"
-    case chevronCircleDown = "\u{f13a}"
-    case chevronCircleLeft = "\u{f137}"
-    case chevronCircleRight = "\u{f138}"
-    case chevronCircleUp = "\u{f139}"
-    case chevronDown = "\u{f078}"
-    case chevronLeft = "\u{f053}"
-    case chevronRight = "\u{f054}"
-    case chevronUp = "\u{f077}"
-    case child = "\u{f1ae}"
-    case chrome = "\u{f268}"
-    case chromecast = "\u{f838}"
-    case church = "\u{f51d}"
-    case circle = "\u{f111}"
-    case circleNotch = "\u{f1ce}"
-    case city = "\u{f64f}"
-    case clinicMedical = "\u{f7f2}"
-    case clipboard = "\u{f328}"
-    case clipboardCheck = "\u{f46c}"
-    case clipboardList = "\u{f46d}"
-    case clock = "\u{f017}"
-    case clone = "\u{f24d}"
-    case closedCaptioning = "\u{f20a}"
-    case cloud = "\u{f0c2}"
-    case cloudDownloadAlt = "\u{f381}"
-    case cloudMeatball = "\u{f73b}"
-    case cloudMoon = "\u{f6c3}"
-    case cloudMoonRain = "\u{f73c}"
-    case cloudRain = "\u{f73d}"
-    case cloudShowersHeavy = "\u{f740}"
-    case cloudSun = "\u{f6c4}"
-    case cloudSunRain = "\u{f743}"
-    case cloudUploadAlt = "\u{f382}"
-    case cloudscale = "\u{f383}"
-    case cloudsmith = "\u{f384}"
-    case cloudversify = "\u{f385}"
-    case cocktail = "\u{f561}"
-    case code = "\u{f121}"
-    case codeBranch = "\u{f126}"
-    case codepen = "\u{f1cb}"
-    case codiepie = "\u{f284}"
-    case coffee = "\u{f0f4}"
-    case cog = "\u{f013}"
-    case cogs = "\u{f085}"
-    case coins = "\u{f51e}"
-    case columns = "\u{f0db}"
-    case comment = "\u{f075}"
-    case commentAlt = "\u{f27a}"
-    case commentDollar = "\u{f651}"
-    case commentDots = "\u{f4ad}"
-    case commentMedical = "\u{f7f5}"
-    case commentSlash = "\u{f4b3}"
-    case comments = "\u{f086}"
-    case commentsDollar = "\u{f653}"
-    case compactDisc = "\u{f51f}"
-    case compass = "\u{f14e}"
-    case compress = "\u{f066}"
-    case compressArrowsAlt = "\u{f78c}"
-    case conciergeBell = "\u{f562}"
-    case confluence = "\u{f78d}"
-    case connectdevelop = "\u{f20e}"
-    case contao = "\u{f26d}"
-    case cookie = "\u{f563}"
-    case cookieBite = "\u{f564}"
-    case copy = "\u{f0c5}"
-    case copyright = "\u{f1f9}"
-    case couch = "\u{f4b8}"
-    case cpanel = "\u{f388}"
-    case creativeCommons = "\u{f25e}"
-    case creativeCommonsBy = "\u{f4e7}"
-    case creativeCommonsNc = "\u{f4e8}"
-    case creativeCommonsNcEu = "\u{f4e9}"
-    case creativeCommonsNcJp = "\u{f4ea}"
-    case creativeCommonsNd = "\u{f4eb}"
-    case creativeCommonsPd = "\u{f4ec}"
-    case creativeCommonsPdAlt = "\u{f4ed}"
-    case creativeCommonsRemix = "\u{f4ee}"
-    case creativeCommonsSa = "\u{f4ef}"
-    case creativeCommonsSampling = "\u{f4f0}"
-    case creativeCommonsSamplingPlus = "\u{f4f1}"
-    case creativeCommonsShare = "\u{f4f2}"
-    case creativeCommonsZero = "\u{f4f3}"
-    case creditCard = "\u{f09d}"
-    case criticalRole = "\u{f6c9}"
-    case crop = "\u{f125}"
-    case cropAlt = "\u{f565}"
-    case cross = "\u{f654}"
-    case crosshairs = "\u{f05b}"
-    case crow = "\u{f520}"
-    case crown = "\u{f521}"
-    case crutch = "\u{f7f7}"
-    case css3 = "\u{f13c}"
-    case css3Alt = "\u{f38b}"
-    case cube = "\u{f1b2}"
-    case cubes = "\u{f1b3}"
-    case cut = "\u{f0c4}"
-    case cuttlefish = "\u{f38c}"
-    case dAndD = "\u{f38d}"
-    case dAndDBeyond = "\u{f6ca}"
-    case dashcube = "\u{f210}"
-    case database = "\u{f1c0}"
-    case deaf = "\u{f2a4}"
-    case delicious = "\u{f1a5}"
-    case democrat = "\u{f747}"
-    case deploydog = "\u{f38e}"
-    case deskpro = "\u{f38f}"
-    case desktop = "\u{f108}"
-    case dev = "\u{f6cc}"
-    case deviantart = "\u{f1bd}"
-    case dharmachakra = "\u{f655}"
-    case dhl = "\u{f790}"
-    case diagnoses = "\u{f470}"
-    case diaspora = "\u{f791}"
-    case dice = "\u{f522}"
-    case diceD20 = "\u{f6cf}"
-    case diceD6 = "\u{f6d1}"
-    case diceFive = "\u{f523}"
-    case diceFour = "\u{f524}"
-    case diceOne = "\u{f525}"
-    case diceSix = "\u{f526}"
-    case diceThree = "\u{f527}"
-    case diceTwo = "\u{f528}"
-    case digg = "\u{f1a6}"
-    case digitalOcean = "\u{f391}"
-    case digitalTachograph = "\u{f566}"
-    case directions = "\u{f5eb}"
-    case discord = "\u{f392}"
-    case discourse = "\u{f393}"
-    case divide = "\u{f529}"
-    case dizzy = "\u{f567}"
-    case dna = "\u{f471}"
-    case dochub = "\u{f394}"
-    case docker = "\u{f395}"
-    case dog = "\u{f6d3}"
-    case dollarSign = "\u{f155}"
-    case dolly = "\u{f472}"
-    case dollyFlatbed = "\u{f474}"
-    case donate = "\u{f4b9}"
-    case doorClosed = "\u{f52a}"
-    case doorOpen = "\u{f52b}"
-    case dotCircle = "\u{f192}"
-    case dove = "\u{f4ba}"
-    case download = "\u{f019}"
-    case draft2digital = "\u{f396}"
-    case draftingCompass = "\u{f568}"
-    case dragon = "\u{f6d5}"
-    case drawPolygon = "\u{f5ee}"
-    case dribbble = "\u{f17d}"
-    case dribbbleSquare = "\u{f397}"
-    case dropbox = "\u{f16b}"
-    case drum = "\u{f569}"
-    case drumSteelpan = "\u{f56a}"
-    case drumstickBite = "\u{f6d7}"
-    case drupal = "\u{f1a9}"
-    case dumbbell = "\u{f44b}"
-    case dumpster = "\u{f793}"
-    case dumpsterFire = "\u{f794}"
-    case dungeon = "\u{f6d9}"
-    case dyalog = "\u{f399}"
-    case earlybirds = "\u{f39a}"
-    case ebay = "\u{f4f4}"
-    case edge = "\u{f282}"
-    case edit = "\u{f044}"
-    case egg = "\u{f7fb}"
-    case eject = "\u{f052}"
-    case elementor = "\u{f430}"
-    case ellipsisH = "\u{f141}"
-    case ellipsisV = "\u{f142}"
-    case ello = "\u{f5f1}"
-    case ember = "\u{f423}"
-    case empire = "\u{f1d1}"
-    case envelope = "\u{f0e0}"
-    case envelopeOpen = "\u{f2b6}"
-    case envelopeOpenText = "\u{f658}"
-    case envelopeSquare = "\u{f199}"
-    case envira = "\u{f299}"
-    case equals = "\u{f52c}"
-    case eraser = "\u{f12d}"
-    case erlang = "\u{f39d}"
-    case ethereum = "\u{f42e}"
-    case ethernet = "\u{f796}"
-    case etsy = "\u{f2d7}"
-    case euroSign = "\u{f153}"
-    case evernote = "\u{f839}"
-    case exchangeAlt = "\u{f362}"
-    case exclamation = "\u{f12a}"
-    case exclamationCircle = "\u{f06a}"
-    case exclamationTriangle = "\u{f071}"
-    case expand = "\u{f065}"
-    case expandArrowsAlt = "\u{f31e}"
-    case expeditedssl = "\u{f23e}"
-    case externalLinkAlt = "\u{f35d}"
-    case externalLinkSquareAlt = "\u{f360}"
-    case eye = "\u{f06e}"
-    case eyeDropper = "\u{f1fb}"
-    case eyeSlash = "\u{f070}"
-    case facebook = "\u{f09a}"
-    case facebookF = "\u{f39e}"
-    case facebookMessenger = "\u{f39f}"
-    case facebookSquare = "\u{f082}"
-    case fantasyFlightGames = "\u{f6dc}"
-    case fastBackward = "\u{f049}"
-    case fastForward = "\u{f050}"
-    case fax = "\u{f1ac}"
-    case feather = "\u{f52d}"
-    case featherAlt = "\u{f56b}"
-    case fedex = "\u{f797}"
-    case fedora = "\u{f798}"
-    case female = "\u{f182}"
-    case fighterJet = "\u{f0fb}"
-    case figma = "\u{f799}"
-    case file = "\u{f15b}"
-    case fileAlt = "\u{f15c}"
-    case fileArchive = "\u{f1c6}"
-    case fileAudio = "\u{f1c7}"
-    case fileCode = "\u{f1c9}"
-    case fileContract = "\u{f56c}"
-    case fileCsv = "\u{f6dd}"
-    case fileDownload = "\u{f56d}"
-    case fileExcel = "\u{f1c3}"
-    case fileExport = "\u{f56e}"
-    case fileImage = "\u{f1c5}"
-    case fileImport = "\u{f56f}"
-    case fileInvoice = "\u{f570}"
-    case fileInvoiceDollar = "\u{f571}"
-    case fileMedical = "\u{f477}"
-    case fileMedicalAlt = "\u{f478}"
-    case filePdf = "\u{f1c1}"
-    case filePowerpoint = "\u{f1c4}"
-    case filePrescription = "\u{f572}"
-    case fileSignature = "\u{f573}"
-    case fileUpload = "\u{f574}"
-    case fileVideo = "\u{f1c8}"
-    case fileWord = "\u{f1c2}"
-    case fill = "\u{f575}"
-    case fillDrip = "\u{f576}"
-    case film = "\u{f008}"
-    case filter = "\u{f0b0}"
-    case fingerprint = "\u{f577}"
-    case fire = "\u{f06d}"
-    case fireAlt = "\u{f7e4}"
-    case fireExtinguisher = "\u{f134}"
-    case firefox = "\u{f269}"
-    case firstAid = "\u{f479}"
-    case firstOrder = "\u{f2b0}"
-    case firstOrderAlt = "\u{f50a}"
-    case firstdraft = "\u{f3a1}"
-    case fish = "\u{f578}"
-    case fistRaised = "\u{f6de}"
-    case flag = "\u{f024}"
-    case flagCheckered = "\u{f11e}"
-    case flagUsa = "\u{f74d}"
-    case flask = "\u{f0c3}"
-    case flickr = "\u{f16e}"
-    case flipboard = "\u{f44d}"
-    case flushed = "\u{f579}"
-    case fly = "\u{f417}"
-    case folder = "\u{f07b}"
-    case folderMinus = "\u{f65d}"
-    case folderOpen = "\u{f07c}"
-    case folderPlus = "\u{f65e}"
-    case font = "\u{f031}"
-    case fontAwesome = "\u{f2b4}"
-    case fontAwesomeAlt = "\u{f35c}"
-    case fontAwesomeFlag = "\u{f425}"
-    case fontAwesomeLogoFull = "\u{f4e6}"
-    case fonticons = "\u{f280}"
-    case fonticonsFi = "\u{f3a2}"
-    case footballBall = "\u{f44e}"
-    case fortAwesome = "\u{f286}"
-    case fortAwesomeAlt = "\u{f3a3}"
-    case forumbee = "\u{f211}"
-    case forward = "\u{f04e}"
-    case foursquare = "\u{f180}"
-    case freeCodeCamp = "\u{f2c5}"
-    case freebsd = "\u{f3a4}"
-    case frog = "\u{f52e}"
-    case frown = "\u{f119}"
-    case frownOpen = "\u{f57a}"
-    case fulcrum = "\u{f50b}"
-    case funnelDollar = "\u{f662}"
-    case futbol = "\u{f1e3}"
-    case galacticRepublic = "\u{f50c}"
-    case galacticSenate = "\u{f50d}"
-    case gamepad = "\u{f11b}"
-    case gasPump = "\u{f52f}"
-    case gavel = "\u{f0e3}"
-    case gem = "\u{f3a5}"
-    case genderless = "\u{f22d}"
-    case getPocket = "\u{f265}"
-    case gg = "\u{f260}"
-    case ggCircle = "\u{f261}"
-    case ghost = "\u{f6e2}"
-    case gift = "\u{f06b}"
-    case gifts = "\u{f79c}"
-    case git = "\u{f1d3}"
-    case gitAlt = "\u{f841}"
-    case gitSquare = "\u{f1d2}"
-    case github = "\u{f09b}"
-    case githubAlt = "\u{f113}"
-    case githubSquare = "\u{f092}"
-    case gitkraken = "\u{f3a6}"
-    case gitlab = "\u{f296}"
-    case gitter = "\u{f426}"
-    case glassCheers = "\u{f79f}"
-    case glassMartini = "\u{f000}"
-    case glassMartiniAlt = "\u{f57b}"
-    case glassWhiskey = "\u{f7a0}"
-    case glasses = "\u{f530}"
-    case glide = "\u{f2a5}"
-    case glideG = "\u{f2a6}"
-    case globe = "\u{f0ac}"
-    case globeAfrica = "\u{f57c}"
-    case globeAmericas = "\u{f57d}"
-    case globeAsia = "\u{f57e}"
-    case globeEurope = "\u{f7a2}"
-    case gofore = "\u{f3a7}"
-    case golfBall = "\u{f450}"
-    case goodreads = "\u{f3a8}"
-    case goodreadsG = "\u{f3a9}"
-    case google = "\u{f1a0}"
-    case googleDrive = "\u{f3aa}"
-    case googlePlay = "\u{f3ab}"
-    case googlePlus = "\u{f2b3}"
-    case googlePlusG = "\u{f0d5}"
-    case googlePlusSquare = "\u{f0d4}"
-    case googleWallet = "\u{f1ee}"
-    case gopuram = "\u{f664}"
-    case graduationCap = "\u{f19d}"
-    case gratipay = "\u{f184}"
-    case grav = "\u{f2d6}"
-    case greaterThan = "\u{f531}"
-    case greaterThanEqual = "\u{f532}"
-    case grimace = "\u{f57f}"
-    case grin = "\u{f580}"
-    case grinAlt = "\u{f581}"
-    case grinBeam = "\u{f582}"
-    case grinBeamSweat = "\u{f583}"
-    case grinHearts = "\u{f584}"
-    case grinSquint = "\u{f585}"
-    case grinSquintTears = "\u{f586}"
-    case grinStars = "\u{f587}"
-    case grinTears = "\u{f588}"
-    case grinTongue = "\u{f589}"
-    case grinTongueSquint = "\u{f58a}"
-    case grinTongueWink = "\u{f58b}"
-    case grinWink = "\u{f58c}"
-    case gripHorizontal = "\u{f58d}"
-    case gripLines = "\u{f7a4}"
-    case gripLinesVertical = "\u{f7a5}"
-    case gripVertical = "\u{f58e}"
-    case gripfire = "\u{f3ac}"
-    case grunt = "\u{f3ad}"
-    case guitar = "\u{f7a6}"
-    case gulp = "\u{f3ae}"
-    case hSquare = "\u{f0fd}"
-    case hackerNews = "\u{f1d4}"
-    case hackerNewsSquare = "\u{f3af}"
-    case hackerrank = "\u{f5f7}"
-    case hamburger = "\u{f805}"
-    case hammer = "\u{f6e3}"
-    case hamsa = "\u{f665}"
-    case handHolding = "\u{f4bd}"
-    case handHoldingHeart = "\u{f4be}"
-    case handHoldingUsd = "\u{f4c0}"
-    case handLizard = "\u{f258}"
-    case handMiddleFinger = "\u{f806}"
-    case handPaper = "\u{f256}"
-    case handPeace = "\u{f25b}"
-    case handPointDown = "\u{f0a7}"
-    case handPointLeft = "\u{f0a5}"
-    case handPointRight = "\u{f0a4}"
-    case handPointUp = "\u{f0a6}"
-    case handPointer = "\u{f25a}"
-    case handRock = "\u{f255}"
-    case handScissors = "\u{f257}"
-    case handSpock = "\u{f259}"
-    case hands = "\u{f4c2}"
-    case handsHelping = "\u{f4c4}"
-    case handshake = "\u{f2b5}"
-    case hanukiah = "\u{f6e6}"
-    case hardHat = "\u{f807}"
-    case hashtag = "\u{f292}"
-    case hatWizard = "\u{f6e8}"
-    case haykal = "\u{f666}"
-    case hdd = "\u{f0a0}"
-    case heading = "\u{f1dc}"
-    case headphones = "\u{f025}"
-    case headphonesAlt = "\u{f58f}"
-    case headset = "\u{f590}"
-    case heart = "\u{f004}"
-    case heartBroken = "\u{f7a9}"
-    case heartbeat = "\u{f21e}"
-    case helicopter = "\u{f533}"
-    case highlighter = "\u{f591}"
-    case hiking = "\u{f6ec}"
-    case hippo = "\u{f6ed}"
-    case hips = "\u{f452}"
-    case hireAHelper = "\u{f3b0}"
-    case history = "\u{f1da}"
-    case hockeyPuck = "\u{f453}"
-    case hollyBerry = "\u{f7aa}"
-    case home = "\u{f015}"
-    case hooli = "\u{f427}"
-    case hornbill = "\u{f592}"
-    case horse = "\u{f6f0}"
-    case horseHead = "\u{f7ab}"
-    case hospital = "\u{f0f8}"
-    case hospitalAlt = "\u{f47d}"
-    case hospitalSymbol = "\u{f47e}"
-    case hotTub = "\u{f593}"
-    case hotdog = "\u{f80f}"
-    case hotel = "\u{f594}"
-    case hotjar = "\u{f3b1}"
-    case hourglass = "\u{f254}"
-    case hourglassEnd = "\u{f253}"
-    case hourglassHalf = "\u{f252}"
-    case hourglassStart = "\u{f251}"
-    case houseDamage = "\u{f6f1}"
-    case houzz = "\u{f27c}"
-    case hryvnia = "\u{f6f2}"
-    case html5 = "\u{f13b}"
-    case hubspot = "\u{f3b2}"
-    case iCursor = "\u{f246}"
-    case iceCream = "\u{f810}"
-    case icicles = "\u{f7ad}"
-    case idBadge = "\u{f2c1}"
-    case idCard = "\u{f2c2}"
-    case idCardAlt = "\u{f47f}"
-    case igloo = "\u{f7ae}"
-    case image = "\u{f03e}"
-    case images = "\u{f302}"
-    case imdb = "\u{f2d8}"
-    case inbox = "\u{f01c}"
-    case indent = "\u{f03c}"
-    case industry = "\u{f275}"
-    case infinity = "\u{f534}"
-    case info = "\u{f129}"
-    case infoCircle = "\u{f05a}"
-    case instagram = "\u{f16d}"
-    case intercom = "\u{f7af}"
-    case internetExplorer = "\u{f26b}"
-    case invision = "\u{f7b0}"
-    case ioxhost = "\u{f208}"
-    case italic = "\u{f033}"
-    case itchIo = "\u{f83a}"
-    case itunes = "\u{f3b4}"
-    case itunesNote = "\u{f3b5}"
-    case java = "\u{f4e4}"
-    case jedi = "\u{f669}"
-    case jediOrder = "\u{f50e}"
-    case jenkins = "\u{f3b6}"
-    case jira = "\u{f7b1}"
-    case joget = "\u{f3b7}"
-    case joint = "\u{f595}"
-    case joomla = "\u{f1aa}"
-    case journalWhills = "\u{f66a}"
-    case js = "\u{f3b8}"
-    case jsSquare = "\u{f3b9}"
-    case jsfiddle = "\u{f1cc}"
-    case kaaba = "\u{f66b}"
-    case kaggle = "\u{f5fa}"
-    case key = "\u{f084}"
-    case keybase = "\u{f4f5}"
-    case keyboard = "\u{f11c}"
-    case keycdn = "\u{f3ba}"
-    case khanda = "\u{f66d}"
-    case kickstarter = "\u{f3bb}"
-    case kickstarterK = "\u{f3bc}"
-    case kiss = "\u{f596}"
-    case kissBeam = "\u{f597}"
-    case kissWinkHeart = "\u{f598}"
-    case kiwiBird = "\u{f535}"
-    case korvue = "\u{f42f}"
-    case landmark = "\u{f66f}"
-    case language = "\u{f1ab}"
-    case laptop = "\u{f109}"
-    case laptopCode = "\u{f5fc}"
-    case laptopMedical = "\u{f812}"
-    case laravel = "\u{f3bd}"
-    case lastfm = "\u{f202}"
-    case lastfmSquare = "\u{f203}"
-    case laugh = "\u{f599}"
-    case laughBeam = "\u{f59a}"
-    case laughSquint = "\u{f59b}"
-    case laughWink = "\u{f59c}"
-    case layerGroup = "\u{f5fd}"
-    case leaf = "\u{f06c}"
-    case leanpub = "\u{f212}"
-    case lemon = "\u{f094}"
-    case less = "\u{f41d}"
-    case lessThan = "\u{f536}"
-    case lessThanEqual = "\u{f537}"
-    case levelDownAlt = "\u{f3be}"
-    case levelUpAlt = "\u{f3bf}"
-    case lifeRing = "\u{f1cd}"
-    case lightbulb = "\u{f0eb}"
-    case line = "\u{f3c0}"
-    case link = "\u{f0c1}"
-    case linkedin = "\u{f08c}"
-    case linkedinIn = "\u{f0e1}"
-    case linode = "\u{f2b8}"
-    case linux = "\u{f17c}"
-    case liraSign = "\u{f195}"
-    case list = "\u{f03a}"
-    case listAlt = "\u{f022}"
-    case listOl = "\u{f0cb}"
-    case listUl = "\u{f0ca}"
-    case locationArrow = "\u{f124}"
-    case lock = "\u{f023}"
-    case lockOpen = "\u{f3c1}"
-    case longArrowAltDown = "\u{f309}"
-    case longArrowAltLeft = "\u{f30a}"
-    case longArrowAltRight = "\u{f30b}"
-    case longArrowAltUp = "\u{f30c}"
-    case lowVision = "\u{f2a8}"
-    case luggageCart = "\u{f59d}"
-    case lyft = "\u{f3c3}"
-    case magento = "\u{f3c4}"
-    case magic = "\u{f0d0}"
-    case magnet = "\u{f076}"
-    case mailBulk = "\u{f674}"
-    case mailchimp = "\u{f59e}"
-    case male = "\u{f183}"
-    case mandalorian = "\u{f50f}"
-    case map = "\u{f279}"
-    case mapMarked = "\u{f59f}"
-    case mapMarkedAlt = "\u{f5a0}"
-    case mapMarker = "\u{f041}"
-    case mapMarkerAlt = "\u{f3c5}"
-    case mapPin = "\u{f276}"
-    case mapSigns = "\u{f277}"
-    case markdown = "\u{f60f}"
-    case marker = "\u{f5a1}"
-    case mars = "\u{f222}"
-    case marsDouble = "\u{f227}"
-    case marsStroke = "\u{f229}"
-    case marsStrokeH = "\u{f22b}"
-    case marsStrokeV = "\u{f22a}"
-    case mask = "\u{f6fa}"
-    case mastodon = "\u{f4f6}"
-    case maxcdn = "\u{f136}"
-    case medal = "\u{f5a2}"
-    case medapps = "\u{f3c6}"
-    case medium = "\u{f23a}"
-    case mediumM = "\u{f3c7}"
-    case medkit = "\u{f0fa}"
-    case medrt = "\u{f3c8}"
-    case meetup = "\u{f2e0}"
-    case megaport = "\u{f5a3}"
-    case meh = "\u{f11a}"
-    case mehBlank = "\u{f5a4}"
-    case mehRollingEyes = "\u{f5a5}"
-    case memory = "\u{f538}"
-    case mendeley = "\u{f7b3}"
-    case menorah = "\u{f676}"
-    case mercury = "\u{f223}"
-    case meteor = "\u{f753}"
-    case microchip = "\u{f2db}"
-    case microphone = "\u{f130}"
-    case microphoneAlt = "\u{f3c9}"
-    case microphoneAltSlash = "\u{f539}"
-    case microphoneSlash = "\u{f131}"
-    case microscope = "\u{f610}"
-    case microsoft = "\u{f3ca}"
-    case minus = "\u{f068}"
-    case minusCircle = "\u{f056}"
-    case minusSquare = "\u{f146}"
-    case mitten = "\u{f7b5}"
-    case mix = "\u{f3cb}"
-    case mixcloud = "\u{f289}"
-    case mizuni = "\u{f3cc}"
-    case mobile = "\u{f10b}"
-    case mobileAlt = "\u{f3cd}"
-    case modx = "\u{f285}"
-    case monero = "\u{f3d0}"
-    case moneyBill = "\u{f0d6}"
-    case moneyBillAlt = "\u{f3d1}"
-    case moneyBillWave = "\u{f53a}"
-    case moneyBillWaveAlt = "\u{f53b}"
-    case moneyCheck = "\u{f53c}"
-    case moneyCheckAlt = "\u{f53d}"
-    case monument = "\u{f5a6}"
-    case moon = "\u{f186}"
-    case mortarPestle = "\u{f5a7}"
-    case mosque = "\u{f678}"
-    case motorcycle = "\u{f21c}"
-    case mountain = "\u{f6fc}"
-    case mousePointer = "\u{f245}"
-    case mugHot = "\u{f7b6}"
-    case music = "\u{f001}"
-    case napster = "\u{f3d2}"
-    case neos = "\u{f612}"
-    case networkWired = "\u{f6ff}"
-    case neuter = "\u{f22c}"
-    case newspaper = "\u{f1ea}"
-    case nimblr = "\u{f5a8}"
-    case nintendoSwitch = "\u{f418}"
-    case node = "\u{f419}"
-    case nodeJs = "\u{f3d3}"
-    case notEqual = "\u{f53e}"
-    case notesMedical = "\u{f481}"
-    case npm = "\u{f3d4}"
-    case ns8 = "\u{f3d5}"
-    case nutritionix = "\u{f3d6}"
-    case objectGroup = "\u{f247}"
-    case objectUngroup = "\u{f248}"
-    case odnoklassniki = "\u{f263}"
-    case odnoklassnikiSquare = "\u{f264}"
-    case oilCan = "\u{f613}"
-    case oldRepublic = "\u{f510}"
-    case om = "\u{f679}"
-    case opencart = "\u{f23d}"
-    case openid = "\u{f19b}"
-    case opera = "\u{f26a}"
-    case optinMonster = "\u{f23c}"
-    case osi = "\u{f41a}"
-    case otter = "\u{f700}"
-    case outdent = "\u{f03b}"
-    case page4 = "\u{f3d7}"
-    case pagelines = "\u{f18c}"
-    case pager = "\u{f815}"
-    case paintBrush = "\u{f1fc}"
-    case paintRoller = "\u{f5aa}"
-    case palette = "\u{f53f}"
-    case palfed = "\u{f3d8}"
-    case pallet = "\u{f482}"
-    case paperPlane = "\u{f1d8}"
-    case paperclip = "\u{f0c6}"
-    case parachuteBox = "\u{f4cd}"
-    case paragraph = "\u{f1dd}"
-    case parking = "\u{f540}"
-    case passport = "\u{f5ab}"
-    case pastafarianism = "\u{f67b}"
-    case paste = "\u{f0ea}"
-    case patreon = "\u{f3d9}"
-    case pause = "\u{f04c}"
-    case pauseCircle = "\u{f28b}"
-    case paw = "\u{f1b0}"
-    case paypal = "\u{f1ed}"
-    case peace = "\u{f67c}"
-    case pen = "\u{f304}"
-    case penAlt = "\u{f305}"
-    case penFancy = "\u{f5ac}"
-    case penNib = "\u{f5ad}"
-    case penSquare = "\u{f14b}"
-    case pencilAlt = "\u{f303}"
-    case pencilRuler = "\u{f5ae}"
-    case pennyArcade = "\u{f704}"
-    case peopleCarry = "\u{f4ce}"
-    case pepperHot = "\u{f816}"
-    case percent = "\u{f295}"
-    case percentage = "\u{f541}"
-    case periscope = "\u{f3da}"
-    case personBooth = "\u{f756}"
-    case phabricator = "\u{f3db}"
-    case phoenixFramework = "\u{f3dc}"
-    case phoenixSquadron = "\u{f511}"
-    case phone = "\u{f095}"
-    case phoneSlash = "\u{f3dd}"
-    case phoneSquare = "\u{f098}"
-    case phoneVolume = "\u{f2a0}"
-    case php = "\u{f457}"
-    case piedPiper = "\u{f2ae}"
-    case piedPiperAlt = "\u{f1a8}"
-    case piedPiperHat = "\u{f4e5}"
-    case piedPiperPp = "\u{f1a7}"
-    case piggyBank = "\u{f4d3}"
-    case pills = "\u{f484}"
-    case pinterest = "\u{f0d2}"
-    case pinterestP = "\u{f231}"
-    case pinterestSquare = "\u{f0d3}"
-    case pizzaSlice = "\u{f818}"
-    case placeOfWorship = "\u{f67f}"
-    case plane = "\u{f072}"
-    case planeArrival = "\u{f5af}"
-    case planeDeparture = "\u{f5b0}"
-    case play = "\u{f04b}"
-    case playCircle = "\u{f144}"
-    case playstation = "\u{f3df}"
-    case plug = "\u{f1e6}"
-    case plus = "\u{f067}"
-    case plusCircle = "\u{f055}"
-    case plusSquare = "\u{f0fe}"
-    case podcast = "\u{f2ce}"
-    case poll = "\u{f681}"
-    case pollH = "\u{f682}"
-    case poo = "\u{f2fe}"
-    case pooStorm = "\u{f75a}"
-    case poop = "\u{f619}"
-    case portrait = "\u{f3e0}"
-    case poundSign = "\u{f154}"
-    case powerOff = "\u{f011}"
-    case pray = "\u{f683}"
-    case prayingHands = "\u{f684}"
-    case prescription = "\u{f5b1}"
-    case prescriptionBottle = "\u{f485}"
-    case prescriptionBottleAlt = "\u{f486}"
-    case print = "\u{f02f}"
-    case procedures = "\u{f487}"
-    case productHunt = "\u{f288}"
-    case projectDiagram = "\u{f542}"
-    case pushed = "\u{f3e1}"
-    case puzzlePiece = "\u{f12e}"
-    case python = "\u{f3e2}"
-    case qq = "\u{f1d6}"
-    case qrcode = "\u{f029}"
-    case question = "\u{f128}"
-    case questionCircle = "\u{f059}"
-    case quidditch = "\u{f458}"
-    case quinscape = "\u{f459}"
-    case quora = "\u{f2c4}"
-    case quoteLeft = "\u{f10d}"
-    case quoteRight = "\u{f10e}"
-    case quran = "\u{f687}"
-    case rProject = "\u{f4f7}"
-    case radiation = "\u{f7b9}"
-    case radiationAlt = "\u{f7ba}"
-    case rainbow = "\u{f75b}"
-    case random = "\u{f074}"
-    case raspberryPi = "\u{f7bb}"
-    case ravelry = "\u{f2d9}"
-    case react = "\u{f41b}"
-    case reacteurope = "\u{f75d}"
-    case readme = "\u{f4d5}"
-    case rebel = "\u{f1d0}"
-    case receipt = "\u{f543}"
-    case recycle = "\u{f1b8}"
-    case redRiver = "\u{f3e3}"
-    case reddit = "\u{f1a1}"
-    case redditAlien = "\u{f281}"
-    case redditSquare = "\u{f1a2}"
-    case redhat = "\u{f7bc}"
-    case redo = "\u{f01e}"
-    case redoAlt = "\u{f2f9}"
-    case registered = "\u{f25d}"
-    case renren = "\u{f18b}"
-    case reply = "\u{f3e5}"
-    case replyAll = "\u{f122}"
-    case replyd = "\u{f3e6}"
-    case republican = "\u{f75e}"
-    case researchgate = "\u{f4f8}"
-    case resolving = "\u{f3e7}"
-    case restroom = "\u{f7bd}"
-    case retweet = "\u{f079}"
-    case rev = "\u{f5b2}"
-    case ribbon = "\u{f4d6}"
-    case ring = "\u{f70b}"
-    case road = "\u{f018}"
-    case robot = "\u{f544}"
-    case rocket = "\u{f135}"
-    case rocketchat = "\u{f3e8}"
-    case rockrms = "\u{f3e9}"
-    case route = "\u{f4d7}"
-    case rss = "\u{f09e}"
-    case rssSquare = "\u{f143}"
-    case rubleSign = "\u{f158}"
-    case ruler = "\u{f545}"
-    case rulerCombined = "\u{f546}"
-    case rulerHorizontal = "\u{f547}"
-    case rulerVertical = "\u{f548}"
-    case running = "\u{f70c}"
-    case rupeeSign = "\u{f156}"
-    case sadCry = "\u{f5b3}"
-    case sadTear = "\u{f5b4}"
-    case safari = "\u{f267}"
-    case salesforce = "\u{f83b}"
-    case sass = "\u{f41e}"
-    case satellite = "\u{f7bf}"
-    case satelliteDish = "\u{f7c0}"
-    case save = "\u{f0c7}"
-    case schlix = "\u{f3ea}"
-    case school = "\u{f549}"
-    case screwdriver = "\u{f54a}"
-    case scribd = "\u{f28a}"
-    case scroll = "\u{f70e}"
-    case sdCard = "\u{f7c2}"
-    case search = "\u{f002}"
-    case searchDollar = "\u{f688}"
-    case searchLocation = "\u{f689}"
-    case searchMinus = "\u{f010}"
-    case searchPlus = "\u{f00e}"
-    case searchengin = "\u{f3eb}"
-    case seedling = "\u{f4d8}"
-    case sellcast = "\u{f2da}"
-    case sellsy = "\u{f213}"
-    case server = "\u{f233}"
-    case servicestack = "\u{f3ec}"
-    case shapes = "\u{f61f}"
-    case share = "\u{f064}"
-    case shareAlt = "\u{f1e0}"
-    case shareAltSquare = "\u{f1e1}"
-    case shareSquare = "\u{f14d}"
-    case shekelSign = "\u{f20b}"
-    case shieldAlt = "\u{f3ed}"
-    case ship = "\u{f21a}"
-    case shippingFast = "\u{f48b}"
-    case shirtsinbulk = "\u{f214}"
-    case shoePrints = "\u{f54b}"
-    case shoppingBag = "\u{f290}"
-    case shoppingBasket = "\u{f291}"
-    case shoppingCart = "\u{f07a}"
-    case shopware = "\u{f5b5}"
-    case shower = "\u{f2cc}"
-    case shuttleVan = "\u{f5b6}"
-    case sign = "\u{f4d9}"
-    case signInAlt = "\u{f2f6}"
-    case signLanguage = "\u{f2a7}"
-    case signOutAlt = "\u{f2f5}"
-    case signal = "\u{f012}"
-    case signature = "\u{f5b7}"
-    case simCard = "\u{f7c4}"
-    case simplybuilt = "\u{f215}"
-    case sistrix = "\u{f3ee}"
-    case sitemap = "\u{f0e8}"
-    case sith = "\u{f512}"
-    case skating = "\u{f7c5}"
-    case sketch = "\u{f7c6}"
-    case skiing = "\u{f7c9}"
-    case skiingNordic = "\u{f7ca}"
-    case skull = "\u{f54c}"
-    case skullCrossbones = "\u{f714}"
-    case skyatlas = "\u{f216}"
-    case skype = "\u{f17e}"
-    case slack = "\u{f198}"
-    case slackHash = "\u{f3ef}"
-    case slash = "\u{f715}"
-    case sleigh = "\u{f7cc}"
-    case slidersH = "\u{f1de}"
-    case slideshare = "\u{f1e7}"
-    case smile = "\u{f118}"
-    case smileBeam = "\u{f5b8}"
-    case smileWink = "\u{f4da}"
-    case smog = "\u{f75f}"
-    case smoking = "\u{f48d}"
-    case smokingBan = "\u{f54d}"
-    case sms = "\u{f7cd}"
-    case snapchat = "\u{f2ab}"
-    case snapchatGhost = "\u{f2ac}"
-    case snapchatSquare = "\u{f2ad}"
-    case snowboarding = "\u{f7ce}"
-    case snowflake = "\u{f2dc}"
-    case snowman = "\u{f7d0}"
-    case snowplow = "\u{f7d2}"
-    case socks = "\u{f696}"
-    case solarPanel = "\u{f5ba}"
-    case sort = "\u{f0dc}"
-    case sortAlphaDown = "\u{f15d}"
-    case sortAlphaUp = "\u{f15e}"
-    case sortAmountDown = "\u{f160}"
-    case sortAmountUp = "\u{f161}"
-    case sortDown = "\u{f0dd}"
-    case sortNumericDown = "\u{f162}"
-    case sortNumericUp = "\u{f163}"
-    case sortUp = "\u{f0de}"
-    case soundcloud = "\u{f1be}"
-    case sourcetree = "\u{f7d3}"
-    case spa = "\u{f5bb}"
-    case spaceShuttle = "\u{f197}"
-    case speakap = "\u{f3f3}"
-    case speakerDeck = "\u{f83c}"
-    case spider = "\u{f717}"
-    case spinner = "\u{f110}"
-    case splotch = "\u{f5bc}"
-    case spotify = "\u{f1bc}"
-    case sprayCan = "\u{f5bd}"
-    case square = "\u{f0c8}"
-    case squareFull = "\u{f45c}"
-    case squareRootAlt = "\u{f698}"
-    case squarespace = "\u{f5be}"
-    case stackExchange = "\u{f18d}"
-    case stackOverflow = "\u{f16c}"
-    case stackpath = "\u{f842}"
-    case stamp = "\u{f5bf}"
-    case star = "\u{f005}"
-    case starAndCrescent = "\u{f699}"
-    case starHalf = "\u{f089}"
-    case starHalfAlt = "\u{f5c0}"
-    case starOfDavid = "\u{f69a}"
-    case starOfLife = "\u{f621}"
-    case staylinked = "\u{f3f5}"
-    case steam = "\u{f1b6}"
-    case steamSquare = "\u{f1b7}"
-    case steamSymbol = "\u{f3f6}"
-    case stepBackward = "\u{f048}"
-    case stepForward = "\u{f051}"
-    case stethoscope = "\u{f0f1}"
-    case stickerMule = "\u{f3f7}"
-    case stickyNote = "\u{f249}"
-    case stop = "\u{f04d}"
-    case stopCircle = "\u{f28d}"
-    case stopwatch = "\u{f2f2}"
-    case store = "\u{f54e}"
-    case storeAlt = "\u{f54f}"
-    case strava = "\u{f428}"
-    case stream = "\u{f550}"
-    case streetView = "\u{f21d}"
-    case strikethrough = "\u{f0cc}"
-    case stripe = "\u{f429}"
-    case stripeS = "\u{f42a}"
-    case stroopwafel = "\u{f551}"
-    case studiovinari = "\u{f3f8}"
-    case stumbleupon = "\u{f1a4}"
-    case stumbleuponCircle = "\u{f1a3}"
-    case `subscript` = "\u{f12c}"
-    case subway = "\u{f239}"
-    case suitcase = "\u{f0f2}"
-    case suitcaseRolling = "\u{f5c1}"
-    case sun = "\u{f185}"
-    case superpowers = "\u{f2dd}"
-    case superscript = "\u{f12b}"
-    case supple = "\u{f3f9}"
-    case surprise = "\u{f5c2}"
-    case suse = "\u{f7d6}"
-    case swatchbook = "\u{f5c3}"
-    case swimmer = "\u{f5c4}"
-    case swimmingPool = "\u{f5c5}"
-    case symfony = "\u{f83d}"
-    case synagogue = "\u{f69b}"
-    case sync = "\u{f021}"
-    case syncAlt = "\u{f2f1}"
-    case syringe = "\u{f48e}"
-    case table = "\u{f0ce}"
-    case tableTennis = "\u{f45d}"
-    case tablet = "\u{f10a}"
-    case tabletAlt = "\u{f3fa}"
-    case tablets = "\u{f490}"
-    case tachometerAlt = "\u{f3fd}"
-    case tag = "\u{f02b}"
-    case tags = "\u{f02c}"
-    case tape = "\u{f4db}"
-    case tasks = "\u{f0ae}"
-    case taxi = "\u{f1ba}"
-    case teamspeak = "\u{f4f9}"
-    case teeth = "\u{f62e}"
-    case teethOpen = "\u{f62f}"
-    case telegram = "\u{f2c6}"
-    case telegramPlane = "\u{f3fe}"
-    case temperatureHigh = "\u{f769}"
-    case temperatureLow = "\u{f76b}"
-    case tencentWeibo = "\u{f1d5}"
-    case tenge = "\u{f7d7}"
-    case terminal = "\u{f120}"
-    case textHeight = "\u{f034}"
-    case textWidth = "\u{f035}"
-    case th = "\u{f00a}"
-    case thLarge = "\u{f009}"
-    case thList = "\u{f00b}"
-    case theRedYeti = "\u{f69d}"
-    case theaterMasks = "\u{f630}"
-    case themeco = "\u{f5c6}"
-    case themeisle = "\u{f2b2}"
-    case thermometer = "\u{f491}"
-    case thermometerEmpty = "\u{f2cb}"
-    case thermometerFull = "\u{f2c7}"
-    case thermometerHalf = "\u{f2c9}"
-    case thermometerQuarter = "\u{f2ca}"
-    case thermometerThreeQuarters = "\u{f2c8}"
-    case thinkPeaks = "\u{f731}"
-    case thumbsDown = "\u{f165}"
-    case thumbsUp = "\u{f164}"
-    case thumbtack = "\u{f08d}"
-    case ticketAlt = "\u{f3ff}"
-    case times = "\u{f00d}"
-    case timesCircle = "\u{f057}"
-    case tint = "\u{f043}"
-    case tintSlash = "\u{f5c7}"
-    case tired = "\u{f5c8}"
-    case toggleOff = "\u{f204}"
-    case toggleOn = "\u{f205}"
-    case toilet = "\u{f7d8}"
-    case toiletPaper = "\u{f71e}"
-    case toolbox = "\u{f552}"
-    case tools = "\u{f7d9}"
-    case tooth = "\u{f5c9}"
-    case torah = "\u{f6a0}"
-    case toriiGate = "\u{f6a1}"
-    case tractor = "\u{f722}"
-    case tradeFederation = "\u{f513}"
-    case trademark = "\u{f25c}"
-    case trafficLight = "\u{f637}"
-    case train = "\u{f238}"
-    case tram = "\u{f7da}"
-    case transgender = "\u{f224}"
-    case transgenderAlt = "\u{f225}"
-    case trash = "\u{f1f8}"
-    case trashAlt = "\u{f2ed}"
-    case trashRestore = "\u{f829}"
-    case trashRestoreAlt = "\u{f82a}"
-    case tree = "\u{f1bb}"
-    case trello = "\u{f181}"
-    case tripadvisor = "\u{f262}"
-    case trophy = "\u{f091}"
-    case truck = "\u{f0d1}"
-    case truckLoading = "\u{f4de}"
-    case truckMonster = "\u{f63b}"
-    case truckMoving = "\u{f4df}"
-    case truckPickup = "\u{f63c}"
-    case tshirt = "\u{f553}"
-    case tty = "\u{f1e4}"
-    case tumblr = "\u{f173}"
-    case tumblrSquare = "\u{f174}"
-    case tv = "\u{f26c}"
-    case twitch = "\u{f1e8}"
-    case twitter = "\u{f099}"
-    case twitterSquare = "\u{f081}"
-    case typo3 = "\u{f42b}"
-    case uber = "\u{f402}"
-    case ubuntu = "\u{f7df}"
-    case uikit = "\u{f403}"
-    case umbrella = "\u{f0e9}"
-    case umbrellaBeach = "\u{f5ca}"
-    case underline = "\u{f0cd}"
-    case undo = "\u{f0e2}"
-    case undoAlt = "\u{f2ea}"
-    case uniregistry = "\u{f404}"
-    case universalAccess = "\u{f29a}"
-    case university = "\u{f19c}"
-    case unlink = "\u{f127}"
-    case unlock = "\u{f09c}"
-    case unlockAlt = "\u{f13e}"
-    case untappd = "\u{f405}"
-    case upload = "\u{f093}"
-    case ups = "\u{f7e0}"
-    case usb = "\u{f287}"
-    case user = "\u{f007}"
-    case userAlt = "\u{f406}"
-    case userAltSlash = "\u{f4fa}"
-    case userAstronaut = "\u{f4fb}"
-    case userCheck = "\u{f4fc}"
-    case userCircle = "\u{f2bd}"
-    case userClock = "\u{f4fd}"
-    case userCog = "\u{f4fe}"
-    case userEdit = "\u{f4ff}"
-    case userFriends = "\u{f500}"
-    case userGraduate = "\u{f501}"
-    case userInjured = "\u{f728}"
-    case userLock = "\u{f502}"
-    case userMd = "\u{f0f0}"
-    case userMinus = "\u{f503}"
-    case userNinja = "\u{f504}"
-    case userNurse = "\u{f82f}"
-    case userPlus = "\u{f234}"
-    case userSecret = "\u{f21b}"
-    case userShield = "\u{f505}"
-    case userSlash = "\u{f506}"
-    case userTag = "\u{f507}"
-    case userTie = "\u{f508}"
-    case userTimes = "\u{f235}"
-    case users = "\u{f0c0}"
-    case usersCog = "\u{f509}"
-    case usps = "\u{f7e1}"
-    case ussunnah = "\u{f407}"
-    case utensilSpoon = "\u{f2e5}"
-    case utensils = "\u{f2e7}"
-    case vaadin = "\u{f408}"
-    case vectorSquare = "\u{f5cb}"
-    case venus = "\u{f221}"
-    case venusDouble = "\u{f226}"
-    case venusMars = "\u{f228}"
-    case viacoin = "\u{f237}"
-    case viadeo = "\u{f2a9}"
-    case viadeoSquare = "\u{f2aa}"
-    case vial = "\u{f492}"
-    case vials = "\u{f493}"
-    case viber = "\u{f409}"
-    case video = "\u{f03d}"
-    case videoSlash = "\u{f4e2}"
-    case vihara = "\u{f6a7}"
-    case vimeo = "\u{f40a}"
-    case vimeoSquare = "\u{f194}"
-    case vimeoV = "\u{f27d}"
-    case vine = "\u{f1ca}"
-    case vk = "\u{f189}"
-    case vnv = "\u{f40b}"
-    case volleyballBall = "\u{f45f}"
-    case volumeDown = "\u{f027}"
-    case volumeMute = "\u{f6a9}"
-    case volumeOff = "\u{f026}"
-    case volumeUp = "\u{f028}"
-    case voteYea = "\u{f772}"
-    case vrCardboard = "\u{f729}"
-    case vuejs = "\u{f41f}"
-    case walking = "\u{f554}"
-    case wallet = "\u{f555}"
-    case warehouse = "\u{f494}"
-    case water = "\u{f773}"
-    case waveSquare = "\u{f83e}"
-    case waze = "\u{f83f}"
-    case weebly = "\u{f5cc}"
-    case weibo = "\u{f18a}"
-    case weight = "\u{f496}"
-    case weightHanging = "\u{f5cd}"
-    case weixin = "\u{f1d7}"
-    case whatsapp = "\u{f232}"
-    case whatsappSquare = "\u{f40c}"
-    case wheelchair = "\u{f193}"
-    case whmcs = "\u{f40d}"
-    case wifi = "\u{f1eb}"
-    case wikipediaW = "\u{f266}"
-    case wind = "\u{f72e}"
-    case windowClose = "\u{f410}"
-    case windowMaximize = "\u{f2d0}"
-    case windowMinimize = "\u{f2d1}"
-    case windowRestore = "\u{f2d2}"
-    case windows = "\u{f17a}"
-    case wineBottle = "\u{f72f}"
-    case wineGlass = "\u{f4e3}"
-    case wineGlassAlt = "\u{f5ce}"
-    case wix = "\u{f5cf}"
-    case wizardsOfTheCoast = "\u{f730}"
-    case wolfPackBattalion = "\u{f514}"
-    case wonSign = "\u{f159}"
-    case wordpress = "\u{f19a}"
-    case wordpressSimple = "\u{f411}"
-    case wpbeginner = "\u{f297}"
-    case wpexplorer = "\u{f2de}"
-    case wpforms = "\u{f298}"
-    case wpressr = "\u{f3e4}"
-    case wrench = "\u{f0ad}"
-    case xRay = "\u{f497}"
-    case xbox = "\u{f412}"
-    case xing = "\u{f168}"
-    case xingSquare = "\u{f169}"
-    case yCombinator = "\u{f23b}"
-    case yahoo = "\u{f19e}"
-    case yammer = "\u{f840}"
-    case yandex = "\u{f413}"
-    case yandexInternational = "\u{f414}"
-    case yarn = "\u{f7e3}"
-    case yelp = "\u{f1e9}"
-    case yenSign = "\u{f157}"
-    case yinYang = "\u{f6ad}"
-    case yoast = "\u{f2b1}"
-    case youtube = "\u{f167}"
-    case youtubeSquare = "\u{f431}"
-    case zhihu = "\u{f63f}"
+    case fiveHundredPixels = "fa-500px"
+    case accessibleIcon = "fa-accessible-icon"
+    case accusoft = "fa-accusoft"
+    case acquisitionsIncorporated = "fa-acquisitions-incorporated"
+    case ad = "fa-ad"
+    case addressBook = "fa-address-book"
+    case addressCard = "fa-address-card"
+    case adjust = "fa-adjust"
+    case adn = "fa-adn"
+    case adobe = "fa-adobe"
+    case adversal = "fa-adversal"
+    case affiliatetheme = "fa-affiliatetheme"
+    case airFreshener = "fa-air-freshener"
+    case airbnb = "fa-airbnb"
+    case algolia = "fa-algolia"
+    case alignCenter = "fa-align-center"
+    case alignJustify = "fa-align-justify"
+    case alignLeft = "fa-align-left"
+    case alignRight = "fa-align-right"
+    case alipay = "fa-alipay"
+    case allergies = "fa-allergies"
+    case amazon = "fa-amazon"
+    case amazonPay = "fa-amazon-pay"
+    case ambulance = "fa-ambulance"
+    case americanSignLanguageInterpreting = "fa-american-sign-language-interpreting"
+    case amilia = "fa-amilia"
+    case anchor = "fa-anchor"
+    case android = "fa-android"
+    case angellist = "fa-angellist"
+    case angleDoubleDown = "fa-angle-double-down"
+    case angleDoubleLeft = "fa-angle-double-left"
+    case angleDoubleRight = "fa-angle-double-right"
+    case angleDoubleUp = "fa-angle-double-up"
+    case angleDown = "fa-angle-down"
+    case angleLeft = "fa-angle-left"
+    case angleRight = "fa-angle-right"
+    case angleUp = "fa-angle-up"
+    case angry = "fa-angry"
+    case angrycreative = "fa-angrycreative"
+    case angular = "fa-angular"
+    case ankh = "fa-ankh"
+    case appStore = "fa-app-store"
+    case appStoreIos = "fa-app-store-ios"
+    case apper = "fa-apper"
+    case apple = "fa-apple"
+    case appleAlt = "fa-apple-alt"
+    case applePay = "fa-apple-pay"
+    case archive = "fa-archive"
+    case archway = "fa-archway"
+    case arrowAltCircleDown = "fa-arrow-alt-circle-down"
+    case arrowAltCircleLeft = "fa-arrow-alt-circle-left"
+    case arrowAltCircleRight = "fa-arrow-alt-circle-right"
+    case arrowAltCircleUp = "fa-arrow-alt-circle-up"
+    case arrowCircleDown = "fa-arrow-circle-down"
+    case arrowCircleLeft = "fa-arrow-circle-left"
+    case arrowCircleRight = "fa-arrow-circle-right"
+    case arrowCircleUp = "fa-arrow-circle-up"
+    case arrowDown = "fa-arrow-down"
+    case arrowLeft = "fa-arrow-left"
+    case arrowRight = "fa-arrow-right"
+    case arrowUp = "fa-arrow-up"
+    case arrowsAlt = "fa-arrows-alt"
+    case arrowsAltH = "fa-arrows-alt-h"
+    case arrowsAltV = "fa-arrows-alt-v"
+    case artstation = "fa-artstation"
+    case assistiveListeningSystems = "fa-assistive-listening-systems"
+    case asterisk = "fa-asterisk"
+    case asymmetrik = "fa-asymmetrik"
+    case at = "fa-at"
+    case atlas = "fa-atlas"
+    case atlassian = "fa-atlassian"
+    case atom = "fa-atom"
+    case audible = "fa-audible"
+    case audioDescription = "fa-audio-description"
+    case autoprefixer = "fa-autoprefixer"
+    case avianex = "fa-avianex"
+    case aviato = "fa-aviato"
+    case award = "fa-award"
+    case aws = "fa-aws"
+    case baby = "fa-baby"
+    case babyCarriage = "fa-baby-carriage"
+    case backspace = "fa-backspace"
+    case backward = "fa-backward"
+    case bacon = "fa-bacon"
+    case balanceScale = "fa-balance-scale"
+    case ban = "fa-ban"
+    case bandAid = "fa-band-aid"
+    case bandcamp = "fa-bandcamp"
+    case barcode = "fa-barcode"
+    case bars = "fa-bars"
+    case baseballBall = "fa-baseball-ball"
+    case basketballBall = "fa-basketball-ball"
+    case bath = "fa-bath"
+    case batteryEmpty = "fa-battery-empty"
+    case batteryFull = "fa-battery-full"
+    case batteryHalf = "fa-battery-half"
+    case batteryQuarter = "fa-battery-quarter"
+    case batteryThreeQuarters = "fa-battery-three-quarters"
+    case battleNet = "fa-battle-net"
+    case bed = "fa-bed"
+    case beer = "fa-beer"
+    case behance = "fa-behance"
+    case behanceSquare = "fa-behance-square"
+    case bell = "fa-bell"
+    case bellSlash = "fa-bell-slash"
+    case bezierCurve = "fa-bezier-curve"
+    case bible = "fa-bible"
+    case bicycle = "fa-bicycle"
+    case bimobject = "fa-bimobject"
+    case binoculars = "fa-binoculars"
+    case biohazard = "fa-biohazard"
+    case birthdayCake = "fa-birthday-cake"
+    case bitbucket = "fa-bitbucket"
+    case bitcoin = "fa-bitcoin"
+    case bity = "fa-bity"
+    case blackTie = "fa-black-tie"
+    case blackberry = "fa-blackberry"
+    case blender = "fa-blender"
+    case blenderPhone = "fa-blender-phone"
+    case blind = "fa-blind"
+    case blog = "fa-blog"
+    case blogger = "fa-blogger"
+    case bloggerB = "fa-blogger-b"
+    case bluetooth = "fa-bluetooth"
+    case bluetoothB = "fa-bluetooth-b"
+    case bold = "fa-bold"
+    case bolt = "fa-bolt"
+    case bomb = "fa-bomb"
+    case bone = "fa-bone"
+    case bong = "fa-bong"
+    case book = "fa-book"
+    case bookDead = "fa-book-dead"
+    case bookMedical = "fa-book-medical"
+    case bookOpen = "fa-book-open"
+    case bookReader = "fa-book-reader"
+    case bookmark = "fa-bookmark"
+    case bootstrap = "fa-bootstrap"
+    case bowlingBall = "fa-bowling-ball"
+    case box = "fa-box"
+    case boxOpen = "fa-box-open"
+    case boxes = "fa-boxes"
+    case braille = "fa-braille"
+    case brain = "fa-brain"
+    case breadSlice = "fa-bread-slice"
+    case briefcase = "fa-briefcase"
+    case briefcaseMedical = "fa-briefcase-medical"
+    case broadcastTower = "fa-broadcast-tower"
+    case broom = "fa-broom"
+    case brush = "fa-brush"
+    case btc = "fa-btc"
+    case buffer = "fa-buffer"
+    case bug = "fa-bug"
+    case building = "fa-building"
+    case bullhorn = "fa-bullhorn"
+    case bullseye = "fa-bullseye"
+    case burn = "fa-burn"
+    case buromobelexperte = "fa-buromobelexperte"
+    case bus = "fa-bus"
+    case busAlt = "fa-bus-alt"
+    case businessTime = "fa-business-time"
+    case buysellads = "fa-buysellads"
+    case calculator = "fa-calculator"
+    case calendar = "fa-calendar"
+    case calendarAlt = "fa-calendar-alt"
+    case calendarCheck = "fa-calendar-check"
+    case calendarDay = "fa-calendar-day"
+    case calendarMinus = "fa-calendar-minus"
+    case calendarPlus = "fa-calendar-plus"
+    case calendarTimes = "fa-calendar-times"
+    case calendarWeek = "fa-calendar-week"
+    case camera = "fa-camera"
+    case cameraRetro = "fa-camera-retro"
+    case campground = "fa-campground"
+    case canadianMapleLeaf = "fa-canadian-maple-leaf"
+    case candyCane = "fa-candy-cane"
+    case cannabis = "fa-cannabis"
+    case capsules = "fa-capsules"
+    case car = "fa-car"
+    case carAlt = "fa-car-alt"
+    case carBattery = "fa-car-battery"
+    case carCrash = "fa-car-crash"
+    case carSide = "fa-car-side"
+    case caretDown = "fa-caret-down"
+    case caretLeft = "fa-caret-left"
+    case caretRight = "fa-caret-right"
+    case caretSquareDown = "fa-caret-square-down"
+    case caretSquareLeft = "fa-caret-square-left"
+    case caretSquareRight = "fa-caret-square-right"
+    case caretSquareUp = "fa-caret-square-up"
+    case caretUp = "fa-caret-up"
+    case carrot = "fa-carrot"
+    case cartArrowDown = "fa-cart-arrow-down"
+    case cartPlus = "fa-cart-plus"
+    case cashRegister = "fa-cash-register"
+    case cat = "fa-cat"
+    case ccAmazonPay = "fa-cc-amazon-pay"
+    case ccAmex = "fa-cc-amex"
+    case ccApplePay = "fa-cc-apple-pay"
+    case ccDinersClub = "fa-cc-diners-club"
+    case ccDiscover = "fa-cc-discover"
+    case ccJcb = "fa-cc-jcb"
+    case ccMastercard = "fa-cc-mastercard"
+    case ccPaypal = "fa-cc-paypal"
+    case ccStripe = "fa-cc-stripe"
+    case ccVisa = "fa-cc-visa"
+    case centercode = "fa-centercode"
+    case centos = "fa-centos"
+    case certificate = "fa-certificate"
+    case chair = "fa-chair"
+    case chalkboard = "fa-chalkboard"
+    case chalkboardTeacher = "fa-chalkboard-teacher"
+    case chargingStation = "fa-charging-station"
+    case chartArea = "fa-chart-area"
+    case chartBar = "fa-chart-bar"
+    case chartLine = "fa-chart-line"
+    case chartPie = "fa-chart-pie"
+    case check = "fa-check"
+    case checkCircle = "fa-check-circle"
+    case checkDouble = "fa-check-double"
+    case checkSquare = "fa-check-square"
+    case cheese = "fa-cheese"
+    case chess = "fa-chess"
+    case chessBishop = "fa-chess-bishop"
+    case chessBoard = "fa-chess-board"
+    case chessKing = "fa-chess-king"
+    case chessKnight = "fa-chess-knight"
+    case chessPawn = "fa-chess-pawn"
+    case chessQueen = "fa-chess-queen"
+    case chessRook = "fa-chess-rook"
+    case chevronCircleDown = "fa-chevron-circle-down"
+    case chevronCircleLeft = "fa-chevron-circle-left"
+    case chevronCircleRight = "fa-chevron-circle-right"
+    case chevronCircleUp = "fa-chevron-circle-up"
+    case chevronDown = "fa-chevron-down"
+    case chevronLeft = "fa-chevron-left"
+    case chevronRight = "fa-chevron-right"
+    case chevronUp = "fa-chevron-up"
+    case child = "fa-child"
+    case chrome = "fa-chrome"
+    case chromecast = "fa-chromecast"
+    case church = "fa-church"
+    case circle = "fa-circle"
+    case circleNotch = "fa-circle-notch"
+    case city = "fa-city"
+    case clinicMedical = "fa-clinic-medical"
+    case clipboard = "fa-clipboard"
+    case clipboardCheck = "fa-clipboard-check"
+    case clipboardList = "fa-clipboard-list"
+    case clock = "fa-clock"
+    case clone = "fa-clone"
+    case closedCaptioning = "fa-closed-captioning"
+    case cloud = "fa-cloud"
+    case cloudDownloadAlt = "fa-cloud-download-alt"
+    case cloudMeatball = "fa-cloud-meatball"
+    case cloudMoon = "fa-cloud-moon"
+    case cloudMoonRain = "fa-cloud-moon-rain"
+    case cloudRain = "fa-cloud-rain"
+    case cloudShowersHeavy = "fa-cloud-showers-heavy"
+    case cloudSun = "fa-cloud-sun"
+    case cloudSunRain = "fa-cloud-sun-rain"
+    case cloudUploadAlt = "fa-cloud-upload-alt"
+    case cloudscale = "fa-cloudscale"
+    case cloudsmith = "fa-cloudsmith"
+    case cloudversify = "fa-cloudversify"
+    case cocktail = "fa-cocktail"
+    case code = "fa-code"
+    case codeBranch = "fa-code-branch"
+    case codepen = "fa-codepen"
+    case codiepie = "fa-codiepie"
+    case coffee = "fa-coffee"
+    case cog = "fa-cog"
+    case cogs = "fa-cogs"
+    case coins = "fa-coins"
+    case columns = "fa-columns"
+    case comment = "fa-comment"
+    case commentAlt = "fa-comment-alt"
+    case commentDollar = "fa-comment-dollar"
+    case commentDots = "fa-comment-dots"
+    case commentMedical = "fa-comment-medical"
+    case commentSlash = "fa-comment-slash"
+    case comments = "fa-comments"
+    case commentsDollar = "fa-comments-dollar"
+    case compactDisc = "fa-compact-disc"
+    case compass = "fa-compass"
+    case compress = "fa-compress"
+    case compressArrowsAlt = "fa-compress-arrows-alt"
+    case conciergeBell = "fa-concierge-bell"
+    case confluence = "fa-confluence"
+    case connectdevelop = "fa-connectdevelop"
+    case contao = "fa-contao"
+    case cookie = "fa-cookie"
+    case cookieBite = "fa-cookie-bite"
+    case copy = "fa-copy"
+    case copyright = "fa-copyright"
+    case couch = "fa-couch"
+    case cpanel = "fa-cpanel"
+    case creativeCommons = "fa-creative-commons"
+    case creativeCommonsBy = "fa-creative-commons-by"
+    case creativeCommonsNc = "fa-creative-commons-nc"
+    case creativeCommonsNcEu = "fa-creative-commons-nc-eu"
+    case creativeCommonsNcJp = "fa-creative-commons-nc-jp"
+    case creativeCommonsNd = "fa-creative-commons-nd"
+    case creativeCommonsPd = "fa-creative-commons-pd"
+    case creativeCommonsPdAlt = "fa-creative-commons-pd-alt"
+    case creativeCommonsRemix = "fa-creative-commons-remix"
+    case creativeCommonsSa = "fa-creative-commons-sa"
+    case creativeCommonsSampling = "fa-creative-commons-sampling"
+    case creativeCommonsSamplingPlus = "fa-creative-commons-sampling-plus"
+    case creativeCommonsShare = "fa-creative-commons-share"
+    case creativeCommonsZero = "fa-creative-commons-zero"
+    case creditCard = "fa-credit-card"
+    case criticalRole = "fa-critical-role"
+    case crop = "fa-crop"
+    case cropAlt = "fa-crop-alt"
+    case cross = "fa-cross"
+    case crosshairs = "fa-crosshairs"
+    case crow = "fa-crow"
+    case crown = "fa-crown"
+    case crutch = "fa-crutch"
+    case css3 = "fa-css3"
+    case css3Alt = "fa-css3-alt"
+    case cube = "fa-cube"
+    case cubes = "fa-cubes"
+    case cut = "fa-cut"
+    case cuttlefish = "fa-cuttlefish"
+    case dAndD = "fa-d-and-d"
+    case dAndDBeyond = "fa-d-and-d-beyond"
+    case dashcube = "fa-dashcube"
+    case database = "fa-database"
+    case deaf = "fa-deaf"
+    case delicious = "fa-delicious"
+    case democrat = "fa-democrat"
+    case deploydog = "fa-deploydog"
+    case deskpro = "fa-deskpro"
+    case desktop = "fa-desktop"
+    case dev = "fa-dev"
+    case deviantart = "fa-deviantart"
+    case dharmachakra = "fa-dharmachakra"
+    case dhl = "fa-dhl"
+    case diagnoses = "fa-diagnoses"
+    case diaspora = "fa-diaspora"
+    case dice = "fa-dice"
+    case diceD20 = "fa-dice-d20"
+    case diceD6 = "fa-dice-d6"
+    case diceFive = "fa-dice-five"
+    case diceFour = "fa-dice-four"
+    case diceOne = "fa-dice-one"
+    case diceSix = "fa-dice-six"
+    case diceThree = "fa-dice-three"
+    case diceTwo = "fa-dice-two"
+    case digg = "fa-digg"
+    case digitalOcean = "fa-digital-ocean"
+    case digitalTachograph = "fa-digital-tachograph"
+    case directions = "fa-directions"
+    case discord = "fa-discord"
+    case discourse = "fa-discourse"
+    case divide = "fa-divide"
+    case dizzy = "fa-dizzy"
+    case dna = "fa-dna"
+    case dochub = "fa-dochub"
+    case docker = "fa-docker"
+    case dog = "fa-dog"
+    case dollarSign = "fa-dollar-sign"
+    case dolly = "fa-dolly"
+    case dollyFlatbed = "fa-dolly-flatbed"
+    case donate = "fa-donate"
+    case doorClosed = "fa-door-closed"
+    case doorOpen = "fa-door-open"
+    case dotCircle = "fa-dot-circle"
+    case dove = "fa-dove"
+    case download = "fa-download"
+    case draft2digital = "fa-draft2digital"
+    case draftingCompass = "fa-drafting-compass"
+    case dragon = "fa-dragon"
+    case drawPolygon = "fa-draw-polygon"
+    case dribbble = "fa-dribbble"
+    case dribbbleSquare = "fa-dribbble-square"
+    case dropbox = "fa-dropbox"
+    case drum = "fa-drum"
+    case drumSteelpan = "fa-drum-steelpan"
+    case drumstickBite = "fa-drumstick-bite"
+    case drupal = "fa-drupal"
+    case dumbbell = "fa-dumbbell"
+    case dumpster = "fa-dumpster"
+    case dumpsterFire = "fa-dumpster-fire"
+    case dungeon = "fa-dungeon"
+    case dyalog = "fa-dyalog"
+    case earlybirds = "fa-earlybirds"
+    case ebay = "fa-ebay"
+    case edge = "fa-edge"
+    case edit = "fa-edit"
+    case egg = "fa-egg"
+    case eject = "fa-eject"
+    case elementor = "fa-elementor"
+    case ellipsisH = "fa-ellipsis-h"
+    case ellipsisV = "fa-ellipsis-v"
+    case ello = "fa-ello"
+    case ember = "fa-ember"
+    case empire = "fa-empire"
+    case envelope = "fa-envelope"
+    case envelopeOpen = "fa-envelope-open"
+    case envelopeOpenText = "fa-envelope-open-text"
+    case envelopeSquare = "fa-envelope-square"
+    case envira = "fa-envira"
+    case equals = "fa-equals"
+    case eraser = "fa-eraser"
+    case erlang = "fa-erlang"
+    case ethereum = "fa-ethereum"
+    case ethernet = "fa-ethernet"
+    case etsy = "fa-etsy"
+    case euroSign = "fa-euro-sign"
+    case evernote = "fa-evernote"
+    case exchangeAlt = "fa-exchange-alt"
+    case exclamation = "fa-exclamation"
+    case exclamationCircle = "fa-exclamation-circle"
+    case exclamationTriangle = "fa-exclamation-triangle"
+    case expand = "fa-expand"
+    case expandArrowsAlt = "fa-expand-arrows-alt"
+    case expeditedssl = "fa-expeditedssl"
+    case externalLinkAlt = "fa-external-link-alt"
+    case externalLinkSquareAlt = "fa-external-link-square-alt"
+    case eye = "fa-eye"
+    case eyeDropper = "fa-eye-dropper"
+    case eyeSlash = "fa-eye-slash"
+    case facebook = "fa-facebook"
+    case facebookF = "fa-facebook-f"
+    case facebookMessenger = "fa-facebook-messenger"
+    case facebookSquare = "fa-facebook-square"
+    case fantasyFlightGames = "fa-fantasy-flight-games"
+    case fastBackward = "fa-fast-backward"
+    case fastForward = "fa-fast-forward"
+    case fax = "fa-fax"
+    case feather = "fa-feather"
+    case featherAlt = "fa-feather-alt"
+    case fedex = "fa-fedex"
+    case fedora = "fa-fedora"
+    case female = "fa-female"
+    case fighterJet = "fa-fighter-jet"
+    case figma = "fa-figma"
+    case file = "fa-file"
+    case fileAlt = "fa-file-alt"
+    case fileArchive = "fa-file-archive"
+    case fileAudio = "fa-file-audio"
+    case fileCode = "fa-file-code"
+    case fileContract = "fa-file-contract"
+    case fileCsv = "fa-file-csv"
+    case fileDownload = "fa-file-download"
+    case fileExcel = "fa-file-excel"
+    case fileExport = "fa-file-export"
+    case fileImage = "fa-file-image"
+    case fileImport = "fa-file-import"
+    case fileInvoice = "fa-file-invoice"
+    case fileInvoiceDollar = "fa-file-invoice-dollar"
+    case fileMedical = "fa-file-medical"
+    case fileMedicalAlt = "fa-file-medical-alt"
+    case filePdf = "fa-file-pdf"
+    case filePowerpoint = "fa-file-powerpoint"
+    case filePrescription = "fa-file-prescription"
+    case fileSignature = "fa-file-signature"
+    case fileUpload = "fa-file-upload"
+    case fileVideo = "fa-file-video"
+    case fileWord = "fa-file-word"
+    case fill = "fa-fill"
+    case fillDrip = "fa-fill-drip"
+    case film = "fa-film"
+    case filter = "fa-filter"
+    case fingerprint = "fa-fingerprint"
+    case fire = "fa-fire"
+    case fireAlt = "fa-fire-alt"
+    case fireExtinguisher = "fa-fire-extinguisher"
+    case firefox = "fa-firefox"
+    case firstAid = "fa-first-aid"
+    case firstOrder = "fa-first-order"
+    case firstOrderAlt = "fa-first-order-alt"
+    case firstdraft = "fa-firstdraft"
+    case fish = "fa-fish"
+    case fistRaised = "fa-fist-raised"
+    case flag = "fa-flag"
+    case flagCheckered = "fa-flag-checkered"
+    case flagUsa = "fa-flag-usa"
+    case flask = "fa-flask"
+    case flickr = "fa-flickr"
+    case flipboard = "fa-flipboard"
+    case flushed = "fa-flushed"
+    case fly = "fa-fly"
+    case folder = "fa-folder"
+    case folderMinus = "fa-folder-minus"
+    case folderOpen = "fa-folder-open"
+    case folderPlus = "fa-folder-plus"
+    case font = "fa-font"
+    case fontAwesome = "fa-font-awesome"
+    case fontAwesomeAlt = "fa-font-awesome-alt"
+    case fontAwesomeFlag = "fa-font-awesome-flag"
+    case fontAwesomeLogoFull = "fa-font-awesome-logo-full"
+    case fonticons = "fa-fonticons"
+    case fonticonsFi = "fa-fonticons-fi"
+    case footballBall = "fa-football-ball"
+    case fortAwesome = "fa-fort-awesome"
+    case fortAwesomeAlt = "fa-fort-awesome-alt"
+    case forumbee = "fa-forumbee"
+    case forward = "fa-forward"
+    case foursquare = "fa-foursquare"
+    case freeCodeCamp = "fa-free-code-camp"
+    case freebsd = "fa-freebsd"
+    case frog = "fa-frog"
+    case frown = "fa-frown"
+    case frownOpen = "fa-frown-open"
+    case fulcrum = "fa-fulcrum"
+    case funnelDollar = "fa-funnel-dollar"
+    case futbol = "fa-futbol"
+    case galacticRepublic = "fa-galactic-republic"
+    case galacticSenate = "fa-galactic-senate"
+    case gamepad = "fa-gamepad"
+    case gasPump = "fa-gas-pump"
+    case gavel = "fa-gavel"
+    case gem = "fa-gem"
+    case genderless = "fa-genderless"
+    case getPocket = "fa-get-pocket"
+    case gg = "fa-gg"
+    case ggCircle = "fa-gg-circle"
+    case ghost = "fa-ghost"
+    case gift = "fa-gift"
+    case gifts = "fa-gifts"
+    case git = "fa-git"
+    case gitAlt = "fa-git-alt"
+    case gitSquare = "fa-git-square"
+    case github = "fa-github"
+    case githubAlt = "fa-github-alt"
+    case githubSquare = "fa-github-square"
+    case gitkraken = "fa-gitkraken"
+    case gitlab = "fa-gitlab"
+    case gitter = "fa-gitter"
+    case glassCheers = "fa-glass-cheers"
+    case glassMartini = "fa-glass-martini"
+    case glassMartiniAlt = "fa-glass-martini-alt"
+    case glassWhiskey = "fa-glass-whiskey"
+    case glasses = "fa-glasses"
+    case glide = "fa-glide"
+    case glideG = "fa-glide-g"
+    case globe = "fa-globe"
+    case globeAfrica = "fa-globe-africa"
+    case globeAmericas = "fa-globe-americas"
+    case globeAsia = "fa-globe-asia"
+    case globeEurope = "fa-globe-europe"
+    case gofore = "fa-gofore"
+    case golfBall = "fa-golf-ball"
+    case goodreads = "fa-goodreads"
+    case goodreadsG = "fa-goodreads-g"
+    case google = "fa-google"
+    case googleDrive = "fa-google-drive"
+    case googlePlay = "fa-google-play"
+    case googlePlus = "fa-google-plus"
+    case googlePlusG = "fa-google-plus-g"
+    case googlePlusSquare = "fa-google-plus-square"
+    case googleWallet = "fa-google-wallet"
+    case gopuram = "fa-gopuram"
+    case graduationCap = "fa-graduation-cap"
+    case gratipay = "fa-gratipay"
+    case grav = "fa-grav"
+    case greaterThan = "fa-greater-than"
+    case greaterThanEqual = "fa-greater-than-equal"
+    case grimace = "fa-grimace"
+    case grin = "fa-grin"
+    case grinAlt = "fa-grin-alt"
+    case grinBeam = "fa-grin-beam"
+    case grinBeamSweat = "fa-grin-beam-sweat"
+    case grinHearts = "fa-grin-hearts"
+    case grinSquint = "fa-grin-squint"
+    case grinSquintTears = "fa-grin-squint-tears"
+    case grinStars = "fa-grin-stars"
+    case grinTears = "fa-grin-tears"
+    case grinTongue = "fa-grin-tongue"
+    case grinTongueSquint = "fa-grin-tongue-squint"
+    case grinTongueWink = "fa-grin-tongue-wink"
+    case grinWink = "fa-grin-wink"
+    case gripHorizontal = "fa-grip-horizontal"
+    case gripLines = "fa-grip-lines"
+    case gripLinesVertical = "fa-grip-lines-vertical"
+    case gripVertical = "fa-grip-vertical"
+    case gripfire = "fa-gripfire"
+    case grunt = "fa-grunt"
+    case guitar = "fa-guitar"
+    case gulp = "fa-gulp"
+    case hSquare = "fa-h-square"
+    case hackerNews = "fa-hacker-news"
+    case hackerNewsSquare = "fa-hacker-news-square"
+    case hackerrank = "fa-hackerrank"
+    case hamburger = "fa-hamburger"
+    case hammer = "fa-hammer"
+    case hamsa = "fa-hamsa"
+    case handHolding = "fa-hand-holding"
+    case handHoldingHeart = "fa-hand-holding-heart"
+    case handHoldingUsd = "fa-hand-holding-usd"
+    case handLizard = "fa-hand-lizard"
+    case handMiddleFinger = "fa-hand-middle-finger"
+    case handPaper = "fa-hand-paper"
+    case handPeace = "fa-hand-peace"
+    case handPointDown = "fa-hand-point-down"
+    case handPointLeft = "fa-hand-point-left"
+    case handPointRight = "fa-hand-point-right"
+    case handPointUp = "fa-hand-point-up"
+    case handPointer = "fa-hand-pointer"
+    case handRock = "fa-hand-rock"
+    case handScissors = "fa-hand-scissors"
+    case handSpock = "fa-hand-spock"
+    case hands = "fa-hands"
+    case handsHelping = "fa-hands-helping"
+    case handshake = "fa-handshake"
+    case hanukiah = "fa-hanukiah"
+    case hardHat = "fa-hard-hat"
+    case hashtag = "fa-hashtag"
+    case hatWizard = "fa-hat-wizard"
+    case haykal = "fa-haykal"
+    case hdd = "fa-hdd"
+    case heading = "fa-heading"
+    case headphones = "fa-headphones"
+    case headphonesAlt = "fa-headphones-alt"
+    case headset = "fa-headset"
+    case heart = "fa-heart"
+    case heartBroken = "fa-heart-broken"
+    case heartbeat = "fa-heartbeat"
+    case helicopter = "fa-helicopter"
+    case highlighter = "fa-highlighter"
+    case hiking = "fa-hiking"
+    case hippo = "fa-hippo"
+    case hips = "fa-hips"
+    case hireAHelper = "fa-hire-a-helper"
+    case history = "fa-history"
+    case hockeyPuck = "fa-hockey-puck"
+    case hollyBerry = "fa-holly-berry"
+    case home = "fa-home"
+    case hooli = "fa-hooli"
+    case hornbill = "fa-hornbill"
+    case horse = "fa-horse"
+    case horseHead = "fa-horse-head"
+    case hospital = "fa-hospital"
+    case hospitalAlt = "fa-hospital-alt"
+    case hospitalSymbol = "fa-hospital-symbol"
+    case hotTub = "fa-hot-tub"
+    case hotdog = "fa-hotdog"
+    case hotel = "fa-hotel"
+    case hotjar = "fa-hotjar"
+    case hourglass = "fa-hourglass"
+    case hourglassEnd = "fa-hourglass-end"
+    case hourglassHalf = "fa-hourglass-half"
+    case hourglassStart = "fa-hourglass-start"
+    case houseDamage = "fa-house-damage"
+    case houzz = "fa-houzz"
+    case hryvnia = "fa-hryvnia"
+    case html5 = "fa-html5"
+    case hubspot = "fa-hubspot"
+    case iCursor = "fa-i-cursor"
+    case iceCream = "fa-ice-cream"
+    case icicles = "fa-icicles"
+    case idBadge = "fa-id-badge"
+    case idCard = "fa-id-card"
+    case idCardAlt = "fa-id-card-alt"
+    case igloo = "fa-igloo"
+    case image = "fa-image"
+    case images = "fa-images"
+    case imdb = "fa-imdb"
+    case inbox = "fa-inbox"
+    case indent = "fa-indent"
+    case industry = "fa-industry"
+    case infinity = "fa-infinity"
+    case info = "fa-info"
+    case infoCircle = "fa-info-circle"
+    case instagram = "fa-instagram"
+    case intercom = "fa-intercom"
+    case internetExplorer = "fa-internet-explorer"
+    case invision = "fa-invision"
+    case ioxhost = "fa-ioxhost"
+    case italic = "fa-italic"
+    case itchIo = "fa-itch-io"
+    case itunes = "fa-itunes"
+    case itunesNote = "fa-itunes-note"
+    case java = "fa-java"
+    case jedi = "fa-jedi"
+    case jediOrder = "fa-jedi-order"
+    case jenkins = "fa-jenkins"
+    case jira = "fa-jira"
+    case joget = "fa-joget"
+    case joint = "fa-joint"
+    case joomla = "fa-joomla"
+    case journalWhills = "fa-journal-whills"
+    case js = "fa-js"
+    case jsSquare = "fa-js-square"
+    case jsfiddle = "fa-jsfiddle"
+    case kaaba = "fa-kaaba"
+    case kaggle = "fa-kaggle"
+    case key = "fa-key"
+    case keybase = "fa-keybase"
+    case keyboard = "fa-keyboard"
+    case keycdn = "fa-keycdn"
+    case khanda = "fa-khanda"
+    case kickstarter = "fa-kickstarter"
+    case kickstarterK = "fa-kickstarter-k"
+    case kiss = "fa-kiss"
+    case kissBeam = "fa-kiss-beam"
+    case kissWinkHeart = "fa-kiss-wink-heart"
+    case kiwiBird = "fa-kiwi-bird"
+    case korvue = "fa-korvue"
+    case landmark = "fa-landmark"
+    case language = "fa-language"
+    case laptop = "fa-laptop"
+    case laptopCode = "fa-laptop-code"
+    case laptopMedical = "fa-laptop-medical"
+    case laravel = "fa-laravel"
+    case lastfm = "fa-lastfm"
+    case lastfmSquare = "fa-lastfm-square"
+    case laugh = "fa-laugh"
+    case laughBeam = "fa-laugh-beam"
+    case laughSquint = "fa-laugh-squint"
+    case laughWink = "fa-laugh-wink"
+    case layerGroup = "fa-layer-group"
+    case leaf = "fa-leaf"
+    case leanpub = "fa-leanpub"
+    case lemon = "fa-lemon"
+    case less = "fa-less"
+    case lessThan = "fa-less-than"
+    case lessThanEqual = "fa-less-than-equal"
+    case levelDownAlt = "fa-level-down-alt"
+    case levelUpAlt = "fa-level-up-alt"
+    case lifeRing = "fa-life-ring"
+    case lightbulb = "fa-lightbulb"
+    case line = "fa-line"
+    case link = "fa-link"
+    case linkedin = "fa-linkedin"
+    case linkedinIn = "fa-linkedin-in"
+    case linode = "fa-linode"
+    case linux = "fa-linux"
+    case liraSign = "fa-lira-sign"
+    case list = "fa-list"
+    case listAlt = "fa-list-alt"
+    case listOl = "fa-list-ol"
+    case listUl = "fa-list-ul"
+    case locationArrow = "fa-location-arrow"
+    case lock = "fa-lock"
+    case lockOpen = "fa-lock-open"
+    case longArrowAltDown = "fa-long-arrow-alt-down"
+    case longArrowAltLeft = "fa-long-arrow-alt-left"
+    case longArrowAltRight = "fa-long-arrow-alt-right"
+    case longArrowAltUp = "fa-long-arrow-alt-up"
+    case lowVision = "fa-low-vision"
+    case luggageCart = "fa-luggage-cart"
+    case lyft = "fa-lyft"
+    case magento = "fa-magento"
+    case magic = "fa-magic"
+    case magnet = "fa-magnet"
+    case mailBulk = "fa-mail-bulk"
+    case mailchimp = "fa-mailchimp"
+    case male = "fa-male"
+    case mandalorian = "fa-mandalorian"
+    case map = "fa-map"
+    case mapMarked = "fa-map-marked"
+    case mapMarkedAlt = "fa-map-marked-alt"
+    case mapMarker = "fa-map-marker"
+    case mapMarkerAlt = "fa-map-marker-alt"
+    case mapPin = "fa-map-pin"
+    case mapSigns = "fa-map-signs"
+    case markdown = "fa-markdown"
+    case marker = "fa-marker"
+    case mars = "fa-mars"
+    case marsDouble = "fa-mars-double"
+    case marsStroke = "fa-mars-stroke"
+    case marsStrokeH = "fa-mars-stroke-h"
+    case marsStrokeV = "fa-mars-stroke-v"
+    case mask = "fa-mask"
+    case mastodon = "fa-mastodon"
+    case maxcdn = "fa-maxcdn"
+    case medal = "fa-medal"
+    case medapps = "fa-medapps"
+    case medium = "fa-medium"
+    case mediumM = "fa-medium-m"
+    case medkit = "fa-medkit"
+    case medrt = "fa-medrt"
+    case meetup = "fa-meetup"
+    case megaport = "fa-megaport"
+    case meh = "fa-meh"
+    case mehBlank = "fa-meh-blank"
+    case mehRollingEyes = "fa-meh-rolling-eyes"
+    case memory = "fa-memory"
+    case mendeley = "fa-mendeley"
+    case menorah = "fa-menorah"
+    case mercury = "fa-mercury"
+    case meteor = "fa-meteor"
+    case microchip = "fa-microchip"
+    case microphone = "fa-microphone"
+    case microphoneAlt = "fa-microphone-alt"
+    case microphoneAltSlash = "fa-microphone-alt-slash"
+    case microphoneSlash = "fa-microphone-slash"
+    case microscope = "fa-microscope"
+    case microsoft = "fa-microsoft"
+    case minus = "fa-minus"
+    case minusCircle = "fa-minus-circle"
+    case minusSquare = "fa-minus-square"
+    case mitten = "fa-mitten"
+    case mix = "fa-mix"
+    case mixcloud = "fa-mixcloud"
+    case mizuni = "fa-mizuni"
+    case mobile = "fa-mobile"
+    case mobileAlt = "fa-mobile-alt"
+    case modx = "fa-modx"
+    case monero = "fa-monero"
+    case moneyBill = "fa-money-bill"
+    case moneyBillAlt = "fa-money-bill-alt"
+    case moneyBillWave = "fa-money-bill-wave"
+    case moneyBillWaveAlt = "fa-money-bill-wave-alt"
+    case moneyCheck = "fa-money-check"
+    case moneyCheckAlt = "fa-money-check-alt"
+    case monument = "fa-monument"
+    case moon = "fa-moon"
+    case mortarPestle = "fa-mortar-pestle"
+    case mosque = "fa-mosque"
+    case motorcycle = "fa-motorcycle"
+    case mountain = "fa-mountain"
+    case mousePointer = "fa-mouse-pointer"
+    case mugHot = "fa-mug-hot"
+    case music = "fa-music"
+    case napster = "fa-napster"
+    case neos = "fa-neos"
+    case networkWired = "fa-network-wired"
+    case neuter = "fa-neuter"
+    case newspaper = "fa-newspaper"
+    case nimblr = "fa-nimblr"
+    case nintendoSwitch = "fa-nintendo-switch"
+    case node = "fa-node"
+    case nodeJs = "fa-node-js"
+    case notEqual = "fa-not-equal"
+    case notesMedical = "fa-notes-medical"
+    case npm = "fa-npm"
+    case ns8 = "fa-ns8"
+    case nutritionix = "fa-nutritionix"
+    case objectGroup = "fa-object-group"
+    case objectUngroup = "fa-object-ungroup"
+    case odnoklassniki = "fa-odnoklassniki"
+    case odnoklassnikiSquare = "fa-odnoklassniki-square"
+    case oilCan = "fa-oil-can"
+    case oldRepublic = "fa-old-republic"
+    case om = "fa-om"
+    case opencart = "fa-opencart"
+    case openid = "fa-openid"
+    case opera = "fa-opera"
+    case optinMonster = "fa-optin-monster"
+    case osi = "fa-osi"
+    case otter = "fa-otter"
+    case outdent = "fa-outdent"
+    case page4 = "fa-page4"
+    case pagelines = "fa-pagelines"
+    case pager = "fa-pager"
+    case paintBrush = "fa-paint-brush"
+    case paintRoller = "fa-paint-roller"
+    case palette = "fa-palette"
+    case palfed = "fa-palfed"
+    case pallet = "fa-pallet"
+    case paperPlane = "fa-paper-plane"
+    case paperclip = "fa-paperclip"
+    case parachuteBox = "fa-parachute-box"
+    case paragraph = "fa-paragraph"
+    case parking = "fa-parking"
+    case passport = "fa-passport"
+    case pastafarianism = "fa-pastafarianism"
+    case paste = "fa-paste"
+    case patreon = "fa-patreon"
+    case pause = "fa-pause"
+    case pauseCircle = "fa-pause-circle"
+    case paw = "fa-paw"
+    case paypal = "fa-paypal"
+    case peace = "fa-peace"
+    case pen = "fa-pen"
+    case penAlt = "fa-pen-alt"
+    case penFancy = "fa-pen-fancy"
+    case penNib = "fa-pen-nib"
+    case penSquare = "fa-pen-square"
+    case pencilAlt = "fa-pencil-alt"
+    case pencilRuler = "fa-pencil-ruler"
+    case pennyArcade = "fa-penny-arcade"
+    case peopleCarry = "fa-people-carry"
+    case pepperHot = "fa-pepper-hot"
+    case percent = "fa-percent"
+    case percentage = "fa-percentage"
+    case periscope = "fa-periscope"
+    case personBooth = "fa-person-booth"
+    case phabricator = "fa-phabricator"
+    case phoenixFramework = "fa-phoenix-framework"
+    case phoenixSquadron = "fa-phoenix-squadron"
+    case phone = "fa-phone"
+    case phoneSlash = "fa-phone-slash"
+    case phoneSquare = "fa-phone-square"
+    case phoneVolume = "fa-phone-volume"
+    case php = "fa-php"
+    case piedPiper = "fa-pied-piper"
+    case piedPiperAlt = "fa-pied-piper-alt"
+    case piedPiperHat = "fa-pied-piper-hat"
+    case piedPiperPp = "fa-pied-piper-pp"
+    case piggyBank = "fa-piggy-bank"
+    case pills = "fa-pills"
+    case pinterest = "fa-pinterest"
+    case pinterestP = "fa-pinterest-p"
+    case pinterestSquare = "fa-pinterest-square"
+    case pizzaSlice = "fa-pizza-slice"
+    case placeOfWorship = "fa-place-of-worship"
+    case plane = "fa-plane"
+    case planeArrival = "fa-plane-arrival"
+    case planeDeparture = "fa-plane-departure"
+    case play = "fa-play"
+    case playCircle = "fa-play-circle"
+    case playstation = "fa-playstation"
+    case plug = "fa-plug"
+    case plus = "fa-plus"
+    case plusCircle = "fa-plus-circle"
+    case plusSquare = "fa-plus-square"
+    case podcast = "fa-podcast"
+    case poll = "fa-poll"
+    case pollH = "fa-poll-h"
+    case poo = "fa-poo"
+    case pooStorm = "fa-poo-storm"
+    case poop = "fa-poop"
+    case portrait = "fa-portrait"
+    case poundSign = "fa-pound-sign"
+    case powerOff = "fa-power-off"
+    case pray = "fa-pray"
+    case prayingHands = "fa-praying-hands"
+    case prescription = "fa-prescription"
+    case prescriptionBottle = "fa-prescription-bottle"
+    case prescriptionBottleAlt = "fa-prescription-bottle-alt"
+    case print = "fa-print"
+    case procedures = "fa-procedures"
+    case productHunt = "fa-product-hunt"
+    case projectDiagram = "fa-project-diagram"
+    case pushed = "fa-pushed"
+    case puzzlePiece = "fa-puzzle-piece"
+    case python = "fa-python"
+    case qq = "fa-qq"
+    case qrcode = "fa-qrcode"
+    case question = "fa-question"
+    case questionCircle = "fa-question-circle"
+    case quidditch = "fa-quidditch"
+    case quinscape = "fa-quinscape"
+    case quora = "fa-quora"
+    case quoteLeft = "fa-quote-left"
+    case quoteRight = "fa-quote-right"
+    case quran = "fa-quran"
+    case rProject = "fa-r-project"
+    case radiation = "fa-radiation"
+    case radiationAlt = "fa-radiation-alt"
+    case rainbow = "fa-rainbow"
+    case random = "fa-random"
+    case raspberryPi = "fa-raspberry-pi"
+    case ravelry = "fa-ravelry"
+    case react = "fa-react"
+    case reacteurope = "fa-reacteurope"
+    case readme = "fa-readme"
+    case rebel = "fa-rebel"
+    case receipt = "fa-receipt"
+    case recycle = "fa-recycle"
+    case redRiver = "fa-red-river"
+    case reddit = "fa-reddit"
+    case redditAlien = "fa-reddit-alien"
+    case redditSquare = "fa-reddit-square"
+    case redhat = "fa-redhat"
+    case redo = "fa-redo"
+    case redoAlt = "fa-redo-alt"
+    case registered = "fa-registered"
+    case renren = "fa-renren"
+    case reply = "fa-reply"
+    case replyAll = "fa-reply-all"
+    case replyd = "fa-replyd"
+    case republican = "fa-republican"
+    case researchgate = "fa-researchgate"
+    case resolving = "fa-resolving"
+    case restroom = "fa-restroom"
+    case retweet = "fa-retweet"
+    case rev = "fa-rev"
+    case ribbon = "fa-ribbon"
+    case ring = "fa-ring"
+    case road = "fa-road"
+    case robot = "fa-robot"
+    case rocket = "fa-rocket"
+    case rocketchat = "fa-rocketchat"
+    case rockrms = "fa-rockrms"
+    case route = "fa-route"
+    case rss = "fa-rss"
+    case rssSquare = "fa-rss-square"
+    case rubleSign = "fa-ruble-sign"
+    case ruler = "fa-ruler"
+    case rulerCombined = "fa-ruler-combined"
+    case rulerHorizontal = "fa-ruler-horizontal"
+    case rulerVertical = "fa-ruler-vertical"
+    case running = "fa-running"
+    case rupeeSign = "fa-rupee-sign"
+    case sadCry = "fa-sad-cry"
+    case sadTear = "fa-sad-tear"
+    case safari = "fa-safari"
+    case salesforce = "fa-salesforce"
+    case sass = "fa-sass"
+    case satellite = "fa-satellite"
+    case satelliteDish = "fa-satellite-dish"
+    case save = "fa-save"
+    case schlix = "fa-schlix"
+    case school = "fa-school"
+    case screwdriver = "fa-screwdriver"
+    case scribd = "fa-scribd"
+    case scroll = "fa-scroll"
+    case sdCard = "fa-sd-card"
+    case search = "fa-search"
+    case searchDollar = "fa-search-dollar"
+    case searchLocation = "fa-search-location"
+    case searchMinus = "fa-search-minus"
+    case searchPlus = "fa-search-plus"
+    case searchengin = "fa-searchengin"
+    case seedling = "fa-seedling"
+    case sellcast = "fa-sellcast"
+    case sellsy = "fa-sellsy"
+    case server = "fa-server"
+    case servicestack = "fa-servicestack"
+    case shapes = "fa-shapes"
+    case share = "fa-share"
+    case shareAlt = "fa-share-alt"
+    case shareAltSquare = "fa-share-alt-square"
+    case shareSquare = "fa-share-square"
+    case shekelSign = "fa-shekel-sign"
+    case shieldAlt = "fa-shield-alt"
+    case ship = "fa-ship"
+    case shippingFast = "fa-shipping-fast"
+    case shirtsinbulk = "fa-shirtsinbulk"
+    case shoePrints = "fa-shoe-prints"
+    case shoppingBag = "fa-shopping-bag"
+    case shoppingBasket = "fa-shopping-basket"
+    case shoppingCart = "fa-shopping-cart"
+    case shopware = "fa-shopware"
+    case shower = "fa-shower"
+    case shuttleVan = "fa-shuttle-van"
+    case sign = "fa-sign"
+    case signInAlt = "fa-sign-in-alt"
+    case signLanguage = "fa-sign-language"
+    case signOutAlt = "fa-sign-out-alt"
+    case signal = "fa-signal"
+    case signature = "fa-signature"
+    case simCard = "fa-sim-card"
+    case simplybuilt = "fa-simplybuilt"
+    case sistrix = "fa-sistrix"
+    case sitemap = "fa-sitemap"
+    case sith = "fa-sith"
+    case skating = "fa-skating"
+    case sketch = "fa-sketch"
+    case skiing = "fa-skiing"
+    case skiingNordic = "fa-skiing-nordic"
+    case skull = "fa-skull"
+    case skullCrossbones = "fa-skull-crossbones"
+    case skyatlas = "fa-skyatlas"
+    case skype = "fa-skype"
+    case slack = "fa-slack"
+    case slackHash = "fa-slack-hash"
+    case slash = "fa-slash"
+    case sleigh = "fa-sleigh"
+    case slidersH = "fa-sliders-h"
+    case slideshare = "fa-slideshare"
+    case smile = "fa-smile"
+    case smileBeam = "fa-smile-beam"
+    case smileWink = "fa-smile-wink"
+    case smog = "fa-smog"
+    case smoking = "fa-smoking"
+    case smokingBan = "fa-smoking-ban"
+    case sms = "fa-sms"
+    case snapchat = "fa-snapchat"
+    case snapchatGhost = "fa-snapchat-ghost"
+    case snapchatSquare = "fa-snapchat-square"
+    case snowboarding = "fa-snowboarding"
+    case snowflake = "fa-snowflake"
+    case snowman = "fa-snowman"
+    case snowplow = "fa-snowplow"
+    case socks = "fa-socks"
+    case solarPanel = "fa-solar-panel"
+    case sort = "fa-sort"
+    case sortAlphaDown = "fa-sort-alpha-down"
+    case sortAlphaUp = "fa-sort-alpha-up"
+    case sortAmountDown = "fa-sort-amount-down"
+    case sortAmountUp = "fa-sort-amount-up"
+    case sortDown = "fa-sort-down"
+    case sortNumericDown = "fa-sort-numeric-down"
+    case sortNumericUp = "fa-sort-numeric-up"
+    case sortUp = "fa-sort-up"
+    case soundcloud = "fa-soundcloud"
+    case sourcetree = "fa-sourcetree"
+    case spa = "fa-spa"
+    case spaceShuttle = "fa-space-shuttle"
+    case speakap = "fa-speakap"
+    case speakerDeck = "fa-speaker-deck"
+    case spider = "fa-spider"
+    case spinner = "fa-spinner"
+    case splotch = "fa-splotch"
+    case spotify = "fa-spotify"
+    case sprayCan = "fa-spray-can"
+    case square = "fa-square"
+    case squareFull = "fa-square-full"
+    case squareRootAlt = "fa-square-root-alt"
+    case squarespace = "fa-squarespace"
+    case stackExchange = "fa-stack-exchange"
+    case stackOverflow = "fa-stack-overflow"
+    case stackpath = "fa-stackpath"
+    case stamp = "fa-stamp"
+    case star = "fa-star"
+    case starAndCrescent = "fa-star-and-crescent"
+    case starHalf = "fa-star-half"
+    case starHalfAlt = "fa-star-half-alt"
+    case starOfDavid = "fa-star-of-david"
+    case starOfLife = "fa-star-of-life"
+    case staylinked = "fa-staylinked"
+    case steam = "fa-steam"
+    case steamSquare = "fa-steam-square"
+    case steamSymbol = "fa-steam-symbol"
+    case stepBackward = "fa-step-backward"
+    case stepForward = "fa-step-forward"
+    case stethoscope = "fa-stethoscope"
+    case stickerMule = "fa-sticker-mule"
+    case stickyNote = "fa-sticky-note"
+    case stop = "fa-stop"
+    case stopCircle = "fa-stop-circle"
+    case stopwatch = "fa-stopwatch"
+    case store = "fa-store"
+    case storeAlt = "fa-store-alt"
+    case strava = "fa-strava"
+    case stream = "fa-stream"
+    case streetView = "fa-street-view"
+    case strikethrough = "fa-strikethrough"
+    case stripe = "fa-stripe"
+    case stripeS = "fa-stripe-s"
+    case stroopwafel = "fa-stroopwafel"
+    case studiovinari = "fa-studiovinari"
+    case stumbleupon = "fa-stumbleupon"
+    case stumbleuponCircle = "fa-stumbleupon-circle"
+    case `subscript` = "fa-subscript"
+    case subway = "fa-subway"
+    case suitcase = "fa-suitcase"
+    case suitcaseRolling = "fa-suitcase-rolling"
+    case sun = "fa-sun"
+    case superpowers = "fa-superpowers"
+    case superscript = "fa-superscript"
+    case supple = "fa-supple"
+    case surprise = "fa-surprise"
+    case suse = "fa-suse"
+    case swatchbook = "fa-swatchbook"
+    case swimmer = "fa-swimmer"
+    case swimmingPool = "fa-swimming-pool"
+    case symfony = "fa-symfony"
+    case synagogue = "fa-synagogue"
+    case sync = "fa-sync"
+    case syncAlt = "fa-sync-alt"
+    case syringe = "fa-syringe"
+    case table = "fa-table"
+    case tableTennis = "fa-table-tennis"
+    case tablet = "fa-tablet"
+    case tabletAlt = "fa-tablet-alt"
+    case tablets = "fa-tablets"
+    case tachometerAlt = "fa-tachometer-alt"
+    case tag = "fa-tag"
+    case tags = "fa-tags"
+    case tape = "fa-tape"
+    case tasks = "fa-tasks"
+    case taxi = "fa-taxi"
+    case teamspeak = "fa-teamspeak"
+    case teeth = "fa-teeth"
+    case teethOpen = "fa-teeth-open"
+    case telegram = "fa-telegram"
+    case telegramPlane = "fa-telegram-plane"
+    case temperatureHigh = "fa-temperature-high"
+    case temperatureLow = "fa-temperature-low"
+    case tencentWeibo = "fa-tencent-weibo"
+    case tenge = "fa-tenge"
+    case terminal = "fa-terminal"
+    case textHeight = "fa-text-height"
+    case textWidth = "fa-text-width"
+    case th = "fa-th"
+    case thLarge = "fa-th-large"
+    case thList = "fa-th-list"
+    case theRedYeti = "fa-the-red-yeti"
+    case theaterMasks = "fa-theater-masks"
+    case themeco = "fa-themeco"
+    case themeisle = "fa-themeisle"
+    case thermometer = "fa-thermometer"
+    case thermometerEmpty = "fa-thermometer-empty"
+    case thermometerFull = "fa-thermometer-full"
+    case thermometerHalf = "fa-thermometer-half"
+    case thermometerQuarter = "fa-thermometer-quarter"
+    case thermometerThreeQuarters = "fa-thermometer-three-quarters"
+    case thinkPeaks = "fa-think-peaks"
+    case thumbsDown = "fa-thumbs-down"
+    case thumbsUp = "fa-thumbs-up"
+    case thumbtack = "fa-thumbtack"
+    case ticketAlt = "fa-ticket-alt"
+    case times = "fa-times"
+    case timesCircle = "fa-times-circle"
+    case tint = "fa-tint"
+    case tintSlash = "fa-tint-slash"
+    case tired = "fa-tired"
+    case toggleOff = "fa-toggle-off"
+    case toggleOn = "fa-toggle-on"
+    case toilet = "fa-toilet"
+    case toiletPaper = "fa-toilet-paper"
+    case toolbox = "fa-toolbox"
+    case tools = "fa-tools"
+    case tooth = "fa-tooth"
+    case torah = "fa-torah"
+    case toriiGate = "fa-torii-gate"
+    case tractor = "fa-tractor"
+    case tradeFederation = "fa-trade-federation"
+    case trademark = "fa-trademark"
+    case trafficLight = "fa-traffic-light"
+    case train = "fa-train"
+    case tram = "fa-tram"
+    case transgender = "fa-transgender"
+    case transgenderAlt = "fa-transgender-alt"
+    case trash = "fa-trash"
+    case trashAlt = "fa-trash-alt"
+    case trashRestore = "fa-trash-restore"
+    case trashRestoreAlt = "fa-trash-restore-alt"
+    case tree = "fa-tree"
+    case trello = "fa-trello"
+    case tripadvisor = "fa-tripadvisor"
+    case trophy = "fa-trophy"
+    case truck = "fa-truck"
+    case truckLoading = "fa-truck-loading"
+    case truckMonster = "fa-truck-monster"
+    case truckMoving = "fa-truck-moving"
+    case truckPickup = "fa-truck-pickup"
+    case tshirt = "fa-tshirt"
+    case tty = "fa-tty"
+    case tumblr = "fa-tumblr"
+    case tumblrSquare = "fa-tumblr-square"
+    case tv = "fa-tv"
+    case twitch = "fa-twitch"
+    case twitter = "fa-twitter"
+    case twitterSquare = "fa-twitter-square"
+    case typo3 = "fa-typo3"
+    case uber = "fa-uber"
+    case ubuntu = "fa-ubuntu"
+    case uikit = "fa-uikit"
+    case umbrella = "fa-umbrella"
+    case umbrellaBeach = "fa-umbrella-beach"
+    case underline = "fa-underline"
+    case undo = "fa-undo"
+    case undoAlt = "fa-undo-alt"
+    case uniregistry = "fa-uniregistry"
+    case universalAccess = "fa-universal-access"
+    case university = "fa-university"
+    case unlink = "fa-unlink"
+    case unlock = "fa-unlock"
+    case unlockAlt = "fa-unlock-alt"
+    case untappd = "fa-untappd"
+    case upload = "fa-upload"
+    case ups = "fa-ups"
+    case usb = "fa-usb"
+    case user = "fa-user"
+    case userAlt = "fa-user-alt"
+    case userAltSlash = "fa-user-alt-slash"
+    case userAstronaut = "fa-user-astronaut"
+    case userCheck = "fa-user-check"
+    case userCircle = "fa-user-circle"
+    case userClock = "fa-user-clock"
+    case userCog = "fa-user-cog"
+    case userEdit = "fa-user-edit"
+    case userFriends = "fa-user-friends"
+    case userGraduate = "fa-user-graduate"
+    case userInjured = "fa-user-injured"
+    case userLock = "fa-user-lock"
+    case userMd = "fa-user-md"
+    case userMinus = "fa-user-minus"
+    case userNinja = "fa-user-ninja"
+    case userNurse = "fa-user-nurse"
+    case userPlus = "fa-user-plus"
+    case userSecret = "fa-user-secret"
+    case userShield = "fa-user-shield"
+    case userSlash = "fa-user-slash"
+    case userTag = "fa-user-tag"
+    case userTie = "fa-user-tie"
+    case userTimes = "fa-user-times"
+    case users = "fa-users"
+    case usersCog = "fa-users-cog"
+    case usps = "fa-usps"
+    case ussunnah = "fa-ussunnah"
+    case utensilSpoon = "fa-utensil-spoon"
+    case utensils = "fa-utensils"
+    case vaadin = "fa-vaadin"
+    case vectorSquare = "fa-vector-square"
+    case venus = "fa-venus"
+    case venusDouble = "fa-venus-double"
+    case venusMars = "fa-venus-mars"
+    case viacoin = "fa-viacoin"
+    case viadeo = "fa-viadeo"
+    case viadeoSquare = "fa-viadeo-square"
+    case vial = "fa-vial"
+    case vials = "fa-vials"
+    case viber = "fa-viber"
+    case video = "fa-video"
+    case videoSlash = "fa-video-slash"
+    case vihara = "fa-vihara"
+    case vimeo = "fa-vimeo"
+    case vimeoSquare = "fa-vimeo-square"
+    case vimeoV = "fa-vimeo-v"
+    case vine = "fa-vine"
+    case vk = "fa-vk"
+    case vnv = "fa-vnv"
+    case volleyballBall = "fa-volleyball-ball"
+    case volumeDown = "fa-volume-down"
+    case volumeMute = "fa-volume-mute"
+    case volumeOff = "fa-volume-off"
+    case volumeUp = "fa-volume-up"
+    case voteYea = "fa-vote-yea"
+    case vrCardboard = "fa-vr-cardboard"
+    case vuejs = "fa-vuejs"
+    case walking = "fa-walking"
+    case wallet = "fa-wallet"
+    case warehouse = "fa-warehouse"
+    case water = "fa-water"
+    case waveSquare = "fa-wave-square"
+    case waze = "fa-waze"
+    case weebly = "fa-weebly"
+    case weibo = "fa-weibo"
+    case weight = "fa-weight"
+    case weightHanging = "fa-weight-hanging"
+    case weixin = "fa-weixin"
+    case whatsapp = "fa-whatsapp"
+    case whatsappSquare = "fa-whatsapp-square"
+    case wheelchair = "fa-wheelchair"
+    case whmcs = "fa-whmcs"
+    case wifi = "fa-wifi"
+    case wikipediaW = "fa-wikipedia-w"
+    case wind = "fa-wind"
+    case windowClose = "fa-window-close"
+    case windowMaximize = "fa-window-maximize"
+    case windowMinimize = "fa-window-minimize"
+    case windowRestore = "fa-window-restore"
+    case windows = "fa-windows"
+    case wineBottle = "fa-wine-bottle"
+    case wineGlass = "fa-wine-glass"
+    case wineGlassAlt = "fa-wine-glass-alt"
+    case wix = "fa-wix"
+    case wizardsOfTheCoast = "fa-wizards-of-the-coast"
+    case wolfPackBattalion = "fa-wolf-pack-battalion"
+    case wonSign = "fa-won-sign"
+    case wordpress = "fa-wordpress"
+    case wordpressSimple = "fa-wordpress-simple"
+    case wpbeginner = "fa-wpbeginner"
+    case wpexplorer = "fa-wpexplorer"
+    case wpforms = "fa-wpforms"
+    case wpressr = "fa-wpressr"
+    case wrench = "fa-wrench"
+    case xRay = "fa-x-ray"
+    case xbox = "fa-xbox"
+    case xing = "fa-xing"
+    case xingSquare = "fa-xing-square"
+    case yCombinator = "fa-y-combinator"
+    case yahoo = "fa-yahoo"
+    case yammer = "fa-yammer"
+    case yandex = "fa-yandex"
+    case yandexInternational = "fa-yandex-international"
+    case yarn = "fa-yarn"
+    case yelp = "fa-yelp"
+    case yenSign = "fa-yen-sign"
+    case yinYang = "fa-yin-yang"
+    case yoast = "fa-yoast"
+    case youtube = "fa-youtube"
+    case youtubeSquare = "fa-youtube-square"
+    case zhihu = "fa-zhihu"
+
+    /// An unicode code of FontAwesome icon
+    public var unicode: String {
+        switch self {
+            case .fiveHundredPixels: return "\u{f26e}"
+            case .accessibleIcon: return "\u{f368}"
+            case .accusoft: return "\u{f369}"
+            case .acquisitionsIncorporated: return "\u{f6af}"
+            case .ad: return "\u{f641}"
+            case .addressBook: return "\u{f2b9}"
+            case .addressCard: return "\u{f2bb}"
+            case .adjust: return "\u{f042}"
+            case .adn: return "\u{f170}"
+            case .adobe: return "\u{f778}"
+            case .adversal: return "\u{f36a}"
+            case .affiliatetheme: return "\u{f36b}"
+            case .airFreshener: return "\u{f5d0}"
+            case .airbnb: return "\u{f834}"
+            case .algolia: return "\u{f36c}"
+            case .alignCenter: return "\u{f037}"
+            case .alignJustify: return "\u{f039}"
+            case .alignLeft: return "\u{f036}"
+            case .alignRight: return "\u{f038}"
+            case .alipay: return "\u{f642}"
+            case .allergies: return "\u{f461}"
+            case .amazon: return "\u{f270}"
+            case .amazonPay: return "\u{f42c}"
+            case .ambulance: return "\u{f0f9}"
+            case .americanSignLanguageInterpreting: return "\u{f2a3}"
+            case .amilia: return "\u{f36d}"
+            case .anchor: return "\u{f13d}"
+            case .android: return "\u{f17b}"
+            case .angellist: return "\u{f209}"
+            case .angleDoubleDown: return "\u{f103}"
+            case .angleDoubleLeft: return "\u{f100}"
+            case .angleDoubleRight: return "\u{f101}"
+            case .angleDoubleUp: return "\u{f102}"
+            case .angleDown: return "\u{f107}"
+            case .angleLeft: return "\u{f104}"
+            case .angleRight: return "\u{f105}"
+            case .angleUp: return "\u{f106}"
+            case .angry: return "\u{f556}"
+            case .angrycreative: return "\u{f36e}"
+            case .angular: return "\u{f420}"
+            case .ankh: return "\u{f644}"
+            case .appStore: return "\u{f36f}"
+            case .appStoreIos: return "\u{f370}"
+            case .apper: return "\u{f371}"
+            case .apple: return "\u{f179}"
+            case .appleAlt: return "\u{f5d1}"
+            case .applePay: return "\u{f415}"
+            case .archive: return "\u{f187}"
+            case .archway: return "\u{f557}"
+            case .arrowAltCircleDown: return "\u{f358}"
+            case .arrowAltCircleLeft: return "\u{f359}"
+            case .arrowAltCircleRight: return "\u{f35a}"
+            case .arrowAltCircleUp: return "\u{f35b}"
+            case .arrowCircleDown: return "\u{f0ab}"
+            case .arrowCircleLeft: return "\u{f0a8}"
+            case .arrowCircleRight: return "\u{f0a9}"
+            case .arrowCircleUp: return "\u{f0aa}"
+            case .arrowDown: return "\u{f063}"
+            case .arrowLeft: return "\u{f060}"
+            case .arrowRight: return "\u{f061}"
+            case .arrowUp: return "\u{f062}"
+            case .arrowsAlt: return "\u{f0b2}"
+            case .arrowsAltH: return "\u{f337}"
+            case .arrowsAltV: return "\u{f338}"
+            case .artstation: return "\u{f77a}"
+            case .assistiveListeningSystems: return "\u{f2a2}"
+            case .asterisk: return "\u{f069}"
+            case .asymmetrik: return "\u{f372}"
+            case .at: return "\u{f1fa}"
+            case .atlas: return "\u{f558}"
+            case .atlassian: return "\u{f77b}"
+            case .atom: return "\u{f5d2}"
+            case .audible: return "\u{f373}"
+            case .audioDescription: return "\u{f29e}"
+            case .autoprefixer: return "\u{f41c}"
+            case .avianex: return "\u{f374}"
+            case .aviato: return "\u{f421}"
+            case .award: return "\u{f559}"
+            case .aws: return "\u{f375}"
+            case .baby: return "\u{f77c}"
+            case .babyCarriage: return "\u{f77d}"
+            case .backspace: return "\u{f55a}"
+            case .backward: return "\u{f04a}"
+            case .bacon: return "\u{f7e5}"
+            case .balanceScale: return "\u{f24e}"
+            case .ban: return "\u{f05e}"
+            case .bandAid: return "\u{f462}"
+            case .bandcamp: return "\u{f2d5}"
+            case .barcode: return "\u{f02a}"
+            case .bars: return "\u{f0c9}"
+            case .baseballBall: return "\u{f433}"
+            case .basketballBall: return "\u{f434}"
+            case .bath: return "\u{f2cd}"
+            case .batteryEmpty: return "\u{f244}"
+            case .batteryFull: return "\u{f240}"
+            case .batteryHalf: return "\u{f242}"
+            case .batteryQuarter: return "\u{f243}"
+            case .batteryThreeQuarters: return "\u{f241}"
+            case .battleNet: return "\u{f835}"
+            case .bed: return "\u{f236}"
+            case .beer: return "\u{f0fc}"
+            case .behance: return "\u{f1b4}"
+            case .behanceSquare: return "\u{f1b5}"
+            case .bell: return "\u{f0f3}"
+            case .bellSlash: return "\u{f1f6}"
+            case .bezierCurve: return "\u{f55b}"
+            case .bible: return "\u{f647}"
+            case .bicycle: return "\u{f206}"
+            case .bimobject: return "\u{f378}"
+            case .binoculars: return "\u{f1e5}"
+            case .biohazard: return "\u{f780}"
+            case .birthdayCake: return "\u{f1fd}"
+            case .bitbucket: return "\u{f171}"
+            case .bitcoin: return "\u{f379}"
+            case .bity: return "\u{f37a}"
+            case .blackTie: return "\u{f27e}"
+            case .blackberry: return "\u{f37b}"
+            case .blender: return "\u{f517}"
+            case .blenderPhone: return "\u{f6b6}"
+            case .blind: return "\u{f29d}"
+            case .blog: return "\u{f781}"
+            case .blogger: return "\u{f37c}"
+            case .bloggerB: return "\u{f37d}"
+            case .bluetooth: return "\u{f293}"
+            case .bluetoothB: return "\u{f294}"
+            case .bold: return "\u{f032}"
+            case .bolt: return "\u{f0e7}"
+            case .bomb: return "\u{f1e2}"
+            case .bone: return "\u{f5d7}"
+            case .bong: return "\u{f55c}"
+            case .book: return "\u{f02d}"
+            case .bookDead: return "\u{f6b7}"
+            case .bookMedical: return "\u{f7e6}"
+            case .bookOpen: return "\u{f518}"
+            case .bookReader: return "\u{f5da}"
+            case .bookmark: return "\u{f02e}"
+            case .bootstrap: return "\u{f836}"
+            case .bowlingBall: return "\u{f436}"
+            case .box: return "\u{f466}"
+            case .boxOpen: return "\u{f49e}"
+            case .boxes: return "\u{f468}"
+            case .braille: return "\u{f2a1}"
+            case .brain: return "\u{f5dc}"
+            case .breadSlice: return "\u{f7ec}"
+            case .briefcase: return "\u{f0b1}"
+            case .briefcaseMedical: return "\u{f469}"
+            case .broadcastTower: return "\u{f519}"
+            case .broom: return "\u{f51a}"
+            case .brush: return "\u{f55d}"
+            case .btc: return "\u{f15a}"
+            case .buffer: return "\u{f837}"
+            case .bug: return "\u{f188}"
+            case .building: return "\u{f1ad}"
+            case .bullhorn: return "\u{f0a1}"
+            case .bullseye: return "\u{f140}"
+            case .burn: return "\u{f46a}"
+            case .buromobelexperte: return "\u{f37f}"
+            case .bus: return "\u{f207}"
+            case .busAlt: return "\u{f55e}"
+            case .businessTime: return "\u{f64a}"
+            case .buysellads: return "\u{f20d}"
+            case .calculator: return "\u{f1ec}"
+            case .calendar: return "\u{f133}"
+            case .calendarAlt: return "\u{f073}"
+            case .calendarCheck: return "\u{f274}"
+            case .calendarDay: return "\u{f783}"
+            case .calendarMinus: return "\u{f272}"
+            case .calendarPlus: return "\u{f271}"
+            case .calendarTimes: return "\u{f273}"
+            case .calendarWeek: return "\u{f784}"
+            case .camera: return "\u{f030}"
+            case .cameraRetro: return "\u{f083}"
+            case .campground: return "\u{f6bb}"
+            case .canadianMapleLeaf: return "\u{f785}"
+            case .candyCane: return "\u{f786}"
+            case .cannabis: return "\u{f55f}"
+            case .capsules: return "\u{f46b}"
+            case .car: return "\u{f1b9}"
+            case .carAlt: return "\u{f5de}"
+            case .carBattery: return "\u{f5df}"
+            case .carCrash: return "\u{f5e1}"
+            case .carSide: return "\u{f5e4}"
+            case .caretDown: return "\u{f0d7}"
+            case .caretLeft: return "\u{f0d9}"
+            case .caretRight: return "\u{f0da}"
+            case .caretSquareDown: return "\u{f150}"
+            case .caretSquareLeft: return "\u{f191}"
+            case .caretSquareRight: return "\u{f152}"
+            case .caretSquareUp: return "\u{f151}"
+            case .caretUp: return "\u{f0d8}"
+            case .carrot: return "\u{f787}"
+            case .cartArrowDown: return "\u{f218}"
+            case .cartPlus: return "\u{f217}"
+            case .cashRegister: return "\u{f788}"
+            case .cat: return "\u{f6be}"
+            case .ccAmazonPay: return "\u{f42d}"
+            case .ccAmex: return "\u{f1f3}"
+            case .ccApplePay: return "\u{f416}"
+            case .ccDinersClub: return "\u{f24c}"
+            case .ccDiscover: return "\u{f1f2}"
+            case .ccJcb: return "\u{f24b}"
+            case .ccMastercard: return "\u{f1f1}"
+            case .ccPaypal: return "\u{f1f4}"
+            case .ccStripe: return "\u{f1f5}"
+            case .ccVisa: return "\u{f1f0}"
+            case .centercode: return "\u{f380}"
+            case .centos: return "\u{f789}"
+            case .certificate: return "\u{f0a3}"
+            case .chair: return "\u{f6c0}"
+            case .chalkboard: return "\u{f51b}"
+            case .chalkboardTeacher: return "\u{f51c}"
+            case .chargingStation: return "\u{f5e7}"
+            case .chartArea: return "\u{f1fe}"
+            case .chartBar: return "\u{f080}"
+            case .chartLine: return "\u{f201}"
+            case .chartPie: return "\u{f200}"
+            case .check: return "\u{f00c}"
+            case .checkCircle: return "\u{f058}"
+            case .checkDouble: return "\u{f560}"
+            case .checkSquare: return "\u{f14a}"
+            case .cheese: return "\u{f7ef}"
+            case .chess: return "\u{f439}"
+            case .chessBishop: return "\u{f43a}"
+            case .chessBoard: return "\u{f43c}"
+            case .chessKing: return "\u{f43f}"
+            case .chessKnight: return "\u{f441}"
+            case .chessPawn: return "\u{f443}"
+            case .chessQueen: return "\u{f445}"
+            case .chessRook: return "\u{f447}"
+            case .chevronCircleDown: return "\u{f13a}"
+            case .chevronCircleLeft: return "\u{f137}"
+            case .chevronCircleRight: return "\u{f138}"
+            case .chevronCircleUp: return "\u{f139}"
+            case .chevronDown: return "\u{f078}"
+            case .chevronLeft: return "\u{f053}"
+            case .chevronRight: return "\u{f054}"
+            case .chevronUp: return "\u{f077}"
+            case .child: return "\u{f1ae}"
+            case .chrome: return "\u{f268}"
+            case .chromecast: return "\u{f838}"
+            case .church: return "\u{f51d}"
+            case .circle: return "\u{f111}"
+            case .circleNotch: return "\u{f1ce}"
+            case .city: return "\u{f64f}"
+            case .clinicMedical: return "\u{f7f2}"
+            case .clipboard: return "\u{f328}"
+            case .clipboardCheck: return "\u{f46c}"
+            case .clipboardList: return "\u{f46d}"
+            case .clock: return "\u{f017}"
+            case .clone: return "\u{f24d}"
+            case .closedCaptioning: return "\u{f20a}"
+            case .cloud: return "\u{f0c2}"
+            case .cloudDownloadAlt: return "\u{f381}"
+            case .cloudMeatball: return "\u{f73b}"
+            case .cloudMoon: return "\u{f6c3}"
+            case .cloudMoonRain: return "\u{f73c}"
+            case .cloudRain: return "\u{f73d}"
+            case .cloudShowersHeavy: return "\u{f740}"
+            case .cloudSun: return "\u{f6c4}"
+            case .cloudSunRain: return "\u{f743}"
+            case .cloudUploadAlt: return "\u{f382}"
+            case .cloudscale: return "\u{f383}"
+            case .cloudsmith: return "\u{f384}"
+            case .cloudversify: return "\u{f385}"
+            case .cocktail: return "\u{f561}"
+            case .code: return "\u{f121}"
+            case .codeBranch: return "\u{f126}"
+            case .codepen: return "\u{f1cb}"
+            case .codiepie: return "\u{f284}"
+            case .coffee: return "\u{f0f4}"
+            case .cog: return "\u{f013}"
+            case .cogs: return "\u{f085}"
+            case .coins: return "\u{f51e}"
+            case .columns: return "\u{f0db}"
+            case .comment: return "\u{f075}"
+            case .commentAlt: return "\u{f27a}"
+            case .commentDollar: return "\u{f651}"
+            case .commentDots: return "\u{f4ad}"
+            case .commentMedical: return "\u{f7f5}"
+            case .commentSlash: return "\u{f4b3}"
+            case .comments: return "\u{f086}"
+            case .commentsDollar: return "\u{f653}"
+            case .compactDisc: return "\u{f51f}"
+            case .compass: return "\u{f14e}"
+            case .compress: return "\u{f066}"
+            case .compressArrowsAlt: return "\u{f78c}"
+            case .conciergeBell: return "\u{f562}"
+            case .confluence: return "\u{f78d}"
+            case .connectdevelop: return "\u{f20e}"
+            case .contao: return "\u{f26d}"
+            case .cookie: return "\u{f563}"
+            case .cookieBite: return "\u{f564}"
+            case .copy: return "\u{f0c5}"
+            case .copyright: return "\u{f1f9}"
+            case .couch: return "\u{f4b8}"
+            case .cpanel: return "\u{f388}"
+            case .creativeCommons: return "\u{f25e}"
+            case .creativeCommonsBy: return "\u{f4e7}"
+            case .creativeCommonsNc: return "\u{f4e8}"
+            case .creativeCommonsNcEu: return "\u{f4e9}"
+            case .creativeCommonsNcJp: return "\u{f4ea}"
+            case .creativeCommonsNd: return "\u{f4eb}"
+            case .creativeCommonsPd: return "\u{f4ec}"
+            case .creativeCommonsPdAlt: return "\u{f4ed}"
+            case .creativeCommonsRemix: return "\u{f4ee}"
+            case .creativeCommonsSa: return "\u{f4ef}"
+            case .creativeCommonsSampling: return "\u{f4f0}"
+            case .creativeCommonsSamplingPlus: return "\u{f4f1}"
+            case .creativeCommonsShare: return "\u{f4f2}"
+            case .creativeCommonsZero: return "\u{f4f3}"
+            case .creditCard: return "\u{f09d}"
+            case .criticalRole: return "\u{f6c9}"
+            case .crop: return "\u{f125}"
+            case .cropAlt: return "\u{f565}"
+            case .cross: return "\u{f654}"
+            case .crosshairs: return "\u{f05b}"
+            case .crow: return "\u{f520}"
+            case .crown: return "\u{f521}"
+            case .crutch: return "\u{f7f7}"
+            case .css3: return "\u{f13c}"
+            case .css3Alt: return "\u{f38b}"
+            case .cube: return "\u{f1b2}"
+            case .cubes: return "\u{f1b3}"
+            case .cut: return "\u{f0c4}"
+            case .cuttlefish: return "\u{f38c}"
+            case .dAndD: return "\u{f38d}"
+            case .dAndDBeyond: return "\u{f6ca}"
+            case .dashcube: return "\u{f210}"
+            case .database: return "\u{f1c0}"
+            case .deaf: return "\u{f2a4}"
+            case .delicious: return "\u{f1a5}"
+            case .democrat: return "\u{f747}"
+            case .deploydog: return "\u{f38e}"
+            case .deskpro: return "\u{f38f}"
+            case .desktop: return "\u{f108}"
+            case .dev: return "\u{f6cc}"
+            case .deviantart: return "\u{f1bd}"
+            case .dharmachakra: return "\u{f655}"
+            case .dhl: return "\u{f790}"
+            case .diagnoses: return "\u{f470}"
+            case .diaspora: return "\u{f791}"
+            case .dice: return "\u{f522}"
+            case .diceD20: return "\u{f6cf}"
+            case .diceD6: return "\u{f6d1}"
+            case .diceFive: return "\u{f523}"
+            case .diceFour: return "\u{f524}"
+            case .diceOne: return "\u{f525}"
+            case .diceSix: return "\u{f526}"
+            case .diceThree: return "\u{f527}"
+            case .diceTwo: return "\u{f528}"
+            case .digg: return "\u{f1a6}"
+            case .digitalOcean: return "\u{f391}"
+            case .digitalTachograph: return "\u{f566}"
+            case .directions: return "\u{f5eb}"
+            case .discord: return "\u{f392}"
+            case .discourse: return "\u{f393}"
+            case .divide: return "\u{f529}"
+            case .dizzy: return "\u{f567}"
+            case .dna: return "\u{f471}"
+            case .dochub: return "\u{f394}"
+            case .docker: return "\u{f395}"
+            case .dog: return "\u{f6d3}"
+            case .dollarSign: return "\u{f155}"
+            case .dolly: return "\u{f472}"
+            case .dollyFlatbed: return "\u{f474}"
+            case .donate: return "\u{f4b9}"
+            case .doorClosed: return "\u{f52a}"
+            case .doorOpen: return "\u{f52b}"
+            case .dotCircle: return "\u{f192}"
+            case .dove: return "\u{f4ba}"
+            case .download: return "\u{f019}"
+            case .draft2digital: return "\u{f396}"
+            case .draftingCompass: return "\u{f568}"
+            case .dragon: return "\u{f6d5}"
+            case .drawPolygon: return "\u{f5ee}"
+            case .dribbble: return "\u{f17d}"
+            case .dribbbleSquare: return "\u{f397}"
+            case .dropbox: return "\u{f16b}"
+            case .drum: return "\u{f569}"
+            case .drumSteelpan: return "\u{f56a}"
+            case .drumstickBite: return "\u{f6d7}"
+            case .drupal: return "\u{f1a9}"
+            case .dumbbell: return "\u{f44b}"
+            case .dumpster: return "\u{f793}"
+            case .dumpsterFire: return "\u{f794}"
+            case .dungeon: return "\u{f6d9}"
+            case .dyalog: return "\u{f399}"
+            case .earlybirds: return "\u{f39a}"
+            case .ebay: return "\u{f4f4}"
+            case .edge: return "\u{f282}"
+            case .edit: return "\u{f044}"
+            case .egg: return "\u{f7fb}"
+            case .eject: return "\u{f052}"
+            case .elementor: return "\u{f430}"
+            case .ellipsisH: return "\u{f141}"
+            case .ellipsisV: return "\u{f142}"
+            case .ello: return "\u{f5f1}"
+            case .ember: return "\u{f423}"
+            case .empire: return "\u{f1d1}"
+            case .envelope: return "\u{f0e0}"
+            case .envelopeOpen: return "\u{f2b6}"
+            case .envelopeOpenText: return "\u{f658}"
+            case .envelopeSquare: return "\u{f199}"
+            case .envira: return "\u{f299}"
+            case .equals: return "\u{f52c}"
+            case .eraser: return "\u{f12d}"
+            case .erlang: return "\u{f39d}"
+            case .ethereum: return "\u{f42e}"
+            case .ethernet: return "\u{f796}"
+            case .etsy: return "\u{f2d7}"
+            case .euroSign: return "\u{f153}"
+            case .evernote: return "\u{f839}"
+            case .exchangeAlt: return "\u{f362}"
+            case .exclamation: return "\u{f12a}"
+            case .exclamationCircle: return "\u{f06a}"
+            case .exclamationTriangle: return "\u{f071}"
+            case .expand: return "\u{f065}"
+            case .expandArrowsAlt: return "\u{f31e}"
+            case .expeditedssl: return "\u{f23e}"
+            case .externalLinkAlt: return "\u{f35d}"
+            case .externalLinkSquareAlt: return "\u{f360}"
+            case .eye: return "\u{f06e}"
+            case .eyeDropper: return "\u{f1fb}"
+            case .eyeSlash: return "\u{f070}"
+            case .facebook: return "\u{f09a}"
+            case .facebookF: return "\u{f39e}"
+            case .facebookMessenger: return "\u{f39f}"
+            case .facebookSquare: return "\u{f082}"
+            case .fantasyFlightGames: return "\u{f6dc}"
+            case .fastBackward: return "\u{f049}"
+            case .fastForward: return "\u{f050}"
+            case .fax: return "\u{f1ac}"
+            case .feather: return "\u{f52d}"
+            case .featherAlt: return "\u{f56b}"
+            case .fedex: return "\u{f797}"
+            case .fedora: return "\u{f798}"
+            case .female: return "\u{f182}"
+            case .fighterJet: return "\u{f0fb}"
+            case .figma: return "\u{f799}"
+            case .file: return "\u{f15b}"
+            case .fileAlt: return "\u{f15c}"
+            case .fileArchive: return "\u{f1c6}"
+            case .fileAudio: return "\u{f1c7}"
+            case .fileCode: return "\u{f1c9}"
+            case .fileContract: return "\u{f56c}"
+            case .fileCsv: return "\u{f6dd}"
+            case .fileDownload: return "\u{f56d}"
+            case .fileExcel: return "\u{f1c3}"
+            case .fileExport: return "\u{f56e}"
+            case .fileImage: return "\u{f1c5}"
+            case .fileImport: return "\u{f56f}"
+            case .fileInvoice: return "\u{f570}"
+            case .fileInvoiceDollar: return "\u{f571}"
+            case .fileMedical: return "\u{f477}"
+            case .fileMedicalAlt: return "\u{f478}"
+            case .filePdf: return "\u{f1c1}"
+            case .filePowerpoint: return "\u{f1c4}"
+            case .filePrescription: return "\u{f572}"
+            case .fileSignature: return "\u{f573}"
+            case .fileUpload: return "\u{f574}"
+            case .fileVideo: return "\u{f1c8}"
+            case .fileWord: return "\u{f1c2}"
+            case .fill: return "\u{f575}"
+            case .fillDrip: return "\u{f576}"
+            case .film: return "\u{f008}"
+            case .filter: return "\u{f0b0}"
+            case .fingerprint: return "\u{f577}"
+            case .fire: return "\u{f06d}"
+            case .fireAlt: return "\u{f7e4}"
+            case .fireExtinguisher: return "\u{f134}"
+            case .firefox: return "\u{f269}"
+            case .firstAid: return "\u{f479}"
+            case .firstOrder: return "\u{f2b0}"
+            case .firstOrderAlt: return "\u{f50a}"
+            case .firstdraft: return "\u{f3a1}"
+            case .fish: return "\u{f578}"
+            case .fistRaised: return "\u{f6de}"
+            case .flag: return "\u{f024}"
+            case .flagCheckered: return "\u{f11e}"
+            case .flagUsa: return "\u{f74d}"
+            case .flask: return "\u{f0c3}"
+            case .flickr: return "\u{f16e}"
+            case .flipboard: return "\u{f44d}"
+            case .flushed: return "\u{f579}"
+            case .fly: return "\u{f417}"
+            case .folder: return "\u{f07b}"
+            case .folderMinus: return "\u{f65d}"
+            case .folderOpen: return "\u{f07c}"
+            case .folderPlus: return "\u{f65e}"
+            case .font: return "\u{f031}"
+            case .fontAwesome: return "\u{f2b4}"
+            case .fontAwesomeAlt: return "\u{f35c}"
+            case .fontAwesomeFlag: return "\u{f425}"
+            case .fontAwesomeLogoFull: return "\u{f4e6}"
+            case .fonticons: return "\u{f280}"
+            case .fonticonsFi: return "\u{f3a2}"
+            case .footballBall: return "\u{f44e}"
+            case .fortAwesome: return "\u{f286}"
+            case .fortAwesomeAlt: return "\u{f3a3}"
+            case .forumbee: return "\u{f211}"
+            case .forward: return "\u{f04e}"
+            case .foursquare: return "\u{f180}"
+            case .freeCodeCamp: return "\u{f2c5}"
+            case .freebsd: return "\u{f3a4}"
+            case .frog: return "\u{f52e}"
+            case .frown: return "\u{f119}"
+            case .frownOpen: return "\u{f57a}"
+            case .fulcrum: return "\u{f50b}"
+            case .funnelDollar: return "\u{f662}"
+            case .futbol: return "\u{f1e3}"
+            case .galacticRepublic: return "\u{f50c}"
+            case .galacticSenate: return "\u{f50d}"
+            case .gamepad: return "\u{f11b}"
+            case .gasPump: return "\u{f52f}"
+            case .gavel: return "\u{f0e3}"
+            case .gem: return "\u{f3a5}"
+            case .genderless: return "\u{f22d}"
+            case .getPocket: return "\u{f265}"
+            case .gg: return "\u{f260}"
+            case .ggCircle: return "\u{f261}"
+            case .ghost: return "\u{f6e2}"
+            case .gift: return "\u{f06b}"
+            case .gifts: return "\u{f79c}"
+            case .git: return "\u{f1d3}"
+            case .gitAlt: return "\u{f841}"
+            case .gitSquare: return "\u{f1d2}"
+            case .github: return "\u{f09b}"
+            case .githubAlt: return "\u{f113}"
+            case .githubSquare: return "\u{f092}"
+            case .gitkraken: return "\u{f3a6}"
+            case .gitlab: return "\u{f296}"
+            case .gitter: return "\u{f426}"
+            case .glassCheers: return "\u{f79f}"
+            case .glassMartini: return "\u{f000}"
+            case .glassMartiniAlt: return "\u{f57b}"
+            case .glassWhiskey: return "\u{f7a0}"
+            case .glasses: return "\u{f530}"
+            case .glide: return "\u{f2a5}"
+            case .glideG: return "\u{f2a6}"
+            case .globe: return "\u{f0ac}"
+            case .globeAfrica: return "\u{f57c}"
+            case .globeAmericas: return "\u{f57d}"
+            case .globeAsia: return "\u{f57e}"
+            case .globeEurope: return "\u{f7a2}"
+            case .gofore: return "\u{f3a7}"
+            case .golfBall: return "\u{f450}"
+            case .goodreads: return "\u{f3a8}"
+            case .goodreadsG: return "\u{f3a9}"
+            case .google: return "\u{f1a0}"
+            case .googleDrive: return "\u{f3aa}"
+            case .googlePlay: return "\u{f3ab}"
+            case .googlePlus: return "\u{f2b3}"
+            case .googlePlusG: return "\u{f0d5}"
+            case .googlePlusSquare: return "\u{f0d4}"
+            case .googleWallet: return "\u{f1ee}"
+            case .gopuram: return "\u{f664}"
+            case .graduationCap: return "\u{f19d}"
+            case .gratipay: return "\u{f184}"
+            case .grav: return "\u{f2d6}"
+            case .greaterThan: return "\u{f531}"
+            case .greaterThanEqual: return "\u{f532}"
+            case .grimace: return "\u{f57f}"
+            case .grin: return "\u{f580}"
+            case .grinAlt: return "\u{f581}"
+            case .grinBeam: return "\u{f582}"
+            case .grinBeamSweat: return "\u{f583}"
+            case .grinHearts: return "\u{f584}"
+            case .grinSquint: return "\u{f585}"
+            case .grinSquintTears: return "\u{f586}"
+            case .grinStars: return "\u{f587}"
+            case .grinTears: return "\u{f588}"
+            case .grinTongue: return "\u{f589}"
+            case .grinTongueSquint: return "\u{f58a}"
+            case .grinTongueWink: return "\u{f58b}"
+            case .grinWink: return "\u{f58c}"
+            case .gripHorizontal: return "\u{f58d}"
+            case .gripLines: return "\u{f7a4}"
+            case .gripLinesVertical: return "\u{f7a5}"
+            case .gripVertical: return "\u{f58e}"
+            case .gripfire: return "\u{f3ac}"
+            case .grunt: return "\u{f3ad}"
+            case .guitar: return "\u{f7a6}"
+            case .gulp: return "\u{f3ae}"
+            case .hSquare: return "\u{f0fd}"
+            case .hackerNews: return "\u{f1d4}"
+            case .hackerNewsSquare: return "\u{f3af}"
+            case .hackerrank: return "\u{f5f7}"
+            case .hamburger: return "\u{f805}"
+            case .hammer: return "\u{f6e3}"
+            case .hamsa: return "\u{f665}"
+            case .handHolding: return "\u{f4bd}"
+            case .handHoldingHeart: return "\u{f4be}"
+            case .handHoldingUsd: return "\u{f4c0}"
+            case .handLizard: return "\u{f258}"
+            case .handMiddleFinger: return "\u{f806}"
+            case .handPaper: return "\u{f256}"
+            case .handPeace: return "\u{f25b}"
+            case .handPointDown: return "\u{f0a7}"
+            case .handPointLeft: return "\u{f0a5}"
+            case .handPointRight: return "\u{f0a4}"
+            case .handPointUp: return "\u{f0a6}"
+            case .handPointer: return "\u{f25a}"
+            case .handRock: return "\u{f255}"
+            case .handScissors: return "\u{f257}"
+            case .handSpock: return "\u{f259}"
+            case .hands: return "\u{f4c2}"
+            case .handsHelping: return "\u{f4c4}"
+            case .handshake: return "\u{f2b5}"
+            case .hanukiah: return "\u{f6e6}"
+            case .hardHat: return "\u{f807}"
+            case .hashtag: return "\u{f292}"
+            case .hatWizard: return "\u{f6e8}"
+            case .haykal: return "\u{f666}"
+            case .hdd: return "\u{f0a0}"
+            case .heading: return "\u{f1dc}"
+            case .headphones: return "\u{f025}"
+            case .headphonesAlt: return "\u{f58f}"
+            case .headset: return "\u{f590}"
+            case .heart: return "\u{f004}"
+            case .heartBroken: return "\u{f7a9}"
+            case .heartbeat: return "\u{f21e}"
+            case .helicopter: return "\u{f533}"
+            case .highlighter: return "\u{f591}"
+            case .hiking: return "\u{f6ec}"
+            case .hippo: return "\u{f6ed}"
+            case .hips: return "\u{f452}"
+            case .hireAHelper: return "\u{f3b0}"
+            case .history: return "\u{f1da}"
+            case .hockeyPuck: return "\u{f453}"
+            case .hollyBerry: return "\u{f7aa}"
+            case .home: return "\u{f015}"
+            case .hooli: return "\u{f427}"
+            case .hornbill: return "\u{f592}"
+            case .horse: return "\u{f6f0}"
+            case .horseHead: return "\u{f7ab}"
+            case .hospital: return "\u{f0f8}"
+            case .hospitalAlt: return "\u{f47d}"
+            case .hospitalSymbol: return "\u{f47e}"
+            case .hotTub: return "\u{f593}"
+            case .hotdog: return "\u{f80f}"
+            case .hotel: return "\u{f594}"
+            case .hotjar: return "\u{f3b1}"
+            case .hourglass: return "\u{f254}"
+            case .hourglassEnd: return "\u{f253}"
+            case .hourglassHalf: return "\u{f252}"
+            case .hourglassStart: return "\u{f251}"
+            case .houseDamage: return "\u{f6f1}"
+            case .houzz: return "\u{f27c}"
+            case .hryvnia: return "\u{f6f2}"
+            case .html5: return "\u{f13b}"
+            case .hubspot: return "\u{f3b2}"
+            case .iCursor: return "\u{f246}"
+            case .iceCream: return "\u{f810}"
+            case .icicles: return "\u{f7ad}"
+            case .idBadge: return "\u{f2c1}"
+            case .idCard: return "\u{f2c2}"
+            case .idCardAlt: return "\u{f47f}"
+            case .igloo: return "\u{f7ae}"
+            case .image: return "\u{f03e}"
+            case .images: return "\u{f302}"
+            case .imdb: return "\u{f2d8}"
+            case .inbox: return "\u{f01c}"
+            case .indent: return "\u{f03c}"
+            case .industry: return "\u{f275}"
+            case .infinity: return "\u{f534}"
+            case .info: return "\u{f129}"
+            case .infoCircle: return "\u{f05a}"
+            case .instagram: return "\u{f16d}"
+            case .intercom: return "\u{f7af}"
+            case .internetExplorer: return "\u{f26b}"
+            case .invision: return "\u{f7b0}"
+            case .ioxhost: return "\u{f208}"
+            case .italic: return "\u{f033}"
+            case .itchIo: return "\u{f83a}"
+            case .itunes: return "\u{f3b4}"
+            case .itunesNote: return "\u{f3b5}"
+            case .java: return "\u{f4e4}"
+            case .jedi: return "\u{f669}"
+            case .jediOrder: return "\u{f50e}"
+            case .jenkins: return "\u{f3b6}"
+            case .jira: return "\u{f7b1}"
+            case .joget: return "\u{f3b7}"
+            case .joint: return "\u{f595}"
+            case .joomla: return "\u{f1aa}"
+            case .journalWhills: return "\u{f66a}"
+            case .js: return "\u{f3b8}"
+            case .jsSquare: return "\u{f3b9}"
+            case .jsfiddle: return "\u{f1cc}"
+            case .kaaba: return "\u{f66b}"
+            case .kaggle: return "\u{f5fa}"
+            case .key: return "\u{f084}"
+            case .keybase: return "\u{f4f5}"
+            case .keyboard: return "\u{f11c}"
+            case .keycdn: return "\u{f3ba}"
+            case .khanda: return "\u{f66d}"
+            case .kickstarter: return "\u{f3bb}"
+            case .kickstarterK: return "\u{f3bc}"
+            case .kiss: return "\u{f596}"
+            case .kissBeam: return "\u{f597}"
+            case .kissWinkHeart: return "\u{f598}"
+            case .kiwiBird: return "\u{f535}"
+            case .korvue: return "\u{f42f}"
+            case .landmark: return "\u{f66f}"
+            case .language: return "\u{f1ab}"
+            case .laptop: return "\u{f109}"
+            case .laptopCode: return "\u{f5fc}"
+            case .laptopMedical: return "\u{f812}"
+            case .laravel: return "\u{f3bd}"
+            case .lastfm: return "\u{f202}"
+            case .lastfmSquare: return "\u{f203}"
+            case .laugh: return "\u{f599}"
+            case .laughBeam: return "\u{f59a}"
+            case .laughSquint: return "\u{f59b}"
+            case .laughWink: return "\u{f59c}"
+            case .layerGroup: return "\u{f5fd}"
+            case .leaf: return "\u{f06c}"
+            case .leanpub: return "\u{f212}"
+            case .lemon: return "\u{f094}"
+            case .less: return "\u{f41d}"
+            case .lessThan: return "\u{f536}"
+            case .lessThanEqual: return "\u{f537}"
+            case .levelDownAlt: return "\u{f3be}"
+            case .levelUpAlt: return "\u{f3bf}"
+            case .lifeRing: return "\u{f1cd}"
+            case .lightbulb: return "\u{f0eb}"
+            case .line: return "\u{f3c0}"
+            case .link: return "\u{f0c1}"
+            case .linkedin: return "\u{f08c}"
+            case .linkedinIn: return "\u{f0e1}"
+            case .linode: return "\u{f2b8}"
+            case .linux: return "\u{f17c}"
+            case .liraSign: return "\u{f195}"
+            case .list: return "\u{f03a}"
+            case .listAlt: return "\u{f022}"
+            case .listOl: return "\u{f0cb}"
+            case .listUl: return "\u{f0ca}"
+            case .locationArrow: return "\u{f124}"
+            case .lock: return "\u{f023}"
+            case .lockOpen: return "\u{f3c1}"
+            case .longArrowAltDown: return "\u{f309}"
+            case .longArrowAltLeft: return "\u{f30a}"
+            case .longArrowAltRight: return "\u{f30b}"
+            case .longArrowAltUp: return "\u{f30c}"
+            case .lowVision: return "\u{f2a8}"
+            case .luggageCart: return "\u{f59d}"
+            case .lyft: return "\u{f3c3}"
+            case .magento: return "\u{f3c4}"
+            case .magic: return "\u{f0d0}"
+            case .magnet: return "\u{f076}"
+            case .mailBulk: return "\u{f674}"
+            case .mailchimp: return "\u{f59e}"
+            case .male: return "\u{f183}"
+            case .mandalorian: return "\u{f50f}"
+            case .map: return "\u{f279}"
+            case .mapMarked: return "\u{f59f}"
+            case .mapMarkedAlt: return "\u{f5a0}"
+            case .mapMarker: return "\u{f041}"
+            case .mapMarkerAlt: return "\u{f3c5}"
+            case .mapPin: return "\u{f276}"
+            case .mapSigns: return "\u{f277}"
+            case .markdown: return "\u{f60f}"
+            case .marker: return "\u{f5a1}"
+            case .mars: return "\u{f222}"
+            case .marsDouble: return "\u{f227}"
+            case .marsStroke: return "\u{f229}"
+            case .marsStrokeH: return "\u{f22b}"
+            case .marsStrokeV: return "\u{f22a}"
+            case .mask: return "\u{f6fa}"
+            case .mastodon: return "\u{f4f6}"
+            case .maxcdn: return "\u{f136}"
+            case .medal: return "\u{f5a2}"
+            case .medapps: return "\u{f3c6}"
+            case .medium: return "\u{f23a}"
+            case .mediumM: return "\u{f3c7}"
+            case .medkit: return "\u{f0fa}"
+            case .medrt: return "\u{f3c8}"
+            case .meetup: return "\u{f2e0}"
+            case .megaport: return "\u{f5a3}"
+            case .meh: return "\u{f11a}"
+            case .mehBlank: return "\u{f5a4}"
+            case .mehRollingEyes: return "\u{f5a5}"
+            case .memory: return "\u{f538}"
+            case .mendeley: return "\u{f7b3}"
+            case .menorah: return "\u{f676}"
+            case .mercury: return "\u{f223}"
+            case .meteor: return "\u{f753}"
+            case .microchip: return "\u{f2db}"
+            case .microphone: return "\u{f130}"
+            case .microphoneAlt: return "\u{f3c9}"
+            case .microphoneAltSlash: return "\u{f539}"
+            case .microphoneSlash: return "\u{f131}"
+            case .microscope: return "\u{f610}"
+            case .microsoft: return "\u{f3ca}"
+            case .minus: return "\u{f068}"
+            case .minusCircle: return "\u{f056}"
+            case .minusSquare: return "\u{f146}"
+            case .mitten: return "\u{f7b5}"
+            case .mix: return "\u{f3cb}"
+            case .mixcloud: return "\u{f289}"
+            case .mizuni: return "\u{f3cc}"
+            case .mobile: return "\u{f10b}"
+            case .mobileAlt: return "\u{f3cd}"
+            case .modx: return "\u{f285}"
+            case .monero: return "\u{f3d0}"
+            case .moneyBill: return "\u{f0d6}"
+            case .moneyBillAlt: return "\u{f3d1}"
+            case .moneyBillWave: return "\u{f53a}"
+            case .moneyBillWaveAlt: return "\u{f53b}"
+            case .moneyCheck: return "\u{f53c}"
+            case .moneyCheckAlt: return "\u{f53d}"
+            case .monument: return "\u{f5a6}"
+            case .moon: return "\u{f186}"
+            case .mortarPestle: return "\u{f5a7}"
+            case .mosque: return "\u{f678}"
+            case .motorcycle: return "\u{f21c}"
+            case .mountain: return "\u{f6fc}"
+            case .mousePointer: return "\u{f245}"
+            case .mugHot: return "\u{f7b6}"
+            case .music: return "\u{f001}"
+            case .napster: return "\u{f3d2}"
+            case .neos: return "\u{f612}"
+            case .networkWired: return "\u{f6ff}"
+            case .neuter: return "\u{f22c}"
+            case .newspaper: return "\u{f1ea}"
+            case .nimblr: return "\u{f5a8}"
+            case .nintendoSwitch: return "\u{f418}"
+            case .node: return "\u{f419}"
+            case .nodeJs: return "\u{f3d3}"
+            case .notEqual: return "\u{f53e}"
+            case .notesMedical: return "\u{f481}"
+            case .npm: return "\u{f3d4}"
+            case .ns8: return "\u{f3d5}"
+            case .nutritionix: return "\u{f3d6}"
+            case .objectGroup: return "\u{f247}"
+            case .objectUngroup: return "\u{f248}"
+            case .odnoklassniki: return "\u{f263}"
+            case .odnoklassnikiSquare: return "\u{f264}"
+            case .oilCan: return "\u{f613}"
+            case .oldRepublic: return "\u{f510}"
+            case .om: return "\u{f679}"
+            case .opencart: return "\u{f23d}"
+            case .openid: return "\u{f19b}"
+            case .opera: return "\u{f26a}"
+            case .optinMonster: return "\u{f23c}"
+            case .osi: return "\u{f41a}"
+            case .otter: return "\u{f700}"
+            case .outdent: return "\u{f03b}"
+            case .page4: return "\u{f3d7}"
+            case .pagelines: return "\u{f18c}"
+            case .pager: return "\u{f815}"
+            case .paintBrush: return "\u{f1fc}"
+            case .paintRoller: return "\u{f5aa}"
+            case .palette: return "\u{f53f}"
+            case .palfed: return "\u{f3d8}"
+            case .pallet: return "\u{f482}"
+            case .paperPlane: return "\u{f1d8}"
+            case .paperclip: return "\u{f0c6}"
+            case .parachuteBox: return "\u{f4cd}"
+            case .paragraph: return "\u{f1dd}"
+            case .parking: return "\u{f540}"
+            case .passport: return "\u{f5ab}"
+            case .pastafarianism: return "\u{f67b}"
+            case .paste: return "\u{f0ea}"
+            case .patreon: return "\u{f3d9}"
+            case .pause: return "\u{f04c}"
+            case .pauseCircle: return "\u{f28b}"
+            case .paw: return "\u{f1b0}"
+            case .paypal: return "\u{f1ed}"
+            case .peace: return "\u{f67c}"
+            case .pen: return "\u{f304}"
+            case .penAlt: return "\u{f305}"
+            case .penFancy: return "\u{f5ac}"
+            case .penNib: return "\u{f5ad}"
+            case .penSquare: return "\u{f14b}"
+            case .pencilAlt: return "\u{f303}"
+            case .pencilRuler: return "\u{f5ae}"
+            case .pennyArcade: return "\u{f704}"
+            case .peopleCarry: return "\u{f4ce}"
+            case .pepperHot: return "\u{f816}"
+            case .percent: return "\u{f295}"
+            case .percentage: return "\u{f541}"
+            case .periscope: return "\u{f3da}"
+            case .personBooth: return "\u{f756}"
+            case .phabricator: return "\u{f3db}"
+            case .phoenixFramework: return "\u{f3dc}"
+            case .phoenixSquadron: return "\u{f511}"
+            case .phone: return "\u{f095}"
+            case .phoneSlash: return "\u{f3dd}"
+            case .phoneSquare: return "\u{f098}"
+            case .phoneVolume: return "\u{f2a0}"
+            case .php: return "\u{f457}"
+            case .piedPiper: return "\u{f2ae}"
+            case .piedPiperAlt: return "\u{f1a8}"
+            case .piedPiperHat: return "\u{f4e5}"
+            case .piedPiperPp: return "\u{f1a7}"
+            case .piggyBank: return "\u{f4d3}"
+            case .pills: return "\u{f484}"
+            case .pinterest: return "\u{f0d2}"
+            case .pinterestP: return "\u{f231}"
+            case .pinterestSquare: return "\u{f0d3}"
+            case .pizzaSlice: return "\u{f818}"
+            case .placeOfWorship: return "\u{f67f}"
+            case .plane: return "\u{f072}"
+            case .planeArrival: return "\u{f5af}"
+            case .planeDeparture: return "\u{f5b0}"
+            case .play: return "\u{f04b}"
+            case .playCircle: return "\u{f144}"
+            case .playstation: return "\u{f3df}"
+            case .plug: return "\u{f1e6}"
+            case .plus: return "\u{f067}"
+            case .plusCircle: return "\u{f055}"
+            case .plusSquare: return "\u{f0fe}"
+            case .podcast: return "\u{f2ce}"
+            case .poll: return "\u{f681}"
+            case .pollH: return "\u{f682}"
+            case .poo: return "\u{f2fe}"
+            case .pooStorm: return "\u{f75a}"
+            case .poop: return "\u{f619}"
+            case .portrait: return "\u{f3e0}"
+            case .poundSign: return "\u{f154}"
+            case .powerOff: return "\u{f011}"
+            case .pray: return "\u{f683}"
+            case .prayingHands: return "\u{f684}"
+            case .prescription: return "\u{f5b1}"
+            case .prescriptionBottle: return "\u{f485}"
+            case .prescriptionBottleAlt: return "\u{f486}"
+            case .print: return "\u{f02f}"
+            case .procedures: return "\u{f487}"
+            case .productHunt: return "\u{f288}"
+            case .projectDiagram: return "\u{f542}"
+            case .pushed: return "\u{f3e1}"
+            case .puzzlePiece: return "\u{f12e}"
+            case .python: return "\u{f3e2}"
+            case .qq: return "\u{f1d6}"
+            case .qrcode: return "\u{f029}"
+            case .question: return "\u{f128}"
+            case .questionCircle: return "\u{f059}"
+            case .quidditch: return "\u{f458}"
+            case .quinscape: return "\u{f459}"
+            case .quora: return "\u{f2c4}"
+            case .quoteLeft: return "\u{f10d}"
+            case .quoteRight: return "\u{f10e}"
+            case .quran: return "\u{f687}"
+            case .rProject: return "\u{f4f7}"
+            case .radiation: return "\u{f7b9}"
+            case .radiationAlt: return "\u{f7ba}"
+            case .rainbow: return "\u{f75b}"
+            case .random: return "\u{f074}"
+            case .raspberryPi: return "\u{f7bb}"
+            case .ravelry: return "\u{f2d9}"
+            case .react: return "\u{f41b}"
+            case .reacteurope: return "\u{f75d}"
+            case .readme: return "\u{f4d5}"
+            case .rebel: return "\u{f1d0}"
+            case .receipt: return "\u{f543}"
+            case .recycle: return "\u{f1b8}"
+            case .redRiver: return "\u{f3e3}"
+            case .reddit: return "\u{f1a1}"
+            case .redditAlien: return "\u{f281}"
+            case .redditSquare: return "\u{f1a2}"
+            case .redhat: return "\u{f7bc}"
+            case .redo: return "\u{f01e}"
+            case .redoAlt: return "\u{f2f9}"
+            case .registered: return "\u{f25d}"
+            case .renren: return "\u{f18b}"
+            case .reply: return "\u{f3e5}"
+            case .replyAll: return "\u{f122}"
+            case .replyd: return "\u{f3e6}"
+            case .republican: return "\u{f75e}"
+            case .researchgate: return "\u{f4f8}"
+            case .resolving: return "\u{f3e7}"
+            case .restroom: return "\u{f7bd}"
+            case .retweet: return "\u{f079}"
+            case .rev: return "\u{f5b2}"
+            case .ribbon: return "\u{f4d6}"
+            case .ring: return "\u{f70b}"
+            case .road: return "\u{f018}"
+            case .robot: return "\u{f544}"
+            case .rocket: return "\u{f135}"
+            case .rocketchat: return "\u{f3e8}"
+            case .rockrms: return "\u{f3e9}"
+            case .route: return "\u{f4d7}"
+            case .rss: return "\u{f09e}"
+            case .rssSquare: return "\u{f143}"
+            case .rubleSign: return "\u{f158}"
+            case .ruler: return "\u{f545}"
+            case .rulerCombined: return "\u{f546}"
+            case .rulerHorizontal: return "\u{f547}"
+            case .rulerVertical: return "\u{f548}"
+            case .running: return "\u{f70c}"
+            case .rupeeSign: return "\u{f156}"
+            case .sadCry: return "\u{f5b3}"
+            case .sadTear: return "\u{f5b4}"
+            case .safari: return "\u{f267}"
+            case .salesforce: return "\u{f83b}"
+            case .sass: return "\u{f41e}"
+            case .satellite: return "\u{f7bf}"
+            case .satelliteDish: return "\u{f7c0}"
+            case .save: return "\u{f0c7}"
+            case .schlix: return "\u{f3ea}"
+            case .school: return "\u{f549}"
+            case .screwdriver: return "\u{f54a}"
+            case .scribd: return "\u{f28a}"
+            case .scroll: return "\u{f70e}"
+            case .sdCard: return "\u{f7c2}"
+            case .search: return "\u{f002}"
+            case .searchDollar: return "\u{f688}"
+            case .searchLocation: return "\u{f689}"
+            case .searchMinus: return "\u{f010}"
+            case .searchPlus: return "\u{f00e}"
+            case .searchengin: return "\u{f3eb}"
+            case .seedling: return "\u{f4d8}"
+            case .sellcast: return "\u{f2da}"
+            case .sellsy: return "\u{f213}"
+            case .server: return "\u{f233}"
+            case .servicestack: return "\u{f3ec}"
+            case .shapes: return "\u{f61f}"
+            case .share: return "\u{f064}"
+            case .shareAlt: return "\u{f1e0}"
+            case .shareAltSquare: return "\u{f1e1}"
+            case .shareSquare: return "\u{f14d}"
+            case .shekelSign: return "\u{f20b}"
+            case .shieldAlt: return "\u{f3ed}"
+            case .ship: return "\u{f21a}"
+            case .shippingFast: return "\u{f48b}"
+            case .shirtsinbulk: return "\u{f214}"
+            case .shoePrints: return "\u{f54b}"
+            case .shoppingBag: return "\u{f290}"
+            case .shoppingBasket: return "\u{f291}"
+            case .shoppingCart: return "\u{f07a}"
+            case .shopware: return "\u{f5b5}"
+            case .shower: return "\u{f2cc}"
+            case .shuttleVan: return "\u{f5b6}"
+            case .sign: return "\u{f4d9}"
+            case .signInAlt: return "\u{f2f6}"
+            case .signLanguage: return "\u{f2a7}"
+            case .signOutAlt: return "\u{f2f5}"
+            case .signal: return "\u{f012}"
+            case .signature: return "\u{f5b7}"
+            case .simCard: return "\u{f7c4}"
+            case .simplybuilt: return "\u{f215}"
+            case .sistrix: return "\u{f3ee}"
+            case .sitemap: return "\u{f0e8}"
+            case .sith: return "\u{f512}"
+            case .skating: return "\u{f7c5}"
+            case .sketch: return "\u{f7c6}"
+            case .skiing: return "\u{f7c9}"
+            case .skiingNordic: return "\u{f7ca}"
+            case .skull: return "\u{f54c}"
+            case .skullCrossbones: return "\u{f714}"
+            case .skyatlas: return "\u{f216}"
+            case .skype: return "\u{f17e}"
+            case .slack: return "\u{f198}"
+            case .slackHash: return "\u{f3ef}"
+            case .slash: return "\u{f715}"
+            case .sleigh: return "\u{f7cc}"
+            case .slidersH: return "\u{f1de}"
+            case .slideshare: return "\u{f1e7}"
+            case .smile: return "\u{f118}"
+            case .smileBeam: return "\u{f5b8}"
+            case .smileWink: return "\u{f4da}"
+            case .smog: return "\u{f75f}"
+            case .smoking: return "\u{f48d}"
+            case .smokingBan: return "\u{f54d}"
+            case .sms: return "\u{f7cd}"
+            case .snapchat: return "\u{f2ab}"
+            case .snapchatGhost: return "\u{f2ac}"
+            case .snapchatSquare: return "\u{f2ad}"
+            case .snowboarding: return "\u{f7ce}"
+            case .snowflake: return "\u{f2dc}"
+            case .snowman: return "\u{f7d0}"
+            case .snowplow: return "\u{f7d2}"
+            case .socks: return "\u{f696}"
+            case .solarPanel: return "\u{f5ba}"
+            case .sort: return "\u{f0dc}"
+            case .sortAlphaDown: return "\u{f15d}"
+            case .sortAlphaUp: return "\u{f15e}"
+            case .sortAmountDown: return "\u{f160}"
+            case .sortAmountUp: return "\u{f161}"
+            case .sortDown: return "\u{f0dd}"
+            case .sortNumericDown: return "\u{f162}"
+            case .sortNumericUp: return "\u{f163}"
+            case .sortUp: return "\u{f0de}"
+            case .soundcloud: return "\u{f1be}"
+            case .sourcetree: return "\u{f7d3}"
+            case .spa: return "\u{f5bb}"
+            case .spaceShuttle: return "\u{f197}"
+            case .speakap: return "\u{f3f3}"
+            case .speakerDeck: return "\u{f83c}"
+            case .spider: return "\u{f717}"
+            case .spinner: return "\u{f110}"
+            case .splotch: return "\u{f5bc}"
+            case .spotify: return "\u{f1bc}"
+            case .sprayCan: return "\u{f5bd}"
+            case .square: return "\u{f0c8}"
+            case .squareFull: return "\u{f45c}"
+            case .squareRootAlt: return "\u{f698}"
+            case .squarespace: return "\u{f5be}"
+            case .stackExchange: return "\u{f18d}"
+            case .stackOverflow: return "\u{f16c}"
+            case .stackpath: return "\u{f842}"
+            case .stamp: return "\u{f5bf}"
+            case .star: return "\u{f005}"
+            case .starAndCrescent: return "\u{f699}"
+            case .starHalf: return "\u{f089}"
+            case .starHalfAlt: return "\u{f5c0}"
+            case .starOfDavid: return "\u{f69a}"
+            case .starOfLife: return "\u{f621}"
+            case .staylinked: return "\u{f3f5}"
+            case .steam: return "\u{f1b6}"
+            case .steamSquare: return "\u{f1b7}"
+            case .steamSymbol: return "\u{f3f6}"
+            case .stepBackward: return "\u{f048}"
+            case .stepForward: return "\u{f051}"
+            case .stethoscope: return "\u{f0f1}"
+            case .stickerMule: return "\u{f3f7}"
+            case .stickyNote: return "\u{f249}"
+            case .stop: return "\u{f04d}"
+            case .stopCircle: return "\u{f28d}"
+            case .stopwatch: return "\u{f2f2}"
+            case .store: return "\u{f54e}"
+            case .storeAlt: return "\u{f54f}"
+            case .strava: return "\u{f428}"
+            case .stream: return "\u{f550}"
+            case .streetView: return "\u{f21d}"
+            case .strikethrough: return "\u{f0cc}"
+            case .stripe: return "\u{f429}"
+            case .stripeS: return "\u{f42a}"
+            case .stroopwafel: return "\u{f551}"
+            case .studiovinari: return "\u{f3f8}"
+            case .stumbleupon: return "\u{f1a4}"
+            case .stumbleuponCircle: return "\u{f1a3}"
+            case .`subscript`: return "\u{f12c}"
+            case .subway: return "\u{f239}"
+            case .suitcase: return "\u{f0f2}"
+            case .suitcaseRolling: return "\u{f5c1}"
+            case .sun: return "\u{f185}"
+            case .superpowers: return "\u{f2dd}"
+            case .superscript: return "\u{f12b}"
+            case .supple: return "\u{f3f9}"
+            case .surprise: return "\u{f5c2}"
+            case .suse: return "\u{f7d6}"
+            case .swatchbook: return "\u{f5c3}"
+            case .swimmer: return "\u{f5c4}"
+            case .swimmingPool: return "\u{f5c5}"
+            case .symfony: return "\u{f83d}"
+            case .synagogue: return "\u{f69b}"
+            case .sync: return "\u{f021}"
+            case .syncAlt: return "\u{f2f1}"
+            case .syringe: return "\u{f48e}"
+            case .table: return "\u{f0ce}"
+            case .tableTennis: return "\u{f45d}"
+            case .tablet: return "\u{f10a}"
+            case .tabletAlt: return "\u{f3fa}"
+            case .tablets: return "\u{f490}"
+            case .tachometerAlt: return "\u{f3fd}"
+            case .tag: return "\u{f02b}"
+            case .tags: return "\u{f02c}"
+            case .tape: return "\u{f4db}"
+            case .tasks: return "\u{f0ae}"
+            case .taxi: return "\u{f1ba}"
+            case .teamspeak: return "\u{f4f9}"
+            case .teeth: return "\u{f62e}"
+            case .teethOpen: return "\u{f62f}"
+            case .telegram: return "\u{f2c6}"
+            case .telegramPlane: return "\u{f3fe}"
+            case .temperatureHigh: return "\u{f769}"
+            case .temperatureLow: return "\u{f76b}"
+            case .tencentWeibo: return "\u{f1d5}"
+            case .tenge: return "\u{f7d7}"
+            case .terminal: return "\u{f120}"
+            case .textHeight: return "\u{f034}"
+            case .textWidth: return "\u{f035}"
+            case .th: return "\u{f00a}"
+            case .thLarge: return "\u{f009}"
+            case .thList: return "\u{f00b}"
+            case .theRedYeti: return "\u{f69d}"
+            case .theaterMasks: return "\u{f630}"
+            case .themeco: return "\u{f5c6}"
+            case .themeisle: return "\u{f2b2}"
+            case .thermometer: return "\u{f491}"
+            case .thermometerEmpty: return "\u{f2cb}"
+            case .thermometerFull: return "\u{f2c7}"
+            case .thermometerHalf: return "\u{f2c9}"
+            case .thermometerQuarter: return "\u{f2ca}"
+            case .thermometerThreeQuarters: return "\u{f2c8}"
+            case .thinkPeaks: return "\u{f731}"
+            case .thumbsDown: return "\u{f165}"
+            case .thumbsUp: return "\u{f164}"
+            case .thumbtack: return "\u{f08d}"
+            case .ticketAlt: return "\u{f3ff}"
+            case .times: return "\u{f00d}"
+            case .timesCircle: return "\u{f057}"
+            case .tint: return "\u{f043}"
+            case .tintSlash: return "\u{f5c7}"
+            case .tired: return "\u{f5c8}"
+            case .toggleOff: return "\u{f204}"
+            case .toggleOn: return "\u{f205}"
+            case .toilet: return "\u{f7d8}"
+            case .toiletPaper: return "\u{f71e}"
+            case .toolbox: return "\u{f552}"
+            case .tools: return "\u{f7d9}"
+            case .tooth: return "\u{f5c9}"
+            case .torah: return "\u{f6a0}"
+            case .toriiGate: return "\u{f6a1}"
+            case .tractor: return "\u{f722}"
+            case .tradeFederation: return "\u{f513}"
+            case .trademark: return "\u{f25c}"
+            case .trafficLight: return "\u{f637}"
+            case .train: return "\u{f238}"
+            case .tram: return "\u{f7da}"
+            case .transgender: return "\u{f224}"
+            case .transgenderAlt: return "\u{f225}"
+            case .trash: return "\u{f1f8}"
+            case .trashAlt: return "\u{f2ed}"
+            case .trashRestore: return "\u{f829}"
+            case .trashRestoreAlt: return "\u{f82a}"
+            case .tree: return "\u{f1bb}"
+            case .trello: return "\u{f181}"
+            case .tripadvisor: return "\u{f262}"
+            case .trophy: return "\u{f091}"
+            case .truck: return "\u{f0d1}"
+            case .truckLoading: return "\u{f4de}"
+            case .truckMonster: return "\u{f63b}"
+            case .truckMoving: return "\u{f4df}"
+            case .truckPickup: return "\u{f63c}"
+            case .tshirt: return "\u{f553}"
+            case .tty: return "\u{f1e4}"
+            case .tumblr: return "\u{f173}"
+            case .tumblrSquare: return "\u{f174}"
+            case .tv: return "\u{f26c}"
+            case .twitch: return "\u{f1e8}"
+            case .twitter: return "\u{f099}"
+            case .twitterSquare: return "\u{f081}"
+            case .typo3: return "\u{f42b}"
+            case .uber: return "\u{f402}"
+            case .ubuntu: return "\u{f7df}"
+            case .uikit: return "\u{f403}"
+            case .umbrella: return "\u{f0e9}"
+            case .umbrellaBeach: return "\u{f5ca}"
+            case .underline: return "\u{f0cd}"
+            case .undo: return "\u{f0e2}"
+            case .undoAlt: return "\u{f2ea}"
+            case .uniregistry: return "\u{f404}"
+            case .universalAccess: return "\u{f29a}"
+            case .university: return "\u{f19c}"
+            case .unlink: return "\u{f127}"
+            case .unlock: return "\u{f09c}"
+            case .unlockAlt: return "\u{f13e}"
+            case .untappd: return "\u{f405}"
+            case .upload: return "\u{f093}"
+            case .ups: return "\u{f7e0}"
+            case .usb: return "\u{f287}"
+            case .user: return "\u{f007}"
+            case .userAlt: return "\u{f406}"
+            case .userAltSlash: return "\u{f4fa}"
+            case .userAstronaut: return "\u{f4fb}"
+            case .userCheck: return "\u{f4fc}"
+            case .userCircle: return "\u{f2bd}"
+            case .userClock: return "\u{f4fd}"
+            case .userCog: return "\u{f4fe}"
+            case .userEdit: return "\u{f4ff}"
+            case .userFriends: return "\u{f500}"
+            case .userGraduate: return "\u{f501}"
+            case .userInjured: return "\u{f728}"
+            case .userLock: return "\u{f502}"
+            case .userMd: return "\u{f0f0}"
+            case .userMinus: return "\u{f503}"
+            case .userNinja: return "\u{f504}"
+            case .userNurse: return "\u{f82f}"
+            case .userPlus: return "\u{f234}"
+            case .userSecret: return "\u{f21b}"
+            case .userShield: return "\u{f505}"
+            case .userSlash: return "\u{f506}"
+            case .userTag: return "\u{f507}"
+            case .userTie: return "\u{f508}"
+            case .userTimes: return "\u{f235}"
+            case .users: return "\u{f0c0}"
+            case .usersCog: return "\u{f509}"
+            case .usps: return "\u{f7e1}"
+            case .ussunnah: return "\u{f407}"
+            case .utensilSpoon: return "\u{f2e5}"
+            case .utensils: return "\u{f2e7}"
+            case .vaadin: return "\u{f408}"
+            case .vectorSquare: return "\u{f5cb}"
+            case .venus: return "\u{f221}"
+            case .venusDouble: return "\u{f226}"
+            case .venusMars: return "\u{f228}"
+            case .viacoin: return "\u{f237}"
+            case .viadeo: return "\u{f2a9}"
+            case .viadeoSquare: return "\u{f2aa}"
+            case .vial: return "\u{f492}"
+            case .vials: return "\u{f493}"
+            case .viber: return "\u{f409}"
+            case .video: return "\u{f03d}"
+            case .videoSlash: return "\u{f4e2}"
+            case .vihara: return "\u{f6a7}"
+            case .vimeo: return "\u{f40a}"
+            case .vimeoSquare: return "\u{f194}"
+            case .vimeoV: return "\u{f27d}"
+            case .vine: return "\u{f1ca}"
+            case .vk: return "\u{f189}"
+            case .vnv: return "\u{f40b}"
+            case .volleyballBall: return "\u{f45f}"
+            case .volumeDown: return "\u{f027}"
+            case .volumeMute: return "\u{f6a9}"
+            case .volumeOff: return "\u{f026}"
+            case .volumeUp: return "\u{f028}"
+            case .voteYea: return "\u{f772}"
+            case .vrCardboard: return "\u{f729}"
+            case .vuejs: return "\u{f41f}"
+            case .walking: return "\u{f554}"
+            case .wallet: return "\u{f555}"
+            case .warehouse: return "\u{f494}"
+            case .water: return "\u{f773}"
+            case .waveSquare: return "\u{f83e}"
+            case .waze: return "\u{f83f}"
+            case .weebly: return "\u{f5cc}"
+            case .weibo: return "\u{f18a}"
+            case .weight: return "\u{f496}"
+            case .weightHanging: return "\u{f5cd}"
+            case .weixin: return "\u{f1d7}"
+            case .whatsapp: return "\u{f232}"
+            case .whatsappSquare: return "\u{f40c}"
+            case .wheelchair: return "\u{f193}"
+            case .whmcs: return "\u{f40d}"
+            case .wifi: return "\u{f1eb}"
+            case .wikipediaW: return "\u{f266}"
+            case .wind: return "\u{f72e}"
+            case .windowClose: return "\u{f410}"
+            case .windowMaximize: return "\u{f2d0}"
+            case .windowMinimize: return "\u{f2d1}"
+            case .windowRestore: return "\u{f2d2}"
+            case .windows: return "\u{f17a}"
+            case .wineBottle: return "\u{f72f}"
+            case .wineGlass: return "\u{f4e3}"
+            case .wineGlassAlt: return "\u{f5ce}"
+            case .wix: return "\u{f5cf}"
+            case .wizardsOfTheCoast: return "\u{f730}"
+            case .wolfPackBattalion: return "\u{f514}"
+            case .wonSign: return "\u{f159}"
+            case .wordpress: return "\u{f19a}"
+            case .wordpressSimple: return "\u{f411}"
+            case .wpbeginner: return "\u{f297}"
+            case .wpexplorer: return "\u{f2de}"
+            case .wpforms: return "\u{f298}"
+            case .wpressr: return "\u{f3e4}"
+            case .wrench: return "\u{f0ad}"
+            case .xRay: return "\u{f497}"
+            case .xbox: return "\u{f412}"
+            case .xing: return "\u{f168}"
+            case .xingSquare: return "\u{f169}"
+            case .yCombinator: return "\u{f23b}"
+            case .yahoo: return "\u{f19e}"
+            case .yammer: return "\u{f840}"
+            case .yandex: return "\u{f413}"
+            case .yandexInternational: return "\u{f414}"
+            case .yarn: return "\u{f7e3}"
+            case .yelp: return "\u{f1e9}"
+            case .yenSign: return "\u{f157}"
+            case .yinYang: return "\u{f6ad}"
+            case .yoast: return "\u{f2b1}"
+            case .youtube: return "\u{f167}"
+            case .youtubeSquare: return "\u{f431}"
+            case .zhihu: return "\u{f63f}"        
+        }
+    }
 }
-
-/// An array of FontAwesome icon codes.
-// swiftlint:disable identifier_name
-public let FontAwesomeIcons: [String: String] = [
-    "fa-500px": "\u{f26e}",
-    "fa-accessible-icon": "\u{f368}",
-    "fa-accusoft": "\u{f369}",
-    "fa-acquisitions-incorporated": "\u{f6af}",
-    "fa-ad": "\u{f641}",
-    "fa-address-book": "\u{f2b9}",
-    "fa-address-card": "\u{f2bb}",
-    "fa-adjust": "\u{f042}",
-    "fa-adn": "\u{f170}",
-    "fa-adobe": "\u{f778}",
-    "fa-adversal": "\u{f36a}",
-    "fa-affiliatetheme": "\u{f36b}",
-    "fa-air-freshener": "\u{f5d0}",
-    "fa-airbnb": "\u{f834}",
-    "fa-algolia": "\u{f36c}",
-    "fa-align-center": "\u{f037}",
-    "fa-align-justify": "\u{f039}",
-    "fa-align-left": "\u{f036}",
-    "fa-align-right": "\u{f038}",
-    "fa-alipay": "\u{f642}",
-    "fa-allergies": "\u{f461}",
-    "fa-amazon": "\u{f270}",
-    "fa-amazon-pay": "\u{f42c}",
-    "fa-ambulance": "\u{f0f9}",
-    "fa-american-sign-language-interpreting": "\u{f2a3}",
-    "fa-amilia": "\u{f36d}",
-    "fa-anchor": "\u{f13d}",
-    "fa-android": "\u{f17b}",
-    "fa-angellist": "\u{f209}",
-    "fa-angle-double-down": "\u{f103}",
-    "fa-angle-double-left": "\u{f100}",
-    "fa-angle-double-right": "\u{f101}",
-    "fa-angle-double-up": "\u{f102}",
-    "fa-angle-down": "\u{f107}",
-    "fa-angle-left": "\u{f104}",
-    "fa-angle-right": "\u{f105}",
-    "fa-angle-up": "\u{f106}",
-    "fa-angry": "\u{f556}",
-    "fa-angrycreative": "\u{f36e}",
-    "fa-angular": "\u{f420}",
-    "fa-ankh": "\u{f644}",
-    "fa-app-store": "\u{f36f}",
-    "fa-app-store-ios": "\u{f370}",
-    "fa-apper": "\u{f371}",
-    "fa-apple": "\u{f179}",
-    "fa-apple-alt": "\u{f5d1}",
-    "fa-apple-pay": "\u{f415}",
-    "fa-archive": "\u{f187}",
-    "fa-archway": "\u{f557}",
-    "fa-arrow-alt-circle-down": "\u{f358}",
-    "fa-arrow-alt-circle-left": "\u{f359}",
-    "fa-arrow-alt-circle-right": "\u{f35a}",
-    "fa-arrow-alt-circle-up": "\u{f35b}",
-    "fa-arrow-circle-down": "\u{f0ab}",
-    "fa-arrow-circle-left": "\u{f0a8}",
-    "fa-arrow-circle-right": "\u{f0a9}",
-    "fa-arrow-circle-up": "\u{f0aa}",
-    "fa-arrow-down": "\u{f063}",
-    "fa-arrow-left": "\u{f060}",
-    "fa-arrow-right": "\u{f061}",
-    "fa-arrow-up": "\u{f062}",
-    "fa-arrows-alt": "\u{f0b2}",
-    "fa-arrows-alt-h": "\u{f337}",
-    "fa-arrows-alt-v": "\u{f338}",
-    "fa-artstation": "\u{f77a}",
-    "fa-assistive-listening-systems": "\u{f2a2}",
-    "fa-asterisk": "\u{f069}",
-    "fa-asymmetrik": "\u{f372}",
-    "fa-at": "\u{f1fa}",
-    "fa-atlas": "\u{f558}",
-    "fa-atlassian": "\u{f77b}",
-    "fa-atom": "\u{f5d2}",
-    "fa-audible": "\u{f373}",
-    "fa-audio-description": "\u{f29e}",
-    "fa-autoprefixer": "\u{f41c}",
-    "fa-avianex": "\u{f374}",
-    "fa-aviato": "\u{f421}",
-    "fa-award": "\u{f559}",
-    "fa-aws": "\u{f375}",
-    "fa-baby": "\u{f77c}",
-    "fa-baby-carriage": "\u{f77d}",
-    "fa-backspace": "\u{f55a}",
-    "fa-backward": "\u{f04a}",
-    "fa-bacon": "\u{f7e5}",
-    "fa-balance-scale": "\u{f24e}",
-    "fa-ban": "\u{f05e}",
-    "fa-band-aid": "\u{f462}",
-    "fa-bandcamp": "\u{f2d5}",
-    "fa-barcode": "\u{f02a}",
-    "fa-bars": "\u{f0c9}",
-    "fa-baseball-ball": "\u{f433}",
-    "fa-basketball-ball": "\u{f434}",
-    "fa-bath": "\u{f2cd}",
-    "fa-battery-empty": "\u{f244}",
-    "fa-battery-full": "\u{f240}",
-    "fa-battery-half": "\u{f242}",
-    "fa-battery-quarter": "\u{f243}",
-    "fa-battery-three-quarters": "\u{f241}",
-    "fa-battle-net": "\u{f835}",
-    "fa-bed": "\u{f236}",
-    "fa-beer": "\u{f0fc}",
-    "fa-behance": "\u{f1b4}",
-    "fa-behance-square": "\u{f1b5}",
-    "fa-bell": "\u{f0f3}",
-    "fa-bell-slash": "\u{f1f6}",
-    "fa-bezier-curve": "\u{f55b}",
-    "fa-bible": "\u{f647}",
-    "fa-bicycle": "\u{f206}",
-    "fa-bimobject": "\u{f378}",
-    "fa-binoculars": "\u{f1e5}",
-    "fa-biohazard": "\u{f780}",
-    "fa-birthday-cake": "\u{f1fd}",
-    "fa-bitbucket": "\u{f171}",
-    "fa-bitcoin": "\u{f379}",
-    "fa-bity": "\u{f37a}",
-    "fa-black-tie": "\u{f27e}",
-    "fa-blackberry": "\u{f37b}",
-    "fa-blender": "\u{f517}",
-    "fa-blender-phone": "\u{f6b6}",
-    "fa-blind": "\u{f29d}",
-    "fa-blog": "\u{f781}",
-    "fa-blogger": "\u{f37c}",
-    "fa-blogger-b": "\u{f37d}",
-    "fa-bluetooth": "\u{f293}",
-    "fa-bluetooth-b": "\u{f294}",
-    "fa-bold": "\u{f032}",
-    "fa-bolt": "\u{f0e7}",
-    "fa-bomb": "\u{f1e2}",
-    "fa-bone": "\u{f5d7}",
-    "fa-bong": "\u{f55c}",
-    "fa-book": "\u{f02d}",
-    "fa-book-dead": "\u{f6b7}",
-    "fa-book-medical": "\u{f7e6}",
-    "fa-book-open": "\u{f518}",
-    "fa-book-reader": "\u{f5da}",
-    "fa-bookmark": "\u{f02e}",
-    "fa-bootstrap": "\u{f836}",
-    "fa-bowling-ball": "\u{f436}",
-    "fa-box": "\u{f466}",
-    "fa-box-open": "\u{f49e}",
-    "fa-boxes": "\u{f468}",
-    "fa-braille": "\u{f2a1}",
-    "fa-brain": "\u{f5dc}",
-    "fa-bread-slice": "\u{f7ec}",
-    "fa-briefcase": "\u{f0b1}",
-    "fa-briefcase-medical": "\u{f469}",
-    "fa-broadcast-tower": "\u{f519}",
-    "fa-broom": "\u{f51a}",
-    "fa-brush": "\u{f55d}",
-    "fa-btc": "\u{f15a}",
-    "fa-buffer": "\u{f837}",
-    "fa-bug": "\u{f188}",
-    "fa-building": "\u{f1ad}",
-    "fa-bullhorn": "\u{f0a1}",
-    "fa-bullseye": "\u{f140}",
-    "fa-burn": "\u{f46a}",
-    "fa-buromobelexperte": "\u{f37f}",
-    "fa-bus": "\u{f207}",
-    "fa-bus-alt": "\u{f55e}",
-    "fa-business-time": "\u{f64a}",
-    "fa-buysellads": "\u{f20d}",
-    "fa-calculator": "\u{f1ec}",
-    "fa-calendar": "\u{f133}",
-    "fa-calendar-alt": "\u{f073}",
-    "fa-calendar-check": "\u{f274}",
-    "fa-calendar-day": "\u{f783}",
-    "fa-calendar-minus": "\u{f272}",
-    "fa-calendar-plus": "\u{f271}",
-    "fa-calendar-times": "\u{f273}",
-    "fa-calendar-week": "\u{f784}",
-    "fa-camera": "\u{f030}",
-    "fa-camera-retro": "\u{f083}",
-    "fa-campground": "\u{f6bb}",
-    "fa-canadian-maple-leaf": "\u{f785}",
-    "fa-candy-cane": "\u{f786}",
-    "fa-cannabis": "\u{f55f}",
-    "fa-capsules": "\u{f46b}",
-    "fa-car": "\u{f1b9}",
-    "fa-car-alt": "\u{f5de}",
-    "fa-car-battery": "\u{f5df}",
-    "fa-car-crash": "\u{f5e1}",
-    "fa-car-side": "\u{f5e4}",
-    "fa-caret-down": "\u{f0d7}",
-    "fa-caret-left": "\u{f0d9}",
-    "fa-caret-right": "\u{f0da}",
-    "fa-caret-square-down": "\u{f150}",
-    "fa-caret-square-left": "\u{f191}",
-    "fa-caret-square-right": "\u{f152}",
-    "fa-caret-square-up": "\u{f151}",
-    "fa-caret-up": "\u{f0d8}",
-    "fa-carrot": "\u{f787}",
-    "fa-cart-arrow-down": "\u{f218}",
-    "fa-cart-plus": "\u{f217}",
-    "fa-cash-register": "\u{f788}",
-    "fa-cat": "\u{f6be}",
-    "fa-cc-amazon-pay": "\u{f42d}",
-    "fa-cc-amex": "\u{f1f3}",
-    "fa-cc-apple-pay": "\u{f416}",
-    "fa-cc-diners-club": "\u{f24c}",
-    "fa-cc-discover": "\u{f1f2}",
-    "fa-cc-jcb": "\u{f24b}",
-    "fa-cc-mastercard": "\u{f1f1}",
-    "fa-cc-paypal": "\u{f1f4}",
-    "fa-cc-stripe": "\u{f1f5}",
-    "fa-cc-visa": "\u{f1f0}",
-    "fa-centercode": "\u{f380}",
-    "fa-centos": "\u{f789}",
-    "fa-certificate": "\u{f0a3}",
-    "fa-chair": "\u{f6c0}",
-    "fa-chalkboard": "\u{f51b}",
-    "fa-chalkboard-teacher": "\u{f51c}",
-    "fa-charging-station": "\u{f5e7}",
-    "fa-chart-area": "\u{f1fe}",
-    "fa-chart-bar": "\u{f080}",
-    "fa-chart-line": "\u{f201}",
-    "fa-chart-pie": "\u{f200}",
-    "fa-check": "\u{f00c}",
-    "fa-check-circle": "\u{f058}",
-    "fa-check-double": "\u{f560}",
-    "fa-check-square": "\u{f14a}",
-    "fa-cheese": "\u{f7ef}",
-    "fa-chess": "\u{f439}",
-    "fa-chess-bishop": "\u{f43a}",
-    "fa-chess-board": "\u{f43c}",
-    "fa-chess-king": "\u{f43f}",
-    "fa-chess-knight": "\u{f441}",
-    "fa-chess-pawn": "\u{f443}",
-    "fa-chess-queen": "\u{f445}",
-    "fa-chess-rook": "\u{f447}",
-    "fa-chevron-circle-down": "\u{f13a}",
-    "fa-chevron-circle-left": "\u{f137}",
-    "fa-chevron-circle-right": "\u{f138}",
-    "fa-chevron-circle-up": "\u{f139}",
-    "fa-chevron-down": "\u{f078}",
-    "fa-chevron-left": "\u{f053}",
-    "fa-chevron-right": "\u{f054}",
-    "fa-chevron-up": "\u{f077}",
-    "fa-child": "\u{f1ae}",
-    "fa-chrome": "\u{f268}",
-    "fa-chromecast": "\u{f838}",
-    "fa-church": "\u{f51d}",
-    "fa-circle": "\u{f111}",
-    "fa-circle-notch": "\u{f1ce}",
-    "fa-city": "\u{f64f}",
-    "fa-clinic-medical": "\u{f7f2}",
-    "fa-clipboard": "\u{f328}",
-    "fa-clipboard-check": "\u{f46c}",
-    "fa-clipboard-list": "\u{f46d}",
-    "fa-clock": "\u{f017}",
-    "fa-clone": "\u{f24d}",
-    "fa-closed-captioning": "\u{f20a}",
-    "fa-cloud": "\u{f0c2}",
-    "fa-cloud-download-alt": "\u{f381}",
-    "fa-cloud-meatball": "\u{f73b}",
-    "fa-cloud-moon": "\u{f6c3}",
-    "fa-cloud-moon-rain": "\u{f73c}",
-    "fa-cloud-rain": "\u{f73d}",
-    "fa-cloud-showers-heavy": "\u{f740}",
-    "fa-cloud-sun": "\u{f6c4}",
-    "fa-cloud-sun-rain": "\u{f743}",
-    "fa-cloud-upload-alt": "\u{f382}",
-    "fa-cloudscale": "\u{f383}",
-    "fa-cloudsmith": "\u{f384}",
-    "fa-cloudversify": "\u{f385}",
-    "fa-cocktail": "\u{f561}",
-    "fa-code": "\u{f121}",
-    "fa-code-branch": "\u{f126}",
-    "fa-codepen": "\u{f1cb}",
-    "fa-codiepie": "\u{f284}",
-    "fa-coffee": "\u{f0f4}",
-    "fa-cog": "\u{f013}",
-    "fa-cogs": "\u{f085}",
-    "fa-coins": "\u{f51e}",
-    "fa-columns": "\u{f0db}",
-    "fa-comment": "\u{f075}",
-    "fa-comment-alt": "\u{f27a}",
-    "fa-comment-dollar": "\u{f651}",
-    "fa-comment-dots": "\u{f4ad}",
-    "fa-comment-medical": "\u{f7f5}",
-    "fa-comment-slash": "\u{f4b3}",
-    "fa-comments": "\u{f086}",
-    "fa-comments-dollar": "\u{f653}",
-    "fa-compact-disc": "\u{f51f}",
-    "fa-compass": "\u{f14e}",
-    "fa-compress": "\u{f066}",
-    "fa-compress-arrows-alt": "\u{f78c}",
-    "fa-concierge-bell": "\u{f562}",
-    "fa-confluence": "\u{f78d}",
-    "fa-connectdevelop": "\u{f20e}",
-    "fa-contao": "\u{f26d}",
-    "fa-cookie": "\u{f563}",
-    "fa-cookie-bite": "\u{f564}",
-    "fa-copy": "\u{f0c5}",
-    "fa-copyright": "\u{f1f9}",
-    "fa-couch": "\u{f4b8}",
-    "fa-cpanel": "\u{f388}",
-    "fa-creative-commons": "\u{f25e}",
-    "fa-creative-commons-by": "\u{f4e7}",
-    "fa-creative-commons-nc": "\u{f4e8}",
-    "fa-creative-commons-nc-eu": "\u{f4e9}",
-    "fa-creative-commons-nc-jp": "\u{f4ea}",
-    "fa-creative-commons-nd": "\u{f4eb}",
-    "fa-creative-commons-pd": "\u{f4ec}",
-    "fa-creative-commons-pd-alt": "\u{f4ed}",
-    "fa-creative-commons-remix": "\u{f4ee}",
-    "fa-creative-commons-sa": "\u{f4ef}",
-    "fa-creative-commons-sampling": "\u{f4f0}",
-    "fa-creative-commons-sampling-plus": "\u{f4f1}",
-    "fa-creative-commons-share": "\u{f4f2}",
-    "fa-creative-commons-zero": "\u{f4f3}",
-    "fa-credit-card": "\u{f09d}",
-    "fa-critical-role": "\u{f6c9}",
-    "fa-crop": "\u{f125}",
-    "fa-crop-alt": "\u{f565}",
-    "fa-cross": "\u{f654}",
-    "fa-crosshairs": "\u{f05b}",
-    "fa-crow": "\u{f520}",
-    "fa-crown": "\u{f521}",
-    "fa-crutch": "\u{f7f7}",
-    "fa-css3": "\u{f13c}",
-    "fa-css3-alt": "\u{f38b}",
-    "fa-cube": "\u{f1b2}",
-    "fa-cubes": "\u{f1b3}",
-    "fa-cut": "\u{f0c4}",
-    "fa-cuttlefish": "\u{f38c}",
-    "fa-d-and-d": "\u{f38d}",
-    "fa-d-and-d-beyond": "\u{f6ca}",
-    "fa-dashcube": "\u{f210}",
-    "fa-database": "\u{f1c0}",
-    "fa-deaf": "\u{f2a4}",
-    "fa-delicious": "\u{f1a5}",
-    "fa-democrat": "\u{f747}",
-    "fa-deploydog": "\u{f38e}",
-    "fa-deskpro": "\u{f38f}",
-    "fa-desktop": "\u{f108}",
-    "fa-dev": "\u{f6cc}",
-    "fa-deviantart": "\u{f1bd}",
-    "fa-dharmachakra": "\u{f655}",
-    "fa-dhl": "\u{f790}",
-    "fa-diagnoses": "\u{f470}",
-    "fa-diaspora": "\u{f791}",
-    "fa-dice": "\u{f522}",
-    "fa-dice-d20": "\u{f6cf}",
-    "fa-dice-d6": "\u{f6d1}",
-    "fa-dice-five": "\u{f523}",
-    "fa-dice-four": "\u{f524}",
-    "fa-dice-one": "\u{f525}",
-    "fa-dice-six": "\u{f526}",
-    "fa-dice-three": "\u{f527}",
-    "fa-dice-two": "\u{f528}",
-    "fa-digg": "\u{f1a6}",
-    "fa-digital-ocean": "\u{f391}",
-    "fa-digital-tachograph": "\u{f566}",
-    "fa-directions": "\u{f5eb}",
-    "fa-discord": "\u{f392}",
-    "fa-discourse": "\u{f393}",
-    "fa-divide": "\u{f529}",
-    "fa-dizzy": "\u{f567}",
-    "fa-dna": "\u{f471}",
-    "fa-dochub": "\u{f394}",
-    "fa-docker": "\u{f395}",
-    "fa-dog": "\u{f6d3}",
-    "fa-dollar-sign": "\u{f155}",
-    "fa-dolly": "\u{f472}",
-    "fa-dolly-flatbed": "\u{f474}",
-    "fa-donate": "\u{f4b9}",
-    "fa-door-closed": "\u{f52a}",
-    "fa-door-open": "\u{f52b}",
-    "fa-dot-circle": "\u{f192}",
-    "fa-dove": "\u{f4ba}",
-    "fa-download": "\u{f019}",
-    "fa-draft2digital": "\u{f396}",
-    "fa-drafting-compass": "\u{f568}",
-    "fa-dragon": "\u{f6d5}",
-    "fa-draw-polygon": "\u{f5ee}",
-    "fa-dribbble": "\u{f17d}",
-    "fa-dribbble-square": "\u{f397}",
-    "fa-dropbox": "\u{f16b}",
-    "fa-drum": "\u{f569}",
-    "fa-drum-steelpan": "\u{f56a}",
-    "fa-drumstick-bite": "\u{f6d7}",
-    "fa-drupal": "\u{f1a9}",
-    "fa-dumbbell": "\u{f44b}",
-    "fa-dumpster": "\u{f793}",
-    "fa-dumpster-fire": "\u{f794}",
-    "fa-dungeon": "\u{f6d9}",
-    "fa-dyalog": "\u{f399}",
-    "fa-earlybirds": "\u{f39a}",
-    "fa-ebay": "\u{f4f4}",
-    "fa-edge": "\u{f282}",
-    "fa-edit": "\u{f044}",
-    "fa-egg": "\u{f7fb}",
-    "fa-eject": "\u{f052}",
-    "fa-elementor": "\u{f430}",
-    "fa-ellipsis-h": "\u{f141}",
-    "fa-ellipsis-v": "\u{f142}",
-    "fa-ello": "\u{f5f1}",
-    "fa-ember": "\u{f423}",
-    "fa-empire": "\u{f1d1}",
-    "fa-envelope": "\u{f0e0}",
-    "fa-envelope-open": "\u{f2b6}",
-    "fa-envelope-open-text": "\u{f658}",
-    "fa-envelope-square": "\u{f199}",
-    "fa-envira": "\u{f299}",
-    "fa-equals": "\u{f52c}",
-    "fa-eraser": "\u{f12d}",
-    "fa-erlang": "\u{f39d}",
-    "fa-ethereum": "\u{f42e}",
-    "fa-ethernet": "\u{f796}",
-    "fa-etsy": "\u{f2d7}",
-    "fa-euro-sign": "\u{f153}",
-    "fa-evernote": "\u{f839}",
-    "fa-exchange-alt": "\u{f362}",
-    "fa-exclamation": "\u{f12a}",
-    "fa-exclamation-circle": "\u{f06a}",
-    "fa-exclamation-triangle": "\u{f071}",
-    "fa-expand": "\u{f065}",
-    "fa-expand-arrows-alt": "\u{f31e}",
-    "fa-expeditedssl": "\u{f23e}",
-    "fa-external-link-alt": "\u{f35d}",
-    "fa-external-link-square-alt": "\u{f360}",
-    "fa-eye": "\u{f06e}",
-    "fa-eye-dropper": "\u{f1fb}",
-    "fa-eye-slash": "\u{f070}",
-    "fa-facebook": "\u{f09a}",
-    "fa-facebook-f": "\u{f39e}",
-    "fa-facebook-messenger": "\u{f39f}",
-    "fa-facebook-square": "\u{f082}",
-    "fa-fantasy-flight-games": "\u{f6dc}",
-    "fa-fast-backward": "\u{f049}",
-    "fa-fast-forward": "\u{f050}",
-    "fa-fax": "\u{f1ac}",
-    "fa-feather": "\u{f52d}",
-    "fa-feather-alt": "\u{f56b}",
-    "fa-fedex": "\u{f797}",
-    "fa-fedora": "\u{f798}",
-    "fa-female": "\u{f182}",
-    "fa-fighter-jet": "\u{f0fb}",
-    "fa-figma": "\u{f799}",
-    "fa-file": "\u{f15b}",
-    "fa-file-alt": "\u{f15c}",
-    "fa-file-archive": "\u{f1c6}",
-    "fa-file-audio": "\u{f1c7}",
-    "fa-file-code": "\u{f1c9}",
-    "fa-file-contract": "\u{f56c}",
-    "fa-file-csv": "\u{f6dd}",
-    "fa-file-download": "\u{f56d}",
-    "fa-file-excel": "\u{f1c3}",
-    "fa-file-export": "\u{f56e}",
-    "fa-file-image": "\u{f1c5}",
-    "fa-file-import": "\u{f56f}",
-    "fa-file-invoice": "\u{f570}",
-    "fa-file-invoice-dollar": "\u{f571}",
-    "fa-file-medical": "\u{f477}",
-    "fa-file-medical-alt": "\u{f478}",
-    "fa-file-pdf": "\u{f1c1}",
-    "fa-file-powerpoint": "\u{f1c4}",
-    "fa-file-prescription": "\u{f572}",
-    "fa-file-signature": "\u{f573}",
-    "fa-file-upload": "\u{f574}",
-    "fa-file-video": "\u{f1c8}",
-    "fa-file-word": "\u{f1c2}",
-    "fa-fill": "\u{f575}",
-    "fa-fill-drip": "\u{f576}",
-    "fa-film": "\u{f008}",
-    "fa-filter": "\u{f0b0}",
-    "fa-fingerprint": "\u{f577}",
-    "fa-fire": "\u{f06d}",
-    "fa-fire-alt": "\u{f7e4}",
-    "fa-fire-extinguisher": "\u{f134}",
-    "fa-firefox": "\u{f269}",
-    "fa-first-aid": "\u{f479}",
-    "fa-first-order": "\u{f2b0}",
-    "fa-first-order-alt": "\u{f50a}",
-    "fa-firstdraft": "\u{f3a1}",
-    "fa-fish": "\u{f578}",
-    "fa-fist-raised": "\u{f6de}",
-    "fa-flag": "\u{f024}",
-    "fa-flag-checkered": "\u{f11e}",
-    "fa-flag-usa": "\u{f74d}",
-    "fa-flask": "\u{f0c3}",
-    "fa-flickr": "\u{f16e}",
-    "fa-flipboard": "\u{f44d}",
-    "fa-flushed": "\u{f579}",
-    "fa-fly": "\u{f417}",
-    "fa-folder": "\u{f07b}",
-    "fa-folder-minus": "\u{f65d}",
-    "fa-folder-open": "\u{f07c}",
-    "fa-folder-plus": "\u{f65e}",
-    "fa-font": "\u{f031}",
-    "fa-font-awesome": "\u{f2b4}",
-    "fa-font-awesome-alt": "\u{f35c}",
-    "fa-font-awesome-flag": "\u{f425}",
-    "fa-font-awesome-logo-full": "\u{f4e6}",
-    "fa-fonticons": "\u{f280}",
-    "fa-fonticons-fi": "\u{f3a2}",
-    "fa-football-ball": "\u{f44e}",
-    "fa-fort-awesome": "\u{f286}",
-    "fa-fort-awesome-alt": "\u{f3a3}",
-    "fa-forumbee": "\u{f211}",
-    "fa-forward": "\u{f04e}",
-    "fa-foursquare": "\u{f180}",
-    "fa-free-code-camp": "\u{f2c5}",
-    "fa-freebsd": "\u{f3a4}",
-    "fa-frog": "\u{f52e}",
-    "fa-frown": "\u{f119}",
-    "fa-frown-open": "\u{f57a}",
-    "fa-fulcrum": "\u{f50b}",
-    "fa-funnel-dollar": "\u{f662}",
-    "fa-futbol": "\u{f1e3}",
-    "fa-galactic-republic": "\u{f50c}",
-    "fa-galactic-senate": "\u{f50d}",
-    "fa-gamepad": "\u{f11b}",
-    "fa-gas-pump": "\u{f52f}",
-    "fa-gavel": "\u{f0e3}",
-    "fa-gem": "\u{f3a5}",
-    "fa-genderless": "\u{f22d}",
-    "fa-get-pocket": "\u{f265}",
-    "fa-gg": "\u{f260}",
-    "fa-gg-circle": "\u{f261}",
-    "fa-ghost": "\u{f6e2}",
-    "fa-gift": "\u{f06b}",
-    "fa-gifts": "\u{f79c}",
-    "fa-git": "\u{f1d3}",
-    "fa-git-alt": "\u{f841}",
-    "fa-git-square": "\u{f1d2}",
-    "fa-github": "\u{f09b}",
-    "fa-github-alt": "\u{f113}",
-    "fa-github-square": "\u{f092}",
-    "fa-gitkraken": "\u{f3a6}",
-    "fa-gitlab": "\u{f296}",
-    "fa-gitter": "\u{f426}",
-    "fa-glass-cheers": "\u{f79f}",
-    "fa-glass-martini": "\u{f000}",
-    "fa-glass-martini-alt": "\u{f57b}",
-    "fa-glass-whiskey": "\u{f7a0}",
-    "fa-glasses": "\u{f530}",
-    "fa-glide": "\u{f2a5}",
-    "fa-glide-g": "\u{f2a6}",
-    "fa-globe": "\u{f0ac}",
-    "fa-globe-africa": "\u{f57c}",
-    "fa-globe-americas": "\u{f57d}",
-    "fa-globe-asia": "\u{f57e}",
-    "fa-globe-europe": "\u{f7a2}",
-    "fa-gofore": "\u{f3a7}",
-    "fa-golf-ball": "\u{f450}",
-    "fa-goodreads": "\u{f3a8}",
-    "fa-goodreads-g": "\u{f3a9}",
-    "fa-google": "\u{f1a0}",
-    "fa-google-drive": "\u{f3aa}",
-    "fa-google-play": "\u{f3ab}",
-    "fa-google-plus": "\u{f2b3}",
-    "fa-google-plus-g": "\u{f0d5}",
-    "fa-google-plus-square": "\u{f0d4}",
-    "fa-google-wallet": "\u{f1ee}",
-    "fa-gopuram": "\u{f664}",
-    "fa-graduation-cap": "\u{f19d}",
-    "fa-gratipay": "\u{f184}",
-    "fa-grav": "\u{f2d6}",
-    "fa-greater-than": "\u{f531}",
-    "fa-greater-than-equal": "\u{f532}",
-    "fa-grimace": "\u{f57f}",
-    "fa-grin": "\u{f580}",
-    "fa-grin-alt": "\u{f581}",
-    "fa-grin-beam": "\u{f582}",
-    "fa-grin-beam-sweat": "\u{f583}",
-    "fa-grin-hearts": "\u{f584}",
-    "fa-grin-squint": "\u{f585}",
-    "fa-grin-squint-tears": "\u{f586}",
-    "fa-grin-stars": "\u{f587}",
-    "fa-grin-tears": "\u{f588}",
-    "fa-grin-tongue": "\u{f589}",
-    "fa-grin-tongue-squint": "\u{f58a}",
-    "fa-grin-tongue-wink": "\u{f58b}",
-    "fa-grin-wink": "\u{f58c}",
-    "fa-grip-horizontal": "\u{f58d}",
-    "fa-grip-lines": "\u{f7a4}",
-    "fa-grip-lines-vertical": "\u{f7a5}",
-    "fa-grip-vertical": "\u{f58e}",
-    "fa-gripfire": "\u{f3ac}",
-    "fa-grunt": "\u{f3ad}",
-    "fa-guitar": "\u{f7a6}",
-    "fa-gulp": "\u{f3ae}",
-    "fa-h-square": "\u{f0fd}",
-    "fa-hacker-news": "\u{f1d4}",
-    "fa-hacker-news-square": "\u{f3af}",
-    "fa-hackerrank": "\u{f5f7}",
-    "fa-hamburger": "\u{f805}",
-    "fa-hammer": "\u{f6e3}",
-    "fa-hamsa": "\u{f665}",
-    "fa-hand-holding": "\u{f4bd}",
-    "fa-hand-holding-heart": "\u{f4be}",
-    "fa-hand-holding-usd": "\u{f4c0}",
-    "fa-hand-lizard": "\u{f258}",
-    "fa-hand-middle-finger": "\u{f806}",
-    "fa-hand-paper": "\u{f256}",
-    "fa-hand-peace": "\u{f25b}",
-    "fa-hand-point-down": "\u{f0a7}",
-    "fa-hand-point-left": "\u{f0a5}",
-    "fa-hand-point-right": "\u{f0a4}",
-    "fa-hand-point-up": "\u{f0a6}",
-    "fa-hand-pointer": "\u{f25a}",
-    "fa-hand-rock": "\u{f255}",
-    "fa-hand-scissors": "\u{f257}",
-    "fa-hand-spock": "\u{f259}",
-    "fa-hands": "\u{f4c2}",
-    "fa-hands-helping": "\u{f4c4}",
-    "fa-handshake": "\u{f2b5}",
-    "fa-hanukiah": "\u{f6e6}",
-    "fa-hard-hat": "\u{f807}",
-    "fa-hashtag": "\u{f292}",
-    "fa-hat-wizard": "\u{f6e8}",
-    "fa-haykal": "\u{f666}",
-    "fa-hdd": "\u{f0a0}",
-    "fa-heading": "\u{f1dc}",
-    "fa-headphones": "\u{f025}",
-    "fa-headphones-alt": "\u{f58f}",
-    "fa-headset": "\u{f590}",
-    "fa-heart": "\u{f004}",
-    "fa-heart-broken": "\u{f7a9}",
-    "fa-heartbeat": "\u{f21e}",
-    "fa-helicopter": "\u{f533}",
-    "fa-highlighter": "\u{f591}",
-    "fa-hiking": "\u{f6ec}",
-    "fa-hippo": "\u{f6ed}",
-    "fa-hips": "\u{f452}",
-    "fa-hire-a-helper": "\u{f3b0}",
-    "fa-history": "\u{f1da}",
-    "fa-hockey-puck": "\u{f453}",
-    "fa-holly-berry": "\u{f7aa}",
-    "fa-home": "\u{f015}",
-    "fa-hooli": "\u{f427}",
-    "fa-hornbill": "\u{f592}",
-    "fa-horse": "\u{f6f0}",
-    "fa-horse-head": "\u{f7ab}",
-    "fa-hospital": "\u{f0f8}",
-    "fa-hospital-alt": "\u{f47d}",
-    "fa-hospital-symbol": "\u{f47e}",
-    "fa-hot-tub": "\u{f593}",
-    "fa-hotdog": "\u{f80f}",
-    "fa-hotel": "\u{f594}",
-    "fa-hotjar": "\u{f3b1}",
-    "fa-hourglass": "\u{f254}",
-    "fa-hourglass-end": "\u{f253}",
-    "fa-hourglass-half": "\u{f252}",
-    "fa-hourglass-start": "\u{f251}",
-    "fa-house-damage": "\u{f6f1}",
-    "fa-houzz": "\u{f27c}",
-    "fa-hryvnia": "\u{f6f2}",
-    "fa-html5": "\u{f13b}",
-    "fa-hubspot": "\u{f3b2}",
-    "fa-i-cursor": "\u{f246}",
-    "fa-ice-cream": "\u{f810}",
-    "fa-icicles": "\u{f7ad}",
-    "fa-id-badge": "\u{f2c1}",
-    "fa-id-card": "\u{f2c2}",
-    "fa-id-card-alt": "\u{f47f}",
-    "fa-igloo": "\u{f7ae}",
-    "fa-image": "\u{f03e}",
-    "fa-images": "\u{f302}",
-    "fa-imdb": "\u{f2d8}",
-    "fa-inbox": "\u{f01c}",
-    "fa-indent": "\u{f03c}",
-    "fa-industry": "\u{f275}",
-    "fa-infinity": "\u{f534}",
-    "fa-info": "\u{f129}",
-    "fa-info-circle": "\u{f05a}",
-    "fa-instagram": "\u{f16d}",
-    "fa-intercom": "\u{f7af}",
-    "fa-internet-explorer": "\u{f26b}",
-    "fa-invision": "\u{f7b0}",
-    "fa-ioxhost": "\u{f208}",
-    "fa-italic": "\u{f033}",
-    "fa-itch-io": "\u{f83a}",
-    "fa-itunes": "\u{f3b4}",
-    "fa-itunes-note": "\u{f3b5}",
-    "fa-java": "\u{f4e4}",
-    "fa-jedi": "\u{f669}",
-    "fa-jedi-order": "\u{f50e}",
-    "fa-jenkins": "\u{f3b6}",
-    "fa-jira": "\u{f7b1}",
-    "fa-joget": "\u{f3b7}",
-    "fa-joint": "\u{f595}",
-    "fa-joomla": "\u{f1aa}",
-    "fa-journal-whills": "\u{f66a}",
-    "fa-js": "\u{f3b8}",
-    "fa-js-square": "\u{f3b9}",
-    "fa-jsfiddle": "\u{f1cc}",
-    "fa-kaaba": "\u{f66b}",
-    "fa-kaggle": "\u{f5fa}",
-    "fa-key": "\u{f084}",
-    "fa-keybase": "\u{f4f5}",
-    "fa-keyboard": "\u{f11c}",
-    "fa-keycdn": "\u{f3ba}",
-    "fa-khanda": "\u{f66d}",
-    "fa-kickstarter": "\u{f3bb}",
-    "fa-kickstarter-k": "\u{f3bc}",
-    "fa-kiss": "\u{f596}",
-    "fa-kiss-beam": "\u{f597}",
-    "fa-kiss-wink-heart": "\u{f598}",
-    "fa-kiwi-bird": "\u{f535}",
-    "fa-korvue": "\u{f42f}",
-    "fa-landmark": "\u{f66f}",
-    "fa-language": "\u{f1ab}",
-    "fa-laptop": "\u{f109}",
-    "fa-laptop-code": "\u{f5fc}",
-    "fa-laptop-medical": "\u{f812}",
-    "fa-laravel": "\u{f3bd}",
-    "fa-lastfm": "\u{f202}",
-    "fa-lastfm-square": "\u{f203}",
-    "fa-laugh": "\u{f599}",
-    "fa-laugh-beam": "\u{f59a}",
-    "fa-laugh-squint": "\u{f59b}",
-    "fa-laugh-wink": "\u{f59c}",
-    "fa-layer-group": "\u{f5fd}",
-    "fa-leaf": "\u{f06c}",
-    "fa-leanpub": "\u{f212}",
-    "fa-lemon": "\u{f094}",
-    "fa-less": "\u{f41d}",
-    "fa-less-than": "\u{f536}",
-    "fa-less-than-equal": "\u{f537}",
-    "fa-level-down-alt": "\u{f3be}",
-    "fa-level-up-alt": "\u{f3bf}",
-    "fa-life-ring": "\u{f1cd}",
-    "fa-lightbulb": "\u{f0eb}",
-    "fa-line": "\u{f3c0}",
-    "fa-link": "\u{f0c1}",
-    "fa-linkedin": "\u{f08c}",
-    "fa-linkedin-in": "\u{f0e1}",
-    "fa-linode": "\u{f2b8}",
-    "fa-linux": "\u{f17c}",
-    "fa-lira-sign": "\u{f195}",
-    "fa-list": "\u{f03a}",
-    "fa-list-alt": "\u{f022}",
-    "fa-list-ol": "\u{f0cb}",
-    "fa-list-ul": "\u{f0ca}",
-    "fa-location-arrow": "\u{f124}",
-    "fa-lock": "\u{f023}",
-    "fa-lock-open": "\u{f3c1}",
-    "fa-long-arrow-alt-down": "\u{f309}",
-    "fa-long-arrow-alt-left": "\u{f30a}",
-    "fa-long-arrow-alt-right": "\u{f30b}",
-    "fa-long-arrow-alt-up": "\u{f30c}",
-    "fa-low-vision": "\u{f2a8}",
-    "fa-luggage-cart": "\u{f59d}",
-    "fa-lyft": "\u{f3c3}",
-    "fa-magento": "\u{f3c4}",
-    "fa-magic": "\u{f0d0}",
-    "fa-magnet": "\u{f076}",
-    "fa-mail-bulk": "\u{f674}",
-    "fa-mailchimp": "\u{f59e}",
-    "fa-male": "\u{f183}",
-    "fa-mandalorian": "\u{f50f}",
-    "fa-map": "\u{f279}",
-    "fa-map-marked": "\u{f59f}",
-    "fa-map-marked-alt": "\u{f5a0}",
-    "fa-map-marker": "\u{f041}",
-    "fa-map-marker-alt": "\u{f3c5}",
-    "fa-map-pin": "\u{f276}",
-    "fa-map-signs": "\u{f277}",
-    "fa-markdown": "\u{f60f}",
-    "fa-marker": "\u{f5a1}",
-    "fa-mars": "\u{f222}",
-    "fa-mars-double": "\u{f227}",
-    "fa-mars-stroke": "\u{f229}",
-    "fa-mars-stroke-h": "\u{f22b}",
-    "fa-mars-stroke-v": "\u{f22a}",
-    "fa-mask": "\u{f6fa}",
-    "fa-mastodon": "\u{f4f6}",
-    "fa-maxcdn": "\u{f136}",
-    "fa-medal": "\u{f5a2}",
-    "fa-medapps": "\u{f3c6}",
-    "fa-medium": "\u{f23a}",
-    "fa-medium-m": "\u{f3c7}",
-    "fa-medkit": "\u{f0fa}",
-    "fa-medrt": "\u{f3c8}",
-    "fa-meetup": "\u{f2e0}",
-    "fa-megaport": "\u{f5a3}",
-    "fa-meh": "\u{f11a}",
-    "fa-meh-blank": "\u{f5a4}",
-    "fa-meh-rolling-eyes": "\u{f5a5}",
-    "fa-memory": "\u{f538}",
-    "fa-mendeley": "\u{f7b3}",
-    "fa-menorah": "\u{f676}",
-    "fa-mercury": "\u{f223}",
-    "fa-meteor": "\u{f753}",
-    "fa-microchip": "\u{f2db}",
-    "fa-microphone": "\u{f130}",
-    "fa-microphone-alt": "\u{f3c9}",
-    "fa-microphone-alt-slash": "\u{f539}",
-    "fa-microphone-slash": "\u{f131}",
-    "fa-microscope": "\u{f610}",
-    "fa-microsoft": "\u{f3ca}",
-    "fa-minus": "\u{f068}",
-    "fa-minus-circle": "\u{f056}",
-    "fa-minus-square": "\u{f146}",
-    "fa-mitten": "\u{f7b5}",
-    "fa-mix": "\u{f3cb}",
-    "fa-mixcloud": "\u{f289}",
-    "fa-mizuni": "\u{f3cc}",
-    "fa-mobile": "\u{f10b}",
-    "fa-mobile-alt": "\u{f3cd}",
-    "fa-modx": "\u{f285}",
-    "fa-monero": "\u{f3d0}",
-    "fa-money-bill": "\u{f0d6}",
-    "fa-money-bill-alt": "\u{f3d1}",
-    "fa-money-bill-wave": "\u{f53a}",
-    "fa-money-bill-wave-alt": "\u{f53b}",
-    "fa-money-check": "\u{f53c}",
-    "fa-money-check-alt": "\u{f53d}",
-    "fa-monument": "\u{f5a6}",
-    "fa-moon": "\u{f186}",
-    "fa-mortar-pestle": "\u{f5a7}",
-    "fa-mosque": "\u{f678}",
-    "fa-motorcycle": "\u{f21c}",
-    "fa-mountain": "\u{f6fc}",
-    "fa-mouse-pointer": "\u{f245}",
-    "fa-mug-hot": "\u{f7b6}",
-    "fa-music": "\u{f001}",
-    "fa-napster": "\u{f3d2}",
-    "fa-neos": "\u{f612}",
-    "fa-network-wired": "\u{f6ff}",
-    "fa-neuter": "\u{f22c}",
-    "fa-newspaper": "\u{f1ea}",
-    "fa-nimblr": "\u{f5a8}",
-    "fa-nintendo-switch": "\u{f418}",
-    "fa-node": "\u{f419}",
-    "fa-node-js": "\u{f3d3}",
-    "fa-not-equal": "\u{f53e}",
-    "fa-notes-medical": "\u{f481}",
-    "fa-npm": "\u{f3d4}",
-    "fa-ns8": "\u{f3d5}",
-    "fa-nutritionix": "\u{f3d6}",
-    "fa-object-group": "\u{f247}",
-    "fa-object-ungroup": "\u{f248}",
-    "fa-odnoklassniki": "\u{f263}",
-    "fa-odnoklassniki-square": "\u{f264}",
-    "fa-oil-can": "\u{f613}",
-    "fa-old-republic": "\u{f510}",
-    "fa-om": "\u{f679}",
-    "fa-opencart": "\u{f23d}",
-    "fa-openid": "\u{f19b}",
-    "fa-opera": "\u{f26a}",
-    "fa-optin-monster": "\u{f23c}",
-    "fa-osi": "\u{f41a}",
-    "fa-otter": "\u{f700}",
-    "fa-outdent": "\u{f03b}",
-    "fa-page4": "\u{f3d7}",
-    "fa-pagelines": "\u{f18c}",
-    "fa-pager": "\u{f815}",
-    "fa-paint-brush": "\u{f1fc}",
-    "fa-paint-roller": "\u{f5aa}",
-    "fa-palette": "\u{f53f}",
-    "fa-palfed": "\u{f3d8}",
-    "fa-pallet": "\u{f482}",
-    "fa-paper-plane": "\u{f1d8}",
-    "fa-paperclip": "\u{f0c6}",
-    "fa-parachute-box": "\u{f4cd}",
-    "fa-paragraph": "\u{f1dd}",
-    "fa-parking": "\u{f540}",
-    "fa-passport": "\u{f5ab}",
-    "fa-pastafarianism": "\u{f67b}",
-    "fa-paste": "\u{f0ea}",
-    "fa-patreon": "\u{f3d9}",
-    "fa-pause": "\u{f04c}",
-    "fa-pause-circle": "\u{f28b}",
-    "fa-paw": "\u{f1b0}",
-    "fa-paypal": "\u{f1ed}",
-    "fa-peace": "\u{f67c}",
-    "fa-pen": "\u{f304}",
-    "fa-pen-alt": "\u{f305}",
-    "fa-pen-fancy": "\u{f5ac}",
-    "fa-pen-nib": "\u{f5ad}",
-    "fa-pen-square": "\u{f14b}",
-    "fa-pencil-alt": "\u{f303}",
-    "fa-pencil-ruler": "\u{f5ae}",
-    "fa-penny-arcade": "\u{f704}",
-    "fa-people-carry": "\u{f4ce}",
-    "fa-pepper-hot": "\u{f816}",
-    "fa-percent": "\u{f295}",
-    "fa-percentage": "\u{f541}",
-    "fa-periscope": "\u{f3da}",
-    "fa-person-booth": "\u{f756}",
-    "fa-phabricator": "\u{f3db}",
-    "fa-phoenix-framework": "\u{f3dc}",
-    "fa-phoenix-squadron": "\u{f511}",
-    "fa-phone": "\u{f095}",
-    "fa-phone-slash": "\u{f3dd}",
-    "fa-phone-square": "\u{f098}",
-    "fa-phone-volume": "\u{f2a0}",
-    "fa-php": "\u{f457}",
-    "fa-pied-piper": "\u{f2ae}",
-    "fa-pied-piper-alt": "\u{f1a8}",
-    "fa-pied-piper-hat": "\u{f4e5}",
-    "fa-pied-piper-pp": "\u{f1a7}",
-    "fa-piggy-bank": "\u{f4d3}",
-    "fa-pills": "\u{f484}",
-    "fa-pinterest": "\u{f0d2}",
-    "fa-pinterest-p": "\u{f231}",
-    "fa-pinterest-square": "\u{f0d3}",
-    "fa-pizza-slice": "\u{f818}",
-    "fa-place-of-worship": "\u{f67f}",
-    "fa-plane": "\u{f072}",
-    "fa-plane-arrival": "\u{f5af}",
-    "fa-plane-departure": "\u{f5b0}",
-    "fa-play": "\u{f04b}",
-    "fa-play-circle": "\u{f144}",
-    "fa-playstation": "\u{f3df}",
-    "fa-plug": "\u{f1e6}",
-    "fa-plus": "\u{f067}",
-    "fa-plus-circle": "\u{f055}",
-    "fa-plus-square": "\u{f0fe}",
-    "fa-podcast": "\u{f2ce}",
-    "fa-poll": "\u{f681}",
-    "fa-poll-h": "\u{f682}",
-    "fa-poo": "\u{f2fe}",
-    "fa-poo-storm": "\u{f75a}",
-    "fa-poop": "\u{f619}",
-    "fa-portrait": "\u{f3e0}",
-    "fa-pound-sign": "\u{f154}",
-    "fa-power-off": "\u{f011}",
-    "fa-pray": "\u{f683}",
-    "fa-praying-hands": "\u{f684}",
-    "fa-prescription": "\u{f5b1}",
-    "fa-prescription-bottle": "\u{f485}",
-    "fa-prescription-bottle-alt": "\u{f486}",
-    "fa-print": "\u{f02f}",
-    "fa-procedures": "\u{f487}",
-    "fa-product-hunt": "\u{f288}",
-    "fa-project-diagram": "\u{f542}",
-    "fa-pushed": "\u{f3e1}",
-    "fa-puzzle-piece": "\u{f12e}",
-    "fa-python": "\u{f3e2}",
-    "fa-qq": "\u{f1d6}",
-    "fa-qrcode": "\u{f029}",
-    "fa-question": "\u{f128}",
-    "fa-question-circle": "\u{f059}",
-    "fa-quidditch": "\u{f458}",
-    "fa-quinscape": "\u{f459}",
-    "fa-quora": "\u{f2c4}",
-    "fa-quote-left": "\u{f10d}",
-    "fa-quote-right": "\u{f10e}",
-    "fa-quran": "\u{f687}",
-    "fa-r-project": "\u{f4f7}",
-    "fa-radiation": "\u{f7b9}",
-    "fa-radiation-alt": "\u{f7ba}",
-    "fa-rainbow": "\u{f75b}",
-    "fa-random": "\u{f074}",
-    "fa-raspberry-pi": "\u{f7bb}",
-    "fa-ravelry": "\u{f2d9}",
-    "fa-react": "\u{f41b}",
-    "fa-reacteurope": "\u{f75d}",
-    "fa-readme": "\u{f4d5}",
-    "fa-rebel": "\u{f1d0}",
-    "fa-receipt": "\u{f543}",
-    "fa-recycle": "\u{f1b8}",
-    "fa-red-river": "\u{f3e3}",
-    "fa-reddit": "\u{f1a1}",
-    "fa-reddit-alien": "\u{f281}",
-    "fa-reddit-square": "\u{f1a2}",
-    "fa-redhat": "\u{f7bc}",
-    "fa-redo": "\u{f01e}",
-    "fa-redo-alt": "\u{f2f9}",
-    "fa-registered": "\u{f25d}",
-    "fa-renren": "\u{f18b}",
-    "fa-reply": "\u{f3e5}",
-    "fa-reply-all": "\u{f122}",
-    "fa-replyd": "\u{f3e6}",
-    "fa-republican": "\u{f75e}",
-    "fa-researchgate": "\u{f4f8}",
-    "fa-resolving": "\u{f3e7}",
-    "fa-restroom": "\u{f7bd}",
-    "fa-retweet": "\u{f079}",
-    "fa-rev": "\u{f5b2}",
-    "fa-ribbon": "\u{f4d6}",
-    "fa-ring": "\u{f70b}",
-    "fa-road": "\u{f018}",
-    "fa-robot": "\u{f544}",
-    "fa-rocket": "\u{f135}",
-    "fa-rocketchat": "\u{f3e8}",
-    "fa-rockrms": "\u{f3e9}",
-    "fa-route": "\u{f4d7}",
-    "fa-rss": "\u{f09e}",
-    "fa-rss-square": "\u{f143}",
-    "fa-ruble-sign": "\u{f158}",
-    "fa-ruler": "\u{f545}",
-    "fa-ruler-combined": "\u{f546}",
-    "fa-ruler-horizontal": "\u{f547}",
-    "fa-ruler-vertical": "\u{f548}",
-    "fa-running": "\u{f70c}",
-    "fa-rupee-sign": "\u{f156}",
-    "fa-sad-cry": "\u{f5b3}",
-    "fa-sad-tear": "\u{f5b4}",
-    "fa-safari": "\u{f267}",
-    "fa-salesforce": "\u{f83b}",
-    "fa-sass": "\u{f41e}",
-    "fa-satellite": "\u{f7bf}",
-    "fa-satellite-dish": "\u{f7c0}",
-    "fa-save": "\u{f0c7}",
-    "fa-schlix": "\u{f3ea}",
-    "fa-school": "\u{f549}",
-    "fa-screwdriver": "\u{f54a}",
-    "fa-scribd": "\u{f28a}",
-    "fa-scroll": "\u{f70e}",
-    "fa-sd-card": "\u{f7c2}",
-    "fa-search": "\u{f002}",
-    "fa-search-dollar": "\u{f688}",
-    "fa-search-location": "\u{f689}",
-    "fa-search-minus": "\u{f010}",
-    "fa-search-plus": "\u{f00e}",
-    "fa-searchengin": "\u{f3eb}",
-    "fa-seedling": "\u{f4d8}",
-    "fa-sellcast": "\u{f2da}",
-    "fa-sellsy": "\u{f213}",
-    "fa-server": "\u{f233}",
-    "fa-servicestack": "\u{f3ec}",
-    "fa-shapes": "\u{f61f}",
-    "fa-share": "\u{f064}",
-    "fa-share-alt": "\u{f1e0}",
-    "fa-share-alt-square": "\u{f1e1}",
-    "fa-share-square": "\u{f14d}",
-    "fa-shekel-sign": "\u{f20b}",
-    "fa-shield-alt": "\u{f3ed}",
-    "fa-ship": "\u{f21a}",
-    "fa-shipping-fast": "\u{f48b}",
-    "fa-shirtsinbulk": "\u{f214}",
-    "fa-shoe-prints": "\u{f54b}",
-    "fa-shopping-bag": "\u{f290}",
-    "fa-shopping-basket": "\u{f291}",
-    "fa-shopping-cart": "\u{f07a}",
-    "fa-shopware": "\u{f5b5}",
-    "fa-shower": "\u{f2cc}",
-    "fa-shuttle-van": "\u{f5b6}",
-    "fa-sign": "\u{f4d9}",
-    "fa-sign-in-alt": "\u{f2f6}",
-    "fa-sign-language": "\u{f2a7}",
-    "fa-sign-out-alt": "\u{f2f5}",
-    "fa-signal": "\u{f012}",
-    "fa-signature": "\u{f5b7}",
-    "fa-sim-card": "\u{f7c4}",
-    "fa-simplybuilt": "\u{f215}",
-    "fa-sistrix": "\u{f3ee}",
-    "fa-sitemap": "\u{f0e8}",
-    "fa-sith": "\u{f512}",
-    "fa-skating": "\u{f7c5}",
-    "fa-sketch": "\u{f7c6}",
-    "fa-skiing": "\u{f7c9}",
-    "fa-skiing-nordic": "\u{f7ca}",
-    "fa-skull": "\u{f54c}",
-    "fa-skull-crossbones": "\u{f714}",
-    "fa-skyatlas": "\u{f216}",
-    "fa-skype": "\u{f17e}",
-    "fa-slack": "\u{f198}",
-    "fa-slack-hash": "\u{f3ef}",
-    "fa-slash": "\u{f715}",
-    "fa-sleigh": "\u{f7cc}",
-    "fa-sliders-h": "\u{f1de}",
-    "fa-slideshare": "\u{f1e7}",
-    "fa-smile": "\u{f118}",
-    "fa-smile-beam": "\u{f5b8}",
-    "fa-smile-wink": "\u{f4da}",
-    "fa-smog": "\u{f75f}",
-    "fa-smoking": "\u{f48d}",
-    "fa-smoking-ban": "\u{f54d}",
-    "fa-sms": "\u{f7cd}",
-    "fa-snapchat": "\u{f2ab}",
-    "fa-snapchat-ghost": "\u{f2ac}",
-    "fa-snapchat-square": "\u{f2ad}",
-    "fa-snowboarding": "\u{f7ce}",
-    "fa-snowflake": "\u{f2dc}",
-    "fa-snowman": "\u{f7d0}",
-    "fa-snowplow": "\u{f7d2}",
-    "fa-socks": "\u{f696}",
-    "fa-solar-panel": "\u{f5ba}",
-    "fa-sort": "\u{f0dc}",
-    "fa-sort-alpha-down": "\u{f15d}",
-    "fa-sort-alpha-up": "\u{f15e}",
-    "fa-sort-amount-down": "\u{f160}",
-    "fa-sort-amount-up": "\u{f161}",
-    "fa-sort-down": "\u{f0dd}",
-    "fa-sort-numeric-down": "\u{f162}",
-    "fa-sort-numeric-up": "\u{f163}",
-    "fa-sort-up": "\u{f0de}",
-    "fa-soundcloud": "\u{f1be}",
-    "fa-sourcetree": "\u{f7d3}",
-    "fa-spa": "\u{f5bb}",
-    "fa-space-shuttle": "\u{f197}",
-    "fa-speakap": "\u{f3f3}",
-    "fa-speaker-deck": "\u{f83c}",
-    "fa-spider": "\u{f717}",
-    "fa-spinner": "\u{f110}",
-    "fa-splotch": "\u{f5bc}",
-    "fa-spotify": "\u{f1bc}",
-    "fa-spray-can": "\u{f5bd}",
-    "fa-square": "\u{f0c8}",
-    "fa-square-full": "\u{f45c}",
-    "fa-square-root-alt": "\u{f698}",
-    "fa-squarespace": "\u{f5be}",
-    "fa-stack-exchange": "\u{f18d}",
-    "fa-stack-overflow": "\u{f16c}",
-    "fa-stackpath": "\u{f842}",
-    "fa-stamp": "\u{f5bf}",
-    "fa-star": "\u{f005}",
-    "fa-star-and-crescent": "\u{f699}",
-    "fa-star-half": "\u{f089}",
-    "fa-star-half-alt": "\u{f5c0}",
-    "fa-star-of-david": "\u{f69a}",
-    "fa-star-of-life": "\u{f621}",
-    "fa-staylinked": "\u{f3f5}",
-    "fa-steam": "\u{f1b6}",
-    "fa-steam-square": "\u{f1b7}",
-    "fa-steam-symbol": "\u{f3f6}",
-    "fa-step-backward": "\u{f048}",
-    "fa-step-forward": "\u{f051}",
-    "fa-stethoscope": "\u{f0f1}",
-    "fa-sticker-mule": "\u{f3f7}",
-    "fa-sticky-note": "\u{f249}",
-    "fa-stop": "\u{f04d}",
-    "fa-stop-circle": "\u{f28d}",
-    "fa-stopwatch": "\u{f2f2}",
-    "fa-store": "\u{f54e}",
-    "fa-store-alt": "\u{f54f}",
-    "fa-strava": "\u{f428}",
-    "fa-stream": "\u{f550}",
-    "fa-street-view": "\u{f21d}",
-    "fa-strikethrough": "\u{f0cc}",
-    "fa-stripe": "\u{f429}",
-    "fa-stripe-s": "\u{f42a}",
-    "fa-stroopwafel": "\u{f551}",
-    "fa-studiovinari": "\u{f3f8}",
-    "fa-stumbleupon": "\u{f1a4}",
-    "fa-stumbleupon-circle": "\u{f1a3}",
-    "fa-subscript": "\u{f12c}",
-    "fa-subway": "\u{f239}",
-    "fa-suitcase": "\u{f0f2}",
-    "fa-suitcase-rolling": "\u{f5c1}",
-    "fa-sun": "\u{f185}",
-    "fa-superpowers": "\u{f2dd}",
-    "fa-superscript": "\u{f12b}",
-    "fa-supple": "\u{f3f9}",
-    "fa-surprise": "\u{f5c2}",
-    "fa-suse": "\u{f7d6}",
-    "fa-swatchbook": "\u{f5c3}",
-    "fa-swimmer": "\u{f5c4}",
-    "fa-swimming-pool": "\u{f5c5}",
-    "fa-symfony": "\u{f83d}",
-    "fa-synagogue": "\u{f69b}",
-    "fa-sync": "\u{f021}",
-    "fa-sync-alt": "\u{f2f1}",
-    "fa-syringe": "\u{f48e}",
-    "fa-table": "\u{f0ce}",
-    "fa-table-tennis": "\u{f45d}",
-    "fa-tablet": "\u{f10a}",
-    "fa-tablet-alt": "\u{f3fa}",
-    "fa-tablets": "\u{f490}",
-    "fa-tachometer-alt": "\u{f3fd}",
-    "fa-tag": "\u{f02b}",
-    "fa-tags": "\u{f02c}",
-    "fa-tape": "\u{f4db}",
-    "fa-tasks": "\u{f0ae}",
-    "fa-taxi": "\u{f1ba}",
-    "fa-teamspeak": "\u{f4f9}",
-    "fa-teeth": "\u{f62e}",
-    "fa-teeth-open": "\u{f62f}",
-    "fa-telegram": "\u{f2c6}",
-    "fa-telegram-plane": "\u{f3fe}",
-    "fa-temperature-high": "\u{f769}",
-    "fa-temperature-low": "\u{f76b}",
-    "fa-tencent-weibo": "\u{f1d5}",
-    "fa-tenge": "\u{f7d7}",
-    "fa-terminal": "\u{f120}",
-    "fa-text-height": "\u{f034}",
-    "fa-text-width": "\u{f035}",
-    "fa-th": "\u{f00a}",
-    "fa-th-large": "\u{f009}",
-    "fa-th-list": "\u{f00b}",
-    "fa-the-red-yeti": "\u{f69d}",
-    "fa-theater-masks": "\u{f630}",
-    "fa-themeco": "\u{f5c6}",
-    "fa-themeisle": "\u{f2b2}",
-    "fa-thermometer": "\u{f491}",
-    "fa-thermometer-empty": "\u{f2cb}",
-    "fa-thermometer-full": "\u{f2c7}",
-    "fa-thermometer-half": "\u{f2c9}",
-    "fa-thermometer-quarter": "\u{f2ca}",
-    "fa-thermometer-three-quarters": "\u{f2c8}",
-    "fa-think-peaks": "\u{f731}",
-    "fa-thumbs-down": "\u{f165}",
-    "fa-thumbs-up": "\u{f164}",
-    "fa-thumbtack": "\u{f08d}",
-    "fa-ticket-alt": "\u{f3ff}",
-    "fa-times": "\u{f00d}",
-    "fa-times-circle": "\u{f057}",
-    "fa-tint": "\u{f043}",
-    "fa-tint-slash": "\u{f5c7}",
-    "fa-tired": "\u{f5c8}",
-    "fa-toggle-off": "\u{f204}",
-    "fa-toggle-on": "\u{f205}",
-    "fa-toilet": "\u{f7d8}",
-    "fa-toilet-paper": "\u{f71e}",
-    "fa-toolbox": "\u{f552}",
-    "fa-tools": "\u{f7d9}",
-    "fa-tooth": "\u{f5c9}",
-    "fa-torah": "\u{f6a0}",
-    "fa-torii-gate": "\u{f6a1}",
-    "fa-tractor": "\u{f722}",
-    "fa-trade-federation": "\u{f513}",
-    "fa-trademark": "\u{f25c}",
-    "fa-traffic-light": "\u{f637}",
-    "fa-train": "\u{f238}",
-    "fa-tram": "\u{f7da}",
-    "fa-transgender": "\u{f224}",
-    "fa-transgender-alt": "\u{f225}",
-    "fa-trash": "\u{f1f8}",
-    "fa-trash-alt": "\u{f2ed}",
-    "fa-trash-restore": "\u{f829}",
-    "fa-trash-restore-alt": "\u{f82a}",
-    "fa-tree": "\u{f1bb}",
-    "fa-trello": "\u{f181}",
-    "fa-tripadvisor": "\u{f262}",
-    "fa-trophy": "\u{f091}",
-    "fa-truck": "\u{f0d1}",
-    "fa-truck-loading": "\u{f4de}",
-    "fa-truck-monster": "\u{f63b}",
-    "fa-truck-moving": "\u{f4df}",
-    "fa-truck-pickup": "\u{f63c}",
-    "fa-tshirt": "\u{f553}",
-    "fa-tty": "\u{f1e4}",
-    "fa-tumblr": "\u{f173}",
-    "fa-tumblr-square": "\u{f174}",
-    "fa-tv": "\u{f26c}",
-    "fa-twitch": "\u{f1e8}",
-    "fa-twitter": "\u{f099}",
-    "fa-twitter-square": "\u{f081}",
-    "fa-typo3": "\u{f42b}",
-    "fa-uber": "\u{f402}",
-    "fa-ubuntu": "\u{f7df}",
-    "fa-uikit": "\u{f403}",
-    "fa-umbrella": "\u{f0e9}",
-    "fa-umbrella-beach": "\u{f5ca}",
-    "fa-underline": "\u{f0cd}",
-    "fa-undo": "\u{f0e2}",
-    "fa-undo-alt": "\u{f2ea}",
-    "fa-uniregistry": "\u{f404}",
-    "fa-universal-access": "\u{f29a}",
-    "fa-university": "\u{f19c}",
-    "fa-unlink": "\u{f127}",
-    "fa-unlock": "\u{f09c}",
-    "fa-unlock-alt": "\u{f13e}",
-    "fa-untappd": "\u{f405}",
-    "fa-upload": "\u{f093}",
-    "fa-ups": "\u{f7e0}",
-    "fa-usb": "\u{f287}",
-    "fa-user": "\u{f007}",
-    "fa-user-alt": "\u{f406}",
-    "fa-user-alt-slash": "\u{f4fa}",
-    "fa-user-astronaut": "\u{f4fb}",
-    "fa-user-check": "\u{f4fc}",
-    "fa-user-circle": "\u{f2bd}",
-    "fa-user-clock": "\u{f4fd}",
-    "fa-user-cog": "\u{f4fe}",
-    "fa-user-edit": "\u{f4ff}",
-    "fa-user-friends": "\u{f500}",
-    "fa-user-graduate": "\u{f501}",
-    "fa-user-injured": "\u{f728}",
-    "fa-user-lock": "\u{f502}",
-    "fa-user-md": "\u{f0f0}",
-    "fa-user-minus": "\u{f503}",
-    "fa-user-ninja": "\u{f504}",
-    "fa-user-nurse": "\u{f82f}",
-    "fa-user-plus": "\u{f234}",
-    "fa-user-secret": "\u{f21b}",
-    "fa-user-shield": "\u{f505}",
-    "fa-user-slash": "\u{f506}",
-    "fa-user-tag": "\u{f507}",
-    "fa-user-tie": "\u{f508}",
-    "fa-user-times": "\u{f235}",
-    "fa-users": "\u{f0c0}",
-    "fa-users-cog": "\u{f509}",
-    "fa-usps": "\u{f7e1}",
-    "fa-ussunnah": "\u{f407}",
-    "fa-utensil-spoon": "\u{f2e5}",
-    "fa-utensils": "\u{f2e7}",
-    "fa-vaadin": "\u{f408}",
-    "fa-vector-square": "\u{f5cb}",
-    "fa-venus": "\u{f221}",
-    "fa-venus-double": "\u{f226}",
-    "fa-venus-mars": "\u{f228}",
-    "fa-viacoin": "\u{f237}",
-    "fa-viadeo": "\u{f2a9}",
-    "fa-viadeo-square": "\u{f2aa}",
-    "fa-vial": "\u{f492}",
-    "fa-vials": "\u{f493}",
-    "fa-viber": "\u{f409}",
-    "fa-video": "\u{f03d}",
-    "fa-video-slash": "\u{f4e2}",
-    "fa-vihara": "\u{f6a7}",
-    "fa-vimeo": "\u{f40a}",
-    "fa-vimeo-square": "\u{f194}",
-    "fa-vimeo-v": "\u{f27d}",
-    "fa-vine": "\u{f1ca}",
-    "fa-vk": "\u{f189}",
-    "fa-vnv": "\u{f40b}",
-    "fa-volleyball-ball": "\u{f45f}",
-    "fa-volume-down": "\u{f027}",
-    "fa-volume-mute": "\u{f6a9}",
-    "fa-volume-off": "\u{f026}",
-    "fa-volume-up": "\u{f028}",
-    "fa-vote-yea": "\u{f772}",
-    "fa-vr-cardboard": "\u{f729}",
-    "fa-vuejs": "\u{f41f}",
-    "fa-walking": "\u{f554}",
-    "fa-wallet": "\u{f555}",
-    "fa-warehouse": "\u{f494}",
-    "fa-water": "\u{f773}",
-    "fa-wave-square": "\u{f83e}",
-    "fa-waze": "\u{f83f}",
-    "fa-weebly": "\u{f5cc}",
-    "fa-weibo": "\u{f18a}",
-    "fa-weight": "\u{f496}",
-    "fa-weight-hanging": "\u{f5cd}",
-    "fa-weixin": "\u{f1d7}",
-    "fa-whatsapp": "\u{f232}",
-    "fa-whatsapp-square": "\u{f40c}",
-    "fa-wheelchair": "\u{f193}",
-    "fa-whmcs": "\u{f40d}",
-    "fa-wifi": "\u{f1eb}",
-    "fa-wikipedia-w": "\u{f266}",
-    "fa-wind": "\u{f72e}",
-    "fa-window-close": "\u{f410}",
-    "fa-window-maximize": "\u{f2d0}",
-    "fa-window-minimize": "\u{f2d1}",
-    "fa-window-restore": "\u{f2d2}",
-    "fa-windows": "\u{f17a}",
-    "fa-wine-bottle": "\u{f72f}",
-    "fa-wine-glass": "\u{f4e3}",
-    "fa-wine-glass-alt": "\u{f5ce}",
-    "fa-wix": "\u{f5cf}",
-    "fa-wizards-of-the-coast": "\u{f730}",
-    "fa-wolf-pack-battalion": "\u{f514}",
-    "fa-won-sign": "\u{f159}",
-    "fa-wordpress": "\u{f19a}",
-    "fa-wordpress-simple": "\u{f411}",
-    "fa-wpbeginner": "\u{f297}",
-    "fa-wpexplorer": "\u{f2de}",
-    "fa-wpforms": "\u{f298}",
-    "fa-wpressr": "\u{f3e4}",
-    "fa-wrench": "\u{f0ad}",
-    "fa-x-ray": "\u{f497}",
-    "fa-xbox": "\u{f412}",
-    "fa-xing": "\u{f168}",
-    "fa-xing-square": "\u{f169}",
-    "fa-y-combinator": "\u{f23b}",
-    "fa-yahoo": "\u{f19e}",
-    "fa-yammer": "\u{f840}",
-    "fa-yandex": "\u{f413}",
-    "fa-yandex-international": "\u{f414}",
-    "fa-yarn": "\u{f7e3}",
-    "fa-yelp": "\u{f1e9}",
-    "fa-yen-sign": "\u{f157}",
-    "fa-yin-yang": "\u{f6ad}",
-    "fa-yoast": "\u{f2b1}",
-    "fa-youtube": "\u{f167}",
-    "fa-youtube-square": "\u{f431}",
-    "fa-zhihu": "\u{f63f}"
-]
-
-/// An enumaration of FontAwesome Brands icon names
-public enum FontAwesomeBrands: String {
-    case fiveHundredPixels = "\u{f26e}"
-    case accessibleIcon = "\u{f368}"
-    case accusoft = "\u{f369}"
-    case acquisitionsIncorporated = "\u{f6af}"
-    case adn = "\u{f170}"
-    case adobe = "\u{f778}"
-    case adversal = "\u{f36a}"
-    case affiliatetheme = "\u{f36b}"
-    case airbnb = "\u{f834}"
-    case algolia = "\u{f36c}"
-    case alipay = "\u{f642}"
-    case amazon = "\u{f270}"
-    case amazonPay = "\u{f42c}"
-    case amilia = "\u{f36d}"
-    case android = "\u{f17b}"
-    case angellist = "\u{f209}"
-    case angrycreative = "\u{f36e}"
-    case angular = "\u{f420}"
-    case appStore = "\u{f36f}"
-    case appStoreIos = "\u{f370}"
-    case apper = "\u{f371}"
-    case apple = "\u{f179}"
-    case applePay = "\u{f415}"
-    case artstation = "\u{f77a}"
-    case asymmetrik = "\u{f372}"
-    case atlassian = "\u{f77b}"
-    case audible = "\u{f373}"
-    case autoprefixer = "\u{f41c}"
-    case avianex = "\u{f374}"
-    case aviato = "\u{f421}"
-    case aws = "\u{f375}"
-    case bandcamp = "\u{f2d5}"
-    case battleNet = "\u{f835}"
-    case behance = "\u{f1b4}"
-    case behanceSquare = "\u{f1b5}"
-    case bimobject = "\u{f378}"
-    case bitbucket = "\u{f171}"
-    case bitcoin = "\u{f379}"
-    case bity = "\u{f37a}"
-    case blackTie = "\u{f27e}"
-    case blackberry = "\u{f37b}"
-    case blogger = "\u{f37c}"
-    case bloggerB = "\u{f37d}"
-    case bluetooth = "\u{f293}"
-    case bluetoothB = "\u{f294}"
-    case bootstrap = "\u{f836}"
-    case btc = "\u{f15a}"
-    case buffer = "\u{f837}"
-    case buromobelexperte = "\u{f37f}"
-    case buysellads = "\u{f20d}"
-    case canadianMapleLeaf = "\u{f785}"
-    case ccAmazonPay = "\u{f42d}"
-    case ccAmex = "\u{f1f3}"
-    case ccApplePay = "\u{f416}"
-    case ccDinersClub = "\u{f24c}"
-    case ccDiscover = "\u{f1f2}"
-    case ccJcb = "\u{f24b}"
-    case ccMastercard = "\u{f1f1}"
-    case ccPaypal = "\u{f1f4}"
-    case ccStripe = "\u{f1f5}"
-    case ccVisa = "\u{f1f0}"
-    case centercode = "\u{f380}"
-    case centos = "\u{f789}"
-    case chrome = "\u{f268}"
-    case chromecast = "\u{f838}"
-    case cloudscale = "\u{f383}"
-    case cloudsmith = "\u{f384}"
-    case cloudversify = "\u{f385}"
-    case codepen = "\u{f1cb}"
-    case codiepie = "\u{f284}"
-    case confluence = "\u{f78d}"
-    case connectdevelop = "\u{f20e}"
-    case contao = "\u{f26d}"
-    case cpanel = "\u{f388}"
-    case creativeCommons = "\u{f25e}"
-    case creativeCommonsBy = "\u{f4e7}"
-    case creativeCommonsNc = "\u{f4e8}"
-    case creativeCommonsNcEu = "\u{f4e9}"
-    case creativeCommonsNcJp = "\u{f4ea}"
-    case creativeCommonsNd = "\u{f4eb}"
-    case creativeCommonsPd = "\u{f4ec}"
-    case creativeCommonsPdAlt = "\u{f4ed}"
-    case creativeCommonsRemix = "\u{f4ee}"
-    case creativeCommonsSa = "\u{f4ef}"
-    case creativeCommonsSampling = "\u{f4f0}"
-    case creativeCommonsSamplingPlus = "\u{f4f1}"
-    case creativeCommonsShare = "\u{f4f2}"
-    case creativeCommonsZero = "\u{f4f3}"
-    case criticalRole = "\u{f6c9}"
-    case css3 = "\u{f13c}"
-    case css3Alt = "\u{f38b}"
-    case cuttlefish = "\u{f38c}"
-    case dAndD = "\u{f38d}"
-    case dAndDBeyond = "\u{f6ca}"
-    case dashcube = "\u{f210}"
-    case delicious = "\u{f1a5}"
-    case deploydog = "\u{f38e}"
-    case deskpro = "\u{f38f}"
-    case dev = "\u{f6cc}"
-    case deviantart = "\u{f1bd}"
-    case dhl = "\u{f790}"
-    case diaspora = "\u{f791}"
-    case digg = "\u{f1a6}"
-    case digitalOcean = "\u{f391}"
-    case discord = "\u{f392}"
-    case discourse = "\u{f393}"
-    case dochub = "\u{f394}"
-    case docker = "\u{f395}"
-    case draft2digital = "\u{f396}"
-    case dribbble = "\u{f17d}"
-    case dribbbleSquare = "\u{f397}"
-    case dropbox = "\u{f16b}"
-    case drupal = "\u{f1a9}"
-    case dyalog = "\u{f399}"
-    case earlybirds = "\u{f39a}"
-    case ebay = "\u{f4f4}"
-    case edge = "\u{f282}"
-    case elementor = "\u{f430}"
-    case ello = "\u{f5f1}"
-    case ember = "\u{f423}"
-    case empire = "\u{f1d1}"
-    case envira = "\u{f299}"
-    case erlang = "\u{f39d}"
-    case ethereum = "\u{f42e}"
-    case etsy = "\u{f2d7}"
-    case evernote = "\u{f839}"
-    case expeditedssl = "\u{f23e}"
-    case facebook = "\u{f09a}"
-    case facebookF = "\u{f39e}"
-    case facebookMessenger = "\u{f39f}"
-    case facebookSquare = "\u{f082}"
-    case fantasyFlightGames = "\u{f6dc}"
-    case fedex = "\u{f797}"
-    case fedora = "\u{f798}"
-    case figma = "\u{f799}"
-    case firefox = "\u{f269}"
-    case firstOrder = "\u{f2b0}"
-    case firstOrderAlt = "\u{f50a}"
-    case firstdraft = "\u{f3a1}"
-    case flickr = "\u{f16e}"
-    case flipboard = "\u{f44d}"
-    case fly = "\u{f417}"
-    case fontAwesome = "\u{f2b4}"
-    case fontAwesomeAlt = "\u{f35c}"
-    case fontAwesomeFlag = "\u{f425}"
-    case fontAwesomeLogoFull = "\u{f4e6}"
-    case fonticons = "\u{f280}"
-    case fonticonsFi = "\u{f3a2}"
-    case fortAwesome = "\u{f286}"
-    case fortAwesomeAlt = "\u{f3a3}"
-    case forumbee = "\u{f211}"
-    case foursquare = "\u{f180}"
-    case freeCodeCamp = "\u{f2c5}"
-    case freebsd = "\u{f3a4}"
-    case fulcrum = "\u{f50b}"
-    case galacticRepublic = "\u{f50c}"
-    case galacticSenate = "\u{f50d}"
-    case getPocket = "\u{f265}"
-    case gg = "\u{f260}"
-    case ggCircle = "\u{f261}"
-    case git = "\u{f1d3}"
-    case gitAlt = "\u{f841}"
-    case gitSquare = "\u{f1d2}"
-    case github = "\u{f09b}"
-    case githubAlt = "\u{f113}"
-    case githubSquare = "\u{f092}"
-    case gitkraken = "\u{f3a6}"
-    case gitlab = "\u{f296}"
-    case gitter = "\u{f426}"
-    case glide = "\u{f2a5}"
-    case glideG = "\u{f2a6}"
-    case gofore = "\u{f3a7}"
-    case goodreads = "\u{f3a8}"
-    case goodreadsG = "\u{f3a9}"
-    case google = "\u{f1a0}"
-    case googleDrive = "\u{f3aa}"
-    case googlePlay = "\u{f3ab}"
-    case googlePlus = "\u{f2b3}"
-    case googlePlusG = "\u{f0d5}"
-    case googlePlusSquare = "\u{f0d4}"
-    case googleWallet = "\u{f1ee}"
-    case gratipay = "\u{f184}"
-    case grav = "\u{f2d6}"
-    case gripfire = "\u{f3ac}"
-    case grunt = "\u{f3ad}"
-    case gulp = "\u{f3ae}"
-    case hackerNews = "\u{f1d4}"
-    case hackerNewsSquare = "\u{f3af}"
-    case hackerrank = "\u{f5f7}"
-    case hips = "\u{f452}"
-    case hireAHelper = "\u{f3b0}"
-    case hooli = "\u{f427}"
-    case hornbill = "\u{f592}"
-    case hotjar = "\u{f3b1}"
-    case houzz = "\u{f27c}"
-    case html5 = "\u{f13b}"
-    case hubspot = "\u{f3b2}"
-    case imdb = "\u{f2d8}"
-    case instagram = "\u{f16d}"
-    case intercom = "\u{f7af}"
-    case internetExplorer = "\u{f26b}"
-    case invision = "\u{f7b0}"
-    case ioxhost = "\u{f208}"
-    case itchIo = "\u{f83a}"
-    case itunes = "\u{f3b4}"
-    case itunesNote = "\u{f3b5}"
-    case java = "\u{f4e4}"
-    case jediOrder = "\u{f50e}"
-    case jenkins = "\u{f3b6}"
-    case jira = "\u{f7b1}"
-    case joget = "\u{f3b7}"
-    case joomla = "\u{f1aa}"
-    case js = "\u{f3b8}"
-    case jsSquare = "\u{f3b9}"
-    case jsfiddle = "\u{f1cc}"
-    case kaggle = "\u{f5fa}"
-    case keybase = "\u{f4f5}"
-    case keycdn = "\u{f3ba}"
-    case kickstarter = "\u{f3bb}"
-    case kickstarterK = "\u{f3bc}"
-    case korvue = "\u{f42f}"
-    case laravel = "\u{f3bd}"
-    case lastfm = "\u{f202}"
-    case lastfmSquare = "\u{f203}"
-    case leanpub = "\u{f212}"
-    case less = "\u{f41d}"
-    case line = "\u{f3c0}"
-    case linkedin = "\u{f08c}"
-    case linkedinIn = "\u{f0e1}"
-    case linode = "\u{f2b8}"
-    case linux = "\u{f17c}"
-    case lyft = "\u{f3c3}"
-    case magento = "\u{f3c4}"
-    case mailchimp = "\u{f59e}"
-    case mandalorian = "\u{f50f}"
-    case markdown = "\u{f60f}"
-    case mastodon = "\u{f4f6}"
-    case maxcdn = "\u{f136}"
-    case medapps = "\u{f3c6}"
-    case medium = "\u{f23a}"
-    case mediumM = "\u{f3c7}"
-    case medrt = "\u{f3c8}"
-    case meetup = "\u{f2e0}"
-    case megaport = "\u{f5a3}"
-    case mendeley = "\u{f7b3}"
-    case microsoft = "\u{f3ca}"
-    case mix = "\u{f3cb}"
-    case mixcloud = "\u{f289}"
-    case mizuni = "\u{f3cc}"
-    case modx = "\u{f285}"
-    case monero = "\u{f3d0}"
-    case napster = "\u{f3d2}"
-    case neos = "\u{f612}"
-    case nimblr = "\u{f5a8}"
-    case nintendoSwitch = "\u{f418}"
-    case node = "\u{f419}"
-    case nodeJs = "\u{f3d3}"
-    case npm = "\u{f3d4}"
-    case ns8 = "\u{f3d5}"
-    case nutritionix = "\u{f3d6}"
-    case odnoklassniki = "\u{f263}"
-    case odnoklassnikiSquare = "\u{f264}"
-    case oldRepublic = "\u{f510}"
-    case opencart = "\u{f23d}"
-    case openid = "\u{f19b}"
-    case opera = "\u{f26a}"
-    case optinMonster = "\u{f23c}"
-    case osi = "\u{f41a}"
-    case page4 = "\u{f3d7}"
-    case pagelines = "\u{f18c}"
-    case palfed = "\u{f3d8}"
-    case patreon = "\u{f3d9}"
-    case paypal = "\u{f1ed}"
-    case pennyArcade = "\u{f704}"
-    case periscope = "\u{f3da}"
-    case phabricator = "\u{f3db}"
-    case phoenixFramework = "\u{f3dc}"
-    case phoenixSquadron = "\u{f511}"
-    case php = "\u{f457}"
-    case piedPiper = "\u{f2ae}"
-    case piedPiperAlt = "\u{f1a8}"
-    case piedPiperHat = "\u{f4e5}"
-    case piedPiperPp = "\u{f1a7}"
-    case pinterest = "\u{f0d2}"
-    case pinterestP = "\u{f231}"
-    case pinterestSquare = "\u{f0d3}"
-    case playstation = "\u{f3df}"
-    case productHunt = "\u{f288}"
-    case pushed = "\u{f3e1}"
-    case python = "\u{f3e2}"
-    case qq = "\u{f1d6}"
-    case quinscape = "\u{f459}"
-    case quora = "\u{f2c4}"
-    case rProject = "\u{f4f7}"
-    case raspberryPi = "\u{f7bb}"
-    case ravelry = "\u{f2d9}"
-    case react = "\u{f41b}"
-    case reacteurope = "\u{f75d}"
-    case readme = "\u{f4d5}"
-    case rebel = "\u{f1d0}"
-    case redRiver = "\u{f3e3}"
-    case reddit = "\u{f1a1}"
-    case redditAlien = "\u{f281}"
-    case redditSquare = "\u{f1a2}"
-    case redhat = "\u{f7bc}"
-    case renren = "\u{f18b}"
-    case replyd = "\u{f3e6}"
-    case researchgate = "\u{f4f8}"
-    case resolving = "\u{f3e7}"
-    case rev = "\u{f5b2}"
-    case rocketchat = "\u{f3e8}"
-    case rockrms = "\u{f3e9}"
-    case safari = "\u{f267}"
-    case salesforce = "\u{f83b}"
-    case sass = "\u{f41e}"
-    case schlix = "\u{f3ea}"
-    case scribd = "\u{f28a}"
-    case searchengin = "\u{f3eb}"
-    case sellcast = "\u{f2da}"
-    case sellsy = "\u{f213}"
-    case servicestack = "\u{f3ec}"
-    case shirtsinbulk = "\u{f214}"
-    case shopware = "\u{f5b5}"
-    case simplybuilt = "\u{f215}"
-    case sistrix = "\u{f3ee}"
-    case sith = "\u{f512}"
-    case sketch = "\u{f7c6}"
-    case skyatlas = "\u{f216}"
-    case skype = "\u{f17e}"
-    case slack = "\u{f198}"
-    case slackHash = "\u{f3ef}"
-    case slideshare = "\u{f1e7}"
-    case snapchat = "\u{f2ab}"
-    case snapchatGhost = "\u{f2ac}"
-    case snapchatSquare = "\u{f2ad}"
-    case soundcloud = "\u{f1be}"
-    case sourcetree = "\u{f7d3}"
-    case speakap = "\u{f3f3}"
-    case speakerDeck = "\u{f83c}"
-    case spotify = "\u{f1bc}"
-    case squarespace = "\u{f5be}"
-    case stackExchange = "\u{f18d}"
-    case stackOverflow = "\u{f16c}"
-    case stackpath = "\u{f842}"
-    case staylinked = "\u{f3f5}"
-    case steam = "\u{f1b6}"
-    case steamSquare = "\u{f1b7}"
-    case steamSymbol = "\u{f3f6}"
-    case stickerMule = "\u{f3f7}"
-    case strava = "\u{f428}"
-    case stripe = "\u{f429}"
-    case stripeS = "\u{f42a}"
-    case studiovinari = "\u{f3f8}"
-    case stumbleupon = "\u{f1a4}"
-    case stumbleuponCircle = "\u{f1a3}"
-    case superpowers = "\u{f2dd}"
-    case supple = "\u{f3f9}"
-    case suse = "\u{f7d6}"
-    case symfony = "\u{f83d}"
-    case teamspeak = "\u{f4f9}"
-    case telegram = "\u{f2c6}"
-    case telegramPlane = "\u{f3fe}"
-    case tencentWeibo = "\u{f1d5}"
-    case theRedYeti = "\u{f69d}"
-    case themeco = "\u{f5c6}"
-    case themeisle = "\u{f2b2}"
-    case thinkPeaks = "\u{f731}"
-    case tradeFederation = "\u{f513}"
-    case trello = "\u{f181}"
-    case tripadvisor = "\u{f262}"
-    case tumblr = "\u{f173}"
-    case tumblrSquare = "\u{f174}"
-    case twitch = "\u{f1e8}"
-    case twitter = "\u{f099}"
-    case twitterSquare = "\u{f081}"
-    case typo3 = "\u{f42b}"
-    case uber = "\u{f402}"
-    case ubuntu = "\u{f7df}"
-    case uikit = "\u{f403}"
-    case uniregistry = "\u{f404}"
-    case untappd = "\u{f405}"
-    case ups = "\u{f7e0}"
-    case usb = "\u{f287}"
-    case usps = "\u{f7e1}"
-    case ussunnah = "\u{f407}"
-    case vaadin = "\u{f408}"
-    case viacoin = "\u{f237}"
-    case viadeo = "\u{f2a9}"
-    case viadeoSquare = "\u{f2aa}"
-    case viber = "\u{f409}"
-    case vimeo = "\u{f40a}"
-    case vimeoSquare = "\u{f194}"
-    case vimeoV = "\u{f27d}"
-    case vine = "\u{f1ca}"
-    case vk = "\u{f189}"
-    case vnv = "\u{f40b}"
-    case vuejs = "\u{f41f}"
-    case waze = "\u{f83f}"
-    case weebly = "\u{f5cc}"
-    case weibo = "\u{f18a}"
-    case weixin = "\u{f1d7}"
-    case whatsapp = "\u{f232}"
-    case whatsappSquare = "\u{f40c}"
-    case whmcs = "\u{f40d}"
-    case wikipediaW = "\u{f266}"
-    case windows = "\u{f17a}"
-    case wix = "\u{f5cf}"
-    case wizardsOfTheCoast = "\u{f730}"
-    case wolfPackBattalion = "\u{f514}"
-    case wordpress = "\u{f19a}"
-    case wordpressSimple = "\u{f411}"
-    case wpbeginner = "\u{f297}"
-    case wpexplorer = "\u{f2de}"
-    case wpforms = "\u{f298}"
-    case wpressr = "\u{f3e4}"
-    case xbox = "\u{f412}"
-    case xing = "\u{f168}"
-    case xingSquare = "\u{f169}"
-    case yCombinator = "\u{f23b}"
-    case yahoo = "\u{f19e}"
-    case yammer = "\u{f840}"
-    case yandex = "\u{f413}"
-    case yandexInternational = "\u{f414}"
-    case yarn = "\u{f7e3}"
-    case yelp = "\u{f1e9}"
-    case yoast = "\u{f2b1}"
-    case youtube = "\u{f167}"
-    case youtubeSquare = "\u{f431}"
-    case zhihu = "\u{f63f}"
-}
-
-/// An array of FontAwesome brand icon codes.
-public let FontAwesomeBrandIcons: [String: String] = [
-    "fa-500px": "\u{f26e}",
-    "fa-accessible-icon": "\u{f368}",
-    "fa-accusoft": "\u{f369}",
-    "fa-acquisitions-incorporated": "\u{f6af}",
-    "fa-adn": "\u{f170}",
-    "fa-adobe": "\u{f778}",
-    "fa-adversal": "\u{f36a}",
-    "fa-affiliatetheme": "\u{f36b}",
-    "fa-airbnb": "\u{f834}",
-    "fa-algolia": "\u{f36c}",
-    "fa-alipay": "\u{f642}",
-    "fa-amazon": "\u{f270}",
-    "fa-amazon-pay": "\u{f42c}",
-    "fa-amilia": "\u{f36d}",
-    "fa-android": "\u{f17b}",
-    "fa-angellist": "\u{f209}",
-    "fa-angrycreative": "\u{f36e}",
-    "fa-angular": "\u{f420}",
-    "fa-app-store": "\u{f36f}",
-    "fa-app-store-ios": "\u{f370}",
-    "fa-apper": "\u{f371}",
-    "fa-apple": "\u{f179}",
-    "fa-apple-pay": "\u{f415}",
-    "fa-artstation": "\u{f77a}",
-    "fa-asymmetrik": "\u{f372}",
-    "fa-atlassian": "\u{f77b}",
-    "fa-audible": "\u{f373}",
-    "fa-autoprefixer": "\u{f41c}",
-    "fa-avianex": "\u{f374}",
-    "fa-aviato": "\u{f421}",
-    "fa-aws": "\u{f375}",
-    "fa-bandcamp": "\u{f2d5}",
-    "fa-battle-net": "\u{f835}",
-    "fa-behance": "\u{f1b4}",
-    "fa-behance-square": "\u{f1b5}",
-    "fa-bimobject": "\u{f378}",
-    "fa-bitbucket": "\u{f171}",
-    "fa-bitcoin": "\u{f379}",
-    "fa-bity": "\u{f37a}",
-    "fa-black-tie": "\u{f27e}",
-    "fa-blackberry": "\u{f37b}",
-    "fa-blogger": "\u{f37c}",
-    "fa-blogger-b": "\u{f37d}",
-    "fa-bluetooth": "\u{f293}",
-    "fa-bluetooth-b": "\u{f294}",
-    "fa-bootstrap": "\u{f836}",
-    "fa-btc": "\u{f15a}",
-    "fa-buffer": "\u{f837}",
-    "fa-buromobelexperte": "\u{f37f}",
-    "fa-buysellads": "\u{f20d}",
-    "fa-canadian-maple-leaf": "\u{f785}",
-    "fa-cc-amazon-pay": "\u{f42d}",
-    "fa-cc-amex": "\u{f1f3}",
-    "fa-cc-apple-pay": "\u{f416}",
-    "fa-cc-diners-club": "\u{f24c}",
-    "fa-cc-discover": "\u{f1f2}",
-    "fa-cc-jcb": "\u{f24b}",
-    "fa-cc-mastercard": "\u{f1f1}",
-    "fa-cc-paypal": "\u{f1f4}",
-    "fa-cc-stripe": "\u{f1f5}",
-    "fa-cc-visa": "\u{f1f0}",
-    "fa-centercode": "\u{f380}",
-    "fa-centos": "\u{f789}",
-    "fa-chrome": "\u{f268}",
-    "fa-chromecast": "\u{f838}",
-    "fa-cloudscale": "\u{f383}",
-    "fa-cloudsmith": "\u{f384}",
-    "fa-cloudversify": "\u{f385}",
-    "fa-codepen": "\u{f1cb}",
-    "fa-codiepie": "\u{f284}",
-    "fa-confluence": "\u{f78d}",
-    "fa-connectdevelop": "\u{f20e}",
-    "fa-contao": "\u{f26d}",
-    "fa-cpanel": "\u{f388}",
-    "fa-creative-commons": "\u{f25e}",
-    "fa-creative-commons-by": "\u{f4e7}",
-    "fa-creative-commons-nc": "\u{f4e8}",
-    "fa-creative-commons-nc-eu": "\u{f4e9}",
-    "fa-creative-commons-nc-jp": "\u{f4ea}",
-    "fa-creative-commons-nd": "\u{f4eb}",
-    "fa-creative-commons-pd": "\u{f4ec}",
-    "fa-creative-commons-pd-alt": "\u{f4ed}",
-    "fa-creative-commons-remix": "\u{f4ee}",
-    "fa-creative-commons-sa": "\u{f4ef}",
-    "fa-creative-commons-sampling": "\u{f4f0}",
-    "fa-creative-commons-sampling-plus": "\u{f4f1}",
-    "fa-creative-commons-share": "\u{f4f2}",
-    "fa-creative-commons-zero": "\u{f4f3}",
-    "fa-critical-role": "\u{f6c9}",
-    "fa-css3": "\u{f13c}",
-    "fa-css3-alt": "\u{f38b}",
-    "fa-cuttlefish": "\u{f38c}",
-    "fa-d-and-d": "\u{f38d}",
-    "fa-d-and-d-beyond": "\u{f6ca}",
-    "fa-dashcube": "\u{f210}",
-    "fa-delicious": "\u{f1a5}",
-    "fa-deploydog": "\u{f38e}",
-    "fa-deskpro": "\u{f38f}",
-    "fa-dev": "\u{f6cc}",
-    "fa-deviantart": "\u{f1bd}",
-    "fa-dhl": "\u{f790}",
-    "fa-diaspora": "\u{f791}",
-    "fa-digg": "\u{f1a6}",
-    "fa-digital-ocean": "\u{f391}",
-    "fa-discord": "\u{f392}",
-    "fa-discourse": "\u{f393}",
-    "fa-dochub": "\u{f394}",
-    "fa-docker": "\u{f395}",
-    "fa-draft2digital": "\u{f396}",
-    "fa-dribbble": "\u{f17d}",
-    "fa-dribbble-square": "\u{f397}",
-    "fa-dropbox": "\u{f16b}",
-    "fa-drupal": "\u{f1a9}",
-    "fa-dyalog": "\u{f399}",
-    "fa-earlybirds": "\u{f39a}",
-    "fa-ebay": "\u{f4f4}",
-    "fa-edge": "\u{f282}",
-    "fa-elementor": "\u{f430}",
-    "fa-ello": "\u{f5f1}",
-    "fa-ember": "\u{f423}",
-    "fa-empire": "\u{f1d1}",
-    "fa-envira": "\u{f299}",
-    "fa-erlang": "\u{f39d}",
-    "fa-ethereum": "\u{f42e}",
-    "fa-etsy": "\u{f2d7}",
-    "fa-evernote": "\u{f839}",
-    "fa-expeditedssl": "\u{f23e}",
-    "fa-facebook": "\u{f09a}",
-    "fa-facebook-f": "\u{f39e}",
-    "fa-facebook-messenger": "\u{f39f}",
-    "fa-facebook-square": "\u{f082}",
-    "fa-fantasy-flight-games": "\u{f6dc}",
-    "fa-fedex": "\u{f797}",
-    "fa-fedora": "\u{f798}",
-    "fa-figma": "\u{f799}",
-    "fa-firefox": "\u{f269}",
-    "fa-first-order": "\u{f2b0}",
-    "fa-first-order-alt": "\u{f50a}",
-    "fa-firstdraft": "\u{f3a1}",
-    "fa-flickr": "\u{f16e}",
-    "fa-flipboard": "\u{f44d}",
-    "fa-fly": "\u{f417}",
-    "fa-font-awesome": "\u{f2b4}",
-    "fa-font-awesome-alt": "\u{f35c}",
-    "fa-font-awesome-flag": "\u{f425}",
-    "fa-font-awesome-logo-full": "\u{f4e6}",
-    "fa-fonticons": "\u{f280}",
-    "fa-fonticons-fi": "\u{f3a2}",
-    "fa-fort-awesome": "\u{f286}",
-    "fa-fort-awesome-alt": "\u{f3a3}",
-    "fa-forumbee": "\u{f211}",
-    "fa-foursquare": "\u{f180}",
-    "fa-free-code-camp": "\u{f2c5}",
-    "fa-freebsd": "\u{f3a4}",
-    "fa-fulcrum": "\u{f50b}",
-    "fa-galactic-republic": "\u{f50c}",
-    "fa-galactic-senate": "\u{f50d}",
-    "fa-get-pocket": "\u{f265}",
-    "fa-gg": "\u{f260}",
-    "fa-gg-circle": "\u{f261}",
-    "fa-git": "\u{f1d3}",
-    "fa-git-alt": "\u{f841}",
-    "fa-git-square": "\u{f1d2}",
-    "fa-github": "\u{f09b}",
-    "fa-github-alt": "\u{f113}",
-    "fa-github-square": "\u{f092}",
-    "fa-gitkraken": "\u{f3a6}",
-    "fa-gitlab": "\u{f296}",
-    "fa-gitter": "\u{f426}",
-    "fa-glide": "\u{f2a5}",
-    "fa-glide-g": "\u{f2a6}",
-    "fa-gofore": "\u{f3a7}",
-    "fa-goodreads": "\u{f3a8}",
-    "fa-goodreads-g": "\u{f3a9}",
-    "fa-google": "\u{f1a0}",
-    "fa-google-drive": "\u{f3aa}",
-    "fa-google-play": "\u{f3ab}",
-    "fa-google-plus": "\u{f2b3}",
-    "fa-google-plus-g": "\u{f0d5}",
-    "fa-google-plus-square": "\u{f0d4}",
-    "fa-google-wallet": "\u{f1ee}",
-    "fa-gratipay": "\u{f184}",
-    "fa-grav": "\u{f2d6}",
-    "fa-gripfire": "\u{f3ac}",
-    "fa-grunt": "\u{f3ad}",
-    "fa-gulp": "\u{f3ae}",
-    "fa-hacker-news": "\u{f1d4}",
-    "fa-hacker-news-square": "\u{f3af}",
-    "fa-hackerrank": "\u{f5f7}",
-    "fa-hips": "\u{f452}",
-    "fa-hire-a-helper": "\u{f3b0}",
-    "fa-hooli": "\u{f427}",
-    "fa-hornbill": "\u{f592}",
-    "fa-hotjar": "\u{f3b1}",
-    "fa-houzz": "\u{f27c}",
-    "fa-html5": "\u{f13b}",
-    "fa-hubspot": "\u{f3b2}",
-    "fa-imdb": "\u{f2d8}",
-    "fa-instagram": "\u{f16d}",
-    "fa-intercom": "\u{f7af}",
-    "fa-internet-explorer": "\u{f26b}",
-    "fa-invision": "\u{f7b0}",
-    "fa-ioxhost": "\u{f208}",
-    "fa-itch-io": "\u{f83a}",
-    "fa-itunes": "\u{f3b4}",
-    "fa-itunes-note": "\u{f3b5}",
-    "fa-java": "\u{f4e4}",
-    "fa-jedi-order": "\u{f50e}",
-    "fa-jenkins": "\u{f3b6}",
-    "fa-jira": "\u{f7b1}",
-    "fa-joget": "\u{f3b7}",
-    "fa-joomla": "\u{f1aa}",
-    "fa-js": "\u{f3b8}",
-    "fa-js-square": "\u{f3b9}",
-    "fa-jsfiddle": "\u{f1cc}",
-    "fa-kaggle": "\u{f5fa}",
-    "fa-keybase": "\u{f4f5}",
-    "fa-keycdn": "\u{f3ba}",
-    "fa-kickstarter": "\u{f3bb}",
-    "fa-kickstarter-k": "\u{f3bc}",
-    "fa-korvue": "\u{f42f}",
-    "fa-laravel": "\u{f3bd}",
-    "fa-lastfm": "\u{f202}",
-    "fa-lastfm-square": "\u{f203}",
-    "fa-leanpub": "\u{f212}",
-    "fa-less": "\u{f41d}",
-    "fa-line": "\u{f3c0}",
-    "fa-linkedin": "\u{f08c}",
-    "fa-linkedin-in": "\u{f0e1}",
-    "fa-linode": "\u{f2b8}",
-    "fa-linux": "\u{f17c}",
-    "fa-lyft": "\u{f3c3}",
-    "fa-magento": "\u{f3c4}",
-    "fa-mailchimp": "\u{f59e}",
-    "fa-mandalorian": "\u{f50f}",
-    "fa-markdown": "\u{f60f}",
-    "fa-mastodon": "\u{f4f6}",
-    "fa-maxcdn": "\u{f136}",
-    "fa-medapps": "\u{f3c6}",
-    "fa-medium": "\u{f23a}",
-    "fa-medium-m": "\u{f3c7}",
-    "fa-medrt": "\u{f3c8}",
-    "fa-meetup": "\u{f2e0}",
-    "fa-megaport": "\u{f5a3}",
-    "fa-mendeley": "\u{f7b3}",
-    "fa-microsoft": "\u{f3ca}",
-    "fa-mix": "\u{f3cb}",
-    "fa-mixcloud": "\u{f289}",
-    "fa-mizuni": "\u{f3cc}",
-    "fa-modx": "\u{f285}",
-    "fa-monero": "\u{f3d0}",
-    "fa-napster": "\u{f3d2}",
-    "fa-neos": "\u{f612}",
-    "fa-nimblr": "\u{f5a8}",
-    "fa-nintendo-switch": "\u{f418}",
-    "fa-node": "\u{f419}",
-    "fa-node-js": "\u{f3d3}",
-    "fa-npm": "\u{f3d4}",
-    "fa-ns8": "\u{f3d5}",
-    "fa-nutritionix": "\u{f3d6}",
-    "fa-odnoklassniki": "\u{f263}",
-    "fa-odnoklassniki-square": "\u{f264}",
-    "fa-old-republic": "\u{f510}",
-    "fa-opencart": "\u{f23d}",
-    "fa-openid": "\u{f19b}",
-    "fa-opera": "\u{f26a}",
-    "fa-optin-monster": "\u{f23c}",
-    "fa-osi": "\u{f41a}",
-    "fa-page4": "\u{f3d7}",
-    "fa-pagelines": "\u{f18c}",
-    "fa-palfed": "\u{f3d8}",
-    "fa-patreon": "\u{f3d9}",
-    "fa-paypal": "\u{f1ed}",
-    "fa-penny-arcade": "\u{f704}",
-    "fa-periscope": "\u{f3da}",
-    "fa-phabricator": "\u{f3db}",
-    "fa-phoenix-framework": "\u{f3dc}",
-    "fa-phoenix-squadron": "\u{f511}",
-    "fa-php": "\u{f457}",
-    "fa-pied-piper": "\u{f2ae}",
-    "fa-pied-piper-alt": "\u{f1a8}",
-    "fa-pied-piper-hat": "\u{f4e5}",
-    "fa-pied-piper-pp": "\u{f1a7}",
-    "fa-pinterest": "\u{f0d2}",
-    "fa-pinterest-p": "\u{f231}",
-    "fa-pinterest-square": "\u{f0d3}",
-    "fa-playstation": "\u{f3df}",
-    "fa-product-hunt": "\u{f288}",
-    "fa-pushed": "\u{f3e1}",
-    "fa-python": "\u{f3e2}",
-    "fa-qq": "\u{f1d6}",
-    "fa-quinscape": "\u{f459}",
-    "fa-quora": "\u{f2c4}",
-    "fa-r-project": "\u{f4f7}",
-    "fa-raspberry-pi": "\u{f7bb}",
-    "fa-ravelry": "\u{f2d9}",
-    "fa-react": "\u{f41b}",
-    "fa-reacteurope": "\u{f75d}",
-    "fa-readme": "\u{f4d5}",
-    "fa-rebel": "\u{f1d0}",
-    "fa-red-river": "\u{f3e3}",
-    "fa-reddit": "\u{f1a1}",
-    "fa-reddit-alien": "\u{f281}",
-    "fa-reddit-square": "\u{f1a2}",
-    "fa-redhat": "\u{f7bc}",
-    "fa-renren": "\u{f18b}",
-    "fa-replyd": "\u{f3e6}",
-    "fa-researchgate": "\u{f4f8}",
-    "fa-resolving": "\u{f3e7}",
-    "fa-rev": "\u{f5b2}",
-    "fa-rocketchat": "\u{f3e8}",
-    "fa-rockrms": "\u{f3e9}",
-    "fa-safari": "\u{f267}",
-    "fa-salesforce": "\u{f83b}",
-    "fa-sass": "\u{f41e}",
-    "fa-schlix": "\u{f3ea}",
-    "fa-scribd": "\u{f28a}",
-    "fa-searchengin": "\u{f3eb}",
-    "fa-sellcast": "\u{f2da}",
-    "fa-sellsy": "\u{f213}",
-    "fa-servicestack": "\u{f3ec}",
-    "fa-shirtsinbulk": "\u{f214}",
-    "fa-shopware": "\u{f5b5}",
-    "fa-simplybuilt": "\u{f215}",
-    "fa-sistrix": "\u{f3ee}",
-    "fa-sith": "\u{f512}",
-    "fa-sketch": "\u{f7c6}",
-    "fa-skyatlas": "\u{f216}",
-    "fa-skype": "\u{f17e}",
-    "fa-slack": "\u{f198}",
-    "fa-slack-hash": "\u{f3ef}",
-    "fa-slideshare": "\u{f1e7}",
-    "fa-snapchat": "\u{f2ab}",
-    "fa-snapchat-ghost": "\u{f2ac}",
-    "fa-snapchat-square": "\u{f2ad}",
-    "fa-soundcloud": "\u{f1be}",
-    "fa-sourcetree": "\u{f7d3}",
-    "fa-speakap": "\u{f3f3}",
-    "fa-speaker-deck": "\u{f83c}",
-    "fa-spotify": "\u{f1bc}",
-    "fa-squarespace": "\u{f5be}",
-    "fa-stack-exchange": "\u{f18d}",
-    "fa-stack-overflow": "\u{f16c}",
-    "fa-stackpath": "\u{f842}",
-    "fa-staylinked": "\u{f3f5}",
-    "fa-steam": "\u{f1b6}",
-    "fa-steam-square": "\u{f1b7}",
-    "fa-steam-symbol": "\u{f3f6}",
-    "fa-sticker-mule": "\u{f3f7}",
-    "fa-strava": "\u{f428}",
-    "fa-stripe": "\u{f429}",
-    "fa-stripe-s": "\u{f42a}",
-    "fa-studiovinari": "\u{f3f8}",
-    "fa-stumbleupon": "\u{f1a4}",
-    "fa-stumbleupon-circle": "\u{f1a3}",
-    "fa-superpowers": "\u{f2dd}",
-    "fa-supple": "\u{f3f9}",
-    "fa-suse": "\u{f7d6}",
-    "fa-symfony": "\u{f83d}",
-    "fa-teamspeak": "\u{f4f9}",
-    "fa-telegram": "\u{f2c6}",
-    "fa-telegram-plane": "\u{f3fe}",
-    "fa-tencent-weibo": "\u{f1d5}",
-    "fa-the-red-yeti": "\u{f69d}",
-    "fa-themeco": "\u{f5c6}",
-    "fa-themeisle": "\u{f2b2}",
-    "fa-think-peaks": "\u{f731}",
-    "fa-trade-federation": "\u{f513}",
-    "fa-trello": "\u{f181}",
-    "fa-tripadvisor": "\u{f262}",
-    "fa-tumblr": "\u{f173}",
-    "fa-tumblr-square": "\u{f174}",
-    "fa-twitch": "\u{f1e8}",
-    "fa-twitter": "\u{f099}",
-    "fa-twitter-square": "\u{f081}",
-    "fa-typo3": "\u{f42b}",
-    "fa-uber": "\u{f402}",
-    "fa-ubuntu": "\u{f7df}",
-    "fa-uikit": "\u{f403}",
-    "fa-uniregistry": "\u{f404}",
-    "fa-untappd": "\u{f405}",
-    "fa-ups": "\u{f7e0}",
-    "fa-usb": "\u{f287}",
-    "fa-usps": "\u{f7e1}",
-    "fa-ussunnah": "\u{f407}",
-    "fa-vaadin": "\u{f408}",
-    "fa-viacoin": "\u{f237}",
-    "fa-viadeo": "\u{f2a9}",
-    "fa-viadeo-square": "\u{f2aa}",
-    "fa-viber": "\u{f409}",
-    "fa-vimeo": "\u{f40a}",
-    "fa-vimeo-square": "\u{f194}",
-    "fa-vimeo-v": "\u{f27d}",
-    "fa-vine": "\u{f1ca}",
-    "fa-vk": "\u{f189}",
-    "fa-vnv": "\u{f40b}",
-    "fa-vuejs": "\u{f41f}",
-    "fa-waze": "\u{f83f}",
-    "fa-weebly": "\u{f5cc}",
-    "fa-weibo": "\u{f18a}",
-    "fa-weixin": "\u{f1d7}",
-    "fa-whatsapp": "\u{f232}",
-    "fa-whatsapp-square": "\u{f40c}",
-    "fa-whmcs": "\u{f40d}",
-    "fa-wikipedia-w": "\u{f266}",
-    "fa-windows": "\u{f17a}",
-    "fa-wix": "\u{f5cf}",
-    "fa-wizards-of-the-coast": "\u{f730}",
-    "fa-wolf-pack-battalion": "\u{f514}",
-    "fa-wordpress": "\u{f19a}",
-    "fa-wordpress-simple": "\u{f411}",
-    "fa-wpbeginner": "\u{f297}",
-    "fa-wpexplorer": "\u{f2de}",
-    "fa-wpforms": "\u{f298}",
-    "fa-wpressr": "\u{f3e4}",
-    "fa-xbox": "\u{f412}",
-    "fa-xing": "\u{f168}",
-    "fa-xing-square": "\u{f169}",
-    "fa-y-combinator": "\u{f23b}",
-    "fa-yahoo": "\u{f19e}",
-    "fa-yammer": "\u{f840}",
-    "fa-yandex": "\u{f413}",
-    "fa-yandex-international": "\u{f414}",
-    "fa-yarn": "\u{f7e3}",
-    "fa-yelp": "\u{f1e9}",
-    "fa-yoast": "\u{f2b1}",
-    "fa-youtube": "\u{f167}",
-    "fa-youtube-square": "\u{f431}",
-    "fa-zhihu": "\u{f63f}"
-]

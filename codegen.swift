@@ -81,44 +81,49 @@ public enum FontAwesome: String {
 
 let sortedKeys = Array(icons.keys).sorted(by: <)
 sortedKeys.forEach { key in
-    guard let value = icons[key] else { return }
+    guard icons[key] != nil else { return }
     let enumKeyName = key.filteredKeywords().camelCased(with: "-")
     fontAwesomeEnum += """
-        case \(enumKeyName) = \"\\u{\(value.unicode)}\"
+        case \(enumKeyName) = \"fa-\(key)\"
 
     """
 }
 
 fontAwesomeEnum += """
-}
 
-/// An array of FontAwesome icon codes.
-// swiftlint:disable identifier_name
-public let FontAwesomeIcons: [String: String] = [
+    /// An unicode code of FontAwesome icon
+    public var unicode: String {
+        switch self {
 
 """
 
+
 sortedKeys.forEach { key in
     guard let value = icons[key] else { return }
+    let enumKeyName = key.filteredKeywords().camelCased(with: "-")
     fontAwesomeEnum += """
-        \"fa-\(key)\": \"\\u{\(value.unicode)}\"
+                case .\(enumKeyName): return \"\\u{\(value.unicode)}\"
     """
     if key != sortedKeys.last {
-        fontAwesomeEnum += ",\n"
+        fontAwesomeEnum += "\n"
     }
 }
 
 fontAwesomeEnum += """
+        
+        }
+    }
+}
 
-]
-
+"""
+/*
 /// An enumaration of FontAwesome Brands icon names
 public enum FontAwesomeBrands: String {
 
 """
 
 let brandsIcons = icons.filter { $0.value.styles.contains("brands") }
-let sortedBrandsKeys = Array(brandsIcons.keys).sorted(by: <)
+let sortedBrandsKeys = Array(brandsIcons.keys).sorted(by: <)[0..<1]
 sortedBrandsKeys.forEach { key in
     guard let value = brandsIcons[key] else { return }
     let enumKeyName = key.filteredKeywords().camelCased(with: "-")
@@ -150,5 +155,5 @@ fontAwesomeEnum += """
 
 ]
 """
-
+*/
 FileManager.default.createFile(atPath: "FontAwesome/Enum.swift", contents: fontAwesomeEnum.data(using: .utf8), attributes: nil)
