@@ -34,6 +34,7 @@ import UIKit
     }
 
     public override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
         useFontAwesome()
     }
 

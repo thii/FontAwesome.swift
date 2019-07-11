@@ -48,6 +48,7 @@ import UIKit
     }
 
     override public func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
         setupViews()
     }
 
