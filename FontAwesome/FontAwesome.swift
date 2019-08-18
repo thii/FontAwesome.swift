@@ -222,14 +222,11 @@ public extension UIImage {
 private class FontLoader {
     class func loadFont(_ name: String) {
         guard
-            let fontURL = URL.fontURL(for: name),
-            let data = try? Data(contentsOf: fontURL),
-            let provider = CGDataProvider(data: data as CFData),
-            let font = CGFont(provider)
+            let fontURL = URL.fontURL(for: name) as CFURL?
             else { return }
 
         var error: Unmanaged<CFError>?
-        if !CTFontManagerRegisterGraphicsFont(font, &error) {
+        if !CTFontManagerRegisterFontsForURL(fontURL, .process, &error) {
             let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
             guard let nsError = error?.takeUnretainedValue() as AnyObject as? NSError else { return }
             NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
