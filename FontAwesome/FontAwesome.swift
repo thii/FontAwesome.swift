@@ -93,14 +93,14 @@ public extension UIFont {
     ///
     /// - parameter ofSize: The preferred font size.
     /// - returns: A UIFont object of FontAwesome.
-    class func fontAwesome(ofSize fontSize: CGFloat, style: FontAwesomeStyle = .regular) -> UIFont {
+    class func fontAwesome(ofSize fontSize: CGFloat, style: FontAwesomeStyle = .solid) -> UIFont {
         loadFontAwesome(ofStyle: style)
         return UIFont(name: style.fontName(), size: fontSize)!
     }
 
     /// Loads the FontAwesome font in to memory.
     /// This method should be called when setting icons without using code.
-    class func loadFontAwesome(ofStyle style: FontAwesomeStyle = .regular) {
+    class func loadFontAwesome(ofStyle style: FontAwesomeStyle = .solid) {
         if UIFont.fontNames(forFamilyName: style.fontFamilyName()).contains(style.fontName()) {
             return
         }
@@ -113,7 +113,7 @@ public extension UIFont {
     /// - parameter forTextStyle: The preferred text style
     /// - parameter style: FontAwesome font style
     /// - returns: A UIFont object of FontAwesome
-    class func fontAwesome(forTextStyle textStyle: UIFont.TextStyle, style: FontAwesomeStyle = .regular) -> UIFont {
+    class func fontAwesome(forTextStyle textStyle: UIFont.TextStyle, style: FontAwesomeStyle = .solid) -> UIFont {
         let userFont = UIFontDescriptor.preferredFontDescriptor(withTextStyle: textStyle)
         let pointSize = userFont.pointSize
         loadFontAwesome(ofStyle: style)
@@ -172,7 +172,7 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    static func fontAwesomeIcon(name: FontAwesome, style: FontAwesomeStyle = .regular, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage {
+    static func fontAwesomeIcon(name: FontAwesome, style: FontAwesomeStyle = .solid, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage {
 
         // Prevent application crash when passing size where width or height is set equal to or less than zero, by clipping width and height to a minimum of 1 pixel.
         var size = size
@@ -211,7 +211,7 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    static func fontAwesomeIcon(code: String, style: FontAwesomeStyle = .regular, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage? {
+    static func fontAwesomeIcon(code: String, style: FontAwesomeStyle = .solid, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage? {
         guard let name = String.fontAwesome(code: code) else { return nil }
         return fontAwesomeIcon(name: name, style: style, textColor: textColor, size: size, backgroundColor: backgroundColor, borderWidth: borderWidth, borderColor: borderColor)
     }
