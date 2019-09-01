@@ -104,13 +104,15 @@ sortedKeys.forEach { key in
     fontAwesomeEnum += """
                 case .\(enumKeyName): return \"\\u{\(value.unicode)}\"
     """
-    if key != sortedKeys.last {
-        fontAwesomeEnum += "\n"
-    }
+    fontAwesomeEnum += "\n"
 }
 
 fontAwesomeEnum += """
-        
+            default: return ""
+"""
+fontAwesomeEnum += "\n"
+
+fontAwesomeEnum += """
         }
     }
 }
