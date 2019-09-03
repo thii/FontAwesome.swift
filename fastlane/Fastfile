@@ -26,7 +26,9 @@ lane :release do |options|
   ensure_git_status_clean
 
   test
-  pod_lib_lint
+  pod_lib_lint(
+    allow_warnings: true,
+  )
 
   increment_version_number(version_number: target_version)
   version_bump_podspec(path: "FontAwesome.swift.podspec", version_number: target_version)
