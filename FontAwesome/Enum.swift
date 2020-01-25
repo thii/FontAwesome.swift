@@ -25,7 +25,7 @@
 
 /// An enumaration of FontAwesome icon names.
 // swiftlint:disable file_length type_body_length
-public enum FontAwesome: String {
+public enum FontAwesome: String, CaseIterable {
     case fiveHundredPixels = "fa-500px"
     case accessibleIcon = "fa-accessible-icon"
     case accusoft = "fa-accusoft"
