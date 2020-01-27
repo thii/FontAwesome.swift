@@ -115,6 +115,34 @@ fontAwesomeEnum += "\n"
 fontAwesomeEnum += """
         }
     }
+"""
+
+fontAwesomeEnum += """
+
+
+    /// Supported styles of each FontAwesome font
+    public var supportedStyles: [FontAwesomeStyle] {
+        switch self {
+
+"""
+
+sortedKeys.forEach { key in
+    guard let value = icons[key] else { return }
+    let enumKeyName = key.filteredKeywords().camelCased(with: "-")
+    fontAwesomeEnum += """
+                case .\(enumKeyName): return [.\(value.styles.joined(separator: ", ."))]
+    """
+    fontAwesomeEnum += "\n"
+}
+
+fontAwesomeEnum += """
+            default: return []
+"""
+fontAwesomeEnum += "\n"
+
+fontAwesomeEnum += """
+        }
+    }
 }
 
 /// An enumaration of FontAwesome Brands icon names

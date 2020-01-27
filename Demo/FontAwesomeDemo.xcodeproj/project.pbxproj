@@ -12,6 +12,8 @@
 		8401A9591B398B5600269D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8401A9571B398B5600269D14 /* Main.storyboard */; };
 		8401A95B1B398B5600269D14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8401A95A1B398B5600269D14 /* Images.xcassets */; };
 		8401A95E1B398B5600269D14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8401A95C1B398B5600269D14 /* LaunchScreen.xib */; };
+		CD003DE923DC70CD00C48083 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD003DE823DC70CD00C48083 /* GalleryViewController.swift */; };
+		CD003DF023DC80E900C48083 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD003DEF23DC80E900C48083 /* GalleryCell.swift */; };
 		CF090C471FBB7A7200BB8B4C /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841575D61B39AB71001092B6 /* FontAwesome.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		8401A95A1B398B5600269D14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8401A95D1B398B5600269D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		841575D01B39AB71001092B6 /* FontAwesome.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FontAwesome.xcodeproj; path = ../FontAwesome.xcodeproj; sourceTree = "<group>"; };
+		CD003DE823DC70CD00C48083 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		CD003DEF23DC80E900C48083 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				8401A9531B398B5600269D14 /* AppDelegate.swift */,
 				8401A9551B398B5600269D14 /* ViewController.swift */,
+				CD003DE823DC70CD00C48083 /* GalleryViewController.swift */,
+				CD003DEF23DC80E900C48083 /* GalleryCell.swift */,
 				8401A9571B398B5600269D14 /* Main.storyboard */,
 				8401A95A1B398B5600269D14 /* Images.xcassets */,
 				8401A95C1B398B5600269D14 /* LaunchScreen.xib */,
@@ -242,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD003DF023DC80E900C48083 /* GalleryCell.swift in Sources */,
+				CD003DE923DC70CD00C48083 /* GalleryViewController.swift in Sources */,
 				8401A9561B398B5600269D14 /* ViewController.swift in Sources */,
 				8401A9541B398B5600269D14 /* AppDelegate.swift in Sources */,
 			);
