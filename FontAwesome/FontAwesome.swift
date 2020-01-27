@@ -217,6 +217,29 @@ public extension UIImage {
     }
 }
 
+// FontAwesome internal helpers
+
+public extension FontAwesome {
+
+	/// Indicator to check whether a style is supported for the font
+	///
+	/// - Parameter style: The font style. Either .solid, .regular or .brands.
+	/// - returns: A boolean which is true if the style is supported by the font
+	func isSupported(style: FontAwesomeStyle) -> Bool {
+		return self.supportedStyles.contains(style)
+	}
+
+	/// List all fonts supported in a style
+	///
+	/// - Parameter style: The font style. Either .solid, .regular or .brands.
+	/// - returns: An array of FontAwesome
+	static func fontList(style: FontAwesomeStyle) -> [FontAwesome] {
+		return FontAwesome.allCases.filter({
+			$0.isSupported(style: style)
+		})
+	}
+}
+
 // MARK: - Private
 
 private class FontLoader {
