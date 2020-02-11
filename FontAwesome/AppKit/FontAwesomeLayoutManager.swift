@@ -80,7 +80,7 @@ public class FontAwesomeLayoutManager {
         textContainer.lineFragmentPadding = 0
 
         let layoutManager = NSLayoutManager()
-        layoutManager.typesetterBehavior = .behavior_10_2_WithCompatibility
+        layoutManager.typesetterBehavior = .behavior_10_4
         layoutManager.addTextContainer(textContainer)
 
         textStorage = NSTextStorage()
