@@ -1,4 +1,4 @@
-// FontAwesome.h
+// NSToolbar.SizeMode.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,20 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import AppKit
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+extension NSToolbar.SizeMode: Equatable {
+
+    public static func == (lhs: NSToolbar.SizeMode, rhs: NSToolbar.SizeMode) -> Bool {
+        switch lhs {
+        case .default, .regular:
+            return rhs.rawValue == NSToolbar.SizeMode.default.rawValue
+                || rhs.rawValue == NSToolbar.SizeMode.regular.rawValue
+        case .small:
+            return rhs.rawValue == NSToolbar.SizeMode.small.rawValue
+        @unknown default:
+            return false
+        }
+    }
+
+}

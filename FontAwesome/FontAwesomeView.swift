@@ -20,22 +20,36 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
+#else
+import AppKit
+#endif
 
 /// A view for FontAwesome icons.
-@IBDesignable public class FontAwesomeView: UIView {
+@IBDesignable public class FontAwesomeView: View {
 
     @IBInspectable
     public var iconCode: String = "" {
         didSet {
+            #if canImport(UIKit)
             self.iconView.text = String.fontAwesomeIcon(code: iconCode)
+            #else
+            self.iconView.iconCode = iconCode
+            #endif
         }
     }
 
     @IBInspectable
-    public var styleName: String = "Brands"
+    public var styleName: String = "Brands" {
+        didSet {
+            #if canImport(AppKit)
+            self.iconView.styleName = styleName
+            #endif
+        }
+    }
 
-    private var iconView = UILabel()
+    private var iconView = Label()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -52,25 +66,53 @@ import UIKit
         setupViews()
     }
 
-    /// Add a UILabel subview containing FontAwesome icon
+    /// Add a label subview containing FontAwesome icon
     func setupViews() {
+        #if canImport(UIKit)
         // Fits icon in the view
         self.iconView.textAlignment = NSTextAlignment.center
         self.iconView.text = String.fontAwesomeIcon(code: self.iconCode)
         self.iconView.textColor = self.tintColor
+        #else
+        self.iconView.iconCode = self.iconCode
+        self.iconView.styleName = self.styleName
+        #endif
         self.addSubview(iconView)
+
+        #if canImport(AppKit)
+        self.iconView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            self.iconView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            self.iconView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+        ])
+        #endif
     }
 
+    #if canImport(UIKit)
     override public func tintColorDidChange() {
         self.iconView.textColor = self.tintColor
     }
+    #endif
 
+    #if canImport(UIKit)
     override public func layoutSubviews() {
         super.layoutSubviews()
         self.clipsToBounds = true
         let size = bounds.size.width < bounds.size.height ? bounds.size.width : bounds.size.height
-        let style = FontAwesomeStyle(rawValue: styleName) ?? .solid
-        self.iconView.font = UIFont.fontAwesome(ofSize: size, style: style)
-        self.iconView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: bounds.size.width, height: bounds.size.height))
+        let style = FontAwesomeStyle(rawValue: styleName.lowercased()) ?? .solid
+        self.iconView.font = Font.fontAwesome(ofSize: size, style: style)
+        self.iconView.frame = CGRect(origin: .zero, size: CGSize(width: bounds.size.width, height: bounds.size.height))
     }
+    #else
+    override open func layout() {
+        self.iconView.needsLayout = true
+        super.layout()
+    }
+    #endif
+
 }
+
+#if canImport(AppKit)
+extension FontAwesomeView: FontAwesomeRepresentable { }
+#endif

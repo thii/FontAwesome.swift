@@ -1,4 +1,4 @@
-// FontAwesome.h
+// NSButton.BezelStyle.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,36 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import AppKit
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+internal extension NSButton.BezelStyle {
+
+    var hasFixedHeight: Bool {
+        switch self {
+        case .rounded,
+             .roundRect,
+             .texturedRounded,
+             .recessed,
+             .disclosure,
+             .helpButton,
+             .roundedDisclosure,
+             .circular:
+            return true
+        default:
+            return false
+        }
+    }
+
+    var hasFixedWidth: Bool {
+        switch self {
+        case .disclosure,
+             .helpButton,
+             .roundedDisclosure,
+             .circular:
+            return true
+        default:
+            return false
+        }
+    }
+
+}

@@ -1,4 +1,4 @@
-// FontAwesome.h
+// Shims.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,37 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#if canImport(UIKit)
+import UIKit
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+public typealias Font = UIFont
+public typealias Color = UIColor
+public typealias Image = UIImage
+public typealias Rect = CGRect
+#if !os(watchOS)
+public typealias ImageView = UIImageView
+public typealias View = UIView
+public typealias Label = UILabel
+#endif /* !os(watchOS) */
+#else
+import AppKit
+
+public typealias Font = NSFont
+public typealias Color = NSColor
+public typealias Image = NSImage
+public typealias Rect = NSRect
+public typealias ImageView = NSImageView
+public typealias View = NSView
+public typealias Label = FontAwesomeLabel
+
+extension Font {
+
+    static func fontNames(forFamilyName familyName: String) -> [String] {
+        return NSFontManager.shared.availableMembers(ofFontFamily: familyName)?
+            .compactMap({ $0[0] as? String })
+            ?? []
+    }
+
+}
+
+#endif

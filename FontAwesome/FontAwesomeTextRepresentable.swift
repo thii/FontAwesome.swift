@@ -20,8 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
+#if canImport(UIKit)
 protocol FontAwesomeTextRepresentable: FontAwesomeStateRequirement {
 
     var textSize: CGFloat { get }
@@ -52,3 +55,57 @@ extension FontAwesomeTextRepresentable {
         }
     }
 }
+#else
+public protocol FontAwesomeTextRepresentable: FontAwesomeRepresentable {
+
+    /// The font point size of the icon.
+    ///
+    /// When zero, the icon is sized to fit within the receiver's bounds. This property has a default value of `0`.
+    var iconPointSize: CGFloat { get }
+    /// The maximum size of the Font Awesome icon.
+    ///
+    /// This value is used along with `usesTypographicBounds` to compute a fitting font point size.
+    var maxIconSize: NSSize { get }
+    /// Whether to use the glyph's typographic bounds instead of the image bounds.
+    ///
+    /// When true, the icon will be typeset by the system. This includes various additional metrics, which results in a font point size
+    /// that can be drawn wholly within `maxIconSize`.
+    var usesTypographicBounds: Bool { get }
+    var font: Font? { get set }
+
+    /// Updates the receiver's Font Awesome font, if needed.
+    func updateFontIfNeeded()
+    /// Called when the receiver's Font Awesome font is updated as a result of invoking `updateFontIfNeeded()`.
+    func didUpdateFont()
+
+}
+
+public extension FontAwesomeTextRepresentable {
+
+    var usesTypographicBounds: Bool {
+        return false
+    }
+
+    func updateFontIfNeeded() {
+        guard let stringValue = fontAwesomeIcon
+            else { return }
+
+        let fontAwesomeStyle = style
+        let fontSize = iconPointSize > 0
+            ? iconPointSize
+            : Font.fontAwesomePointSize(of: stringValue,
+                                        with: fontAwesomeStyle,
+                                        fitting: maxIconSize,
+                                        usingTypographicBounds: usesTypographicBounds)
+        let newFont = Font.fontAwesome(ofSize: fontSize, style: fontAwesomeStyle)
+        guard newFont != font
+            else { return }
+
+        font = newFont
+        didUpdateFont()
+    }
+
+    func didUpdateFont() { }
+
+}
+#endif

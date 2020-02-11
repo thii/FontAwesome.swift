@@ -1,4 +1,4 @@
-// FontAwesome.h
+// CGFloat.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import Foundation
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+internal extension CGFloat {
+
+    func floor(nearest: CGFloat) -> CGFloat {
+        return Darwin.floor(self / nearest) * nearest
+    }
+
+    func ceil(nearest: CGFloat) -> CGFloat {
+        return Darwin.ceil(self / nearest) * nearest
+    }
+
+    /// Returns the closest pixel point greater than or equal to the receiver.
+    func roundUpToPixel() -> CGFloat {
+        return ceil(nearest: FALayoutManager.pixelPointValue)
+    }
+
+    /// Returns the closest pixel point less than or equal to the receiver.
+    func roundDownToPixel() -> CGFloat {
+        return floor(nearest: FALayoutManager.pixelPointValue)
+    }
+
+}

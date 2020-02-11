@@ -1,4 +1,4 @@
-// FontAwesome.h
+// ViewController.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,31 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import Cocoa
+import FontAwesome
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+class ViewController: NSViewController {
+
+    @IBOutlet
+    var fontAwesomeButton: FontAwesomeButton!
+    @IBOutlet
+    var fontAwesomeImageView: FontAwesomeImageView!
+    @IBOutlet
+    var fontAwesomeLabel: FontAwesomeLabel!
+    @IBOutlet
+    var fontAwesomeView: FontAwesomeView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // 🎡 Play around with the Font Awesome interface components.
+//        fontAwesomeView.icon = .ghost
+//        fontAwesomeView.style = .solid
+    }
+
+    @IBAction
+    func toolbarItemAction(button: FontAwesomeButton) {
+        print("Clicked on the '\(button.toolbarItemIdentifier.rawValue)' toolbar item.")
+    }
+
+}
