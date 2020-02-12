@@ -75,7 +75,7 @@ fontAwesomeEnum += """
 
 /// An enumaration of FontAwesome icon names.
 // swiftlint:disable file_length type_body_length
-public enum FontAwesome: String {
+public enum FontAwesome: String, CaseIterable {
 
 """
 
@@ -109,6 +109,34 @@ sortedKeys.forEach { key in
 
 fontAwesomeEnum += """
             default: return ""
+"""
+fontAwesomeEnum += "\n"
+
+fontAwesomeEnum += """
+        }
+    }
+"""
+
+fontAwesomeEnum += """
+
+
+    /// Supported styles of each FontAwesome font
+    public var supportedStyles: [FontAwesomeStyle] {
+        switch self {
+
+"""
+
+sortedKeys.forEach { key in
+    guard let value = icons[key] else { return }
+    let enumKeyName = key.filteredKeywords().camelCased(with: "-")
+    fontAwesomeEnum += """
+                case .\(enumKeyName): return [.\(value.styles.joined(separator: ", ."))]
+    """
+    fontAwesomeEnum += "\n"
+}
+
+fontAwesomeEnum += """
+            default: return []
 """
 fontAwesomeEnum += "\n"
 

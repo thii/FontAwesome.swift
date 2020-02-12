@@ -278,19 +278,39 @@ public extension Image {
     }
 }
 
+// FontAwesome internal helpers
+
+public extension FontAwesome {
+
+	/// Indicator to check whether a style is supported for the font
+	///
+	/// - Parameter style: The font style. Either .solid, .regular or .brands.
+	/// - returns: A boolean which is true if the style is supported by the font
+	func isSupported(style: FontAwesomeStyle) -> Bool {
+		return self.supportedStyles.contains(style)
+	}
+
+	/// List all fonts supported in a style
+	///
+	/// - Parameter style: The font style. Either .solid, .regular or .brands.
+	/// - returns: An array of FontAwesome
+	static func fontList(style: FontAwesomeStyle) -> [FontAwesome] {
+		return FontAwesome.allCases.filter({
+			$0.isSupported(style: style)
+		})
+	}
+}
+
 // MARK: - Private
 
 private class FontLoader {
     class func loadFont(_ name: String) {
         guard
-            let fontURL = URL.fontURL(for: name),
-            let data = try? Data(contentsOf: fontURL),
-            let provider = CGDataProvider(data: data as CFData),
-            let font = CGFont(provider)
+            let fontURL = URL.fontURL(for: name) as CFURL?
             else { return }
 
         var error: Unmanaged<CFError>?
-        if !CTFontManagerRegisterGraphicsFont(font, &error) {
+        if !CTFontManagerRegisterFontsForURL(fontURL, .process, &error) {
             let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
             guard let nsError = error?.takeUnretainedValue() as AnyObject as? NSError else { return }
             NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
