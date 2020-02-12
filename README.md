@@ -10,6 +10,19 @@ Use Font Awesome in your Swift projects
 
 To see the complete set of 3,978 icons in Font Awesome 5, please check the [FontAwesome.com](http://fontawesome.com/icons/) site.
 
+## Features
+
+### iOS
+
+* Ready to use subclasses of `UIView`, `UIBarButtonItem`, `UIImageView`, `FontAwesomeSegmentedControl`, & more.
+
+### macOS
+
+* Ready to use subclasses of `NSImageView`, `NSButton`, `NSToolbarItem`, `NSTextField`, & more.
+* Dark mode ready.
+* Pixel perfect horizontal & vertical image alignment.
+* Consistent icon layout across major macOS releases.
+
 ## Examples
 ![](./.github/examples.png)
 
@@ -31,7 +44,8 @@ To see the complete set of 3,978 icons in Font Awesome 5, please check the [Font
 
 ## Requirements
 
-iOS 8 or later.
+* iOS 8+
+* macOS 10.11+
 
 ## Development
 To update this project to include all the latest icons from the new verison of
