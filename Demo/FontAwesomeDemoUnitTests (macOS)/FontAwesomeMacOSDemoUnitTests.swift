@@ -48,24 +48,32 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
     }
 
     func testLabel() {
+        continueAfterFailure = true
+
         let label: FontAwesomeLabel = viewController.fontAwesomeLabel
 
         XCTAssertEqual(label.iconPointSize, 50)
         XCTAssertEqual(label.stringValue, FontAwesome.github.unicode)
         XCTAssertEqual(label.font?.pointSize, 50)
-        XCTAssertEqual(label.bounds.size, NSSize(width: isHighResolutionDisplay ? 52.5 : 53,
-                                                 height: 61))
+        XCTAssertEqual(label.bounds.size,
+                       NSSize(width: isHighResolutionDisplay ? 53.5 : 55, height: 50))
     }
 
     func testView() {
-        let size = isHighResolutionDisplay
-            ? NSSize(width: 138.5, height: 167)
-            : NSSize(width: 141, height: 170)
+        let fontPointSize = NSAppKitVersion.isMacOSMojaveOrNewer
+            ? CGFloat(137.5).roundDownToPixel()
+            : 139
+        let size = NSAppKitVersion.isMacOSMojaveOrNewer
+            ? NSSize(width: CGFloat(138.5).roundUpToPixel(), height: 137)
+            : NSSize(width: 141, height: 139)
         let labelSubview = viewController.fontAwesomeView.subviews.first as? FontAwesomeLabel
 
         XCTAssertNotNil(labelSubview)
+
+        continueAfterFailure = true
+
         XCTAssertEqual(labelSubview!.stringValue, FontAwesome.github.unicode)
-        XCTAssertEqual(labelSubview!.font?.pointSize, size.width)
+        XCTAssertEqual(labelSubview!.font?.pointSize, fontPointSize)
         XCTAssertEqual(labelSubview!.bounds.size, size)
     }
 
@@ -108,6 +116,8 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
     }
 
     func testIconHeight() {
+        continueAfterFailure = true
+
         let button = FontAwesomeButton(icon: .fontAwesomeFlag)
 
         button.controlSize = .regular
@@ -121,6 +131,8 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
     }
 
     func testEquatable() {
+        continueAfterFailure = true
+
         XCTAssertEqual(NSToolbar.SizeMode.regular, NSToolbar.SizeMode.default)
         XCTAssertTrue(NSToolbar.SizeMode.regular == NSToolbar.SizeMode.default)
         XCTAssertEqual(NSToolbar.SizeMode.small, NSToolbar.SizeMode.small)
@@ -132,6 +144,8 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
     }
 
     func testImageVerticalAdjustmentForAllBezels() {
+        continueAfterFailure = true
+
         let button = FontAwesomeButton()
 
         for bezelStyle in NSButton.BezelStyle.allCases {
@@ -226,7 +240,15 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
 
     func expectedImageSize(for item: FontAwesomeToolbarItem) -> NSSize {
         var size: NSSize
-        if toolbar?.sizeMode == .small {
+        if NSAppKitVersion.isMacOSMojaveOrNewer && !isHighResolutionDisplay {
+            if toolbar?.sizeMode == .small {
+                guard item.itemIdentifier != .fixedPointSize
+                    else { return NSSize(width: 15, height: 15) }
+                size = NSSize(width: 14, height: 14)
+            } else {
+                size = NSSize(width: 15, height: 15)
+            }
+        } else if toolbar?.sizeMode == .small {
             size = isHighResolutionDisplay
                 ? NSSize(width: 15, height: 14.5)
                 : NSSize(width: 14, height: 14)
@@ -250,16 +272,17 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
     }
 
     func expectedImageOrigin(for item: FontAwesomeToolbarItem) -> NSPoint {
-        var point: NSPoint = .zero
-        if toolbar?.sizeMode == .small {
-            point.y = isHighResolutionDisplay ? 3.5 : 4
-        } else {
-            point.y = isHighResolutionDisplay ? 6 : 7
-        }
+        guard let button = item.button, let buttonCell = button.buttonCell
+            else { return .zero }
 
+        let bezelRect = button.bezelRect(forBounds: button.bounds)
+
+        var point: NSPoint = .zero
         point.x = ((expectedItemWidth(for: item) - expectedImageSize(for: item).width) / 2)
             + (item.bezelWidthAdjustment / 2)
-
+        point.y = bezelRect.origin.y
+            + ((bezelRect.height - expectedImageSize(for: item).height) / 2).roundUpToPixel()
+            + buttonCell.verticalImageAdjustmentForBezel
         return point
     }
 
@@ -273,12 +296,16 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
                                 + " a valid `button` value",
                             file: file,
                             line: line)
-            XCTAssertTrue(item.button!.isInToolbar,
+
+            guard let button = item.button
+                else { return }
+
+            XCTAssertTrue(button.isInToolbar,
                           "the item \"\(item.itemIdentifier.rawValue)\"'s button does not have "
                             + "the correct `isInToolbar` value")
 
             let expectedWidth = expectedItemWidth(for: item)
-            XCTAssertEqual(item.button!.frame.width - item.bezelWidthAdjustment,
+            XCTAssertEqual(button.frame.width - item.bezelWidthAdjustment,
                            expectedWidth,
                            "the item \"\(item.itemIdentifier.rawValue)\" does not have"
                             + " the expected button width \(expectedWidth)",
@@ -292,7 +319,7 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
                            line: line)
 
             let expectedSize = expectedImageSize(for: item)
-            XCTAssertEqual(item.button!.image?.size,
+            XCTAssertEqual(button.image?.size,
                            expectedSize,
                            "the item \"\(item.itemIdentifier.rawValue)\" does not have"
                             + " the expected image size \(expectedSize)",
@@ -300,7 +327,7 @@ class FontAwesomeMacOSDemoUnitTests: XCTestCase {
                            line: line)
 
             let expectedOrigin = expectedImageOrigin(for: item)
-            XCTAssertEqual(item.button!.buttonCell?.imageRect(forBounds: item.button!.bounds).origin,
+            XCTAssertEqual(button.buttonCell?.imageRect(forBounds: button.bounds).origin,
                            expectedOrigin,
                            "the item \"\(item.itemIdentifier.rawValue)\" does not have"
                             + " the expected image origin \(expectedOrigin)",

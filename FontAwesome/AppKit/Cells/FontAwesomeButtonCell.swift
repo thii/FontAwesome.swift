@@ -43,7 +43,7 @@ open class FontAwesomeButtonCell: NSButtonCell {
 
     /// Mirrors `NSButtonCell`'s private `_imageVerticalAdjustmentForBezel` property.
     open var verticalImageAdjustmentForBezel: CGFloat {
-        if FALayoutManager.isHighResolutionDisplay {
+        if NSAppKitVersion.isMacOSMojaveOrNewer {
             if bezelStyle == .texturedRounded {
                 return FALayoutManager.pixelPointValue
             }

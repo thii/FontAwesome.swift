@@ -22,7 +22,7 @@
 
 import AppKit
 
-extension NSButton.BezelStyle: CaseIterable {
+extension NSButton.BezelStyle: CaseIterable, CustomDebugStringConvertible {
 
     public static var allCases: [NSButton.BezelStyle] {
         return [
@@ -40,6 +40,39 @@ extension NSButton.BezelStyle: CaseIterable {
             .roundedDisclosure,
             .inline
         ]
+    }
+
+    public var debugDescription: String {
+        switch self {
+        case .rounded:
+            return ".rounded"
+        case .regularSquare:
+            return ".regularSquare"
+        case .disclosure:
+            return ".disclosure"
+        case .shadowlessSquare:
+            return ".shadowlessSquare"
+        case .circular:
+            return ".circular"
+        case .texturedSquare:
+            return ".texturedSquare"
+        case .helpButton:
+            return ".helpButton"
+        case .smallSquare:
+            return ".smallSquare"
+        case .texturedRounded:
+            return ".texturedRounded"
+        case .roundRect:
+            return ".roundRect"
+        case .recessed:
+            return ".recessed"
+        case .roundedDisclosure:
+            return ".roundedDisclosure"
+        case .inline:
+            return ".inline"
+        @unknown default:
+            return ""
+        }
     }
 
 }

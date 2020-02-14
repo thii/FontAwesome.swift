@@ -25,53 +25,63 @@ import AppKit
 @IBDesignable
 open class FontAwesomeLabel: NSTextField {
 
+    public typealias TextFieldCell = FontAwesomeTextFieldCell
+
     @IBInspectable
-    open var iconCode: String = FontAwesome.fontAwesomeFlag.rawValue {
-        didSet {
-            stringValue = fontAwesomeIcon ?? ""
+    open var iconCode: String {
+        get { return textFieldCell?.iconCode ?? FontAwesome.fontAwesomeFlag.rawValue }
+        set {
+            assert(textFieldCell != nil)
+            textFieldCell?.iconCode = newValue
             needsLayout = true
         }
     }
     @IBInspectable
-    open var styleName: String = FontAwesomeStyle.brands.rawValue {
-        didSet { needsLayout = true }
+    open var styleName: String {
+        get { return textFieldCell?.styleName ?? FontAwesomeStyle.brands.rawValue }
+        set {
+            assert(textFieldCell != nil)
+            textFieldCell?.styleName = newValue
+            needsLayout = true
+        }
     }
     @IBInspectable
-    open var iconPointSize: CGFloat = 0 {
-        didSet { needsLayout = true }
+    open var iconPointSize: CGFloat {
+        get { return textFieldCell?.iconPointSize ?? 0 }
+        set {
+            assert(textFieldCell != nil)
+            textFieldCell?.iconPointSize = newValue
+            needsLayout = true
+        }
     }
 
-    public var textFieldCell: NSTextFieldCell? {
-        return cell as? NSTextFieldCell
+    public var textFieldCell: TextFieldCell? {
+        return cell as? TextFieldCell
+    }
+
+    open override var intrinsicContentSize: NSSize {
+        return cell?.cellSize ?? .zero
     }
 
     public override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
 
-        // The cell will be created in `commonInit()`.
-        cell = nil
         commonInit()
     }
 
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
+
+        commonInit()
     }
 
     public init(icon: FontAwesome, style: FontAwesomeStyle = .brands) {
         super.init(frame: .zero)
 
-        // The cell will be created in `commonInit()`.
-        cell = nil
         commonInit()
 
         self.icon = icon
         self.style = style
-    }
-
-    open override func awakeFromNib() {
-        super.awakeFromNib()
-
-        commonInit()
     }
 
     open override func prepareForInterfaceBuilder() {
@@ -82,14 +92,15 @@ open class FontAwesomeLabel: NSTextField {
     }
 
     open func commonInit() {
-        if cell == nil {
-            cell = NSTextFieldCell(textCell: "")
-            isSelectable = false
-            isBezeled = false
-            drawsBackground = false
+        if !(cell is TextFieldCell) {
+            cell = createCell()
         }
 
         stringValue = fontAwesomeIcon ?? ""
+    }
+
+    open func createCell() -> TextFieldCell {
+        return TextFieldCell(textCell: "")
     }
 
     open override func layout() {

@@ -41,19 +41,6 @@ public class FontAwesomeLayoutManager {
     private let textStorageLock: NSLock = NSLock()
 
     public lazy var sizingButton: NSButton = { NSButton() }()
-    public lazy var sizingTextField: NSTextField = {
-        if #available(OSX 10.12, *) {
-            return NSTextField(labelWithAttributedString: NSAttributedString())
-        } else {
-            // Gotta do it ourselves. 🙄
-            let textField = NSTextField()
-            textField.isBezeled = false
-            textField.drawsBackground = false
-            textField.isEditable = false
-            textField.isSelectable = false
-            return textField
-        }
-    }()
 
     /// The backing store pixel scale factor.
     open var backingScaleFactor: CGFloat {
@@ -120,8 +107,13 @@ public class FontAwesomeLayoutManager {
     }
 
     open func typographicBounds(of attributedString: NSAttributedString) -> Rect {
-        sizingTextField.attributedStringValue = attributedString
-        return CGRect(origin: .zero, size: sizingTextField.intrinsicContentSize)
+        textStorageLock.lock()
+        defer { textStorageLock.unlock() }
+
+        textStorage.setAttributedString(attributedString)
+
+        let iconGlyphRange = layoutManager.glyphRange(for: textContainer)
+        return layoutManager.boundingRect(forGlyphRange: iconGlyphRange, in: textContainer)
     }
 
 }

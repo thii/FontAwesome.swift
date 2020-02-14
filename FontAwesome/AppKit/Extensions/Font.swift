@@ -41,15 +41,17 @@ extension Font {
         let arbitraryPointSize: CGFloat = 100
         let font = Font.fontAwesome(ofSize: arbitraryPointSize, style: style)
         let attributedString = NSMutableAttributedString(string: icon, attributes: [.font: font])
+        let adjustment = usingTypographicBounds ? 2 * FALayoutManager.pixelPointValue : 0
+        let adjustedMaxSize = NSSize(width: maxSize.width - adjustment, height: maxSize.height)
 
         let iconSize = usingTypographicBounds
             ? FALayoutManager.typographicBounds(of: attributedString).size
             : FALayoutManager.imageBounds(of: attributedString).size
 
-        let iconAspectRatio = iconSize.width / iconSize.height
         let heightRatio = iconSize.height / arbitraryPointSize
-        let heightMaxPointSize = maxSize.height / heightRatio
-        let widthMaxPointSize = (maxSize.width / iconAspectRatio) / heightRatio
+        let widthRatio = iconSize.width / arbitraryPointSize
+        let heightMaxPointSize = adjustedMaxSize.height / heightRatio
+        let widthMaxPointSize = adjustedMaxSize.width / widthRatio
         let minimumPointSize = min(heightMaxPointSize, widthMaxPointSize).roundDownToPixel()
         return max(minimumPointSize, 0.1)
     }

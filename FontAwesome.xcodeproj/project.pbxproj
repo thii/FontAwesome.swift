@@ -28,6 +28,7 @@
 		145FF26E23ECC9F5000A7FD5 /* NSSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FF26D23ECC9F5000A7FD5 /* NSSize.swift */; };
 		146609CE23CFAE2300DB1F4D /* Image+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146609CD23CFAE2300DB1F4D /* Image+Trim.swift */; };
 		1466724823EBE03C0000389E /* NSButton.BezelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466724723EBE03C0000389E /* NSButton.BezelStyle.swift */; };
+		147659AA23F3C1EB000CD514 /* NSAppKitVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147659A923F3C1EB000CD514 /* NSAppKitVersion.swift */; };
 		149644E223D998B500045A58 /* FontAwesomeLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149644E123D998B500045A58 /* FontAwesomeLayoutManager.swift */; };
 		14971E9923D7FBEE00C1868E /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8401A8D21B39601400269D14 /* FontAwesome.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		14971E9A23D7FBEE00C1868E /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144772A0236DF81D00597F27 /* FontAwesome.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -38,6 +39,7 @@
 		14C856B5236FC74600C6409A /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A381ECC816A0010B0BA /* FontAwesomeImageView.swift */; };
 		14C856B6236FC75E00C6409A /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A371ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift */; };
 		14C856B9236FC93F00C6409A /* FontAwesomeToolbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C856B8236FC93F00C6409A /* FontAwesomeToolbarItem.swift */; };
+		14ECBBCF23F5C9B5009DDA4F /* FontAwesomeTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECBBCE23F5C9B5009DDA4F /* FontAwesomeTextFieldCell.swift */; };
 		484F4A3D1ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A361ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift */; };
 		484F4A3E1ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A371ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift */; };
 		484F4A3F1ECC816A0010B0BA /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484F4A381ECC816A0010B0BA /* FontAwesomeImageView.swift */; };
@@ -83,11 +85,13 @@
 		145FF26D23ECC9F5000A7FD5 /* NSSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSize.swift; sourceTree = "<group>"; };
 		146609CD23CFAE2300DB1F4D /* Image+Trim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+Trim.swift"; sourceTree = "<group>"; };
 		1466724723EBE03C0000389E /* NSButton.BezelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSButton.BezelStyle.swift; sourceTree = "<group>"; };
+		147659A923F3C1EB000CD514 /* NSAppKitVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAppKitVersion.swift; sourceTree = "<group>"; };
 		149644E123D998B500045A58 /* FontAwesomeLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeLayoutManager.swift; sourceTree = "<group>"; };
 		14A04525238DA90700E309DE /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		14C856AD236F732A00C6409A /* FontAwesomeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeLabel.swift; sourceTree = "<group>"; };
 		14C856AF236F8A6300C6409A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		14C856B8236FC93F00C6409A /* FontAwesomeToolbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeToolbarItem.swift; sourceTree = "<group>"; };
+		14ECBBCE23F5C9B5009DDA4F /* FontAwesomeTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeTextFieldCell.swift; sourceTree = "<group>"; };
 		484F4A361ECC816A0010B0BA /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
 		484F4A371ECC816A0010B0BA /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
 		484F4A381ECC816A0010B0BA /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontAwesomeImageView.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				141B0EAA2374F57A00A019FD /* FontAwesomeButtonCell.swift */,
+				14ECBBCE23F5C9B5009DDA4F /* FontAwesomeTextFieldCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				14A04525238DA90700E309DE /* CGFloat.swift */,
 				14C856AF236F8A6300C6409A /* Font.swift */,
 				146609CD23CFAE2300DB1F4D /* Image+Trim.swift */,
+				147659A923F3C1EB000CD514 /* NSAppKitVersion.swift */,
 				1466724723EBE03C0000389E /* NSButton.BezelStyle.swift */,
 				145FF26D23ECC9F5000A7FD5 /* NSSize.swift */,
 			);
@@ -548,12 +554,14 @@
 				145FF26E23ECC9F5000A7FD5 /* NSSize.swift in Sources */,
 				144772A9236DF8CF00597F27 /* Enum.swift in Sources */,
 				144772AA236DF8CF00597F27 /* FontAwesome.swift in Sources */,
+				14ECBBCF23F5C9B5009DDA4F /* FontAwesomeTextFieldCell.swift in Sources */,
 				149644E223D998B500045A58 /* FontAwesomeLayoutManager.swift in Sources */,
 				141B0EA62374983F00A019FD /* FontAwesomeRepresentable.swift in Sources */,
 				144772AC236DF8CF00597F27 /* FontAwesomeExtension.swift in Sources */,
 				1403403723E6513F00B22878 /* FontAwesomeToolbar.swift in Sources */,
 				144635DD23E3AB6800464BB8 /* FontAwesomeIconSize.swift in Sources */,
 				14C856B1236F8A6B00C6409A /* Font.swift in Sources */,
+				147659AA23F3C1EB000CD514 /* NSAppKitVersion.swift in Sources */,
 				144772BF236E05E700597F27 /* FontAwesomeView.swift in Sources */,
 				144772BD236DF9B500597F27 /* Shims.swift in Sources */,
 				141B0EAB2374F57A00A019FD /* FontAwesomeButtonCell.swift in Sources */,
