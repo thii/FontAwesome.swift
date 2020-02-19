@@ -17,7 +17,32 @@ struct SVG: Codable {
     let viewBox: [String]
     let width: UInt
     let height: UInt
+    let path: Path
+}
+
+struct Path: Codable {
     let path: String
+    let duotonePath: [String]
+
+    // Where we determine what type the value is
+    init(from decoder: Decoder) throws {
+        let container =  try decoder.singleValueContainer()
+
+        // Check for String
+        do {
+            path = try container.decode(String.self)
+            duotonePath = []
+        } catch {
+            // Check for Array
+            duotonePath = try container.decode([String].self)
+            path = ""
+        }
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try duotonePath.isEmpty ? container.encode(path) : container.encode(duotonePath)
+    }
 }
 
 extension String {
