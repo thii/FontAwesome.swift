@@ -166,7 +166,7 @@ open class FontAwesomeToolbarItem: NSToolbarItem {
         self.style = style
     }
 
-    private override init(itemIdentifier: NSToolbarItem.Identifier) {
+    public override init(itemIdentifier: NSToolbarItem.Identifier) {
         super.init(itemIdentifier: itemIdentifier)
 
         view = FontAwesomeButton()
