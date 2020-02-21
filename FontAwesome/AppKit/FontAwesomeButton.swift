@@ -248,11 +248,8 @@ extension FontAwesomeButton: FontAwesomeTextRepresentable {
         guard let icon = icon, let font = font
             else { return }
 
-        image = Image.fontAwesomeIcon(name: icon,
-                                      font: font,
-                                      textColor: .black, // Note: The image will be a template
-                                      size: maxIconSize) //       image, so the color is largely
-        assert(image!.isTemplate)                        //       irrelevant here.
+        image = Image.fontAwesomeIcon(name: icon, font: font, textColor: .black, size: maxIconSize)
+        assert(image!.isTemplate)
 
         // Condition necessary for proper behavior of buttons in toolbar items in macOS 10.13.
         if !isInToolbar {
