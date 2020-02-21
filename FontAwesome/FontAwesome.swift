@@ -111,6 +111,12 @@ public extension Font {
     /// - parameter ofSize: The preferred font size.
     /// - returns: A font object of FontAwesome.
     class func fontAwesome(ofSize fontSize: CGFloat, style: FontAwesomeStyle) -> Font {
+        #if canImport(AppKit)
+        if let loadedFont = Font(name: style.fontName(), size: fontSize) {
+            return loadedFont
+        }
+        #endif
+
         loadFontAwesome(ofStyle: style)
         return Font(name: style.fontName(), size: fontSize)!
     }
@@ -118,9 +124,11 @@ public extension Font {
     /// Loads the FontAwesome font in to memory.
     /// This method should be called when setting icons without using code.
     class func loadFontAwesome(ofStyle style: FontAwesomeStyle) {
+        #if canImport(UIKit)
         if Font.fontNames(forFamilyName: style.fontFamilyName()).contains(style.fontName()) {
             return
         }
+        #endif
 
         FontLoader.loadFont(style.fontFilename())
     }

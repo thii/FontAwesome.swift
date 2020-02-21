@@ -43,14 +43,4 @@ public typealias ImageView = NSImageView
 public typealias View = NSView
 public typealias Label = FontAwesomeLabel
 
-extension Font {
-
-    static func fontNames(forFamilyName familyName: String) -> [String] {
-        return NSFontManager.shared.availableMembers(ofFontFamily: familyName)?
-            .compactMap({ $0[0] as? String })
-            ?? []
-    }
-
-}
-
 #endif
