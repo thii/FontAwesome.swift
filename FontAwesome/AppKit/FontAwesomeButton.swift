@@ -23,7 +23,7 @@
 import AppKit
 
 @IBDesignable
-open class FontAwesomeButton: NSButton {
+open class FontAwesomeButton: NSButton, FontAwesomeTextRepresentable {
 
     public typealias ButtonCell = FontAwesomeButtonCell
 
@@ -234,9 +234,7 @@ open class FontAwesomeButton: NSButton {
         super.layout()
     }
 
-}
-
-extension FontAwesomeButton: FontAwesomeTextRepresentable {
+    // MARK: - FontAwesomeTextRepresentable
 
     open var maxIconSize: NSSize {
         return iconPointSize > 0

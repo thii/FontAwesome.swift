@@ -23,7 +23,7 @@
 import AppKit
 
 @IBDesignable
-open class FontAwesomeLabel: NSTextField {
+open class FontAwesomeLabel: NSTextField, FontAwesomeTextRepresentable {
 
     public typealias TextFieldCell = FontAwesomeTextFieldCell
 
@@ -109,9 +109,7 @@ open class FontAwesomeLabel: NSTextField {
         super.layout()
     }
 
-}
-
-extension FontAwesomeLabel: FontAwesomeTextRepresentable {
+    // MARK: - FontAwesomeTextRepresentable
 
     open var maxIconSize: NSSize {
         return superview is FontAwesomeView

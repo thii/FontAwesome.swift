@@ -22,7 +22,7 @@
 
 import AppKit
 
-open class FontAwesomeToolbarItem: NSToolbarItem {
+open class FontAwesomeToolbarItem: NSToolbarItem, FontAwesomeRepresentable {
 
     @IBInspectable
     open var iconCode: String {
@@ -265,5 +265,3 @@ open class FontAwesomeToolbarItem: NSToolbarItem {
     }
 
 }
-
-extension FontAwesomeToolbarItem: FontAwesomeRepresentable { }
