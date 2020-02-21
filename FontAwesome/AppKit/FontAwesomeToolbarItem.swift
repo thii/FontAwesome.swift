@@ -169,7 +169,7 @@ open class FontAwesomeToolbarItem: NSToolbarItem {
     public override init(itemIdentifier: NSToolbarItem.Identifier) {
         super.init(itemIdentifier: itemIdentifier)
 
-        view = FontAwesomeButton()
+        view = createButton()
     }
 
     open override func awakeFromNib() {
@@ -186,7 +186,7 @@ open class FontAwesomeToolbarItem: NSToolbarItem {
 
     open func commonInit() {
         if button == nil {
-            view = FontAwesomeButton()
+            view = createButton()
         }
 
         guard let button = button
@@ -209,6 +209,10 @@ open class FontAwesomeToolbarItem: NSToolbarItem {
                 self?.updateSize()
             }
         }
+    }
+
+    open func createButton() -> FontAwesomeButton {
+        return FontAwesomeButton()
     }
 
     open func fittingSize() -> NSSize {
