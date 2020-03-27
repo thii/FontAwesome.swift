@@ -47,6 +47,7 @@ public enum FontAwesomeStyle: String {
     case light
     case regular
     case brands
+    case duotone
 
     func fontName() -> String {
         switch self {
@@ -58,6 +59,8 @@ public enum FontAwesomeStyle: String {
             return FontAwesomeConfig.usesProFonts ? "FontAwesome5Pro-Regular" : "FontAwesome5Free-Regular"
         case .brands:
             return "FontAwesome5Brands-Regular"
+        case .duotone:
+            return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Duotone" : "FontAwesome5Free-Solid"
         }
     }
 
@@ -71,6 +74,8 @@ public enum FontAwesomeStyle: String {
             return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro-Regular-400" : "Font Awesome 5 Free-Regular-400"
         case .brands:
             return "Font Awesome 5 Brands-Regular-400"
+        case .duotone:
+            return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Duotone-Solid-900" : "Font Awesome 5 Free-Solid-900"
         }
     }
 
@@ -80,7 +85,8 @@ public enum FontAwesomeStyle: String {
             return "Font Awesome 5 Brands"
         case .regular,
              .light,
-             .solid:
+             .solid,
+             .duotone:
             return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro" : "Font Awesome 5 Free"
         }
     }
