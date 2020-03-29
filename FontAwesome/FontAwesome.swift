@@ -78,7 +78,7 @@ public enum FontAwesomeStyle: String {
         case .brands:
             return "FontAwesome5Brands-Regular"
         case .duotone:
-            return FontAwesomeConfig.usesProFonts ? "FontAwesome5Pro-Duotone" : "FontAwesome5Free-Regular"
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5Duotone-Solid" : "FontAwesome5Free-Regular"
         }
     }
 
