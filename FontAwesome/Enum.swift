@@ -173,6 +173,7 @@ public enum FontAwesome: String, CaseIterable {
     case bowlingBall = "fa-bowling-ball"
     case box = "fa-box"
     case boxOpen = "fa-box-open"
+    case boxTissue = "fa-box-tissue"
     case boxes = "fa-boxes"
     case braille = "fa-braille"
     case brain = "fa-brain"
@@ -364,6 +365,7 @@ public enum FontAwesome: String, CaseIterable {
     case cuttlefish = "fa-cuttlefish"
     case dAndD = "fa-d-and-d"
     case dAndDBeyond = "fa-d-and-d-beyond"
+    case dailymotion = "fa-dailymotion"
     case dashcube = "fa-dashcube"
     case database = "fa-database"
     case deaf = "fa-deaf"
@@ -393,6 +395,7 @@ public enum FontAwesome: String, CaseIterable {
     case directions = "fa-directions"
     case discord = "fa-discord"
     case discourse = "fa-discourse"
+    case disease = "fa-disease"
     case divide = "fa-divide"
     case dizzy = "fa-dizzy"
     case dna = "fa-dna"
@@ -470,6 +473,7 @@ public enum FontAwesome: String, CaseIterable {
     case fantasyFlightGames = "fa-fantasy-flight-games"
     case fastBackward = "fa-fast-backward"
     case fastForward = "fa-fast-forward"
+    case faucet = "fa-faucet"
     case fax = "fa-fax"
     case feather = "fa-feather"
     case featherAlt = "fa-feather-alt"
@@ -632,7 +636,9 @@ public enum FontAwesome: String, CaseIterable {
     case hamsa = "fa-hamsa"
     case handHolding = "fa-hand-holding"
     case handHoldingHeart = "fa-hand-holding-heart"
+    case handHoldingMedical = "fa-hand-holding-medical"
     case handHoldingUsd = "fa-hand-holding-usd"
+    case handHoldingWater = "fa-hand-holding-water"
     case handLizard = "fa-hand-lizard"
     case handMiddleFinger = "fa-hand-middle-finger"
     case handPaper = "fa-hand-paper"
@@ -644,10 +650,14 @@ public enum FontAwesome: String, CaseIterable {
     case handPointer = "fa-hand-pointer"
     case handRock = "fa-hand-rock"
     case handScissors = "fa-hand-scissors"
+    case handSparkles = "fa-hand-sparkles"
     case handSpock = "fa-hand-spock"
     case hands = "fa-hands"
     case handsHelping = "fa-hands-helping"
+    case handsWash = "fa-hands-wash"
     case handshake = "fa-handshake"
+    case handshakeAltSlash = "fa-handshake-alt-slash"
+    case handshakeSlash = "fa-handshake-slash"
     case hanukiah = "fa-hanukiah"
     case hardHat = "fa-hard-hat"
     case hashtag = "fa-hashtag"
@@ -655,6 +665,10 @@ public enum FontAwesome: String, CaseIterable {
     case hatCowboySide = "fa-hat-cowboy-side"
     case hatWizard = "fa-hat-wizard"
     case hdd = "fa-hdd"
+    case headSideCough = "fa-head-side-cough"
+    case headSideCoughSlash = "fa-head-side-cough-slash"
+    case headSideMask = "fa-head-side-mask"
+    case headSideVirus = "fa-head-side-virus"
     case heading = "fa-heading"
     case headphones = "fa-headphones"
     case headphonesAlt = "fa-headphones-alt"
@@ -679,6 +693,7 @@ public enum FontAwesome: String, CaseIterable {
     case hospital = "fa-hospital"
     case hospitalAlt = "fa-hospital-alt"
     case hospitalSymbol = "fa-hospital-symbol"
+    case hospitalUser = "fa-hospital-user"
     case hotTub = "fa-hot-tub"
     case hotdog = "fa-hotdog"
     case hotel = "fa-hotel"
@@ -688,6 +703,7 @@ public enum FontAwesome: String, CaseIterable {
     case hourglassHalf = "fa-hourglass-half"
     case hourglassStart = "fa-hourglass-start"
     case houseDamage = "fa-house-damage"
+    case houseUser = "fa-house-user"
     case houzz = "fa-houzz"
     case hryvnia = "fa-hryvnia"
     case html5 = "fa-html5"
@@ -711,6 +727,7 @@ public enum FontAwesome: String, CaseIterable {
     case info = "fa-info"
     case infoCircle = "fa-info-circle"
     case instagram = "fa-instagram"
+    case instagramSquare = "fa-instagram-square"
     case intercom = "fa-intercom"
     case internetExplorer = "fa-internet-explorer"
     case invision = "fa-invision"
@@ -749,6 +766,7 @@ public enum FontAwesome: String, CaseIterable {
     case language = "fa-language"
     case laptop = "fa-laptop"
     case laptopCode = "fa-laptop-code"
+    case laptopHouse = "fa-laptop-house"
     case laptopMedical = "fa-laptop-medical"
     case laravel = "fa-laravel"
     case lastfm = "fa-lastfm"
@@ -788,6 +806,8 @@ public enum FontAwesome: String, CaseIterable {
     case longArrowAltUp = "fa-long-arrow-alt-up"
     case lowVision = "fa-low-vision"
     case luggageCart = "fa-luggage-cart"
+    case lungs = "fa-lungs"
+    case lungsVirus = "fa-lungs-virus"
     case lyft = "fa-lyft"
     case magento = "fa-magento"
     case magic = "fa-magic"
@@ -844,6 +864,7 @@ public enum FontAwesome: String, CaseIterable {
     case mitten = "fa-mitten"
     case mix = "fa-mix"
     case mixcloud = "fa-mixcloud"
+    case mixer = "fa-mixer"
     case mizuni = "fa-mizuni"
     case mobile = "fa-mobile"
     case mobileAlt = "fa-mobile-alt"
@@ -923,6 +944,7 @@ public enum FontAwesome: String, CaseIterable {
     case pencilAlt = "fa-pencil-alt"
     case pencilRuler = "fa-pencil-ruler"
     case pennyArcade = "fa-penny-arcade"
+    case peopleArrows = "fa-people-arrows"
     case peopleCarry = "fa-people-carry"
     case pepperHot = "fa-pepper-hot"
     case percent = "fa-percent"
@@ -955,6 +977,7 @@ public enum FontAwesome: String, CaseIterable {
     case plane = "fa-plane"
     case planeArrival = "fa-plane-arrival"
     case planeDeparture = "fa-plane-departure"
+    case planeSlash = "fa-plane-slash"
     case play = "fa-play"
     case playCircle = "fa-play-circle"
     case playstation = "fa-playstation"
@@ -980,6 +1003,8 @@ public enum FontAwesome: String, CaseIterable {
     case procedures = "fa-procedures"
     case productHunt = "fa-product-hunt"
     case projectDiagram = "fa-project-diagram"
+    case pumpMedical = "fa-pump-medical"
+    case pumpSoap = "fa-pump-soap"
     case pushed = "fa-pushed"
     case puzzlePiece = "fa-puzzle-piece"
     case python = "fa-python"
@@ -1075,10 +1100,12 @@ public enum FontAwesome: String, CaseIterable {
     case shareSquare = "fa-share-square"
     case shekelSign = "fa-shekel-sign"
     case shieldAlt = "fa-shield-alt"
+    case shieldVirus = "fa-shield-virus"
     case ship = "fa-ship"
     case shippingFast = "fa-shipping-fast"
     case shirtsinbulk = "fa-shirtsinbulk"
     case shoePrints = "fa-shoe-prints"
+    case shopify = "fa-shopify"
     case shoppingBag = "fa-shopping-bag"
     case shoppingBasket = "fa-shopping-basket"
     case shoppingCart = "fa-shopping-cart"
@@ -1124,6 +1151,7 @@ public enum FontAwesome: String, CaseIterable {
     case snowflake = "fa-snowflake"
     case snowman = "fa-snowman"
     case snowplow = "fa-snowplow"
+    case soap = "fa-soap"
     case socks = "fa-socks"
     case solarPanel = "fa-solar-panel"
     case sort = "fa-sort"
@@ -1179,8 +1207,11 @@ public enum FontAwesome: String, CaseIterable {
     case stop = "fa-stop"
     case stopCircle = "fa-stop-circle"
     case stopwatch = "fa-stopwatch"
+    case stopwatch20 = "fa-stopwatch-20"
     case store = "fa-store"
     case storeAlt = "fa-store-alt"
+    case storeAltSlash = "fa-store-alt-slash"
+    case storeSlash = "fa-store-slash"
     case strava = "fa-strava"
     case stream = "fa-stream"
     case streetView = "fa-street-view"
@@ -1260,6 +1291,7 @@ public enum FontAwesome: String, CaseIterable {
     case toggleOn = "fa-toggle-on"
     case toilet = "fa-toilet"
     case toiletPaper = "fa-toilet-paper"
+    case toiletPaperSlash = "fa-toilet-paper-slash"
     case toolbox = "fa-toolbox"
     case tools = "fa-tools"
     case tooth = "fa-tooth"
@@ -1364,6 +1396,9 @@ public enum FontAwesome: String, CaseIterable {
     case vimeoSquare = "fa-vimeo-square"
     case vimeoV = "fa-vimeo-v"
     case vine = "fa-vine"
+    case virus = "fa-virus"
+    case virusSlash = "fa-virus-slash"
+    case viruses = "fa-viruses"
     case vk = "fa-vk"
     case vnv = "fa-vnv"
     case voicemail = "fa-voicemail"
@@ -1580,6 +1615,7 @@ public enum FontAwesome: String, CaseIterable {
             case .bowlingBall: return "\u{f436}"
             case .box: return "\u{f466}"
             case .boxOpen: return "\u{f49e}"
+            case .boxTissue: return "\u{f95b}"
             case .boxes: return "\u{f468}"
             case .braille: return "\u{f2a1}"
             case .brain: return "\u{f5dc}"
@@ -1771,6 +1807,7 @@ public enum FontAwesome: String, CaseIterable {
             case .cuttlefish: return "\u{f38c}"
             case .dAndD: return "\u{f38d}"
             case .dAndDBeyond: return "\u{f6ca}"
+            case .dailymotion: return "\u{f952}"
             case .dashcube: return "\u{f210}"
             case .database: return "\u{f1c0}"
             case .deaf: return "\u{f2a4}"
@@ -1800,6 +1837,7 @@ public enum FontAwesome: String, CaseIterable {
             case .directions: return "\u{f5eb}"
             case .discord: return "\u{f392}"
             case .discourse: return "\u{f393}"
+            case .disease: return "\u{f7fa}"
             case .divide: return "\u{f529}"
             case .dizzy: return "\u{f567}"
             case .dna: return "\u{f471}"
@@ -1877,6 +1915,7 @@ public enum FontAwesome: String, CaseIterable {
             case .fantasyFlightGames: return "\u{f6dc}"
             case .fastBackward: return "\u{f049}"
             case .fastForward: return "\u{f050}"
+            case .faucet: return "\u{f905}"
             case .fax: return "\u{f1ac}"
             case .feather: return "\u{f52d}"
             case .featherAlt: return "\u{f56b}"
@@ -2039,7 +2078,9 @@ public enum FontAwesome: String, CaseIterable {
             case .hamsa: return "\u{f665}"
             case .handHolding: return "\u{f4bd}"
             case .handHoldingHeart: return "\u{f4be}"
+            case .handHoldingMedical: return "\u{f95c}"
             case .handHoldingUsd: return "\u{f4c0}"
+            case .handHoldingWater: return "\u{f4c1}"
             case .handLizard: return "\u{f258}"
             case .handMiddleFinger: return "\u{f806}"
             case .handPaper: return "\u{f256}"
@@ -2051,10 +2092,14 @@ public enum FontAwesome: String, CaseIterable {
             case .handPointer: return "\u{f25a}"
             case .handRock: return "\u{f255}"
             case .handScissors: return "\u{f257}"
+            case .handSparkles: return "\u{f95d}"
             case .handSpock: return "\u{f259}"
             case .hands: return "\u{f4c2}"
             case .handsHelping: return "\u{f4c4}"
+            case .handsWash: return "\u{f95e}"
             case .handshake: return "\u{f2b5}"
+            case .handshakeAltSlash: return "\u{f95f}"
+            case .handshakeSlash: return "\u{f960}"
             case .hanukiah: return "\u{f6e6}"
             case .hardHat: return "\u{f807}"
             case .hashtag: return "\u{f292}"
@@ -2062,6 +2107,10 @@ public enum FontAwesome: String, CaseIterable {
             case .hatCowboySide: return "\u{f8c1}"
             case .hatWizard: return "\u{f6e8}"
             case .hdd: return "\u{f0a0}"
+            case .headSideCough: return "\u{f961}"
+            case .headSideCoughSlash: return "\u{f962}"
+            case .headSideMask: return "\u{f963}"
+            case .headSideVirus: return "\u{f964}"
             case .heading: return "\u{f1dc}"
             case .headphones: return "\u{f025}"
             case .headphonesAlt: return "\u{f58f}"
@@ -2086,6 +2135,7 @@ public enum FontAwesome: String, CaseIterable {
             case .hospital: return "\u{f0f8}"
             case .hospitalAlt: return "\u{f47d}"
             case .hospitalSymbol: return "\u{f47e}"
+            case .hospitalUser: return "\u{f80d}"
             case .hotTub: return "\u{f593}"
             case .hotdog: return "\u{f80f}"
             case .hotel: return "\u{f594}"
@@ -2095,6 +2145,7 @@ public enum FontAwesome: String, CaseIterable {
             case .hourglassHalf: return "\u{f252}"
             case .hourglassStart: return "\u{f251}"
             case .houseDamage: return "\u{f6f1}"
+            case .houseUser: return "\u{f965}"
             case .houzz: return "\u{f27c}"
             case .hryvnia: return "\u{f6f2}"
             case .html5: return "\u{f13b}"
@@ -2118,6 +2169,7 @@ public enum FontAwesome: String, CaseIterable {
             case .info: return "\u{f129}"
             case .infoCircle: return "\u{f05a}"
             case .instagram: return "\u{f16d}"
+            case .instagramSquare: return "\u{f955}"
             case .intercom: return "\u{f7af}"
             case .internetExplorer: return "\u{f26b}"
             case .invision: return "\u{f7b0}"
@@ -2156,6 +2208,7 @@ public enum FontAwesome: String, CaseIterable {
             case .language: return "\u{f1ab}"
             case .laptop: return "\u{f109}"
             case .laptopCode: return "\u{f5fc}"
+            case .laptopHouse: return "\u{f966}"
             case .laptopMedical: return "\u{f812}"
             case .laravel: return "\u{f3bd}"
             case .lastfm: return "\u{f202}"
@@ -2195,6 +2248,8 @@ public enum FontAwesome: String, CaseIterable {
             case .longArrowAltUp: return "\u{f30c}"
             case .lowVision: return "\u{f2a8}"
             case .luggageCart: return "\u{f59d}"
+            case .lungs: return "\u{f604}"
+            case .lungsVirus: return "\u{f967}"
             case .lyft: return "\u{f3c3}"
             case .magento: return "\u{f3c4}"
             case .magic: return "\u{f0d0}"
@@ -2251,6 +2306,7 @@ public enum FontAwesome: String, CaseIterable {
             case .mitten: return "\u{f7b5}"
             case .mix: return "\u{f3cb}"
             case .mixcloud: return "\u{f289}"
+            case .mixer: return "\u{f956}"
             case .mizuni: return "\u{f3cc}"
             case .mobile: return "\u{f10b}"
             case .mobileAlt: return "\u{f3cd}"
@@ -2330,6 +2386,7 @@ public enum FontAwesome: String, CaseIterable {
             case .pencilAlt: return "\u{f303}"
             case .pencilRuler: return "\u{f5ae}"
             case .pennyArcade: return "\u{f704}"
+            case .peopleArrows: return "\u{f968}"
             case .peopleCarry: return "\u{f4ce}"
             case .pepperHot: return "\u{f816}"
             case .percent: return "\u{f295}"
@@ -2362,6 +2419,7 @@ public enum FontAwesome: String, CaseIterable {
             case .plane: return "\u{f072}"
             case .planeArrival: return "\u{f5af}"
             case .planeDeparture: return "\u{f5b0}"
+            case .planeSlash: return "\u{f969}"
             case .play: return "\u{f04b}"
             case .playCircle: return "\u{f144}"
             case .playstation: return "\u{f3df}"
@@ -2387,6 +2445,8 @@ public enum FontAwesome: String, CaseIterable {
             case .procedures: return "\u{f487}"
             case .productHunt: return "\u{f288}"
             case .projectDiagram: return "\u{f542}"
+            case .pumpMedical: return "\u{f96a}"
+            case .pumpSoap: return "\u{f96b}"
             case .pushed: return "\u{f3e1}"
             case .puzzlePiece: return "\u{f12e}"
             case .python: return "\u{f3e2}"
@@ -2482,10 +2542,12 @@ public enum FontAwesome: String, CaseIterable {
             case .shareSquare: return "\u{f14d}"
             case .shekelSign: return "\u{f20b}"
             case .shieldAlt: return "\u{f3ed}"
+            case .shieldVirus: return "\u{f96c}"
             case .ship: return "\u{f21a}"
             case .shippingFast: return "\u{f48b}"
             case .shirtsinbulk: return "\u{f214}"
             case .shoePrints: return "\u{f54b}"
+            case .shopify: return "\u{f957}"
             case .shoppingBag: return "\u{f290}"
             case .shoppingBasket: return "\u{f291}"
             case .shoppingCart: return "\u{f07a}"
@@ -2531,6 +2593,7 @@ public enum FontAwesome: String, CaseIterable {
             case .snowflake: return "\u{f2dc}"
             case .snowman: return "\u{f7d0}"
             case .snowplow: return "\u{f7d2}"
+            case .soap: return "\u{f96e}"
             case .socks: return "\u{f696}"
             case .solarPanel: return "\u{f5ba}"
             case .sort: return "\u{f0dc}"
@@ -2586,8 +2649,11 @@ public enum FontAwesome: String, CaseIterable {
             case .stop: return "\u{f04d}"
             case .stopCircle: return "\u{f28d}"
             case .stopwatch: return "\u{f2f2}"
+            case .stopwatch20: return "\u{f96f}"
             case .store: return "\u{f54e}"
             case .storeAlt: return "\u{f54f}"
+            case .storeAltSlash: return "\u{f970}"
+            case .storeSlash: return "\u{f971}"
             case .strava: return "\u{f428}"
             case .stream: return "\u{f550}"
             case .streetView: return "\u{f21d}"
@@ -2667,6 +2733,7 @@ public enum FontAwesome: String, CaseIterable {
             case .toggleOn: return "\u{f205}"
             case .toilet: return "\u{f7d8}"
             case .toiletPaper: return "\u{f71e}"
+            case .toiletPaperSlash: return "\u{f972}"
             case .toolbox: return "\u{f552}"
             case .tools: return "\u{f7d9}"
             case .tooth: return "\u{f5c9}"
@@ -2771,6 +2838,9 @@ public enum FontAwesome: String, CaseIterable {
             case .vimeoSquare: return "\u{f194}"
             case .vimeoV: return "\u{f27d}"
             case .vine: return "\u{f1ca}"
+            case .virus: return "\u{f974}"
+            case .virusSlash: return "\u{f975}"
+            case .viruses: return "\u{f976}"
             case .vk: return "\u{f189}"
             case .vnv: return "\u{f40b}"
             case .voicemail: return "\u{f897}"
@@ -2990,6 +3060,7 @@ public enum FontAwesome: String, CaseIterable {
             case .bowlingBall: return [.solid]
             case .box: return [.solid]
             case .boxOpen: return [.solid]
+            case .boxTissue: return [.solid]
             case .boxes: return [.solid]
             case .braille: return [.solid]
             case .brain: return [.solid]
@@ -3181,6 +3252,7 @@ public enum FontAwesome: String, CaseIterable {
             case .cuttlefish: return [.brands]
             case .dAndD: return [.brands]
             case .dAndDBeyond: return [.brands]
+            case .dailymotion: return [.brands]
             case .dashcube: return [.brands]
             case .database: return [.solid]
             case .deaf: return [.solid]
@@ -3210,6 +3282,7 @@ public enum FontAwesome: String, CaseIterable {
             case .directions: return [.solid]
             case .discord: return [.brands]
             case .discourse: return [.brands]
+            case .disease: return [.solid]
             case .divide: return [.solid]
             case .dizzy: return [.solid, .regular]
             case .dna: return [.solid]
@@ -3287,6 +3360,7 @@ public enum FontAwesome: String, CaseIterable {
             case .fantasyFlightGames: return [.brands]
             case .fastBackward: return [.solid]
             case .fastForward: return [.solid]
+            case .faucet: return [.solid]
             case .fax: return [.solid]
             case .feather: return [.solid]
             case .featherAlt: return [.solid]
@@ -3449,7 +3523,9 @@ public enum FontAwesome: String, CaseIterable {
             case .hamsa: return [.solid]
             case .handHolding: return [.solid]
             case .handHoldingHeart: return [.solid]
+            case .handHoldingMedical: return [.solid]
             case .handHoldingUsd: return [.solid]
+            case .handHoldingWater: return [.solid]
             case .handLizard: return [.solid, .regular]
             case .handMiddleFinger: return [.solid]
             case .handPaper: return [.solid, .regular]
@@ -3461,10 +3537,14 @@ public enum FontAwesome: String, CaseIterable {
             case .handPointer: return [.solid, .regular]
             case .handRock: return [.solid, .regular]
             case .handScissors: return [.solid, .regular]
+            case .handSparkles: return [.solid]
             case .handSpock: return [.solid, .regular]
             case .hands: return [.solid]
             case .handsHelping: return [.solid]
+            case .handsWash: return [.solid]
             case .handshake: return [.solid, .regular]
+            case .handshakeAltSlash: return [.solid]
+            case .handshakeSlash: return [.solid]
             case .hanukiah: return [.solid]
             case .hardHat: return [.solid]
             case .hashtag: return [.solid]
@@ -3472,6 +3552,10 @@ public enum FontAwesome: String, CaseIterable {
             case .hatCowboySide: return [.solid]
             case .hatWizard: return [.solid]
             case .hdd: return [.solid, .regular]
+            case .headSideCough: return [.solid]
+            case .headSideCoughSlash: return [.solid]
+            case .headSideMask: return [.solid]
+            case .headSideVirus: return [.solid]
             case .heading: return [.solid]
             case .headphones: return [.solid]
             case .headphonesAlt: return [.solid]
@@ -3496,6 +3580,7 @@ public enum FontAwesome: String, CaseIterable {
             case .hospital: return [.solid, .regular]
             case .hospitalAlt: return [.solid]
             case .hospitalSymbol: return [.solid]
+            case .hospitalUser: return [.solid]
             case .hotTub: return [.solid]
             case .hotdog: return [.solid]
             case .hotel: return [.solid]
@@ -3505,6 +3590,7 @@ public enum FontAwesome: String, CaseIterable {
             case .hourglassHalf: return [.solid]
             case .hourglassStart: return [.solid]
             case .houseDamage: return [.solid]
+            case .houseUser: return [.solid]
             case .houzz: return [.brands]
             case .hryvnia: return [.solid]
             case .html5: return [.brands]
@@ -3528,6 +3614,7 @@ public enum FontAwesome: String, CaseIterable {
             case .info: return [.solid]
             case .infoCircle: return [.solid]
             case .instagram: return [.brands]
+            case .instagramSquare: return [.brands]
             case .intercom: return [.brands]
             case .internetExplorer: return [.brands]
             case .invision: return [.brands]
@@ -3566,6 +3653,7 @@ public enum FontAwesome: String, CaseIterable {
             case .language: return [.solid]
             case .laptop: return [.solid]
             case .laptopCode: return [.solid]
+            case .laptopHouse: return [.solid]
             case .laptopMedical: return [.solid]
             case .laravel: return [.brands]
             case .lastfm: return [.brands]
@@ -3605,6 +3693,8 @@ public enum FontAwesome: String, CaseIterable {
             case .longArrowAltUp: return [.solid]
             case .lowVision: return [.solid]
             case .luggageCart: return [.solid]
+            case .lungs: return [.solid]
+            case .lungsVirus: return [.solid]
             case .lyft: return [.brands]
             case .magento: return [.brands]
             case .magic: return [.solid]
@@ -3661,6 +3751,7 @@ public enum FontAwesome: String, CaseIterable {
             case .mitten: return [.solid]
             case .mix: return [.brands]
             case .mixcloud: return [.brands]
+            case .mixer: return [.brands]
             case .mizuni: return [.brands]
             case .mobile: return [.solid]
             case .mobileAlt: return [.solid]
@@ -3740,6 +3831,7 @@ public enum FontAwesome: String, CaseIterable {
             case .pencilAlt: return [.solid]
             case .pencilRuler: return [.solid]
             case .pennyArcade: return [.brands]
+            case .peopleArrows: return [.solid]
             case .peopleCarry: return [.solid]
             case .pepperHot: return [.solid]
             case .percent: return [.solid]
@@ -3772,6 +3864,7 @@ public enum FontAwesome: String, CaseIterable {
             case .plane: return [.solid]
             case .planeArrival: return [.solid]
             case .planeDeparture: return [.solid]
+            case .planeSlash: return [.solid]
             case .play: return [.solid]
             case .playCircle: return [.solid, .regular]
             case .playstation: return [.brands]
@@ -3797,6 +3890,8 @@ public enum FontAwesome: String, CaseIterable {
             case .procedures: return [.solid]
             case .productHunt: return [.brands]
             case .projectDiagram: return [.solid]
+            case .pumpMedical: return [.solid]
+            case .pumpSoap: return [.solid]
             case .pushed: return [.brands]
             case .puzzlePiece: return [.solid]
             case .python: return [.brands]
@@ -3892,10 +3987,12 @@ public enum FontAwesome: String, CaseIterable {
             case .shareSquare: return [.solid, .regular]
             case .shekelSign: return [.solid]
             case .shieldAlt: return [.solid]
+            case .shieldVirus: return [.solid]
             case .ship: return [.solid]
             case .shippingFast: return [.solid]
             case .shirtsinbulk: return [.brands]
             case .shoePrints: return [.solid]
+            case .shopify: return [.brands]
             case .shoppingBag: return [.solid]
             case .shoppingBasket: return [.solid]
             case .shoppingCart: return [.solid]
@@ -3941,6 +4038,7 @@ public enum FontAwesome: String, CaseIterable {
             case .snowflake: return [.solid, .regular]
             case .snowman: return [.solid]
             case .snowplow: return [.solid]
+            case .soap: return [.solid]
             case .socks: return [.solid]
             case .solarPanel: return [.solid]
             case .sort: return [.solid]
@@ -3996,8 +4094,11 @@ public enum FontAwesome: String, CaseIterable {
             case .stop: return [.solid]
             case .stopCircle: return [.solid, .regular]
             case .stopwatch: return [.solid]
+            case .stopwatch20: return [.solid]
             case .store: return [.solid]
             case .storeAlt: return [.solid]
+            case .storeAltSlash: return [.solid]
+            case .storeSlash: return [.solid]
             case .strava: return [.brands]
             case .stream: return [.solid]
             case .streetView: return [.solid]
@@ -4077,6 +4178,7 @@ public enum FontAwesome: String, CaseIterable {
             case .toggleOn: return [.solid]
             case .toilet: return [.solid]
             case .toiletPaper: return [.solid]
+            case .toiletPaperSlash: return [.solid]
             case .toolbox: return [.solid]
             case .tools: return [.solid]
             case .tooth: return [.solid]
@@ -4181,6 +4283,9 @@ public enum FontAwesome: String, CaseIterable {
             case .vimeoSquare: return [.brands]
             case .vimeoV: return [.brands]
             case .vine: return [.brands]
+            case .virus: return [.solid]
+            case .virusSlash: return [.solid]
+            case .viruses: return [.solid]
             case .vk: return [.brands]
             case .vnv: return [.brands]
             case .voicemail: return [.solid]
@@ -4349,6 +4454,7 @@ public enum FontAwesomeBrands: String {
     case cuttlefish = "fa-cuttlefish"
     case dAndD = "fa-d-and-d"
     case dAndDBeyond = "fa-d-and-d-beyond"
+    case dailymotion = "fa-dailymotion"
     case dashcube = "fa-dashcube"
     case delicious = "fa-delicious"
     case deploydog = "fa-deploydog"
@@ -4456,6 +4562,7 @@ public enum FontAwesomeBrands: String {
     case ideal = "fa-ideal"
     case imdb = "fa-imdb"
     case instagram = "fa-instagram"
+    case instagramSquare = "fa-instagram-square"
     case intercom = "fa-intercom"
     case internetExplorer = "fa-internet-explorer"
     case invision = "fa-invision"
@@ -4507,6 +4614,7 @@ public enum FontAwesomeBrands: String {
     case microsoft = "fa-microsoft"
     case mix = "fa-mix"
     case mixcloud = "fa-mixcloud"
+    case mixer = "fa-mixer"
     case mizuni = "fa-mizuni"
     case modx = "fa-modx"
     case monero = "fa-monero"
@@ -4582,6 +4690,7 @@ public enum FontAwesomeBrands: String {
     case sellsy = "fa-sellsy"
     case servicestack = "fa-servicestack"
     case shirtsinbulk = "fa-shirtsinbulk"
+    case shopify = "fa-shopify"
     case shopware = "fa-shopware"
     case simplybuilt = "fa-simplybuilt"
     case sistrix = "fa-sistrix"
@@ -4792,6 +4901,7 @@ public enum FontAwesomeBrands: String {
             case .cuttlefish: return "\u{f38c}"
             case .dAndD: return "\u{f38d}"
             case .dAndDBeyond: return "\u{f6ca}"
+            case .dailymotion: return "\u{f952}"
             case .dashcube: return "\u{f210}"
             case .delicious: return "\u{f1a5}"
             case .deploydog: return "\u{f38e}"
@@ -4899,6 +5009,7 @@ public enum FontAwesomeBrands: String {
             case .ideal: return "\u{f913}"
             case .imdb: return "\u{f2d8}"
             case .instagram: return "\u{f16d}"
+            case .instagramSquare: return "\u{f955}"
             case .intercom: return "\u{f7af}"
             case .internetExplorer: return "\u{f26b}"
             case .invision: return "\u{f7b0}"
@@ -4950,6 +5061,7 @@ public enum FontAwesomeBrands: String {
             case .microsoft: return "\u{f3ca}"
             case .mix: return "\u{f3cb}"
             case .mixcloud: return "\u{f289}"
+            case .mixer: return "\u{f956}"
             case .mizuni: return "\u{f3cc}"
             case .modx: return "\u{f285}"
             case .monero: return "\u{f3d0}"
@@ -5025,6 +5137,7 @@ public enum FontAwesomeBrands: String {
             case .sellsy: return "\u{f213}"
             case .servicestack: return "\u{f3ec}"
             case .shirtsinbulk: return "\u{f214}"
+            case .shopify: return "\u{f957}"
             case .shopware: return "\u{f5b5}"
             case .simplybuilt: return "\u{f215}"
             case .sistrix: return "\u{f3ee}"
