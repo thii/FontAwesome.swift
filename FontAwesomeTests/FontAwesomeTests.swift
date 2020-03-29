@@ -36,7 +36,7 @@ import AppKit
 
 class FontAwesomeTests: XCTestCase {
 
-    #if canImport(AppKit)
+    #if canImport(AppKit) && !targetEnvironment(macCatalyst)
     func testFontAwesomeInit() {
         XCTAssertEqual(FontAwesome(name: "camera"), .camera)
         XCTAssertEqual(FontAwesome(name: "fa-camera"), .camera)
@@ -153,12 +153,21 @@ class FontAwesomeTests: XCTestCase {
         label.text = String.fontAwesomeIcon(name: FontAwesome.github)
         XCTAssertEqual(label.text, "\u{f09b}")
     }
+
+    func testFontsShouldBeLoadedIfFontUsedTwice() {
+        let solidFont = UIFont.fontAwesome(ofSize: 200, style: .solid)
+        let regularFont = UIFont.fontAwesome(ofSize: 200, style: .regular)
+        let regularFontSmaller = UIFont.fontAwesome(ofSize: 100, style: .regular)
+        XCTAssertNotNil(solidFont, "Solid font should be loaded.")
+        XCTAssertNotNil(regularFont, "Regular font should be loaded.")
+        XCTAssertNotNil(regularFontSmaller, "Smaller regular font should be loaded.")
+    }
     #endif
 }
 
 // MARK: - Test Shims
 
-#if canImport(AppKit)
+#if canImport(AppKit) && !targetEnvironment(macCatalyst)
 extension NSTextField {
 
     var text: String! {

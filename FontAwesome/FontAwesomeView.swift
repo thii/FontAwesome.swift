@@ -43,7 +43,7 @@ import AppKit
     @IBInspectable
     public var styleName: String = "Brands" {
         didSet {
-            #if canImport(AppKit)
+            #if canImport(AppKit) && !targetEnvironment(macCatalyst)
             self.iconView.styleName = styleName
             #endif
         }
@@ -79,7 +79,7 @@ import AppKit
         #endif
         self.addSubview(iconView)
 
-        #if canImport(AppKit)
+        #if canImport(AppKit) && !targetEnvironment(macCatalyst)
         self.iconView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
@@ -113,6 +113,6 @@ import AppKit
 
 }
 
-#if canImport(AppKit)
+#if canImport(AppKit) && !targetEnvironment(macCatalyst)
 extension FontAwesomeView: FontAwesomeRepresentable { }
 #endif

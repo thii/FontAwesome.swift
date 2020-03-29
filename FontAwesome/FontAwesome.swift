@@ -45,7 +45,7 @@ public struct FontAwesomeConfig {
     /// make sure they are added to the target and are included in the Info.plist file.
     public static var usesProFonts: Bool = false
 
-    #if canImport(AppKit)
+    #if canImport(AppKit) && !targetEnvironment(macCatalyst)
     /// The default size of the Font Awesome icon in `FontAwesomeButton`s.
     ///
     /// This property has a default value of `.medium`.

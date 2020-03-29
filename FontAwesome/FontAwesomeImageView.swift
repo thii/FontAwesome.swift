@@ -39,7 +39,7 @@ import AppKit
     @IBInspectable public var imageBackgroundColor: NSColor = .clear
     #endif
     @IBInspectable public var styleName: String = "Brands"
-    #if canImport(AppKit)
+    #if canImport(AppKit) && !targetEnvironment(macCatalyst)
     /// The (exclusive) total horizontal and vertical change in points tolerated before the resolution of the backing
     /// image (of the Font Awesome icon) is updated.
     ///
@@ -51,7 +51,7 @@ import AppKit
     @IBInspectable public var sizeChangeTolerance: CGFloat = 10
     #endif
 
-    #if canImport(AppKit)
+    #if canImport(AppKit) && !targetEnvironment(macCatalyst)
     /// The size that was last used to generate the Font Awesome icon image.
     private var lastBoundsUsedForImage: NSSize = .zero
 
@@ -62,7 +62,7 @@ import AppKit
     }
     #endif
 
-    #if canImport(AppKit)
+    #if canImport(AppKit) && !targetEnvironment(macCatalyst)
     override public init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         commonInit()
@@ -88,7 +88,7 @@ import AppKit
 
     public override func awakeFromNib() {
         super.awakeFromNib()
-        #if canImport(AppKit)
+        #if canImport(AppKit) && !targetEnvironment(macCatalyst)
         commonInit()
         #endif
         useFontAwesomeImage()
@@ -96,7 +96,7 @@ import AppKit
 
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        #if canImport(AppKit)
+        #if canImport(AppKit) && !targetEnvironment(macCatalyst)
         commonInit()
         #endif
         useFontAwesomeImage()
@@ -107,12 +107,12 @@ import AppKit
             image = img
         }
 
-        #if canImport(AppKit)
+        #if canImport(AppKit) && !targetEnvironment(macCatalyst)
         lastBoundsUsedForImage = bounds.size
         #endif
     }
 
-    #if canImport(AppKit)
+    #if canImport(AppKit) && !targetEnvironment(macCatalyst)
     open override func viewDidEndLiveResize() {
         super.viewDidEndLiveResize()
 
