@@ -60,10 +60,12 @@ public struct FontAwesomeConfig {
 
 public enum FontAwesomeStyle: String {
     case solid
-    /// WARNING: Font Awesome Free doesn't include a Light variant. Using this with Free will fallback to Regular.
+    /// - Warning: Font Awesome Free doesn't include a Light variant. Using this with Free will fallback to Regular.
     case light
     case regular
     case brands
+    /// - Warning: Font Awesome Free doesn't include a Duotone variant. Using this with Free will fallback to Regular.
+    case duotone
 
     func fontName() -> String {
         switch self {
@@ -75,6 +77,8 @@ public enum FontAwesomeStyle: String {
             return FontAwesomeConfig.usesProFonts ? "FontAwesome5Pro-Regular" : "FontAwesome5Free-Regular"
         case .brands:
             return "FontAwesome5Brands-Regular"
+        case .duotone:
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5Pro-Duotone" : "FontAwesome5Free-Regular"
         }
     }
 
@@ -88,6 +92,8 @@ public enum FontAwesomeStyle: String {
             return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro-Regular-400" : "Font Awesome 5 Free-Regular-400"
         case .brands:
             return "Font Awesome 5 Brands-Regular-400"
+        case .duotone:
+            return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Duotone-Solid-900" : "Font Awesome 5 Free-Solid-900"
         }
     }
 
@@ -97,7 +103,8 @@ public enum FontAwesomeStyle: String {
             return "Font Awesome 5 Brands"
         case .regular,
              .light,
-             .solid:
+             .solid,
+             .duotone:
             return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro" : "Font Awesome 5 Free"
         }
     }
