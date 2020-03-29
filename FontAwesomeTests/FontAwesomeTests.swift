@@ -162,7 +162,29 @@ class FontAwesomeTests: XCTestCase {
         XCTAssertNotNil(regularFont, "Regular font should be loaded.")
         XCTAssertNotNil(regularFontSmaller, "Smaller regular font should be loaded.")
     }
-    #endif
+    #else
+    func testFontAwesomeButtonIconGenerationEdgeCase() {
+        continueAfterFailure = false
+
+        let button = FontAwesomeButton(icon: .robot, style: .solid)
+        button.sizeToFit()
+        button.iconSize = .large
+        button.layout()
+
+        XCTAssertNotNil(button.image)
+        XCTAssertNotEqual(button.image!.size, .zero)
+        XCTAssertNotEqual(button.image!.size, NSSize(width: 1, height: 1))
+
+        let flagImage = button.image!
+        button.icon = .handPaper
+        button.layout()
+
+        XCTAssertNotNil(button.image)
+        XCTAssertNotEqual(button.image!.size, .zero)
+        XCTAssertNotEqual(button.image!.size, NSSize(width: 1, height: 1))
+        XCTAssertNotEqual(button.image, flagImage)
+    }
+    #endif /* canImport(UIKit) */
 }
 
 // MARK: - Test Shims

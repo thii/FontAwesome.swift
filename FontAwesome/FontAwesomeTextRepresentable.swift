@@ -82,6 +82,16 @@ public protocol FontAwesomeTextRepresentable: FontAwesomeRepresentable {
 
 public extension FontAwesomeTextRepresentable {
 
+    var icon: FontAwesome? {
+        get { return FontAwesome(name: iconCode) }
+        set {
+            iconCode = newValue?.rawValue ?? ""
+            // Forces `updateFontIfNeeded()` to call `didUpdateFont()`, which will
+            // render the new icon.
+            font = nil
+        }
+    }
+
     var usesTypographicBounds: Bool {
         return false
     }
