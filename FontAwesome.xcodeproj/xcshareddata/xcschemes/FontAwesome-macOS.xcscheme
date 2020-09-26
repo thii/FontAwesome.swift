@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "848937F81C6AF0660085F6D1"
+               BlueprintIdentifier = "1447729F236DF81D00597F27"
                BuildableName = "FontAwesome.framework"
-               BlueprintName = "FontAwesome-watchOS"
+               BlueprintName = "FontAwesome-macOS"
                ReferencedContainer = "container:FontAwesome.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8401A8DC1B39601400269D14"
+               BuildableName = "FontAwesomeTests.xctest"
+               BlueprintName = "FontAwesomeTests"
+               ReferencedContainer = "container:FontAwesome.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -40,15 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "848937F81C6AF0660085F6D1"
-            BuildableName = "FontAwesome.framework"
-            BlueprintName = "FontAwesome-watchOS"
-            ReferencedContainer = "container:FontAwesome.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -59,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "848937F81C6AF0660085F6D1"
+            BlueprintIdentifier = "1447729F236DF81D00597F27"
             BuildableName = "FontAwesome.framework"
-            BlueprintName = "FontAwesome-watchOS"
+            BlueprintName = "FontAwesome-macOS"
             ReferencedContainer = "container:FontAwesome.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

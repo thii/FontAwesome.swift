@@ -6,8 +6,11 @@ script:
 - brew tap thii/xcbeautify https://github.com/thii/xcbeautify.git
 - brew install xcbeautify
 - xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max' | xcbeautify
+- xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome-macOS -destination 'platform=macOS' | xcbeautify
+- xcodebuild test -project Demo/FontAwesomeDemo.xcodeproj -scheme 'FontAwesomeDemo (macOS)' | xcbeautify
 - xcodebuild -project FontAwesome.xcodeproj -scheme FontAwesome-watchOS -destination 'platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm' | xcbeautify
 - xcodebuild -project FontAwesome.xcodeproj -scheme FontAwesome-tvOS -destination 'platform=tvOS Simulator,name=Apple TV' | xcbeautify
+- pod lib lint --allow-warnings
 before_deploy:
   - carthage build --no-skip-current
   - carthage archive FontAwesome

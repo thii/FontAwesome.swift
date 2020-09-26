@@ -1,4 +1,4 @@
-// FontAwesome.h
+// NSAppKitVersion.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import AppKit
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+internal extension NSAppKitVersion {
+
+    static var isMacOSMojaveOrNewer: Bool {
+        // Note: `1671` is the raw value of `.number10_14`.
+        //       Hardcoded to allow compilation on macOS Mojave (10.14) and earlier.
+        return current.rawValue >= 1671
+    }
+
+}

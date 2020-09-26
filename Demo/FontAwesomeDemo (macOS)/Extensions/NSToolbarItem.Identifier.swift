@@ -1,4 +1,4 @@
-// FontAwesome.h
+// NSToolbarItem.Identifier.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import AppKit
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+extension NSToolbarItem.Identifier {
+
+    static let defaultWidth = NSToolbarItem.Identifier("default-width")
+    static let fittedWidth = NSToolbarItem.Identifier("fitted-width")
+    static let fixedWidth = NSToolbarItem.Identifier("fixed-width")
+    static let fixedPointSize = NSToolbarItem.Identifier("fixed-point-size")
+
+}

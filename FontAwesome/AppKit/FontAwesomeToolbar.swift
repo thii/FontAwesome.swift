@@ -1,4 +1,4 @@
-// FontAwesome.h
+// FontAwesomeToolbar.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import AppKit
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+open class FontAwesomeToolbar: NSToolbar {
+
+    open override var sizeMode: NSToolbar.SizeMode {
+        get { return super.sizeMode }
+        set {
+            super.sizeMode = newValue
+
+            visibleItems?.compactMap({ $0 as? FontAwesomeToolbarItem })
+                .forEach({ $0.updateSize() })
+        }
+    }
+
+}

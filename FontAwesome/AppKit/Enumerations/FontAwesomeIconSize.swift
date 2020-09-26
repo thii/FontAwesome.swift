@@ -1,4 +1,4 @@
-// FontAwesome.h
+// FontAwesomeIconSize.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+public enum FontAwesomeIconSize: String, Codable {
+    case small
+    case medium
+    case large
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+    public init?(stringValue: String) {
+        let value = stringValue.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        if let size = FontAwesomeIconSize(rawValue: value) {
+            self = size
+        } else {
+            switch value.first {
+            case "s":
+                self = .small
+            case "l":
+                self = .large
+            default:
+                self = .medium
+            }
+        }
+    }
+
+}

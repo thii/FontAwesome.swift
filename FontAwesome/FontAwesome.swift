@@ -20,7 +20,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if canImport(UIKit)
 import UIKit
+#else
+import AppKit
+#endif
+
 import CoreText
 
 // MARK: - Public
@@ -39,14 +44,28 @@ public struct FontAwesomeConfig {
     /// To use Font Awesome Pro fonts, you should add these to your main project and
     /// make sure they are added to the target and are included in the Info.plist file.
     public static var usesProFonts: Bool = false
+
+    #if canImport(AppKit) && !targetEnvironment(macCatalyst)
+    /// The default size of the Font Awesome icon in `FontAwesomeButton`s.
+    ///
+    /// This property has a default value of `.medium`.
+    ///
+    /// - Note: The icon sizes corresponding to the values of `FontAwesomeIconSize` may not be aesthetically pleasing for
+    ///         certain icons. Want better control? Your options include using `FontAwesomeButton.iconPointSize` or
+    ///         overriding `FontAwesomeButton.iconHeight`.
+    public static var defaultButtonIconSize: FontAwesomeIconSize = .medium
+    #endif
+
 }
 
 public enum FontAwesomeStyle: String {
     case solid
-    /// WARNING: Font Awesome Free doesn't include a Light variant. Using this with Free will fallback to Regular.
+    /// - Warning: Font Awesome Free doesn't include a Light variant. Using this with Free will fallback to Regular.
     case light
     case regular
     case brands
+    /// - Warning: Font Awesome Free doesn't include a Duotone variant. Using this with Free will fallback to Regular.
+    case duotone
 
     func fontName() -> String {
         switch self {
@@ -58,6 +77,8 @@ public enum FontAwesomeStyle: String {
             return FontAwesomeConfig.usesProFonts ? "FontAwesome5Pro-Regular" : "FontAwesome5Free-Regular"
         case .brands:
             return "FontAwesome5Brands-Regular"
+        case .duotone:
+            return FontAwesomeConfig.usesProFonts ? "FontAwesome5Duotone-Solid" : "FontAwesome5Free-Regular"
         }
     }
 
@@ -71,6 +92,8 @@ public enum FontAwesomeStyle: String {
             return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro-Regular-400" : "Font Awesome 5 Free-Regular-400"
         case .brands:
             return "Font Awesome 5 Brands-Regular-400"
+        case .duotone:
+            return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Duotone-Solid-900" : "Font Awesome 5 Free-Solid-900"
         }
     }
 
@@ -80,34 +103,44 @@ public enum FontAwesomeStyle: String {
             return "Font Awesome 5 Brands"
         case .regular,
              .light,
-             .solid:
+             .solid,
+             .duotone:
             return FontAwesomeConfig.usesProFonts ? "Font Awesome 5 Pro" : "Font Awesome 5 Free"
         }
     }
 }
 
-/// A FontAwesome extension to UIFont.
-public extension UIFont {
+/// A FontAwesome extension to UIFont/NSFont.
+public extension Font {
 
-    /// Get a UIFont object of FontAwesome.
+    /// Get a font object of FontAwesome.
     ///
     /// - parameter ofSize: The preferred font size.
-    /// - returns: A UIFont object of FontAwesome.
-    class func fontAwesome(ofSize fontSize: CGFloat, style: FontAwesomeStyle) -> UIFont {
+    /// - returns: A font object of FontAwesome.
+    class func fontAwesome(ofSize fontSize: CGFloat, style: FontAwesomeStyle) -> Font {
+        #if canImport(AppKit)
+        if let loadedFont = Font(name: style.fontName(), size: fontSize) {
+            return loadedFont
+        }
+        #endif
+
         loadFontAwesome(ofStyle: style)
-        return UIFont(name: style.fontName(), size: fontSize)!
+        return Font(name: style.fontName(), size: fontSize)!
     }
 
     /// Loads the FontAwesome font in to memory.
     /// This method should be called when setting icons without using code.
     class func loadFontAwesome(ofStyle style: FontAwesomeStyle) {
-        if UIFont.fontNames(forFamilyName: style.fontFamilyName()).contains(style.fontName()) {
+        #if canImport(UIKit)
+        if Font.fontNames(forFamilyName: style.fontFamilyName()).contains(style.fontName()) {
             return
         }
+        #endif
 
         FontLoader.loadFont(style.fontFilename())
     }
-    
+
+    #if canImport(UIKit)
     /// Get a UIFont object of FontAwesome for a given text style
     ///
     /// - parameter forTextStyle: The preferred text style
@@ -118,7 +151,6 @@ public extension UIFont {
         let pointSize = userFont.pointSize
         loadFontAwesome(ofStyle: style)
         let awesomeFont = UIFont(name: style.fontName(), size: pointSize)!
-        
         if #available(iOS 11.0, *), #available(watchOSApplicationExtension 4.0, *), #available(tvOS 11.0, *) {
             return UIFontMetrics.default.scaledFont(for: awesomeFont)
         } else {
@@ -126,10 +158,14 @@ public extension UIFont {
             return awesomeFont.withSize(scale * awesomeFont.pointSize)
         }
     }
+    #endif
 }
 
 /// A FontAwesome extension to String.
 public extension String {
+
+    /// The FontAwesome icon name prefix (`"fa-"`).
+    static let fontAwesomeIconNamePrefix: String = "fa-"
 
     /// Get a FontAwesome icon string with the given icon name.
     ///
@@ -161,18 +197,18 @@ public extension String {
     }
 }
 
-/// A FontAwesome extension to UIImage.
-public extension UIImage {
+/// A FontAwesome extension to UIImage/NSImage.
+public extension Image {
 
-    /// Get a FontAwesome image with the given icon name, text color, size and an optional background color.
+    /// Get a FontAwesome image with the given icon, font, text color, size and an optional background color.
     ///
     /// - parameter name: The preferred icon name.
-    /// - parameter style: The font style. Either .solid, .regular or .brands.
+    /// - parameter font: The Font Awesome font.
     /// - parameter textColor: The text color.
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    static func fontAwesomeIcon(name: FontAwesome, style: FontAwesomeStyle, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage {
+    static func fontAwesomeIcon(name: FontAwesome, font: Font, textColor: Color, size: CGSize, backgroundColor: Color = Color.clear, borderWidth: CGFloat = 0, borderColor: Color = Color.clear) -> Image {
 
         // Prevent application crash when passing size where width or height is set equal to or less than zero, by clipping width and height to a minimum of 1 pixel.
         var size = size
@@ -182,25 +218,65 @@ public extension UIImage {
         let paragraph = NSMutableParagraphStyle()
         paragraph.alignment = NSTextAlignment.center
 
-        let fontSize = min(size.width / FontAwesomeConfig.fontAspectRatio, size.height)
-
         // stroke width expects a whole number percentage of the font size
-        let strokeWidth: CGFloat = fontSize == 0 ? 0 : (-100 * borderWidth / fontSize)
+        let strokeWidth: CGFloat = font.pointSize == 0 ? 0 : (-100 * borderWidth / font.pointSize)
 
-        let attributedString = NSAttributedString(string: String.fontAwesomeIcon(name: name), attributes: [
-            NSAttributedString.Key.font: UIFont.fontAwesome(ofSize: fontSize, style: style),
+        let icon = String.fontAwesomeIcon(name: name)
+        let attributedString = NSAttributedString(string: icon, attributes: [
+            NSAttributedString.Key.font: font,
             NSAttributedString.Key.foregroundColor: textColor,
             NSAttributedString.Key.backgroundColor: backgroundColor,
             NSAttributedString.Key.paragraphStyle: paragraph,
             NSAttributedString.Key.strokeWidth: strokeWidth,
             NSAttributedString.Key.strokeColor: borderColor
-            ])
+        ])
 
+        #if canImport(UIKit)
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        attributedString.draw(in: CGRect(x: 0, y: (size.height - fontSize) / 2, width: size.width, height: fontSize))
+        attributedString.draw(in: CGRect(x: 0, y: (size.height - font.pointSize) / 2, width: size.width, height: font.pointSize))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image!
+        #else
+        let pixelPoint = FALayoutManager.pixelPointValue
+        let iconRect = FALayoutManager.imageBounds(of: attributedString)
+        let origin = NSPoint(x: pixelPoint - iconRect.origin.x.roundUpToPixel(),
+                             y: pixelPoint)
+        let imageSize = NSSize(width: iconRect.width.roundUpToPixel() + (2 * pixelPoint),
+                               height: FALayoutManager.lineHeight(for: font) + (2 * pixelPoint))
+
+        let image = NSImage(size: imageSize)
+        image.isTemplate = backgroundColor == .clear && textColor == .black
+
+        image.lockFocusFlipped(true)
+        FALayoutManager.draw(attributedString, at: origin)
+        image.unlockFocus()
+
+        return image.trimmingTransparentPixels(maximumAlphaChannel: 35) ?? image
+        #endif
+    }
+
+    /// Get a FontAwesome image with the given icon name, text color, size and an optional background color.
+    ///
+    /// - parameter name: The preferred icon name.
+    /// - parameter style: The font style. Either .solid, .regular or .brands.
+    /// - parameter textColor: The text color.
+    /// - parameter size: The image size.
+    /// - parameter backgroundColor: The background color (optional).
+    /// - returns: A string that will appear as icon with FontAwesome
+    static func fontAwesomeIcon(name: FontAwesome, style: FontAwesomeStyle, textColor: Color, size: CGSize, backgroundColor: Color = Color.clear, borderWidth: CGFloat = 0, borderColor: Color = Color.clear) -> Image {
+        let icon = String.fontAwesomeIcon(name: name)
+        #if canImport(UIKit)
+        let fontSize = min(size.width / FontAwesomeConfig.fontAspectRatio, size.height)
+        #else
+        let fontSize = size.width == 0
+            // When `size.width` equals zero, then `size.height` specifies the font point size.
+            ? size.height
+            : Font.fontAwesomePointSize(of: icon, with: style, fitting: size)
+        #endif
+        let font = Font.fontAwesome(ofSize: fontSize, style: style)
+
+        return fontAwesomeIcon(name: name, font: font, textColor: textColor, size: size, backgroundColor: backgroundColor, borderWidth: borderWidth, borderColor: borderColor)
     }
 
     /// Get a FontAwesome image with the given icon css code, text color, size and an optional background color.
@@ -211,7 +287,7 @@ public extension UIImage {
     /// - parameter size: The image size.
     /// - parameter backgroundColor: The background color (optional).
     /// - returns: A string that will appear as icon with FontAwesome
-    static func fontAwesomeIcon(code: String, style: FontAwesomeStyle, textColor: UIColor, size: CGSize, backgroundColor: UIColor = UIColor.clear, borderWidth: CGFloat = 0, borderColor: UIColor = UIColor.clear) -> UIImage? {
+    static func fontAwesomeIcon(code: String, style: FontAwesomeStyle, textColor: Color, size: CGSize, backgroundColor: Color = Color.clear, borderWidth: CGFloat = 0, borderColor: Color = Color.clear) -> Image? {
         guard let name = String.fontAwesome(code: code) else { return nil }
         return fontAwesomeIcon(name: name, style: style, textColor: textColor, size: size, backgroundColor: backgroundColor, borderWidth: borderWidth, borderColor: borderColor)
     }
@@ -259,14 +335,18 @@ private class FontLoader {
 
 extension URL {
     static func fontURL(for fontName: String) -> URL? {
-        let bundle = Bundle(for: FontLoader.self)
+        let fontAwesomeBundle = Bundle(for: FontLoader.self)
 
-        if let fontURL = bundle.url(forResource: fontName, withExtension: "otf") {
-            return fontURL
+        // We begin by iterating through the embedding application’s non-framework bundles in case
+        // other font variants were embedded.
+        for bundle in (Bundle.allBundles + [fontAwesomeBundle]) {
+            if let fontURL = bundle.url(forResource: fontName, withExtension: "otf") {
+                return fontURL
+            }
         }
 
         // If this framework is added using CocoaPods, resources is placed under a subdirectory
-        if let fontURL = bundle.url(forResource: fontName, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle") {
+        if let fontURL = fontAwesomeBundle.url(forResource: fontName, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle") {
             return fontURL
         }
 

@@ -1,4 +1,4 @@
-// FontAwesome.h
+// FontAwesomeRawRepresentable.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,29 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+public protocol FontAwesomeRawRepresentable: RawRepresentable where Self.RawValue == String {
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+    /// Creates a new instance with the specified icon name or raw value.
+    ///
+    /// If there is no icon that corresponds with the specified name or raw value, this initializer returns nil.
+    ///
+    /// - Parameter name: The icon name (e.g. `"camera"`) or raw value (e.g. `"fa-camera"`).
+    init?(name: String)
+
+}
+
+public extension FontAwesomeRawRepresentable {
+
+    init?(name: String) {
+        if name.hasPrefix(.fontAwesomeIconNamePrefix) {
+            self.init(rawValue: name.lowercased())
+        } else {
+            self.init(rawValue: .fontAwesomeIconNamePrefix + name.lowercased())
+        }
+    }
+
+}
+
+extension FontAwesome: FontAwesomeRawRepresentable { }
+
+extension FontAwesomeBrands: FontAwesomeRawRepresentable { }

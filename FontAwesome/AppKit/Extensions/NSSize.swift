@@ -1,4 +1,4 @@
-// FontAwesome.h
+// NSSize.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,7 +20,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+import Foundation
 
-FOUNDATION_EXPORT double FontAwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesomeVersionString[];
+internal extension NSSize {
+
+    func adding(size: NSSize) -> NSSize {
+        return NSSize(width: width + size.width, height: height + size.height)
+    }
+
+    func subtracting(width: CGFloat, height: CGFloat) -> NSSize {
+        return NSSize(width: self.width - width, height: self.height - height)
+    }
+
+}

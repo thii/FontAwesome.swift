@@ -20,21 +20,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import UIKit
+import CoreGraphics
 
 protocol FontAwesomeImageRepresentable: class {
 
-    typealias ImageConfig = (cssIconName: String, style: FontAwesomeStyle, color: UIColor?, backgroundColor: UIColor?)
+    typealias ImageConfig = (cssIconName: String, style: FontAwesomeStyle, color: Color?, backgroundColor: Color?)
 
     var imageWidth: CGFloat { get }
     var imageConfigs: [ImageConfig] { get }
 
-    func createImages(configurationHandler: (_ image: UIImage?, _ index: Int) -> Void)
+    func createImages(configurationHandler: (_ image: Image?, _ index: Int) -> Void)
 }
 
 extension FontAwesomeImageRepresentable {
 
-    func createImages(configurationHandler: (_ image: UIImage?, _ index: Int) -> Void) {
+    func createImages(configurationHandler: (_ image: Image?, _ index: Int) -> Void) {
         let imgSize = imageSizeForAspectRatio()
         for (index, config) in imageConfigs.enumerated() {
             let img = createImage(config: config, size: imgSize)
@@ -42,15 +42,21 @@ extension FontAwesomeImageRepresentable {
         }
     }
 
-    private func createImage(config: ImageConfig, size: CGSize) -> UIImage? {
-        return UIImage.fontAwesomeIcon(code: config.cssIconName,
-                                       style: config.style,
-                                       textColor: config.color ?? .black,
-                                       size: size,
-                                       backgroundColor: config.backgroundColor ?? .clear)
+    private func createImage(config: ImageConfig, size: CGSize) -> Image? {
+        return Image.fontAwesomeIcon(code: config.cssIconName,
+                                     style: config.style,
+                                     textColor: config.color ?? .black,
+                                     size: size,
+                                     backgroundColor: config.backgroundColor ?? .clear)
     }
 
     private func imageSizeForAspectRatio() -> CGSize {
+        #if canImport(AppKit)
+        if let view = self as? View {
+            return view.bounds.size
+        }
+        #endif
+
         return CGSize(width: imageWidth, height: imageWidth / FontAwesomeConfig.fontAspectRatio)
     }
 }
