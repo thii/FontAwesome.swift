@@ -13,7 +13,7 @@ lane :update_font do |options|
 
   sh("cd #{ENV["PWD"]}/FortAwesome/Font-Awesome && git fetch origin && git checkout #{target_version}")
   sh("/bin/cp -f #{ENV["PWD"]}/FortAwesome/Font-Awesome/otfs/*.otf #{ENV["PWD"]}/FontAwesome")
-  sh("cd #{ENV["PWD"]} && ./codegen.swift")
+  sh("cd #{ENV["PWD"]} && swift run tools")
   sh("git commit -m \"Update font version to #{target_version}\" ../FontAwesome ../FortAwesome")
 end
 
