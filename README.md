@@ -34,6 +34,14 @@ To see the complete set of 3,978 icons in Font Awesome 5, please check the [Font
 iOS 8 or later.
 
 ## Development
+
+After cloning, initialise the submodule to prepare for updating FontAwesome
+
+```
+git submodule init
+git submodule update
+```
+
 To update this project to include all the latest icons from the new verison of
 Font Awesome (replace `x.y.z` with the new font version):
 
