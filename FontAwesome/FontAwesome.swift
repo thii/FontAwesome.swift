@@ -259,8 +259,16 @@ private class FontLoader {
 
 extension URL {
     static func fontURL(for fontName: String) -> URL? {
+        #if SWIFT_PACKAGE
+        // SPM puts the resources in a different resource bundle
+        if let fontURL = Bundle.module.url(forResource: fontName, withExtension: "otf") {
+            return fontURL
+        }
+        #endif
+
         let bundle = Bundle(for: FontLoader.self)
 
+        // Search for resources at the root
         if let fontURL = bundle.url(forResource: fontName, withExtension: "otf") {
             return fontURL
         }
