@@ -17,7 +17,9 @@ let package = Package(
         .package(url: "https://github.com/jakeheis/SwiftCLI", from: "6.0.0")
     ],
     targets: [
-        .target(name: "Core", dependencies: []),
+        .target(name: "Core", dependencies: [], resources: [
+            .copy("Resources/")
+        ]),
         
         .target(name: "FA+UIKit", dependencies: ["Core"]),
         .target(name: "FA+SwiftUI", dependencies: ["Core"]),

@@ -24,15 +24,30 @@
 // Font-Awesome submodule and run `./codegen.swift`.
 
 /// An enumaration of FontAwesome icon names.
-public enum FontAwesome: String, CaseIterable {
-    {% for k, v in icons %}
-        case {{ k | keywords | camelCased:"-" }} = "fa-{{ k }}"
+public enum {{ enum }}: String, CaseIterable {
+    enum Style: String, CaseIterable {
+        case light, regular, solid
+        case brands
+        case duotone
+    }
+
+    {% for k, v in icons %} case {{ k | keywords | camelCased:"-" }} = "fa-{{ k }}"
     {% endfor %}
     
+    /// The unicode value of each icon
     var unicode: String {
         switch self {
-            {% for k, v in icons %} case .{{ k | keywords | camelCased:"-" }} = "\u{{ v.unicode | braced }}"
+            {% for k, v in icons %} case .{{ k | keywords | camelCased:"-" }}: return "\u{{ v.unicode | braced }}"
             {% endfor %}
+            default: return ""
+        }
+    }
+    
+    var supportedStyles: [Self.Style] {
+        switch self {
+            {% for k, v in icons %} case .{{ k | keywords | camelCased:"-" }}: return [.{{ v.styles | styles }}]
+            {% endfor %}
+            default: return []
         }
     }
 }
