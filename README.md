@@ -1,3 +1,3 @@
 # FontAwesome.swift
 
-A description of this package.
+This branch is currently WIP
