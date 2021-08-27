@@ -1,4 +1,4 @@
-// FontAwesomeImageView.swift
+// Enum.swift
 //
 // Copyright (c) 2014-present FontAwesome.swift contributors
 //
@@ -20,42 +20,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import UIKit
+// DO NOT EDIT! This file is auto-generated. To regenerate it, update
+// Font-Awesome submodule and run `./codegen.swift`.
 
-@IBDesignable public class FontAwesomeImageView: UIImageView {
-
-    @IBInspectable public var cssCode: String = "fa-font-awesome-flag"
-    @IBInspectable public var imageColor: UIColor = .black
-    @IBInspectable public var imageBackgroundColor: UIColor = .clear
-    @IBInspectable public var styleName: String = "Brands"
-
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-        useFontAwesomeImage()
-    }
-
-    public override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        useFontAwesomeImage()
-    }
-
-    private func useFontAwesomeImage() {
-        createImages { (img, _) in
-            image = img
+/// An enumaration of FontAwesome icon names.
+public enum FontAwesome: String, CaseIterable {
+    {% for k, v in icons %}
+        case {{ k | keywords | camelCased:"-" }} = "fa-{{ k }}"
+    {% endfor %}
+    
+    var unicode: String {
+        switch self {
+            {% for k, v in icons %} case .{{ k | keywords | camelCased:"-" }} = "\u{{ v.unicode | braced }}"
+            {% endfor %}
         }
     }
-
-}
-
-extension FontAwesomeImageView: FontAwesomeImageRepresentable {
-
-    var imageWidth: CGFloat {
-        return frame.width
-    }
-
-    var imageConfigs: [ImageConfig] {
-        guard let style = FontAwesomeStyle(rawValue: styleName.lowercased()) else { return [] }
-        return [(cssCode, style, imageColor, imageBackgroundColor)]
-    }
-
 }
