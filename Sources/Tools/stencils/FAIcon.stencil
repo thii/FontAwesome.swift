@@ -25,7 +25,7 @@
 
 /// An enumaration of FontAwesome icon names.
 public enum {{ enum }}: String, CaseIterable {
-    enum Style: String, CaseIterable {
+    public enum Style: String, CaseIterable {
         case light, regular, solid
         case brands
         case duotone
@@ -35,7 +35,7 @@ public enum {{ enum }}: String, CaseIterable {
     {% endfor %}
     
     /// The unicode value of each icon
-    var unicode: String {
+    public var unicode: String {
         switch self {
             {% for k, v in icons %} case .{{ k | keywords | camelCased:"-" }}: return "\u{{ v.unicode | braced }}"
             {% endfor %}
@@ -43,7 +43,7 @@ public enum {{ enum }}: String, CaseIterable {
         }
     }
     
-    var supportedStyles: [Self.Style] {
+    public var supportedStyles: [Self.Style] {
         switch self {
             {% for k, v in icons %} case .{{ k | keywords | camelCased:"-" }}: return [.{{ v.styles | styles }}]
             {% endfor %}

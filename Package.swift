@@ -1,5 +1,4 @@
 // swift-tools-version:5.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
@@ -9,12 +8,16 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        .library(name: "FontAwesome.swift", targets: ["Core"]),
+        .library(name: "FontAwesome.swift", targets: ["Core", "FA+UIKit"]),
+        
+        .library(name: "FontAwesome.UIKit.swift", targets: ["FA+UIKit"]),
+        .library(name: "FontAwesome.SwiftUI.swift", targets: ["FA+SwiftUI"]),
+        
         .executable(name: "tools", targets: ["Tools"])
     ],
     dependencies: [
         .package(url: "https://github.com/stencilproject/Stencil", from: "0.14.0"),
-        .package(url: "https://github.com/jakeheis/SwiftCLI", from: "6.0.0")
+        .package(url: "https://github.com/jakeheis/SwiftCLI", from: "6.0.0"),
     ],
     targets: [
         .target(name: "Core", dependencies: [], resources: [
