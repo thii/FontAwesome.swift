@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 
-  s.source_files = 'FontAwesome/*.{swift}'
-  s.resource_bundle = { 'FontAwesome.swift' => 'FontAwesome/*.otf' }
+  s.source_files = 'Sources/FontAwesome/*.{swift}'
+  s.resource_bundle = { 'FontAwesome.swift' => 'Sources/FontAwesome/Resources/Fonts/*.otf' }
   s.frameworks = 'UIKit', 'CoreText'
   s.swift_version = "5.0"
 end
