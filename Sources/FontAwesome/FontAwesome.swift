@@ -260,22 +260,23 @@ private class FontLoader {
 extension URL {
     static func fontURL(for fontName: String) -> URL? {
         
-        // If this framework is added using SPM
-        if let fontURL = Bundle.module.url(forResource: fontName, withExtension: "otf") {
-            return fontURL
-        }
+        #if SWIFT_PACKAGE
+            if let fontURL = Bundle.module.url(forResource: fontName, withExtension: "otf") {
+                return fontURL
+            }
+        #endif
         
         let bundle = Bundle(for: FontLoader.self)
-
+        
         if let fontURL = bundle.url(forResource: fontName, withExtension: "otf") {
             return fontURL
         }
-
+        
         // If this framework is added using CocoaPods, resources is placed under a subdirectory
         if let fontURL = bundle.url(forResource: fontName, withExtension: "otf", subdirectory: "FontAwesome.swift.bundle") {
             return fontURL
         }
-
+        
         return nil
     }
 }
