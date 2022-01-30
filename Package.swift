@@ -1,4 +1,5 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.5
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
 let package = Package(
@@ -10,11 +11,13 @@ let package = Package(
     targets: [
         .target(
             name: "FontAwesome",
-            path: "FontAwesome"
+            exclude: ["Supporting Files/Info.plist"],
+            resources: [
+                .process("Resources/Fonts"),
+            ]
         ),
         .target(
-            name: "tools",
-            path: "tools"
+            name: "tools"
         )
     ]
 )
